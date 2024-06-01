@@ -14,6 +14,8 @@ sudo dockerd &
 sudo docker run hello-world
 
 sudo pacman -U ./docker-desktop-4.30.0-x86_64.pkg.tar.zst
+systemctl --user start docker-desktop
+systemctl --user enable docker-desktop
 
 yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog
 
