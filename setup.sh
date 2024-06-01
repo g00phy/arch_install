@@ -7,9 +7,7 @@ sudo systemctl enable bluetooth.service
 
 yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog
 
-
-git clone https://aur.archlinux.org/snapd.git
-cd snapd
+cd //run/media/g00phy/EVA-3/apps/snapd
 makepkg -si
 sudo systemctl enable --now snapd.socket
 sudo systemctl enable --now snapd.apparmor.service
@@ -18,7 +16,7 @@ sudo snap install pycharm-professional --classic
 
 sudo snap install slack
 
-cd /media/g00phy/EVA-3/apps/themes
+cd /run/media/g00phy/EVA-3/apps/themes
 cp -r NovaOS-nord-Theme/NovaOS-nord/ /usr/share/themes/
 cp -r NovaOS-nord-Icons/NovaOS-nord/ /usr/share/icons/
 
