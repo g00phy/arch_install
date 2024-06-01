@@ -6,7 +6,7 @@ yes | sudo pacman -S bluez-utils
 yes | sudo pacman -S blueman
 sudo systemctl enable bluetooth.service
 
-yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc
+yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip
 
 
 git clone https://aur.archlinux.org/snapd.git
@@ -25,4 +25,5 @@ cp -r NovaOS-nord-Icons/NovaOS-nord/ /usr/share/icons/
 
 cd gtk
 source gtk-env/bin/activate
-curl -LsSf https://astral.sh/uv/install.sh | sh
+python3 build.py mocha --dest /usr/share/themes -a blue --tweaks black
+
