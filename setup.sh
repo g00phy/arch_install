@@ -6,7 +6,7 @@ yes | sudo pacman -S bluez-utils
 yes | sudo pacman -S blueman
 sudo systemctl enable bluetooth.service
 
-yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller
+yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller feh
 
 
 git clone https://aur.archlinux.org/snapd.git
