@@ -1,4 +1,12 @@
-sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher
+yes | sudo pacman -R bluez-utils
+yes | sudo pacman -R blueberry
+
+yes | sudo pacman -S bluez
+yes | sudo pacman -S bluez-utils
+yes | sudo pacman -S blueman
+sudo systemctl enable bluetooth.service
+
+yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc
 
 
 git clone https://aur.archlinux.org/snapd.git
