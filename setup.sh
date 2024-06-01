@@ -5,9 +5,26 @@ yes | sudo pacman -S bluez-utils
 yes | sudo pacman -S blueman
 sudo systemctl enable bluetooth.service
 
+cd /run/media/g00phy/EVA-3/apps/
+sudo usermod -aG kvm $USER
+sudo pacman -S gnome-terminal
+
+sudo cp docker/* /usr/bin/
+sudo dockerd &
+sudo docker run hello-world
+
+sudo pacman -U ./docker-desktop-4.30.0-x86_64.pkg.tar.zst
+
 yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog
 
-cd //run/media/g00phy/EVA-3/apps/snapd
+
+sudo pacman -S --needed base-devel 
+cd /run/media/g00phy/EVA-3/apps/yay
+makepkg -si
+yay --version
+yay -S lazydocker
+
+cd /run/media/g00phy/EVA-3/apps/snapd
 makepkg -si
 sudo systemctl enable --now snapd.socket
 sudo systemctl enable --now snapd.apparmor.service
