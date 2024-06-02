@@ -16,9 +16,11 @@ sudo docker run hello-world
 sudo pacman -U ./docker-desktop-4.30.0-x86_64.pkg.tar.zst
 systemctl --user start docker-desktop
 systemctl --user enable docker-desktop
+cd /etc/systemd/system/
+mkdir docker.service
 
-yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog
-
+yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog emby-server
+systemctl start emby-server
 
 sudo pacman -S --needed base-devel 
 cd /run/media/g00phy/EVA-3/apps/yay
