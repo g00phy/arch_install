@@ -3,13 +3,26 @@ yes | sudo pacman -S reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
-
 yes | sudo pacman -R blueberry
 
 yes | sudo pacman -S bluez bluez-utils  blueman
 sudo systemctl enable bluetooth.service
 
-yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog libreoffice-fresh gimp thunderbird ntfs-3g nvidia-settings kate
+yes | sudo pacman -Syu vlc keepassxc deluge 
+sudo pacman -S firefox s
+yes | sudo pacman -S spotify-launcher python-pip sassc unzip file-roller eog 
+yes | sudo pacman -S libreoffice-fresh gimp 
+sudo pacman -S thunderbird 
+yes | sudo pacman -S ntfs-3g nvidia-settings kate
+sudo pacman -S emby-server
+sudo systemctl enable emby-server.service
+
+yes | sudo pacman -S docker
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
 
 sudo pacman -S --needed base-devel 
 cd /run/media/g00phy/EVA-3/apps/yay
