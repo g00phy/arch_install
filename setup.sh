@@ -9,7 +9,7 @@ yes | sudo pacman -R blueberry
 yes | sudo pacman -S bluez bluez-utils  blueman
 sudo systemctl enable bluetooth.service
 
-yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog libreoffice-fresh gimp thunderbird ntfs-3g nvidia-settings
+yes | sudo pacman -Syu vlc keepassxc deluge thunderbird firefox spotify-launcher python-pip sassc unzip file-roller eog libreoffice-fresh gimp thunderbird ntfs-3g nvidia-settings kate
 
 sudo pacman -S --needed base-devel 
 cd /run/media/g00phy/EVA-3/apps/yay
