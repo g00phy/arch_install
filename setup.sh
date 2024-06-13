@@ -41,3 +41,6 @@ python3 build.py mocha --dest /usr/share/themes -a blue --tweaks black
 yay -Sy timeshift
 yay -S prowlarr
 yay -S pycharm-professional
+
+sudo chmod -R 755 /mnt/media
+
