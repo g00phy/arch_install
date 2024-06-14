@@ -24,12 +24,19 @@ sudo systemctl enable containerd.service
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-
-sudo pacman -S --needed base-devel 
-cd /run/media/g00phy/EVA-3/apps/yay
+cd /run/media/g00phy/EVA-3/apps/paru
 makepkg -si
-yay --version
-yay -S lazydocker
+
+paru --version
+paru -S lazydocker
+paru -Sy timeshift
+paru -S prowlarr
+sudo systemctl daemon-reload
+sudo systemctl enable --now prowlarr
+paru -S pycharm-professional
+
+sudo chmod -R 755 /mnt/media
+paru -S ttf-roboto-slab
 
 cd /run/media/g00phy/EVA-3/apps/themes
 cp -r NovaOS-nord-Theme/NovaOS-nord/ /usr/share/themes/
@@ -39,12 +46,5 @@ cd /run/media/g00phy/EVA-3/apps/themes/gtk
 source gtk-env/bin/activate
 python3 build.py mocha --dest /usr/share/themes -a blue --tweaks black
 
-yay -Sy timeshift
-yay -S prowlarr
-sudo systemctl daemon-reload
-sudo systemctl enable --now prowlarr
-yay -S pycharm-professional
 
-sudo chmod -R 755 /mnt/media
-yay -S ttf-roboto-slab
 
