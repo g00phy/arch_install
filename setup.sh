@@ -8,7 +8,7 @@ yes | sudo pacman -R blueberry
 yes | sudo pacman -S bluez bluez-utils  blueman
 sudo systemctl enable bluetooth.service
 
-yes | sudo pacman -Syu vlc keepassxc deluge 
+yes | sudo pacman -Syu vlc keepassxc deluge deluge-gtk
 sudo pacman -S firefox s
 yes | sudo pacman -S spotify-launcher python-pip sassc unzip file-roller eog 
 yes | sudo pacman -S libreoffice-fresh gimp 
