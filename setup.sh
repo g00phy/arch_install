@@ -13,7 +13,8 @@ sudo pacman -S firefox s
 yes | sudo pacman -S spotify-launcher python-pip sassc unzip file-roller eog 
 yes | sudo pacman -S libreoffice-fresh gimp 
 sudo pacman -S thunderbird 
-yes | sudo pacman -S ntfs-3g nvidia-settings kate
+yes | sudo pacman -S nvidia-settings 
+1 | sudo pacman -S kate
 sudo pacman -S emby-server
 sudo systemctl enable emby-server.service
 
@@ -34,7 +35,7 @@ cd /run/media/g00phy/EVA-3/apps/themes
 cp -r NovaOS-nord-Theme/NovaOS-nord/ /usr/share/themes/
 cp -r NovaOS-nord-Icons/NovaOS-nord/ /usr/share/icons/
 
-cd gtk
+cd /run/media/g00phy/EVA-3/apps/themes/gtk
 source gtk-env/bin/activate
 python3 build.py mocha --dest /usr/share/themes -a blue --tweaks black
 
@@ -43,4 +44,5 @@ yay -S prowlarr
 yay -S pycharm-professional
 
 sudo chmod -R 755 /mnt/media
+yay -S ttf-roboto-slab
 
