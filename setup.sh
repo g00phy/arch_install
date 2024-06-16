@@ -1,21 +1,25 @@
+echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
-yes | sudo pacman -S reflector
+cd /run/media/g00phy/EVA-3/apps/paru
+makepkg -si
+
+yes | sudo paru -S reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
-yes | sudo pacman -R blueberry
+yes | sudo paru -R blueberry
 
-yes | sudo pacman -S bluez bluez-utils  blueman
+yes | sudo paru -S bluez bluez-utils  blueman
 sudo systemctl enable bluetooth.service
 
-yes | sudo pacman -Syu vlc keepassxc deluge deluge-gtk
-sudo pacman -S firefox s
-yes | sudo pacman -S spotify-launcher python-pip sassc unzip file-roller eog 
-yes | sudo pacman -S libreoffice-fresh gimp 
-sudo pacman -S thunderbird 
-yes | sudo pacman -S nvidia-settings 
-1 | sudo pacman -S kate
-sudo pacman -S emby-server
+yes | sudo paru -Syu vlc keepassxc deluge deluge-gtk
+sudo paru -S firefox s
+yes | sudo paru -S spotify-launcher python-pip sassc unzip file-roller eog 
+yes | sudo paru -S libreoffice-fresh gimp 
+sudo paru -S thunderbird 
+yes | sudo paru -S nvidia-settings 
+1 | sudo paru -S kate
+sudo paru -S emby-server
 sudo systemctl enable emby-server.service
 
 yes | sudo pacman -S docker
@@ -24,10 +28,6 @@ sudo systemctl enable containerd.service
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-cd /run/media/g00phy/EVA-3/apps/paru
-makepkg -si
-
-paru --version
 paru -S lazydocker
 paru -Sy timeshift
 paru -S prowlarr
