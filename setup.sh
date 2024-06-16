@@ -17,16 +17,14 @@ sudo paru -S firefox s
 yes | sudo paru -S spotify-launcher python-pip sassc unzip file-roller eog 
 yes | sudo paru -S libreoffice-fresh gimp 
 sudo paru -S thunderbird 
-yes | sudo paru -S nvidia-settings 
-1 | sudo paru -S kate
+sudo paru -S nvidia-settings 
+sudo paru -S kate
 sudo paru -S emby-server
 sudo systemctl enable emby-server.service
 
-yes | sudo pacman -S docker
-sudo systemctl enable docker.service
-sudo systemctl enable containerd.service
-sudo groupadd docker
-sudo usermod -aG docker $USER
+curl -fsSL https://get.docker.com/rootless | sh
+echo 'export PATH=/home/g00phy/bin:$PATH' >> ~/.bashrc
+echo 'export DOCKER_HOST=unix:///run/user/1000/docker.sock' >> ~/.bashrc
 
 paru -S lazydocker
 paru -Sy timeshift
