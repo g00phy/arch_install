@@ -37,6 +37,7 @@ sudo systemctl enable --now prowlarr
 paru -S pycharm-professional
 
 sudo chmod -R 755 /mnt/media
+sudo chown g00phy:g00phy /mnt/media
 paru -S ttf-roboto-slab
 
 cd /run/media/g00phy/EVA-3/apps/themes
