@@ -35,16 +35,15 @@ systemctl --user restart docker
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 
 
-paru -S lazydocker
-paru -Sy timeshift
-paru -S prowlarr
+sudo paru -Sy timeshift
+sudo paru -S prowlarr
 sudo systemctl daemon-reload
 sudo systemctl enable --now prowlarr
 paru -S pycharm-professional
 
 sudo chmod -R 755 /mnt/media
 sudo chown g00phy:g00phy /mnt/media
-paru -S ttf-roboto-slab
+
 
 cd /run/media/g00phy/EVA-3/apps/themes
 cp -r NovaOS-nord-Theme/NovaOS-nord/ /usr/share/themes/
