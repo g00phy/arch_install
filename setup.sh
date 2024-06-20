@@ -52,5 +52,6 @@ cd /run/media/g00phy/EVA-3/apps/themes/gtk
 source gtk-env/bin/activate
 python3 build.py mocha --dest /usr/share/themes -a blue --tweaks black
 
-
+docker buildx build . -t eda-process-img:latest
+docker run -d -p 52022:22 --runtime=nvidia --gpus all eda-process-img 
 
