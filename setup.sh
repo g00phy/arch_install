@@ -13,7 +13,6 @@ yes | sudo paru -S bluez bluez-utils  blueman
 sudo systemctl enable bluetooth.service
 
 yes | sudo paru -Syu vlc keepassxc deluge deluge-gtk
-sudo paru -S firefox s
 yes | sudo paru -S spotify-launcher python-pip sassc unzip file-roller eog 
 yes | sudo paru -S libreoffice-fresh gimp 
 sudo paru -S thunderbird 
