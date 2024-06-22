@@ -35,7 +35,7 @@ sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 
 
 sudo paru -Sy timeshift
-sudo paru -S prowlarr
+paru -S prowlarr
 sudo systemctl daemon-reload
 sudo systemctl enable --now prowlarr
 paru -S pycharm-professional
