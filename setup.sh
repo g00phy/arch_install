@@ -1,6 +1,10 @@
 echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
-cd /run/media/g00phy/EVA-3/apps/paru
+yes | sudo pacman -S git
+
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
 
 yes | sudo paru -S reflector
