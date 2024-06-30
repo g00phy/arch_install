@@ -1,6 +1,6 @@
 echo 'blacklist ntfs3' | sudo tee /etc/modprobe.d/disable-ntfs3.conf
 
-yes | sudo pacman -S git
+yes | sudo pacman -S git keepassxc
 
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
@@ -16,7 +16,7 @@ yes | sudo paru -R blueberry
 yes | sudo paru -S bluez bluez-utils  blueman
 sudo systemctl enable bluetooth.service
 
-yes | sudo paru -Syu vlc keepassxc deluge deluge-gtk
+yes | sudo paru -Syu vlc deluge deluge-gtk
 yes | sudo paru -S spotify-launcher python-pip sassc unzip file-roller eog octopi apple-fonts
 yes | sudo paru -S libreoffice-fresh gimp 
 sudo paru -S thunderbird 
