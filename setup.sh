@@ -26,8 +26,8 @@ paru -S emby-server
 systemctl enable emby-server.service
 
 curl -fsSL https://get.docker.com/rootless | sh
-echo 'export PATH=/home/g00phy/bin:$PATH' >> ~/.bashrc
-echo 'export DOCKER_HOST=unix:///run/user/1000/docker.sock' >> ~/.bashrc
+export PATH=/home/g00phy/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
 systemctl --user start docker
 systemctl --user enable docker
 sudo loginctl enable-linger $(whoami)
