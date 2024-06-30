@@ -32,7 +32,7 @@ systemctl --user start docker
 systemctl --user enable docker
 sudo loginctl enable-linger $(whoami)
 
-pacman -S nvidia-container-toolkit
+sudo pacman -S nvidia-container-toolkit
 nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
 systemctl --user restart docker
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
