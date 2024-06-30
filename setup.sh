@@ -49,7 +49,7 @@ sudo mkdir media
 sudo chmod -R 755 /mnt/media
 sudo chown g00phy:g00phy /mnt/media
 
-
+su
 cd /run/media/g00phy/EVA-3/apps/themes
 cp -r NovaOS-nord-Theme/NovaOS-nord/ /usr/share/themes/
 cp -r NovaOS-nord-Icons/NovaOS-nord/ /usr/share/icons/
