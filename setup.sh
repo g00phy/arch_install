@@ -38,6 +38,11 @@ systemctl --user restart docker
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 
 
+paru -S docker-buildx 
+git clone https://github.com/docker/buildx.git && cd buildx
+make install
+
+
 sudo paru -S timeshift
 paru -S prowlarr
 sudo systemctl daemon-reload
