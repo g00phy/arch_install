@@ -44,6 +44,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now prowlarr
 paru -S pycharm-professional
 
+cd /mnt
+sudo mkdir media
 sudo chmod -R 755 /mnt/media
 sudo chown g00phy:g00phy /mnt/media
 
