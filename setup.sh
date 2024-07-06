@@ -11,8 +11,7 @@ sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pa
 
 yes | paru -R blueberry
 
-yes | paru -S bluez bluez-utils  blueman
-systemctl enable --now bluetooth.service
+yes | paru -S bluez bluez-utils  blueman |systemctl enable --now bluetooth.service
 
 paru -Syu vlc deluge deluge-gtk
 paru -S spotify-launcher python-pip sassc unzip file-roller eog apple-fonts
@@ -20,15 +19,12 @@ paru -S libreoffice-fresh gimp
 paru -S thunderbird 
 pacman -S nvidia-settings 
 paru -S kate
-paru -S emby-server
-systemctl enable --now emby-server.service
+paru -S emby-server | systemctl enable --now emby-server.service
 
 curl -fsSL https://get.docker.com/rootless | sh
 echo "export PATH=/home/g00phy/bin:$PATH"
 echo "export DOCKER_HOST=unix:///run/user/1000/docker.sock"
-systemctl --user start docker
-systemctl --user enable docker
-sudo loginctl enable-linger $(whoami)
+systemctl --user start docker | systemctl --user enable docker | sudo loginctl enable-linger $(whoami)
 
 sudo pacman -S nvidia-container-toolkit
 nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
