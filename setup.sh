@@ -7,7 +7,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-yes | paru -S reflector
+paru -S reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
@@ -16,9 +16,9 @@ yes | paru -R blueberry
 yes | paru -S bluez bluez-utils  blueman
 systemctl enable bluetooth.service
 
-yes | paru -Syu vlc deluge deluge-gtk
-yes | paru -S spotify-launcher python-pip sassc unzip file-roller eog apple-fonts
-yes | paru -S libreoffice-fresh gimp 
+paru -Syu vlc deluge deluge-gtk
+paru -S spotify-launcher python-pip sassc unzip file-roller eog apple-fonts
+paru -S libreoffice-fresh gimp 
 paru -S thunderbird 
 pacman -S nvidia-settings 
 paru -S kate
