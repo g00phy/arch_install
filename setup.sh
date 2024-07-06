@@ -12,7 +12,7 @@ sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pa
 yes | paru -R blueberry
 
 yes | paru -S bluez bluez-utils  blueman
-systemctl enable bluetooth.service
+systemctl enable --now bluetooth.service
 
 paru -Syu vlc deluge deluge-gtk
 paru -S spotify-launcher python-pip sassc unzip file-roller eog apple-fonts
@@ -21,7 +21,7 @@ paru -S thunderbird
 pacman -S nvidia-settings 
 paru -S kate
 paru -S emby-server
-systemctl enable emby-server.service
+systemctl enable --now emby-server.service
 
 curl -fsSL https://get.docker.com/rootless | sh
 echo "export PATH=/home/g00phy/bin:$PATH"
