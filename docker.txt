@@ -1,6 +1,8 @@
 docker buildx build . -t eda-process-img:latest
 docker run -d -p 52022:22 --runtime=nvidia --gpus all eda-process-img 
 
+export PATH=/home/g00phy/bin:$PATH
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
 paru -S docker-buildx 
 git clone https://github.com/docker/buildx.git && cd buildx
