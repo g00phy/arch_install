@@ -11,4 +11,3 @@ systemctl enable --now emby-server.service | systemctl enable --now bluetooth.se
 sudo systemctl daemon-reload
 sudo systemctl enable --now prowlarr
 
-systemctl enable --now tor
