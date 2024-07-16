@@ -20,8 +20,8 @@ paru -S thunderbird
 pacman -S nvidia-settings 
 paru -S kate
 paru -S emby-server 
+paru -S docker-buildx
 
-pacman -S tor
 
 curl -fsSL https://get.docker.com/rootless | sh
 
