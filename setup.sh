@@ -17,7 +17,7 @@ paru -Syu vlc deluge deluge-gtk
 paru -S spotify-launcher python-pip sassc unzip file-roller eog apple-fonts
 paru -S libreoffice-fresh gimp 
 paru -S thunderbird 
-pacman -S nvidia-settings 
+sudo pacman -S nvidia-settings 
 paru -S kate
 paru -S emby-server 
 paru -S docker-buildx
