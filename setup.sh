@@ -1,33 +1,17 @@
-yes | sudo pacman -S keepassxc
-
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-paru -S reflector
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 yes | paru -R blueberry
 
-yes | paru -S bluez bluez-utils  blueman 
-
-paru -Syu vlc deluge deluge-gtk
-paru -S spotify-launcher python-pip sassc unzip file-roller eog apple-fonts
-paru -S libreoffice-fresh gimp 
-paru -S thunderbird 
-sudo pacman -S nvidia-settings 
-paru -S kate
-paru -S emby-server 
-paru -S docker-buildx
-
+paru -S apple-fonts
 
 curl -fsSL https://get.docker.com/rootless | sh
 
-sudo pacman -S nvidia-container-toolkit
-
-sudo paru -S timeshift
 paru -S prowlarr
 paru -S pycharm-professional
 
