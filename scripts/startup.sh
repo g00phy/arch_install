@@ -25,6 +25,7 @@ set_option() {
 
 
 # Starting functions
+set_option DESKTOP_ENV cinnamon
 set_option INSTALL_TYPE FULL
 set_option AUR_HELPER paru
 clear
