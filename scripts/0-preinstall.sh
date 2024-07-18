@@ -11,6 +11,7 @@ echo -ne "
 Setting up config
 "
 source $CONFIGS_DIR/setup.conf
+echo "$CONFIGS_DIR configuration"
 echo -ne "
 -------------------------------------------------------------------------
                     SYSTEM READY FOR 1-setup.sh

@@ -9,6 +9,7 @@ echo -ne "
                     Installing docker
 -------------------------------------------------------------------------
 "
+source $CONFIGS_DIR/setup.conf
 echo -ne "rootless docker"
 sudo curl -fsSL https://get.docker.com/rootless | sh
 

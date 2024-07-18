@@ -8,6 +8,7 @@ echo -ne "
 
 Installing AUR Softwares
 "
+source $CONFIGS_DIR/setup.conf
 sed -n '/'$INSTALL_TYPE'/q;p' ~/arch_install/pkg-files/${DESKTOP_ENV}.txt | while read line
 do
   if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]

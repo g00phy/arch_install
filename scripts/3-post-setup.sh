@@ -9,6 +9,7 @@ echo -ne "
                     Enabling Essential Services
 -------------------------------------------------------------------------
 "
+source $CONFIGS_DIR/setup.conf
 systemctl enable --now emby-server.service
 echo "emby enabled"
 
