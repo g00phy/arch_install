@@ -8,7 +8,7 @@ echo -ne "
                     Automated Arch Linux Installer
 -------------------------------------------------------------------------
 
-Setting up mirrors for optimal download
+Setting up config
 "
 source $CONFIGS_DIR/setup.conf
 echo -ne "
