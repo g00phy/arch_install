@@ -28,8 +28,6 @@ echo "  nvidia docker enabled"
 
 echo -ne "rootless docker buildx"
 $AUR_HELPER -S --noconfirm --needed docker-buildx
-git clone https://github.com/docker/buildx.git && cd buildx
-make install
 
 echo -ne "
 -------------------------------------------------------------------------
