@@ -14,7 +14,7 @@ echo -ne "rootless docker"
 sudo curl -fsSL https://get.docker.com/rootless | sh
 
 systemctl --user restart docker | systemctl --user start docker
-systemctl --user enable docker | sudo loginctl enable-linger $(whoami)
+systemctl --user enable --now docker | sudo loginctl enable-linger $(whoami)
 echo "export PATH=/home/g00phy/bin:$PATH" >>$HOME/.bashrc
 echo "export DOCKER_HOST=unix:///run/user/1000/docker.sock" >>$HOME/.bashrc
 echo "docker enabled"

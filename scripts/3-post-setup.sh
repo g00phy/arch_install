@@ -29,12 +29,11 @@ source $HOME/arch_install/configs/setup.conf
 echo 'installing nord theme'
 THEMES_DIR="$CONFIGS_DIR/usr/share/themes"
 NORD_THEME="NovaOS-nord" # can grab from config later if we allow selection
-cp -rf ${THEMES_DIR}/${NORD_THEME}-Theme/${NORD_THEME}/ /usr/share/themes/
-cp -rf ${THEMES_DIR}/${NORD_THEME}-Icons/${NORD_THEME}/ /usr/share/icons/
+sudo cp -rf ${THEMES_DIR}/${NORD_THEME}-Theme/${NORD_THEME}/ /usr/share/themes/
+sudo cp -rf ${THEMES_DIR}/${NORD_THEME}-Icons/${NORD_THEME}/ /usr/share/icons/
 
 echo 'installing catpuccin theme'
-cd ${THEMES_DIR}/gtk
-source gtk-env/bin/activate
+source ${THEMES_DIR}/gtk/gtk-env/bin/activate
 python3 build.py mocha --dest /usr/share/themes -a blue --tweaks black
 
 echo -ne "
