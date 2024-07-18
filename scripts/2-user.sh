@@ -4,15 +4,27 @@
 # @file User
 # @brief User customizations and AUR package installation.
 echo -ne "
+-------------------------------------------------------------------------
+
 Installing AUR Softwares
 "
 source $HOME/arch_install/configs/setup.conf
-
 sed -n '/'$INSTALL_TYPE'/q;p' ~/arch_install/pkg-files/${DESKTOP_ENV}.txt | while read line
+do
+  if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]
+  then
+    # If selected installation type is FULL, skip the --END OF THE MINIMAL INSTALLATION-- line
+    continue
+  fi
+  echo "INSTALLING: ${line}"
+  sudo pacman -S --noconfirm --needed ${line}
+done
+
+
 if [[ ! $AUR_HELPER == none ]]; then
   cd ~
-  git clone "https://aur.archlinux.org/paru.git"
-  cd ~/paru
+  git clone "https://aur.archlinux.org/$AUR_HELPER.git"
+  cd ~/$AUR_HELPER
   makepkg -si --noconfirm
   # sed $INSTALL_TYPE is using install type to check for MINIMAL installation, if it's true, stop
   # stop the script and move on, not installing any more packages below that line
@@ -23,13 +35,12 @@ if [[ ! $AUR_HELPER == none ]]; then
       continue
     fi
     echo "INSTALLING: ${line}"
-    paru -S --noconfirm --needed ${line}
+    $AUR_HELPER -S --noconfirm --needed ${line}
   done
 fi
 
 echo -ne "removing blueberry"
 yes | paru -R blueberry
-
 export PATH=$PATH:~/.local/bin
 
 echo -ne "
@@ -37,4 +48,4 @@ echo -ne "
                     SYSTEM READY FOR 3-post-setup.sh
 -------------------------------------------------------------------------
 "
-
+exit
