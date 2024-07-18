@@ -29,9 +29,11 @@ source $HOME/arch_install/configs/setup.conf
 echo 'installing nord theme'
 THEMES_DIR="$CONFIGS_DIR/usr/share/themes"
 cd ${THEMES_DIR} || return
-git clone https://github.com/NicklasVraa/${NORD_THEME}-Icons.git
-git clone https://github.com/NicklasVraa/${NORD_THEME}-Theme.git
 NORD_THEME="NovaOS-nord" # can grab from config later if we allow selection
+
+git clone git@github.com:NicklasVraa/"${NORD_THEME}"-Icons.git
+git clone git@github.com:NicklasVraa/"${NORD_THEME}"-Theme.git
+
 sudo cp -rf ${NORD_THEME}-Theme/${NORD_THEME}/ /usr/share/themes/
 sudo cp -rf ${NORD_THEME}-Icons/${NORD_THEME}/ /usr/share/icons/
 
