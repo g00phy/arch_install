@@ -1,5 +1,6 @@
+--END OF MINIMAL INSTALL--
 apple-fonts
 prowlarr
 pycharm-professional
 docker-buildx
---END OF MINIMAL INSTALL--
+
