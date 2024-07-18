@@ -23,7 +23,7 @@ echo -ne "
     ( $HOME/arch_install/scripts/2-user.sh )|& tee 2-user.log
     ( $HOME/arch_install/scripts/3-post-setup.sh )|& tee 3-post-setup.log
     ( $HOME/arch_install/scripts/4-rootless-docker.sh )|& tee 4-rootless-docker.log
-    cp -v *.log /mnt/home/$USERNAME
+    cp -v *.log /home/$USERNAME
 
 echo -ne "
 -------------------------------------------------------------------------
