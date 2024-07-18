@@ -21,7 +21,7 @@ echo -ne "
     ( bash $SCRIPT_DIR/scripts/0-preinstall.sh )|& tee 0-preinstall.log
     ( $HOME/arch_install/scripts/1-setup.sh )|& tee 1-setup.log
     if [[ ! $DESKTOP_ENV == server ]]; then
-      (sudo -l /usr/bin/runuser -u $USERNAME -- /home/$USERNAME/arch_install/scripts/2-user.sh )|& tee 2-user.log
+      (/home/g00phy/arch_install/scripts/2-user.sh )|& tee 2-user.log
     fi
     ( $HOME/arch_install/scripts/3-post-setup.sh )|& tee 3-post-setup.log
     ( $HOME/arch_install/scripts/4-rootless-docker.sh  )|& tee 4-rootless-docker.log
