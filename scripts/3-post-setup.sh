@@ -26,7 +26,7 @@ echo -ne "
 "
 source $HOME/arch_install/configs/setup.conf
 echo 'installing nord theme'
-THEMES_DIR="$CONFIGS_DIR/usr/share"
+THEMES_DIR="$CONFIGS_DIR/usr/share/themes"
 NORD_THEME="NovaOS-nord" # can grab from config later if we allow selection
 cp -rf ${THEMES_DIR}/${NORD_THEME}-Theme/${NORD_THEME}/ /usr/share/themes/
 cp -rf ${THEMES_DIR}/${NORD_THEME}-Icons/${NORD_THEME}/ /usr/share/icons/
