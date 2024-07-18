@@ -19,12 +19,12 @@ echo -ne "
     ( bash $SCRIPT_DIR/scripts/startup.sh )|& tee startup.log
       source $CONFIGS_DIR/setup.conf
     ( bash $SCRIPT_DIR/scripts/0-preinstall.sh )|& tee 0-preinstall.log
-    ( chroot /mnt $HOME/arch_install/scripts/1-setup.sh )|& tee 1-setup.log
+    ( $HOME/arch_install/scripts/1-setup.sh )|& tee 1-setup.log
     if [[ ! $DESKTOP_ENV == server ]]; then
-      ( chroot /mnt /usr/bin/runuser -u $USERNAME -- /home/$USERNAME/arch_install/scripts/2-user.sh )|& tee 2-user.log
+      (/usr/bin/runuser -u $USERNAME -- /home/$USERNAME/arch_install/scripts/2-user.sh )|& tee 2-user.log
     fi
-    ( chroot /mnt $HOME/arch_install/scripts/3-post-setup.sh )|& tee 3-post-setup.log
-    ( chroot /mnt $HOME/arch_install/scripts/4-rootless-docker.sh  )|& tee 4-rootless-docker.log
+    ( $HOME/arch_install/scripts/3-post-setup.sh )|& tee 3-post-setup.log
+    ( $HOME/arch_install/scripts/4-rootless-docker.sh  )|& tee 4-rootless-docker.log
     cp -v *.log /mnt/home/$USERNAME
    
 echo -ne "
