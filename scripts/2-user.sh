@@ -8,7 +8,6 @@ echo -ne "
 
 Installing AUR Softwares
 "
-source $HOME/arch_install/configs/setup.conf
 sed -n '/'$INSTALL_TYPE'/q;p' ~/arch_install/pkg-files/${DESKTOP_ENV}.txt | while read line
 do
   if [[ ${line} == '--END OF MINIMAL INSTALL--' ]]
@@ -41,7 +40,6 @@ fi
 
 echo -ne "removing blueberry"
 yes | paru -R blueberry
-export PATH=$PATH:~/.local/bin
 
 echo -ne "
 -------------------------------------------------------------------------

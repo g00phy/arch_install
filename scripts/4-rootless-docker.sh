@@ -9,7 +9,6 @@ echo -ne "
                     Installing docker
 -------------------------------------------------------------------------
 "
-source $HOME/arch_install/configs/setup.conf
 echo -ne "rootless docker"
 sudo curl -fsSL https://get.docker.com/rootless | sh
 
@@ -21,7 +20,7 @@ echo "docker enabled"
 
 echo -ne "nvidia-container-toolkit "
 $AUR_HELPER -S --noconfirm --needed nvidia-container-toolkit
-nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
+sudo nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 echo "  nvidia docker enabled"
 
