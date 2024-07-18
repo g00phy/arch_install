@@ -9,8 +9,9 @@ echo -ne "
                     Installing docker
 -------------------------------------------------------------------------
 "
+source $HOME/arch_install/configs/setup.conf
 echo -ne "rootless docker"
-curl -fsSL https://get.docker.com/rootless | sh
+sudo curl -fsSL https://get.docker.com/rootless | sh
 
 systemctl --user restart docker | systemctl --user start docker
 systemctl --user enable docker | sudo loginctl enable-linger $(whoami)
@@ -19,14 +20,14 @@ echo "export DOCKER_HOST=unix:///run/user/1000/docker.sock" >>$HOME/.bashrc
 echo "docker enabled"
 
 echo -ne "nvidia-container-toolkit "
-pacman -S nvidia-container-toolkit
+$AUR_HELPER -S --noconfirm --needed nvidia-container-toolkit
 nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 echo "  nvidia docker enabled"
 
 
 echo -ne "rootless docker buildx"
-pacman -S docker-buildx
+$AUR_HELPER -S --noconfirm --needed docker-buildx
 git clone https://github.com/docker/buildx.git && cd buildx
 make install
 
