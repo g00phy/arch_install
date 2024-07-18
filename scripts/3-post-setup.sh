@@ -38,14 +38,14 @@ python3 -m venv gtk-env
 source gtk-env/bin/activate
 pip install catppuccin
 sudo python3 "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
-source gtk-env/bin/deactivate
+source deactivate
 echo -ne "
 -------------------------------------------------------------------------
                enabling emby server dirs
 -------------------------------------------------------------------------
 "
 cd /mnt || return
-sudo mkdir media
+sudo mkdir -p media
 sudo chmod -R 755 /mnt/media
 sudo chown g00phy:g00phy /mnt/media
 
