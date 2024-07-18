@@ -9,8 +9,6 @@ fi
 
 # Installing git
 
-echo "Installing git."
-pacman -Sy --noconfirm --needed git
 echo "Cloning the arch_install Project"
 git clone https://github.com/g00phy/arch_install
 
