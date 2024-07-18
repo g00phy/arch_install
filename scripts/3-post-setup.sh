@@ -38,7 +38,7 @@ python3 -m venv gtk-env
 source gtk-env/bin/activate
 pip install catppuccin
 sudo python3 "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
-source deactivate
+deactivate
 echo -ne "
 -------------------------------------------------------------------------
                enabling emby server dirs
