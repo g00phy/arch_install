@@ -36,9 +36,9 @@ echo 'installing catpuccin theme'
 cd "${THEMES_DIR}"/gtk || return
 python3 -m venv gtk-env
 source gtk-env/bin/activate
-python-pip install catppuccin
-python3 "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
-
+pip install catppuccin
+sudo python3 "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
+source gtk-env/bin/deactivate
 echo -ne "
 -------------------------------------------------------------------------
                enabling emby server dirs
