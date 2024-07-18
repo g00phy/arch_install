@@ -1,0 +1,14 @@
+pkgs/
+*-temp.scss
+__pycache__
+venv/
+.venv
+bin/
+lib*/
+*.cfg
+.direnv
+build/
+
+# Releases folder
+releases
+chrome
