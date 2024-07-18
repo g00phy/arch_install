@@ -25,6 +25,6 @@ set_option() {
 
 
 # Starting functions
-set_option INSTALL_TYPE SERVER
+set_option INSTALL_TYPE FULL
 set_option AUR_HELPER paru
 clear
