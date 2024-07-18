@@ -6,6 +6,9 @@
 echo -ne "
 Installing AUR Softwares
 "
+source $HOME/arch_install/configs/setup.conf
+
+sed -n '/'$INSTALL_TYPE'/q;p' ~/arch_install/pkg-files/${DESKTOP_ENV}.txt | while read line
 if [[ ! $AUR_HELPER == none ]]; then
   cd ~
   git clone "https://aur.archlinux.org/paru.git"
