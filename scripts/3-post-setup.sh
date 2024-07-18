@@ -33,7 +33,11 @@ sudo cp -rf ${THEMES_DIR}/${NORD_THEME}-Theme/${NORD_THEME}/ /usr/share/themes/
 sudo cp -rf ${THEMES_DIR}/${NORD_THEME}-Icons/${NORD_THEME}/ /usr/share/icons/
 
 echo 'installing catpuccin theme'
-python3 ${THEMES_DIR}/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
+cd "${THEMES_DIR}"/gtk || return
+python3 -m venv gtk-env
+source gtk-env/bin/activate
+python-pip install catppuccin
+python3 "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
 
 echo -ne "
 -------------------------------------------------------------------------
