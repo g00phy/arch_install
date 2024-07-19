@@ -1,4 +1,4 @@
-docker buildx build . -t eda-process-img:latest
-docker run -d -p 52022:22 --runtime=nvidia --gpus all eda-process-img 
+docker buildx build . -t jax-img:latest
+docker run -d -p 52022:22 --runtime=nvidia --gpus all jax-img
 
 
