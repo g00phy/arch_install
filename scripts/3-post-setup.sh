@@ -20,6 +20,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now prowlarr
 echo "prowlarr enabled"
 
+sudo systemctl enable --now deluged.service
+echo "deluged enabled"
+
 echo -ne "
 -------------------------------------------------------------------------
                Enabling THEME
