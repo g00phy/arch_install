@@ -2,5 +2,4 @@ docker buildx build . -t jax-img:latest
 docker run -d -p 52022:22 --runtime=nvidia --gpus all jax-img
 
 
-docker rm -vf $(docker ps -aq) && docker volume prune -f
-docker volume rm $(docker volume ls -q --filter dangling=true)
+docker system prune -a --volumes
