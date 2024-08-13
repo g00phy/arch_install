@@ -45,7 +45,7 @@ cd "${THEMES_DIR}"/gtk || return
 python3 -m venv gtk-env
 source gtk-env/bin/activate
 pip install catppuccin
-sudo python3 "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
+sudo gtk-env/bin/python "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
 deactivate
 echo -ne "
 -------------------------------------------------------------------------
