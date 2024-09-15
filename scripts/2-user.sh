@@ -41,7 +41,7 @@ if [[ ! $AUR_HELPER == none ]]; then
 fi
 
 echo -ne "removing blueberry"
-yes | paru -R blueberry
+yes | yay -R blueberry
 
 echo -ne "
 -------------------------------------------------------------------------
