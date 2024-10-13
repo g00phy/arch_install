@@ -3,4 +3,5 @@ apple-fonts
 prowlarr
 pycharm-professional
 docker-buildx
+skanlite
 
