@@ -234,7 +234,9 @@
         "emby-server",
         "docker-buildx",
         "nvidia-container-toolkit",
-        "timeshift"
+        "timeshift",
+        "cups",
+        "cups-pdf"
     ],
     "parallel downloads": 5,
     "profile_config": {
