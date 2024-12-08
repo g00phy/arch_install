@@ -233,7 +233,10 @@
         "emby-server",
         "timeshift",
         "pacman-contrib",
-        "curl"
+        "curl",
+        "obs-studio",
+        "cups",
+        "cups-pdf"
     ],
     "parallel downloads": 5,
     "profile_config": {
