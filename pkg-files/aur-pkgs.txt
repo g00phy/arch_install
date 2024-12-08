@@ -4,4 +4,8 @@ prowlarr
 pycharm-professional
 docker-buildx
 skanlite
-
+notepad++
+jdownloader2
+filelight
+sumatrapdf
+tor
