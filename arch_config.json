@@ -40,7 +40,7 @@
                             "unit": "sectors",
                             "value": 2048
                         },
-                        "status": "existing",
+                        "status": "modify",
                         "type": "primary"
                     },
                     {
@@ -67,7 +67,7 @@
                             "unit": "sectors",
                             "value": 7813120
                         },
-                        "status": "modify",
+                        "status": "existing",
                         "type": "primary"
                     },
                     {
