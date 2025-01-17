@@ -4,8 +4,12 @@ prowlarr
 pycharm-professional
 docker-buildx
 skanlite
-notepad++
+notepadpp
 jdownloader2
-filelight
 sumatrapdf
-tor
+qdirstat
+sonarr
+bleachbit
+gparted
+obs-studio
+spotify 
