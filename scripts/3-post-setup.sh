@@ -4,24 +4,6 @@
 # @file Post-Setup
 # @brief Finalizing installation configurations and cleaning up after script.
 
-echo -ne "
--------------------------------------------------------------------------
-                    Enabling Essential Services
--------------------------------------------------------------------------
-"
-source $CONFIGS_DIR/setup.conf
-systemctl enable --now emby-server.service
-echo "emby enabled"
-
-systemctl enable --now bluetooth.service
-echo "bluetooth enabled"
-
-sudo systemctl daemon-reload
-sudo systemctl enable --now prowlarr
-echo "prowlarr enabled"
-
-sudo systemctl enable --now deluged.service
-echo "deluged enabled"
 
 echo -ne "
 -------------------------------------------------------------------------
@@ -47,6 +29,7 @@ source gtk-env/bin/activate
 pip install catppuccin
 sudo gtk-env/bin/python "${THEMES_DIR}"/gtk/build.py mocha --dest /usr/share/themes -a blue --tweaks black
 deactivate
+
 echo -ne "
 -------------------------------------------------------------------------
                enabling emby server dirs
@@ -60,13 +43,31 @@ sudo chmod -R 755 /run/media/g00phy/EVA-2
 sudo chmod -R 755 /run/media/g00phy/EVA-3
 
 echo -ne "
+
 -------------------------------------------------------------------------
-                   enabling sonarr and lidarr
+                    Enabling Essential Services
 -------------------------------------------------------------------------
 "
+source $CONFIGS_DIR/setup.conf
+systemctl enable --now emby-server.service
+echo "emby enabled"
+
+systemctl enable --now bluetooth.service
+echo "bluetooth enabled"
+
+sudo systemctl daemon-reload
+sudo systemctl enable --now prowlarr
+echo "prowlarr enabled"
+
+sudo systemctl enable --now deluged.service
+echo "deluged enabled"
+
 sudo systemctl daemon-reload
 sudo systemctl enable --now radarr
 sudo systemctl enable --now sonarr
+sudo chown -R sonarr:sonarr /mnt/media/
+
+
 
 echo -ne "
 -------------------------------------------------------------------------
