@@ -59,6 +59,14 @@ sudo chown g00phy:g00phy /mnt/media
 sudo chmod -R 755 /run/media/g00phy/EVA-2
 sudo chmod -R 755 /run/media/g00phy/EVA-3
 
+echo -ne "
+-------------------------------------------------------------------------
+                   enabling sonarr and lidarr
+-------------------------------------------------------------------------
+"
+sudo systemctl daemon-reload
+sudo systemctl enable --now radarr
+sudo systemctl enable --now sonarr
 
 echo -ne "
 -------------------------------------------------------------------------
