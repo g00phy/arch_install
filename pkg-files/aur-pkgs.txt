@@ -4,7 +4,7 @@ prowlarr
 pycharm-professional
 docker-buildx
 skanlite
-notepadpp
+notepadnext
 jdownloader2
 sumatrapdf
 qdirstat
