@@ -14,3 +14,4 @@ bleachbit
 gparted
 obs-studio
 spotify 
+bcompare
