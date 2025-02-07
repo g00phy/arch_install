@@ -10,7 +10,6 @@ jdownloader2
 sumatrapdf
 qdirstat
 sonarr-bin
-radarr-bin
 bleachbit
 gparted
 obs-studio
