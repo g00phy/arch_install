@@ -37,10 +37,10 @@ echo -ne "
 "
 cd /mnt || return
 sudo mkdir -p media
-sudo chmod -R 755 /mnt/media
+sudo chmod -R 775 /mnt/media
 sudo chown g00phy:g00phy /mnt/media
-sudo chmod -R 755 /run/media/g00phy/EVA-2
-sudo chmod -R 755 /run/media/g00phy/EVA-3
+sudo chmod -R 775 /run/media/g00phy/EVA-2
+sudo chmod -R 775 /run/media/g00phy/EVA-3
 
 echo -ne "
 
