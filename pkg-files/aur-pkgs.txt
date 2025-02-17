@@ -16,3 +16,4 @@ spotify
 bcompare
 docker-compose
 twitch
+chatterino2-git
