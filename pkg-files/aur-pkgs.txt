@@ -1,6 +1,5 @@
 --END OF MINIMAL INSTALL--
 apple-fonts
-raleway-font
 prowlarr
 pycharm-professional
 docker-buildx
@@ -16,4 +15,10 @@ spotify
 bcompare
 docker-compose
 twitch
-chatterino2-git
+onlyoffice-bin 
+dupeguru
+gallery-dl
+handbrake
+peek
+google-chrome
+youtube-dl
