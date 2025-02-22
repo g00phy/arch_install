@@ -21,4 +21,4 @@ gallery-dl
 handbrake
 peek
 google-chrome
-youtube-dl
+yt-dlp
