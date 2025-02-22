@@ -213,8 +213,6 @@
         "bluez-utils",
         "blueman",
         "vlc",
-        "deluge",
-        "deluge-gtk",
         "reflector",
         "python-pip",
         "sassc",
