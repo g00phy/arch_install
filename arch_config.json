@@ -214,13 +214,11 @@
         "blueman",
         "vlc",
         "deluge",
-        "onlyoffice",
         "deluge-gtk",
         "reflector",
         "python-pip",
         "sassc",
         "unzip",
-        "file-roller",
         "eog",
         "gimp",
         "thunderbird",
@@ -230,7 +228,9 @@
         "nvidia-container-toolkit",
         "timeshift",
         "cups",
-        "cups-pdf"
+        "cups-pdf",
+        "ntfs-3g",
+        "git-lfs"
     ],
     "parallel downloads": 5,
     "profile_config": {
