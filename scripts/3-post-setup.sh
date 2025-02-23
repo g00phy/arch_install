@@ -67,6 +67,12 @@ sudo systemctl enable --now radarr
 sudo systemctl enable --now sonarr
 sudo chown -R sonarr:sonarr /mnt/media/
 
+echo -ne "
+-------------------------------------------------------------------------
+                    ENABALING UV
+-------------------------------------------------------------------------
+"
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 
 echo -ne "
