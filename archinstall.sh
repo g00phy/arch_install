@@ -25,6 +25,7 @@ echo -ne "
     fi
     (bash $HOME/arch_install/scripts/3-post-setup.sh )|& tee 3-post-setup.log
     (bash $HOME/arch_install/scripts/4-rootless-docker.sh  )|& tee 4-rootless-docker.log
+    (bash $HOME/arch_install/scripts/5-servarr-setup.sh  )|& tee 5-servarr-setup.log
     mkdir $HOME/logs
     cp -v *.log $HOME/logs
    
