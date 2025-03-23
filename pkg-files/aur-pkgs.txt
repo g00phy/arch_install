@@ -1,13 +1,11 @@
 --END OF MINIMAL INSTALL--
 apple-fonts
-prowlarr
 pycharm-professional
 docker-buildx
 skanlite
 jdownloader2
 sumatrapdf
 qdirstat
-sonarr-bin
 bleachbit
 gparted
 obs-studio
@@ -22,4 +20,3 @@ handbrake
 peek
 google-chrome
 yt-dlp
-qbittorrent
