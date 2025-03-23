@@ -38,7 +38,7 @@ echo -ne "
 cd /mnt || return
 sudo mkdir -p media
 sudo chmod -R 775 /mnt/media
-sudo chown g00phy:g00phy /mnt/media
+#sudo chown g00phy:g00phy /mnt/media
 sudo chmod -R 775 /run/media/g00phy/EVA-2
 sudo chmod -R 775 /run/media/g00phy/EVA-3
 
@@ -49,23 +49,23 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 source $CONFIGS_DIR/setup.conf
-systemctl enable --now emby-server.service
-echo "emby enabled"
+#systemctl enable --now emby-server.service
+#echo "emby enabled"
 
 systemctl enable --now bluetooth.service
 echo "bluetooth enabled"
 
 sudo systemctl daemon-reload
-sudo systemctl enable --now prowlarr
-echo "prowlarr enabled"
+#sudo systemctl enable --now prowlarr
+#echo "prowlarr enabled"
 
-sudo systemctl enable --now deluged.service
-echo "deluged enabled"
+#sudo systemctl enable --now deluged.service
+#echo "deluged enabled"
 
-sudo systemctl daemon-reload
-sudo systemctl enable --now radarr
-sudo systemctl enable --now sonarr
-sudo chown -R sonarr:sonarr /mnt/media/
+#sudo systemctl daemon-reload
+#sudo systemctl enable --now radarr
+#sudo systemctl enable --now sonarr
+#sudo chown -R sonarr:sonarr /mnt/media/
 
 echo -ne "
 -------------------------------------------------------------------------
