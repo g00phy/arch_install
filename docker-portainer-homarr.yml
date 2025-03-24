@@ -1,0 +1,18 @@
+---
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock\n      - /mnt/servarr/config/portainer:/data
+    ports:
+      - "9000:9000"
+  homarr:
+    image: ghcr.io/homarr-labs/homarr:latest
+    container_name: homarr
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock\n      - /mnt/servarr/config/homarr:/data
+    ports:
+      - "7575:7575"

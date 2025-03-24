@@ -5,9 +5,11 @@ echo -ne "
                building Portainer & Homarr
 -------------------------------------------------------------------------
 "
+set -a
+source $CONFIGS_DIR/servarr/.env
+set +a
 
 # Set up directories
-ROOT_DIR="/mnt/servarr"
 CONFIG_DIR="$ROOT_DIR/config"
 
 # Create necessary directories
