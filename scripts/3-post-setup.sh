@@ -4,7 +4,6 @@
 # @file Post-Setup
 # @brief Finalizing installation configurations and cleaning up after script.
 
-
 echo -ne "
 -------------------------------------------------------------------------
                Enabling THEME
@@ -73,7 +72,6 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 curl -LsSf https://astral.sh/uv/install.sh | sh
-
 
 echo -ne "
 -------------------------------------------------------------------------

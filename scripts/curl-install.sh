@@ -2,9 +2,9 @@
 
 # Checking if is running in Repo Folder
 if [[ "$(basename "$(pwd)" | tr '[:upper:]' '[:lower:]')" =~ ^scripts$ ]]; then
-    echo "You are running this in arch_install Folder."
-    echo "Please use ./archinstall.sh instead"
-    exit
+  echo "You are running this in arch_install Folder."
+  echo "Please use ./archinstall.sh instead"
+  exit
 fi
 
 # Installing git

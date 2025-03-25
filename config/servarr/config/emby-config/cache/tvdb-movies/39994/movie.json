@@ -1,0 +1,496 @@
+{
+  "id": 39994,
+  "name": "The Claim",
+  "slug": "the-claim",
+  "image": "https://artworks.thetvdb.com/banners/movies/39994/posters/39994.jpg",
+  "nameTranslations": [
+    "ces",
+    "deu",
+    "ita",
+    "hun",
+    "spa",
+    "pol",
+    "rus",
+    "heb",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "ces",
+    "deu",
+    "ita",
+    "hun",
+    "spa",
+    "pol",
+    "rus",
+    "heb",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 71,
+  "runtime": 120,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 12,
+      "name": "Drama",
+      "slug": "drama"
+    },
+    {
+      "id": 26,
+      "name": "Western",
+      "slug": "western"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "2000-12-29"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2561327,
+      "image": "https://artworks.thetvdb.com/banners/movies/39994/backgrounds/39994.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/39994/backgrounds/39994_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2455522,
+      "image": "https://artworks.thetvdb.com/banners/movies/39994/posters/39994.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/39994/posters/39994_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 63139619,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/259425/photo/62d4cc2febd37.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/v4/actor/259425/photo/62d4cc2febd37_t.jpg",
+      "type": 13,
+      "score": 0,
+      "width": 300,
+      "height": 450,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0218378",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "44853",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12570966,
+      "name": "Daniel Dillon",
+      "peopleId": 521062,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "521062-peter-mullan",
+      "peopleType": "Actor",
+      "personName": "Peter Mullan",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/521062/photo/65216a4eb6e3e.jpg"
+    },
+    {
+      "id": 12570967,
+      "name": "Lucia",
+      "peopleId": 259425,
+      "movieId": "39994",
+      "type": 3,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/259425/photo/62d4cc2febd37.jpg",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "259425-milla-jovovich",
+      "peopleType": "Actor",
+      "personName": "Milla Jovovich",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/259425/607fca5da9686.jpg"
+    },
+    {
+      "id": 12570968,
+      "name": "Donald Dalglish",
+      "peopleId": 505320,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "505320-wes-bentley",
+      "peopleType": "Actor",
+      "personName": "Wes Bentley",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/505320/photo/6570df434574c.jpg"
+    },
+    {
+      "id": 12570969,
+      "name": "Elena Burn",
+      "peopleId": 356538,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 4,
+      "isFeatured": true,
+      "url": "356538-nastassja-kinski",
+      "peopleType": "Actor",
+      "personName": "Nastassja Kinski",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/356538/photo/65651a829d2ea.jpg"
+    },
+    {
+      "id": 12570970,
+      "name": "Hope Burn",
+      "peopleId": 377470,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "377470-sarah-polley",
+      "peopleType": "Actor",
+      "personName": "Sarah Polley",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/377470/photo/62364e118a6c0.jpg"
+    },
+    {
+      "id": 12570971,
+      "name": "Annie",
+      "peopleId": 259429,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "259429-shirley-henderson",
+      "peopleType": "Actor",
+      "personName": "Shirley Henderson",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/259429/6040c75c451d5.jpg"
+    },
+    {
+      "id": 12570972,
+      "name": "Francis Bellanger",
+      "peopleId": 309343,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "309343-julian-richings",
+      "peopleType": "Actor",
+      "personName": "Julian Richings",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/309343/photo/613941e95bb6f.jpg"
+    },
+    {
+      "id": 12570973,
+      "name": "Sweetley",
+      "peopleId": 306348,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "306348-sean-mcginley",
+      "peopleType": "Actor",
+      "personName": "Sean McGinley",
+      "personImgURL": ""
+    },
+    {
+      "id": 12570974,
+      "name": "Burn",
+      "peopleId": 368845,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "368845-tom-mccamus",
+      "peopleType": "Actor",
+      "personName": "Tom McCamus",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/368845/photo/6054d4cb06ba4.jpg"
+    },
+    {
+      "id": 12570975,
+      "name": "Crocker",
+      "peopleId": 284365,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "284365-duncan-fraser",
+      "peopleType": "Actor",
+      "personName": "Duncan Fraser",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/284365/photo/64b955a5d6835.jpg"
+    },
+    {
+      "id": 12570976,
+      "name": "Young Dillon",
+      "peopleId": 468847,
+      "movieId": "39994",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "468847-barry-ward",
+      "peopleType": "Actor",
+      "personName": "Barry Ward",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/468847/primary.jpg"
+    },
+    {
+      "id": 12570977,
+      "peopleId": 289868,
+      "movieId": "39994",
+      "type": 1,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "289868-michael-winterbottom",
+      "peopleType": "Director",
+      "personName": "Michael Winterbottom",
+      "personImgURL": ""
+    },
+    {
+      "id": 12570978,
+      "peopleId": 408438,
+      "movieId": "39994",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "408438-thomas-hardy",
+      "peopleType": "Writer",
+      "personName": "Thomas Hardy",
+      "personImgURL": ""
+    },
+    {
+      "id": 12570979,
+      "peopleId": 319091,
+      "movieId": "39994",
+      "type": 2,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "319091-frank-cottrell-boyce",
+      "peopleType": "Writer",
+      "personName": "Frank Cottrell Boyce",
+      "personImgURL": ""
+    },
+    {
+      "id": 12570980,
+      "peopleId": 356923,
+      "movieId": "39994",
+      "type": 7,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "356923-andrew-eaton",
+      "peopleType": "Producer",
+      "personName": "Andrew Eaton",
+      "personImgURL": ""
+    }
+  ],
+  "originalCountry": "gbr",
+  "originalLanguage": "eng",
+  "studios": [
+    {
+      "id": 93,
+      "name": "Canal+",
+      "parentStudio": "42"
+    }
+  ],
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Vykoupení",
+        "language": "ces",
+        "IsPrimary": false
+      },
+      {
+        "name": "Das Reich und die Herrlichkeit",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "name": "Le bianche tracce della vita",
+        "language": "ita",
+        "IsPrimary": false
+      },
+      {
+        "name": "Aranybánya",
+        "language": "hun",
+        "IsPrimary": false
+      },
+      {
+        "name": "El perdón",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "Królowie życia",
+        "language": "pol",
+        "IsPrimary": false
+      },
+      {
+        "name": "Золотая пыль",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "הטענה",
+        "language": "heb",
+        "IsPrimary": false
+      },
+      {
+        "name": "The Claim",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "Daniel Dillon is an Irish people immigrant who settles in the high mountains of California during the Gold Rush of 1849. It is now 1867, and Dillon has a vault filled with gold and a town of his own, named Kingdom Come. Dillon owns nearly every business of consequence in the town; if someone digs for gold, rents a hotel room, opens a bank account, or commits a crime, they will have to deal with Dillon.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [
+      {
+        "id": 2089,
+        "name": "StudioCanal"
+      }
+    ],
+    "network": [],
+    "production": [
+      {
+        "id": 3985,
+        "name": "Alliance Atlantis Communications",
+        "slug": "alliance-atlantis-communications",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 5410,
+        "name": "Arts Council of England",
+        "slug": "arts-council-of-england",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 12898,
+        "name": "DB Entertainment",
+        "slug": "db-entertainment",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 19774,
+        "name": "Grosvenor Park Productions",
+        "slug": "grosvenor-park-productions",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 32869,
+        "name": "Pathé Pictures International",
+        "slug": "pathe-pictures-international",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 36083,
+        "name": "Revolution Films",
+        "slug": "revolution-films",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 45564,
+      "country": "gbr",
+      "name": "Great Britain"
+    },
+    {
+      "id": 45565,
+      "country": "can",
+      "name": "Canada"
+    },
+    {
+      "id": 45566,
+      "country": "fra",
+      "name": "France"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "2000-12-29"
+  }
+}

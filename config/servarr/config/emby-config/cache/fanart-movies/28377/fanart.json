@@ -1,0 +1,45 @@
+{
+  "name": "Hell Night",
+  "tmdb_id": "28377",
+  "imdb_id": "tt0082511",
+  "movieposter": [
+    {
+      "id": "229873",
+      "url": "https://assets.fanart.tv/fanart/movies/28377/movieposter/hell-night-5b38c8ca9a3de.jpg",
+      "lang": "en",
+      "likes": "4"
+    }
+  ],
+  "moviebackground": [
+    {
+      "id": "405744",
+      "url": "https://assets.fanart.tv/fanart/movies/28377/moviebackground/hell-night-65031d5b5db4d.jpg",
+      "lang": "",
+      "likes": "4"
+    },
+    {
+      "id": "307052",
+      "url": "https://assets.fanart.tv/fanart/movies/28377/moviebackground/hell-night-5f34999dd7c6a.jpg",
+      "lang": "",
+      "likes": "3"
+    }
+  ],
+  "moviedisc": [
+    {
+      "id": "321568",
+      "url": "https://assets.fanart.tv/fanart/movies/28377/moviedisc/hell-night-60145c229bbb7.png",
+      "lang": "en",
+      "likes": "3",
+      "disc": "1",
+      "disc_type": "bluray"
+    }
+  ],
+  "hdmovielogo": [
+    {
+      "id": "248710",
+      "url": "https://assets.fanart.tv/fanart/movies/28377/hdmovielogo/hell-night-5c6d73382ffa2.png",
+      "lang": "en",
+      "likes": "2"
+    }
+  ]
+}

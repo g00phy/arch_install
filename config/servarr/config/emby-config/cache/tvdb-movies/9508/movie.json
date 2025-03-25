@@ -1,0 +1,446 @@
+{
+  "id": 9508,
+  "name": "The Lair of the White Worm",
+  "slug": "the-lair-of-the-white-worm",
+  "image": "https://artworks.thetvdb.com/banners/movies/9508/posters/9508.jpg",
+  "nameTranslations": [
+    "kor",
+    "deu",
+    "rus",
+    "hun",
+    "fra",
+    "spa",
+    "ita",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "kor",
+    "deu",
+    "rus",
+    "hun",
+    "fra",
+    "spa",
+    "ita",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 504,
+  "runtime": 93,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2024-02-22 03:32:00",
+  "genres": [
+    {
+      "id": 15,
+      "name": "Comedy",
+      "slug": "comedy"
+    },
+    {
+      "id": 6,
+      "name": "Horror",
+      "slug": "horror"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1988-09-14"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2600584,
+      "image": "https://artworks.thetvdb.com/banners/movies/9508/backgrounds/9508.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/9508/backgrounds/9508_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2514116,
+      "image": "https://artworks.thetvdb.com/banners/movies/9508/posters/9508.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/9508/posters/9508_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0095488",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "11347",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12317767,
+      "name": "Lady Sylvia Marsh",
+      "peopleId": 330665,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "330665-amanda-donohoe",
+      "peopleType": "Actor",
+      "personName": "Amanda Donohoe",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/330665/photo/6366f5a4097f6.jpg"
+    },
+    {
+      "id": 12317768,
+      "name": "Lord James D'Ampton",
+      "peopleId": 274086,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "274086-hugh-grant",
+      "peopleType": "Actor",
+      "personName": "Hugh Grant",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/274086/photo/6068374c6a663.jpg"
+    },
+    {
+      "id": 12317769,
+      "name": "Eve Trent",
+      "peopleId": 280038,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "280038-catherine-oxenberg",
+      "peopleType": "Actor",
+      "personName": "Catherine Oxenberg",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317770,
+      "name": "Angus Flint",
+      "peopleId": 261504,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "261504-peter-capaldi",
+      "peopleType": "Actor",
+      "personName": "Peter Capaldi",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317771,
+      "name": "Mary Trent",
+      "peopleId": 367464,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "367464-sammi-davis",
+      "peopleType": "Actor",
+      "personName": "Sammi Davis",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/367464/photo/62247b803f80d.jpg"
+    },
+    {
+      "id": 12317772,
+      "name": "Erny",
+      "peopleId": 259639,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "259639-paul-brooke",
+      "peopleType": "Actor",
+      "personName": "Paul Brooke",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/259639/photo/66d4a216dbfda.jpg"
+    },
+    {
+      "id": 12317773,
+      "name": "Kevin",
+      "peopleId": 591404,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "591404-chris-pitt",
+      "peopleType": "Actor",
+      "personName": "Chris Pitt",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317774,
+      "name": "Peters",
+      "peopleId": 371845,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "371845-stratford-johns",
+      "peopleType": "Actor",
+      "personName": "Stratford Johns",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317775,
+      "name": "Joe Trent",
+      "peopleId": 402647,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "402647-christopher-gable",
+      "peopleType": "Actor",
+      "personName": "Christopher Gable",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317776,
+      "name": "Nurse Gladwell",
+      "peopleId": 260544,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "260544-gina-mckee",
+      "peopleType": "Actor",
+      "personName": "Gina McKee",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/260544/photo/65f06b5a87ee6.jpg"
+    },
+    {
+      "id": 12317777,
+      "name": "Maid / Nun",
+      "peopleId": 281103,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "281103-linzi-drew",
+      "peopleType": "Actor",
+      "personName": "Linzi Drew",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317778,
+      "name": "Soldier / Witchdoctor",
+      "peopleId": 490606,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "490606-james-hicks",
+      "peopleType": "Actor",
+      "personName": "James Hicks",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317779,
+      "name": "Police Radio (voice)",
+      "peopleId": 375613,
+      "movieId": "9508",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "375613-ken-russell",
+      "peopleType": "Actor",
+      "personName": "Ken Russell",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317780,
+      "peopleId": 375613,
+      "movieId": "9508",
+      "type": 1,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "375613-ken-russell",
+      "peopleType": "Director",
+      "personName": "Ken Russell",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317781,
+      "peopleId": 375613,
+      "movieId": "9508",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "375613-ken-russell",
+      "peopleType": "Writer",
+      "personName": "Ken Russell",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317782,
+      "peopleId": 465350,
+      "movieId": "9508",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "465350-bram-stoker",
+      "peopleType": "Writer",
+      "personName": "Bram Stoker",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/465350/603aea499cae3.jpg"
+    },
+    {
+      "id": 12317783,
+      "peopleId": 328442,
+      "movieId": "9508",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "328442-dan-ireland",
+      "peopleType": "Producer",
+      "personName": "Dan Ireland",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317784,
+      "peopleId": 375613,
+      "movieId": "9508",
+      "type": 7,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "375613-ken-russell",
+      "peopleType": "Producer",
+      "personName": "Ken Russell",
+      "personImgURL": ""
+    },
+    {
+      "id": 12317785,
+      "peopleId": 465350,
+      "movieId": "9508",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "465350-bram-stoker",
+      "peopleType": "Writer",
+      "personName": "Bram Stoker",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/465350/603aea499cae3.jpg"
+    }
+  ],
+  "budget": "2500000.00",
+  "boxOffice": "1189315.00",
+  "originalCountry": "gbr",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "백사의 전설",
+        "language": "kor",
+        "IsPrimary": false
+      },
+      {
+        "name": "Der Biss der Schlangenfrau",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "name": "Логово белого червя",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "A fehér féreg búvóhelye",
+        "language": "hun",
+        "IsPrimary": false
+      },
+      {
+        "name": "Le repaire du ver blanc",
+        "language": "fra",
+        "IsPrimary": false
+      },
+      {
+        "name": "La guarida del gusano blanco",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "La tana del serpente bianco",
+        "language": "ita",
+        "IsPrimary": false
+      },
+      {
+        "name": "The Lair of the White Worm",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "When an archaeologist uncovers a strange skull in a foreign land, the residents of a nearby town begin to disappear, leading to further inexplicable occurrences.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 46199,
+        "name": "White Lair",
+        "slug": "white-lair",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 12901,
+      "country": "gbr",
+      "name": "Great Britain"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "1988-09-14"
+  }
+}

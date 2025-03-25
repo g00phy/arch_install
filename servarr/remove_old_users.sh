@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# shut down all ezarr containers referenced by docker-compose.yml 
+# shut down all ezarr containers referenced by docker-compose.yml
 # If you previously had ezarr installed somewhere else you have to do this manually in the directory where the docker-compose file is.
 sudo docker compose down
 
@@ -17,7 +17,6 @@ sudo userdel jackett
 sudo userdel plex
 sudo userdel overseerr
 sudo userdel jellyseerr
-sudo userdel qbittorrent
+sudo userdel deluge
 sudo userdel sabnzbd
 sudo groupdel mediacenter
-

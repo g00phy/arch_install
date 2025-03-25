@@ -1,0 +1,334 @@
+{
+  "id": 19327,
+  "name": "Prison",
+  "slug": "prison",
+  "image": "https://artworks.thetvdb.com/banners/movies/19327/posters/19327.jpg",
+  "nameTranslations": [
+    "ces",
+    "deu",
+    "fin",
+    "hun",
+    "pol",
+    "kor",
+    "rus",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "ces",
+    "deu",
+    "fin",
+    "hun",
+    "pol",
+    "kor",
+    "rus",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 89,
+  "runtime": 102,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 14,
+      "name": "Crime",
+      "slug": "crime"
+    },
+    {
+      "id": 12,
+      "name": "Drama",
+      "slug": "drama"
+    },
+    {
+      "id": 6,
+      "name": "Horror",
+      "slug": "horror"
+    },
+    {
+      "id": 24,
+      "name": "Thriller",
+      "slug": "thriller"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1987-12-08"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2542396,
+      "image": "https://artworks.thetvdb.com/banners/movies/19327/backgrounds/19327.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/19327/backgrounds/19327_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2432839,
+      "image": "https://artworks.thetvdb.com/banners/movies/19327/posters/19327.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/19327/posters/19327_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0095904",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "48309",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12416721,
+      "name": "Burke / Forsythe Electrocution",
+      "peopleId": 310471,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "310471-viggo-mortensen",
+      "peopleType": "Actor",
+      "personName": "Viggo Mortensen",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/310471/5efe33944150b.jpg"
+    },
+    {
+      "id": 12416722,
+      "name": "Katherine Walker",
+      "peopleId": 314781,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "314781-chelsea-field",
+      "peopleType": "Actor",
+      "personName": "Chelsea Field",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/314781/photo/64f0d7fe2ae7e.jpg"
+    },
+    {
+      "id": 12416723,
+      "name": "Warden Eaton Sharpe",
+      "peopleId": 266517,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "266517-lane-smith",
+      "peopleType": "Actor",
+      "personName": "Lane Smith",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/266517/photo/6487ac435f354.jpg"
+    },
+    {
+      "id": 12416724,
+      "name": "Cresus",
+      "peopleId": 262759,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "262759-lincoln-kilpatrick",
+      "peopleType": "Actor",
+      "personName": "Lincoln Kilpatrick",
+      "personImgURL": ""
+    },
+    {
+      "id": 12416725,
+      "name": "Rabbitt",
+      "peopleId": 274488,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "274488-tom-everett",
+      "peopleType": "Actor",
+      "personName": "Tom Everett",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/274488/photo/626de731479ca.jpg"
+    },
+    {
+      "id": 12416726,
+      "name": "Lasagna",
+      "peopleId": 291604,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "291604-ivan-kane",
+      "peopleType": "Actor",
+      "personName": "Ivan Kane",
+      "personImgURL": ""
+    },
+    {
+      "id": 12416727,
+      "name": "Captain Horton",
+      "peopleId": 282851,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "282851-arlen-dean-snyder",
+      "peopleType": "Actor",
+      "personName": "Arlen Dean Snyder",
+      "personImgURL": ""
+    },
+    {
+      "id": 12416728,
+      "name": "Wallace",
+      "peopleId": 304380,
+      "movieId": "19327",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "304380-hal-landon-jr",
+      "peopleType": "Actor",
+      "personName": "Hal Landon Jr.",
+      "personImgURL": ""
+    },
+    {
+      "id": 12416729,
+      "peopleId": 472415,
+      "movieId": "19327",
+      "type": 1,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "472415-renny-harlin",
+      "peopleType": "Director",
+      "personName": "Renny Harlin",
+      "personImgURL": ""
+    },
+    {
+      "id": 12416730,
+      "peopleId": 280844,
+      "movieId": "19327",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "280844-john-barron",
+      "peopleType": "Producer",
+      "personName": "John Barron",
+      "personImgURL": ""
+    }
+  ],
+  "budget": "4000000.00",
+  "boxOffice": "354704.00",
+  "originalCountry": "usa",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Věznice",
+        "language": "ces",
+        "IsPrimary": false
+      },
+      {
+        "name": "Prison - Rückkehr aus der Hölle",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "name": "Vankila",
+        "language": "fin",
+        "IsPrimary": false
+      },
+      {
+        "name": "Börtönhalál",
+        "language": "hun",
+        "IsPrimary": false
+      },
+      {
+        "name": "Więzienie",
+        "language": "pol",
+        "IsPrimary": false
+      },
+      {
+        "name": "킬 나이트",
+        "language": "kor",
+        "IsPrimary": false
+      },
+      {
+        "name": "Тюрьма",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "Prison",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "In 1964, inmate Charlie Forsythe of Creedmore Prison was executed via electric chair for a murder he did not commit.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 15082,
+        "name": "Empire Pictures",
+        "slug": "empire-pictures",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 24454,
+      "country": "usa",
+      "name": "United States of America"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "1987-12-08"
+  }
+}

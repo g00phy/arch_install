@@ -1,0 +1,324 @@
+{
+  "id": 14600,
+  "name": "Hell Night",
+  "slug": "hell-night",
+  "image": "https://artworks.thetvdb.com/banners/movies/14600/posters/14600.jpg",
+  "nameTranslations": [
+    "spa",
+    "fra",
+    "kor",
+    "zho",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "spa",
+    "fra",
+    "kor",
+    "zho",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 227,
+  "runtime": 101,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2023-08-07 17:57:15",
+  "trailers": [
+    {
+      "id": 188242,
+      "name": "Trailer",
+      "url": "https://www.youtube.com/watch?v=jrzWXF5SUm8",
+      "language": "eng"
+    }
+  ],
+  "genres": [
+    {
+      "id": 6,
+      "name": "Horror",
+      "slug": "horror"
+    },
+    {
+      "id": 24,
+      "name": "Thriller",
+      "slug": "thriller"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1981-08-28"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2537629,
+      "image": "https://artworks.thetvdb.com/banners/movies/14600/backgrounds/14600.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/14600/backgrounds/14600_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2427632,
+      "image": "https://artworks.thetvdb.com/banners/movies/14600/posters/14600.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/14600/posters/14600_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0082511",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "28377",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12375001,
+      "name": "Marti Gaines",
+      "peopleId": 280486,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "280486-linda-blair",
+      "peopleType": "Actor",
+      "personName": "Linda Blair",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/280486/photo/65ce177dcdc90.jpg"
+    },
+    {
+      "id": 12375002,
+      "name": "Seth",
+      "peopleId": 257579,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "257579-vincent-van-patten",
+      "peopleType": "Actor",
+      "personName": "Vincent Van Patten",
+      "personImgURL": ""
+    },
+    {
+      "id": 12375003,
+      "name": "Jeff Reed",
+      "peopleId": 279982,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "279982-peter-barton",
+      "peopleType": "Actor",
+      "personName": "Peter Barton",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/279982/photo/6750bf1c1a828.jpg"
+    },
+    {
+      "id": 12375004,
+      "name": "Peter Bennett",
+      "peopleId": 282166,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "282166-kevin-brophy",
+      "peopleType": "Actor",
+      "personName": "Kevin Brophy",
+      "personImgURL": ""
+    },
+    {
+      "id": 12375005,
+      "name": "May",
+      "peopleId": 309498,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "309498-jenny-neumann",
+      "peopleType": "Actor",
+      "personName": "Jenny Neumann",
+      "personImgURL": ""
+    },
+    {
+      "id": 12375006,
+      "name": "Scott",
+      "peopleId": 434541,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "434541-jimmy-sturtevant",
+      "peopleType": "Actor",
+      "personName": "Jimmy Sturtevant",
+      "personImgURL": ""
+    },
+    {
+      "id": 12375007,
+      "name": "Older Cop",
+      "peopleId": 439229,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "439229-hal-ralston",
+      "peopleType": "Actor",
+      "personName": "Hal Ralston",
+      "personImgURL": ""
+    },
+    {
+      "id": 12375008,
+      "name": "Driver (as Ronald Gans)",
+      "peopleId": 264949,
+      "movieId": "14600",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "264949-ron-gans",
+      "peopleType": "Actor",
+      "personName": "Ron Gans",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/264949/photo/63fcd592e79bd.jpg"
+    },
+    {
+      "id": 12375009,
+      "peopleId": 300753,
+      "movieId": "14600",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "300753-randy-feldman",
+      "peopleType": "Writer",
+      "personName": "Randy Feldman",
+      "personImgURL": ""
+    },
+    {
+      "id": 12375010,
+      "peopleId": 300783,
+      "movieId": "14600",
+      "type": 7,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "300783-chuck-russell",
+      "peopleType": "Producer",
+      "personName": "Chuck Russell",
+      "personImgURL": ""
+    }
+  ],
+  "budget": "1400000.00",
+  "boxOffice": "2300000.00",
+  "originalCountry": "usa",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Noche infernal",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "Une nuit infernale",
+        "language": "fra",
+        "IsPrimary": false
+      },
+      {
+        "name": "헬 나이트",
+        "language": "kor",
+        "IsPrimary": false
+      },
+      {
+        "name": "地狱之夜",
+        "language": "zho",
+        "IsPrimary": false
+      },
+      {
+        "name": "Hell Night",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "During a college costume party, Peter prepares to initiate four new pledges into Alpha Sigma Rho. The four consist of Jeff, a boy from an opulent upbringing, Marti, an intelligent girl from a poor background, Denise, a promiscuous, heavy drinking party-girl, and Seth, a stoner and surfer from California. The group are forced to spend the night in Garth Manor, an abandoned mansion once owned by a man named Ramon Garth, who murdered his wife and three deformed children; following the murders, Garth hung himself. While Garth had a fourth child, Andrew, his body was never found and legend states that Andrew still lurks within the mansion.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 7711,
+        "name": "BLT Productions",
+        "slug": "blt-productions",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 28108,
+        "name": "Media Home Entertainment",
+        "slug": "media-home-entertainment",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 243738,
+      "country": "usa",
+      "name": "United States of America"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "1981-08-28"
+  }
+}

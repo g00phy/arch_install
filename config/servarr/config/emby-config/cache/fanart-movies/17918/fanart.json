@@ -1,0 +1,73 @@
+{
+  "name": "Swamp Thing",
+  "tmdb_id": "17918",
+  "imdb_id": "tt0084745",
+  "hdmovielogo": [
+    {
+      "id": "43832",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/hdmovielogo/swamp-thing-51fd572715067.png",
+      "lang": "en",
+      "likes": "4"
+    },
+    {
+      "id": "260702",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/hdmovielogo/swamp-thing-5cf7568e77e92.png",
+      "lang": "en",
+      "likes": "4"
+    }
+  ],
+  "moviethumb": [
+    {
+      "id": "66455",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/moviethumb/swamp-thing-531cebd8174fa.jpg",
+      "lang": "en",
+      "likes": "3"
+    },
+    {
+      "id": "260705",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/moviethumb/swamp-thing-5cf75be8855f5.jpg",
+      "lang": "en",
+      "likes": "3"
+    }
+  ],
+  "movieposter": [
+    {
+      "id": "66725",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/movieposter/swamp-thing-532060690f3f4.jpg",
+      "lang": "en",
+      "likes": "3"
+    }
+  ],
+  "moviebanner": [
+    {
+      "id": "89275",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/moviebanner/swamp-thing-546cf4ffc4c40.jpg",
+      "lang": "en",
+      "likes": "3"
+    }
+  ],
+  "moviebackground": [
+    {
+      "id": "260706",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/moviebackground/swamp-thing-5cf75bf4e11ef.jpg",
+      "lang": "",
+      "likes": "3"
+    },
+    {
+      "id": "423068",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/moviebackground/swamp-thing-65f43f0c2299b.jpg",
+      "lang": "",
+      "likes": "1"
+    }
+  ],
+  "moviedisc": [
+    {
+      "id": "264829",
+      "url": "https://assets.fanart.tv/fanart/movies/17918/moviedisc/swamp-thing-5d30a70a0b316.png",
+      "lang": "en",
+      "likes": "3",
+      "disc": "1",
+      "disc_type": "bluray"
+    }
+  ]
+}

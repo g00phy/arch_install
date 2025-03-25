@@ -1,0 +1,77 @@
+{
+  "name": "Naked",
+  "tmdb_id": "21450",
+  "imdb_id": "tt0107653",
+  "moviebackground": [
+    {
+      "id": "32766",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviebackground/naked-5180e7d259537.jpg",
+      "lang": "",
+      "likes": "0"
+    },
+    {
+      "id": "32767",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviebackground/naked-5180e7d259e6b.jpg",
+      "lang": "",
+      "likes": "0"
+    }
+  ],
+  "moviethumb": [
+    {
+      "id": "32768",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviethumb/naked-5180e7f915421.jpg",
+      "lang": "en",
+      "likes": "0"
+    },
+    {
+      "id": "32769",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviethumb/naked-5180e7f916504.jpg",
+      "lang": "en",
+      "likes": "0"
+    },
+    {
+      "id": "32771",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviethumb/naked-5180e7f91702d.jpg",
+      "lang": "en",
+      "likes": "0"
+    },
+    {
+      "id": "32772",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviethumb/naked-5180e7f9175b0.jpg",
+      "lang": "en",
+      "likes": "0"
+    },
+    {
+      "id": "32773",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviethumb/naked-5180e7f917b30.jpg",
+      "lang": "en",
+      "likes": "0"
+    }
+  ],
+  "hdmovielogo": [
+    {
+      "id": "32834",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/hdmovielogo/naked-5181310cdfe19.png",
+      "lang": "en",
+      "likes": "0"
+    }
+  ],
+  "moviedisc": [
+    {
+      "id": "50806",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviedisc/naked-5231689514713.png",
+      "lang": "en",
+      "likes": "0",
+      "disc": "1",
+      "disc_type": "bluray"
+    }
+  ],
+  "moviebanner": [
+    {
+      "id": "84063",
+      "url": "https://assets.fanart.tv/fanart/movies/21450/moviebanner/naked-5421da2c9930e.jpg",
+      "lang": "en",
+      "likes": "0"
+    }
+  ]
+}

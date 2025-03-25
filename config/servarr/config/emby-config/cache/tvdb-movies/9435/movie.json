@@ -1,0 +1,337 @@
+{
+  "id": 9435,
+  "name": "Castle Freak",
+  "slug": "castle-freak",
+  "image": "https://artworks.thetvdb.com/banners/movies/9435/posters/9435.jpg",
+  "nameTranslations": [
+    "ita",
+    "kor",
+    "por",
+    "ces",
+    "spa",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "ita",
+    "kor",
+    "por",
+    "ces",
+    "spa",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 494,
+  "runtime": 95,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 24,
+      "name": "Thriller",
+      "slug": "thriller"
+    },
+    {
+      "id": 12,
+      "name": "Drama",
+      "slug": "drama"
+    },
+    {
+      "id": 6,
+      "name": "Horror",
+      "slug": "horror"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1995-08-04"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2600266,
+      "image": "https://artworks.thetvdb.com/banners/movies/9435/backgrounds/9435.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/9435/backgrounds/9435_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2513421,
+      "image": "https://artworks.thetvdb.com/banners/movies/9435/posters/9435.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/9435/posters/9435_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0112643",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "18256",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12316727,
+      "name": "John Reilly",
+      "peopleId": 272692,
+      "movieId": "9435",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "272692-jeffrey-combs",
+      "peopleType": "Actor",
+      "personName": "Jeffrey Combs",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/272692/primary.jpg"
+    },
+    {
+      "id": 12316728,
+      "name": "Susan Reilly",
+      "peopleId": 287147,
+      "movieId": "9435",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "287147-barbara-crampton",
+      "peopleType": "Actor",
+      "personName": "Barbara Crampton",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/287147/photo/64a1ae4b1b9e2.jpg"
+    },
+    {
+      "id": 12316729,
+      "name": "Giorgio",
+      "peopleId": 376235,
+      "movieId": "9435",
+      "type": 3,
+      "image": "",
+      "sort": 2,
+      "isFeatured": true,
+      "url": "376235-jonathan-fuller",
+      "peopleType": "Actor",
+      "personName": "Jonathan Fuller",
+      "personImgURL": ""
+    },
+    {
+      "id": 12316730,
+      "name": "Rebecca Reilly",
+      "peopleId": 284946,
+      "movieId": "9435",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "284946-jessica-dollarhide",
+      "peopleType": "Actor",
+      "personName": "Jessica Dollarhide",
+      "personImgURL": ""
+    },
+    {
+      "id": 12316731,
+      "name": "Forte",
+      "peopleId": 293132,
+      "movieId": "9435",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "293132-luca-zingaretti",
+      "peopleType": "Actor",
+      "personName": "Luca Zingaretti",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/293132/photo/63c1923e7d489.jpg"
+    },
+    {
+      "id": 12316732,
+      "name": "Gelato Woman",
+      "peopleId": 380536,
+      "movieId": "9435",
+      "type": 3,
+      "image": "",
+      "sort": 2,
+      "isFeatured": true,
+      "url": "380536-carolyn-purdy-gordon",
+      "peopleType": "Actor",
+      "personName": "Carolyn Purdy-Gordon",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/380536/photo/63efbf1f474e8.jpg"
+    },
+    {
+      "id": 12316733,
+      "peopleId": 285996,
+      "movieId": "9435",
+      "type": 1,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "285996-stuart-gordon",
+      "peopleType": "Director",
+      "personName": "Stuart Gordon",
+      "personImgURL": ""
+    },
+    {
+      "id": 12316734,
+      "peopleId": 285996,
+      "movieId": "9435",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "285996-stuart-gordon",
+      "peopleType": "Writer",
+      "personName": "Stuart Gordon",
+      "personImgURL": ""
+    },
+    {
+      "id": 12316735,
+      "peopleId": 659123,
+      "movieId": "9435",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "659123-dennis-paoli",
+      "peopleType": "Writer",
+      "personName": "Dennis Paoli",
+      "personImgURL": ""
+    },
+    {
+      "id": 12316736,
+      "peopleId": 659123,
+      "movieId": "9435",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "659123-dennis-paoli",
+      "peopleType": "Writer",
+      "personName": "Dennis Paoli",
+      "personImgURL": ""
+    },
+    {
+      "id": 12316737,
+      "peopleId": 457972,
+      "movieId": "9435",
+      "type": 7,
+      "image": "",
+      "sort": 7,
+      "isFeatured": false,
+      "url": "457972-perry-bullington",
+      "peopleType": "Producer",
+      "personName": "Perry Bullington",
+      "personImgURL": ""
+    },
+    {
+      "id": 12316738,
+      "peopleId": 257617,
+      "movieId": "9435",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "257617-hp-lovecraft",
+      "peopleType": "Writer",
+      "personName": "H.P. Lovecraft",
+      "personImgURL": ""
+    }
+  ],
+  "originalCountry": "usa",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Il segreto del castello",
+        "language": "ita",
+        "IsPrimary": false
+      },
+      {
+        "name": "사탄의 테러",
+        "language": "kor",
+        "IsPrimary": false
+      },
+      {
+        "name": "O Castelo Maldito",
+        "language": "por",
+        "IsPrimary": false
+      },
+      {
+        "name": "Zámecká zrůda",
+        "language": "ces",
+        "IsPrimary": false
+      },
+      {
+        "name": "Un castillo alucinante",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "Castle Freak",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "After inheriting a 12th-century castle which belonged to a famed Duchess, John Reilly and his family, including his wife Susan and their blind teenage daughter Rebecca, travel to Italy to live. Susan blames him for the death of their son in a drunk driving accident which killed his five-year-old son and cost their daughter her eyesight.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 18208,
+        "name": "Full Moon Entertainment",
+        "slug": "full-moon-entertainment",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 12812,
+      "country": "usa",
+      "name": "United States of America"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng,ita,swe]",
+  "first_release": {
+    "country": "global",
+    "date": "1995-08-04"
+  }
+}

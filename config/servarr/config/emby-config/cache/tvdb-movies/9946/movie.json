@@ -1,0 +1,378 @@
+{
+  "id": 9946,
+  "name": "Songs from the Second Floor",
+  "slug": "songs-from-the-second-floor",
+  "image": "https://artworks.thetvdb.com/banners/movies/9946/posters/9946.jpg",
+  "nameTranslations": [
+    "ita",
+    "kor",
+    "nld",
+    "fra",
+    "fin",
+    "pol",
+    "rus",
+    "tur",
+    "por",
+    "hun",
+    "dan",
+    "swe",
+    "zho",
+    "spa",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "ita",
+    "kor",
+    "nld",
+    "fra",
+    "fin",
+    "pol",
+    "rus",
+    "tur",
+    "por",
+    "hun",
+    "dan",
+    "swe",
+    "zho",
+    "spa",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 840,
+  "runtime": 98,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 12,
+      "name": "Drama",
+      "slug": "drama"
+    },
+    {
+      "id": 15,
+      "name": "Comedy",
+      "slug": "comedy"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "2000-10-06"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2603094,
+      "image": "https://artworks.thetvdb.com/banners/movies/9946/backgrounds/9946.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/9946/backgrounds/9946_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2518590,
+      "image": "https://artworks.thetvdb.com/banners/movies/9946/posters/9946.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/9946/posters/9946_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0120263",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "34070",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12323300,
+      "name": "Stefan",
+      "peopleId": 524912,
+      "movieId": "9946",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "524912-stefan-larsson",
+      "peopleType": "Actor",
+      "personName": "Stefan Larsson",
+      "personImgURL": ""
+    },
+    {
+      "id": 12323301,
+      "name": "Lennart",
+      "peopleId": 553770,
+      "movieId": "9946",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "553770-bengt-cw-carlsson",
+      "peopleType": "Actor",
+      "personName": "Bengt C.W. Carlsson",
+      "personImgURL": ""
+    },
+    {
+      "id": 12323302,
+      "name": "Tomas",
+      "peopleId": 330592,
+      "movieId": "9946",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "330592-peter-roth",
+      "peopleType": "Actor",
+      "personName": "Peter Roth",
+      "personImgURL": ""
+    },
+    {
+      "id": 12323303,
+      "name": "Uffe",
+      "peopleId": 634877,
+      "movieId": "9946",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "634877-tommy-johansson",
+      "peopleType": "Actor",
+      "personName": "Tommy Johansson",
+      "personImgURL": ""
+    },
+    {
+      "id": 12323304,
+      "peopleId": 548516,
+      "movieId": "9946",
+      "type": 1,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "548516-roy-andersson",
+      "peopleType": "Director",
+      "personName": "Roy Andersson",
+      "personImgURL": ""
+    },
+    {
+      "id": 12323305,
+      "peopleId": 548516,
+      "movieId": "9946",
+      "type": 2,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "548516-roy-andersson",
+      "peopleType": "Writer",
+      "personName": "Roy Andersson",
+      "personImgURL": ""
+    },
+    {
+      "id": 12323306,
+      "peopleId": 548516,
+      "movieId": "9946",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "548516-roy-andersson",
+      "peopleType": "Producer",
+      "personName": "Roy Andersson",
+      "personImgURL": ""
+    }
+  ],
+  "budget": "5500000.00",
+  "originalCountry": "swe",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Canzoni del secondo piano",
+        "language": "ita",
+        "IsPrimary": false
+      },
+      {
+        "name": "2층에서 들려오는 노래",
+        "language": "kor",
+        "IsPrimary": false
+      },
+      {
+        "name": "Sånger från andra våningen",
+        "language": "nld",
+        "IsPrimary": false
+      },
+      {
+        "name": "Chansons du deuxième étage",
+        "language": "fra",
+        "IsPrimary": false
+      },
+      {
+        "name": "Toisen kerroksen lauluja",
+        "language": "fin",
+        "IsPrimary": false
+      },
+      {
+        "name": "Pieśni z drugiego piętra",
+        "language": "pol",
+        "IsPrimary": false
+      },
+      {
+        "name": "Песни со второго этажа",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "İkinci Kattan Şarkılar",
+        "language": "tur",
+        "IsPrimary": false
+      },
+      {
+        "name": "Canções do Segundo Andar",
+        "language": "por",
+        "IsPrimary": false
+      },
+      {
+        "name": "Dalok a második emeletről",
+        "language": "hun",
+        "IsPrimary": false
+      },
+      {
+        "name": "Sånger från andra våningen",
+        "language": "dan",
+        "IsPrimary": false
+      },
+      {
+        "name": "Sånger från andra våningen",
+        "language": "swe",
+        "IsPrimary": false
+      },
+      {
+        "name": "二楼传来的歌声",
+        "language": "zho",
+        "IsPrimary": false
+      },
+      {
+        "name": "Canciones del segundo piso",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "Songs from the Second Floor",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "A man is standing in a subway car, his face dirty with soot. In his right hand he carries a plastic bag with documents, or rather, the charred leftovers of them. In a corridor a man is clinging desperately to the legs of the boss who just fired him. He is screaming: \"I've been here for thirty years!\" In a coffee shop someone is waiting for his father, who just burned his furniture company for insurance money. Traffic jams and self-flagellating stock brokers are filling up the streets while an economist, desperate for a solution to the problem of work becoming too expensive, gazes into the crystal ball of a scryer. The main men all have goals but their destinations change during the story.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 14478,
+        "name": "Easy Film",
+        "slug": "easy-film",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 31118,
+        "name": "Nordisk Film & TV Fond",
+        "slug": "nordisk-film-tv-fond",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 36854,
+        "name": "Roy Andersson Filmproduktion AB",
+        "slug": "roy-andersson-filmproduktion-ab",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 41324,
+        "name": "TV12",
+        "slug": "svt-drama",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 13473,
+      "country": "swe",
+      "name": "Sweden"
+    },
+    {
+      "id": 13474,
+      "country": "dnk",
+      "name": "Denmark"
+    },
+    {
+      "id": 13475,
+      "country": "nor",
+      "name": "Norway"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[swe]",
+  "first_release": {
+    "country": "global",
+    "date": "2000-10-06"
+  }
+}

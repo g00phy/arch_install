@@ -1,0 +1,57 @@
+{
+  "name": "A Chinese Ghost Story",
+  "tmdb_id": "30421",
+  "imdb_id": "tt0093978",
+  "hdmovielogo": [
+    {
+      "id": "434864",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/hdmovielogo/a-chinese-ghost-story-66d3497b64d56.png",
+      "lang": "en",
+      "likes": "3"
+    },
+    {
+      "id": "116218",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/hdmovielogo/a-chinese-ghost-story-55b4c0a3a25b1.png",
+      "lang": "it",
+      "likes": "0"
+    },
+    {
+      "id": "197113",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/hdmovielogo/a-chinese-ghost-story-593c69fab24c3.png",
+      "lang": "en",
+      "likes": "0"
+    },
+    {
+      "id": "257002",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/hdmovielogo/a-chinese-ghost-story-5cd223a11ffa0.png",
+      "lang": "en",
+      "likes": "0"
+    },
+    {
+      "id": "312677",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/hdmovielogo/a-chinese-ghost-story-5f9245bc5834c.png",
+      "lang": "zh",
+      "likes": "0"
+    }
+  ],
+  "movieposter": [
+    {
+      "id": "434865",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/movieposter/a-chinese-ghost-story-66d3498c86db7.jpg",
+      "lang": "00",
+      "likes": "3"
+    },
+    {
+      "id": "116913",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/movieposter/a-chinese-ghost-story-55bc0ea779a77.jpg",
+      "lang": "en",
+      "likes": "1"
+    },
+    {
+      "id": "191250",
+      "url": "https://assets.fanart.tv/fanart/movies/30421/movieposter/a-chinese-ghost-story-58f222dbd9eda.jpg",
+      "lang": "en",
+      "likes": "0"
+    }
+  ]
+}

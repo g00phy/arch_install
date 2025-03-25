@@ -2,7 +2,7 @@
 #github-action genshdoc
 #
 # @file Setup
-# @brief Configures installed system, installs base packages, and creates user. 
+# @brief Configures installed system, installs base packages, and creates user.
 echo -ne "
 -------------------------------------------------------------------------
                     Setting up mirrors for optimal download

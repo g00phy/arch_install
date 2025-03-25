@@ -1,0 +1,675 @@
+{
+  "id": 2670,
+  "name": "Runaway Train",
+  "slug": "runaway-train",
+  "image": "https://artworks.thetvdb.com/banners/movies/2670/posters/2670.jpg",
+  "nameTranslations": [
+    "ces",
+    "deu",
+    "pol",
+    "rus",
+    "spa",
+    "ita",
+    "por",
+    "heb",
+    "hun",
+    "tur",
+    "kor",
+    "zho",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "ces",
+    "deu",
+    "pol",
+    "rus",
+    "spa",
+    "ita",
+    "por",
+    "heb",
+    "hun",
+    "tur",
+    "kor",
+    "zho",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 1020,
+  "runtime": 111,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2024-09-13 02:23:51",
+  "genres": [
+    {
+      "id": 19,
+      "name": "Action",
+      "slug": "action"
+    },
+    {
+      "id": 24,
+      "name": "Thriller",
+      "slug": "thriller"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1985-11-15"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2548900,
+      "image": "https://artworks.thetvdb.com/banners/movies/2670/backgrounds/2670.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/2670/backgrounds/2670_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2440971,
+      "image": "https://artworks.thetvdb.com/banners/movies/2670/posters/2670.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/2670/posters/2670_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 63813739,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/270425/photo/65b26870bb5a4.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/v4/actor/270425/photo/65b26870bb5a4_t.jpg",
+      "type": 13,
+      "score": 0,
+      "width": 300,
+      "height": 450,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 62553751,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/282912/photo/60686d205529f.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/v4/actor/282912/photo/60686d205529f_t.jpg",
+      "type": 13,
+      "score": 0,
+      "width": 300,
+      "height": 450,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 62553756,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/271508/photo/60686dc9e9f4e.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/v4/actor/271508/photo/60686dc9e9f4e_t.jpg",
+      "type": 13,
+      "score": 0,
+      "width": 300,
+      "height": 450,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 62553760,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/254056/photo/60686e1946a40.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/v4/actor/254056/photo/60686e1946a40_t.jpg",
+      "type": 13,
+      "score": 0,
+      "width": 300,
+      "height": 450,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0089941",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "11893",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12203732,
+      "name": "Oscar 'Manny' Manheim",
+      "peopleId": 254056,
+      "movieId": "2670",
+      "type": 3,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/254056/photo/60686e1946a40.jpg",
+      "sort": 1,
+      "isFeatured": true,
+      "url": "254056-jon-voight",
+      "peopleType": "Actor",
+      "personName": "Jon Voight",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/254056/primary.jpg"
+    },
+    {
+      "id": 12203733,
+      "name": "Buck",
+      "peopleId": 271508,
+      "movieId": "2670",
+      "type": 3,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/271508/photo/60686dc9e9f4e.jpg",
+      "sort": 2,
+      "isFeatured": true,
+      "url": "271508-eric-roberts",
+      "peopleType": "Actor",
+      "personName": "Eric Roberts",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/271508/photo/65be973f99619.jpg"
+    },
+    {
+      "id": 12203734,
+      "name": "Sara",
+      "peopleId": 270425,
+      "movieId": "2670",
+      "type": 3,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/270425/photo/65b26870bb5a4.jpg",
+      "sort": 3,
+      "isFeatured": true,
+      "url": "270425-rebecca-de-mornay",
+      "peopleType": "Actor",
+      "personName": "Rebecca De Mornay",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/270425/photo/60686ecd658b7.jpg"
+    },
+    {
+      "id": 12203735,
+      "name": "Frank Barstow",
+      "peopleId": 311771,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "311771-kyle-t-heffner",
+      "peopleType": "Actor",
+      "personName": "Kyle T. Heffner",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203736,
+      "name": "Ranken",
+      "peopleId": 282912,
+      "movieId": "2670",
+      "type": 3,
+      "image": "https://artworks.thetvdb.com/banners/v4/actor/282912/photo/60686d205529f.jpg",
+      "sort": 4,
+      "isFeatured": true,
+      "url": "282912-john-p-ryan",
+      "peopleType": "Actor",
+      "personName": "John P. Ryan",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/282912/photo/644fddc55c92c.jpg"
+    },
+    {
+      "id": 12203737,
+      "name": "Dave Prince",
+      "peopleId": 415227,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 7,
+      "isFeatured": false,
+      "url": "415227-t-k-carter",
+      "peopleType": "Actor",
+      "personName": "T. K. Carter",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203738,
+      "name": "Eddie MacDonald",
+      "peopleId": 291261,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 6,
+      "isFeatured": true,
+      "url": "291261-kenneth-mcmillan",
+      "peopleType": "Actor",
+      "personName": "Kenneth McMillan",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203739,
+      "name": "Ruby",
+      "peopleId": 279588,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 18,
+      "isFeatured": false,
+      "url": "279588-stacey-pickren",
+      "peopleType": "Actor",
+      "personName": "Stacey Pickren",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203740,
+      "name": "Conlan",
+      "peopleId": 289740,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 8,
+      "isFeatured": false,
+      "url": "289740-walter-wyatt",
+      "peopleType": "Actor",
+      "personName": "Walter Wyatt",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203741,
+      "name": "Jonah",
+      "peopleId": 442758,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "442758-edward-bunker",
+      "peopleType": "Actor",
+      "personName": "Edward Bunker",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/442758/photo/64958e2824e9e.jpg"
+    },
+    {
+      "id": 12203742,
+      "name": "Al Turner",
+      "peopleId": 282645,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 10,
+      "isFeatured": false,
+      "url": "282645-reid-cruickshanks",
+      "peopleType": "Actor",
+      "personName": "Reid Cruickshanks",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203743,
+      "name": "Short Con",
+      "peopleId": 269003,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 19,
+      "isFeatured": false,
+      "url": "269003-michael-lee-gogin",
+      "peopleType": "Actor",
+      "personName": "Michael Lee Gogin",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203744,
+      "name": "Tall Con",
+      "peopleId": 440282,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 11,
+      "isFeatured": false,
+      "url": "440282-john-bloom",
+      "peopleType": "Actor",
+      "personName": "John Bloom",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203745,
+      "name": "Old Con",
+      "peopleId": 257595,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 20,
+      "isFeatured": false,
+      "url": "257595-hank-worden",
+      "peopleType": "Actor",
+      "personName": "Hank Worden",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203746,
+      "name": "Boxer",
+      "peopleId": 279584,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 12,
+      "isFeatured": false,
+      "url": "279584-danny-trejo",
+      "peopleType": "Actor",
+      "personName": "Danny Trejo",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/279584/photo/64cf5f2cd9873.jpg"
+    },
+    {
+      "id": 12203748,
+      "name": "Cat Con",
+      "peopleId": 282918,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 13,
+      "isFeatured": false,
+      "url": "282918-john-otrin",
+      "peopleType": "Actor",
+      "personName": "John Otrin",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/282918/photo/6759e6b35df96.jpg"
+    },
+    {
+      "id": 12203749,
+      "name": "Queen Con",
+      "peopleId": 355671,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 14,
+      "isFeatured": false,
+      "url": "355671-norman-alexander-gibbs",
+      "peopleType": "Actor",
+      "personName": "Norman Alexander Gibbs",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203750,
+      "name": "Guard",
+      "peopleId": 277662,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 15,
+      "isFeatured": false,
+      "url": "277662-don-pugsley",
+      "peopleType": "Actor",
+      "personName": "Don Pugsley",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203751,
+      "name": "Guard",
+      "peopleId": 407079,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 16,
+      "isFeatured": false,
+      "url": "407079-john-fountain",
+      "peopleType": "Actor",
+      "personName": "John Fountain",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203752,
+      "name": "Announcer",
+      "peopleId": 271896,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 17,
+      "isFeatured": false,
+      "url": "271896-wally-rose",
+      "peopleType": "Actor",
+      "personName": "Wally Rose",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203753,
+      "peopleId": 620278,
+      "movieId": "2670",
+      "type": 1,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "620278-andrei-konchalovsky",
+      "peopleType": "Director",
+      "personName": "Andrei Konchalovsky",
+      "personImgURL": ""
+    },
+    {
+      "id": 12203754,
+      "peopleId": 442758,
+      "movieId": "2670",
+      "type": 2,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "442758-edward-bunker",
+      "peopleType": "Writer",
+      "personName": "Edward Bunker",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/442758/photo/64958e2824e9e.jpg"
+    },
+    {
+      "id": 12203755,
+      "peopleId": 487321,
+      "movieId": "2670",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "487321-menahem-golan",
+      "peopleType": "Producer",
+      "personName": "Menahem Golan",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/487321/photo/62e0b0036d4fb.jpg"
+    },
+    {
+      "id": 12203756,
+      "peopleId": 635727,
+      "movieId": "2670",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "635727-akira-kurosawa",
+      "peopleType": "Writer",
+      "personName": "Akira Kurosawa",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/635727/photo/6095db6ccb959.jpg"
+    },
+    {
+      "id": 66192870,
+      "name": "Black Guard",
+      "peopleId": 7866985,
+      "movieId": "2670",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": false,
+      "url": "7866985-tom-lister-jr",
+      "peopleType": "Actor",
+      "personName": "Tom Lister Jr.",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/7866985/photo/66cb6d3b86149.jpg"
+    }
+  ],
+  "budget": "9000000.00",
+  "boxOffice": "7700000.00",
+  "originalCountry": "usa",
+  "originalLanguage": "eng",
+  "awards": [
+    {
+      "id": 87098,
+      "year": "1986",
+      "isWinner": false,
+      "category": "Film Editing",
+      "name": "Academy Awards"
+    },
+    {
+      "id": 87099,
+      "year": "1986",
+      "isWinner": false,
+      "category": "Actor in a Leading Role",
+      "name": "Academy Awards"
+    },
+    {
+      "id": 87100,
+      "year": "1986",
+      "isWinner": false,
+      "category": "Actor in a Supporting Role",
+      "name": "Academy Awards"
+    }
+  ],
+  "tagOptions": "[{id:200,tag:32,tagName:Geographic Location,name:America / United States,helpText:null},{id:626,tag:12,tagName:Setting,name:Prison,helpText:null},{id:615,tag:12,tagName:Setting,name:Train,helpText:null},{id:122,tag:5,tagName:Time Period,name:1980s,helpText:null}]",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Splašený vlak",
+        "language": "ces",
+        "IsPrimary": false
+      },
+      {
+        "name": "Express in die Hölle",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "name": "Uciekający pociąg",
+        "language": "pol",
+        "IsPrimary": false
+      },
+      {
+        "name": "Поезд-беглец",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "El tren del infierno",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "A 30 secondi dalla fine",
+        "language": "ita",
+        "IsPrimary": false
+      },
+      {
+        "name": "Comboio em Fuga",
+        "language": "por",
+        "IsPrimary": false
+      },
+      {
+        "name": "רכבת אל החופש",
+        "language": "heb",
+        "IsPrimary": false
+      },
+      {
+        "name": "Szökevényvonat",
+        "language": "hun",
+        "IsPrimary": false
+      },
+      {
+        "name": "Firar Treni",
+        "language": "tur",
+        "IsPrimary": false
+      },
+      {
+        "name": "폭주기관차",
+        "language": "kor",
+        "IsPrimary": false
+      },
+      {
+        "name": "亡命列车",
+        "language": "zho",
+        "IsPrimary": false
+      },
+      {
+        "name": "Runaway Train",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "Zwei entflohene Sträflinge und eine Eisenbahnerin sitzen in einem Zug ohne Bremsen und ohne Fahrer fest.",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "overview": "Oscar \"Manny\" Manheim is a ruthless bank robber and hero to the convicts of Alaska's Stonehaven Maximum Security Prison. After two previous escape attempts, Manny is put in solitary confinement for three years.  A court order compels sadistic Associate Warden Ranken to release him from solitary. Planning a third break out, Manny is forced to advance his plan to mid-winter after he is stabbed. Manny recruits young prisoner Buck McGeehy to help in the complicated plan. After an arduous cross-country hike, including a swim across a freezing river, the two hop on board a train.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 9101,
+        "name": "Cannon Group",
+        "slug": "cannon-group",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 19150,
+        "name": "Golan-Globus Productions",
+        "slug": "golan-globus-productions",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 31192,
+        "name": "Northbrook Films",
+        "slug": "northbrook-films",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 223294,
+      "country": "isr",
+      "name": "Israel"
+    },
+    {
+      "id": 223295,
+      "country": "usa",
+      "name": "United States of America"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[deu,eng]",
+  "first_release": {
+    "country": "global",
+    "date": "1985-11-15"
+  }
+}

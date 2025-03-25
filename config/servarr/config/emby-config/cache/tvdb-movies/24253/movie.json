@@ -1,0 +1,416 @@
+{
+  "id": 24253,
+  "name": "Dead of Night",
+  "slug": "dead-of-night-1974",
+  "image": "https://artworks.thetvdb.com/banners/movies/24253/posters/24253.jpg",
+  "nameTranslations": [
+    "fra",
+    "rus",
+    "hun",
+    "deu",
+    "ita",
+    "swe",
+    "spa",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "fra",
+    "rus",
+    "hun",
+    "deu",
+    "ita",
+    "swe",
+    "spa",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 79,
+  "runtime": 88,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 6,
+      "name": "Horror",
+      "slug": "horror"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1974-08-28"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2546855,
+      "image": "https://artworks.thetvdb.com/banners/movies/24253/backgrounds/24253.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/24253/backgrounds/24253_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2438273,
+      "image": "https://artworks.thetvdb.com/banners/movies/24253/posters/24253.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/24253/posters/24253_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0068457",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "38996",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12454591,
+      "name": "Charles Brooks",
+      "peopleId": 259555,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "259555-john-marley",
+      "peopleType": "Actor",
+      "personName": "John Marley",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454592,
+      "name": "Christine Brooks",
+      "peopleId": 262622,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "262622-lynn-carlin",
+      "peopleType": "Actor",
+      "personName": "Lynn Carlin",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454593,
+      "name": "Andy Brooks",
+      "peopleId": 340214,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "340214-richard-backus",
+      "peopleType": "Actor",
+      "personName": "Richard Backus",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454594,
+      "name": "Dr. Philip Allman",
+      "peopleId": 326001,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "326001-henderson-forsythe",
+      "peopleType": "Actor",
+      "personName": "Henderson Forsythe",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454595,
+      "name": "Joanne",
+      "peopleId": 274650,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "274650-jane-daly",
+      "peopleType": "Actor",
+      "personName": "Jane Daly",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454596,
+      "name": "Bob",
+      "peopleId": 307128,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "307128-michael-mazes",
+      "peopleType": "Actor",
+      "personName": "Michael Mazes",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454597,
+      "name": "Postman",
+      "peopleId": 266204,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "266204-arthur-anderson",
+      "peopleType": "Actor",
+      "personName": "Arthur Anderson",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/266204/photo/67bd799ba72e6.jpg"
+    },
+    {
+      "id": 12454598,
+      "name": "Ed",
+      "peopleId": 432081,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "432081-bud-hoey",
+      "peopleType": "Actor",
+      "personName": "Bud Hoey",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454599,
+      "name": "Bystander",
+      "peopleId": 278678,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "278678-alan-ormsby",
+      "peopleType": "Actor",
+      "personName": "Alan Ormsby",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454600,
+      "name": "Officer Ted",
+      "peopleId": 9111791,
+      "movieId": "24253",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "9111791-bob-clark",
+      "peopleType": "Actor",
+      "personName": "Bob Clark",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/9111791/photo/6451481b5ea76.jpg"
+    },
+    {
+      "id": 12454601,
+      "peopleId": 278678,
+      "movieId": "24253",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "278678-alan-ormsby",
+      "peopleType": "Writer",
+      "personName": "Alan Ormsby",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454602,
+      "peopleId": 9111791,
+      "movieId": "24253",
+      "type": 1,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "9111791-bob-clark",
+      "peopleType": "Director",
+      "personName": "Bob Clark",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/9111791/photo/6451481b5ea76.jpg"
+    },
+    {
+      "id": 12454603,
+      "peopleId": 9111791,
+      "movieId": "24253",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "9111791-bob-clark",
+      "peopleType": "Producer",
+      "personName": "Bob Clark",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/9111791/photo/6451481b5ea76.jpg"
+    },
+    {
+      "id": 12454604,
+      "peopleId": 315562,
+      "movieId": "24253",
+      "type": 7,
+      "image": "",
+      "sort": 7,
+      "isFeatured": false,
+      "url": "315562-peter-james",
+      "peopleType": "Producer",
+      "personName": "Peter James",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/315562/photo/65af30bfa9a4f.jpg"
+    },
+    {
+      "id": 12454605,
+      "peopleId": 324781,
+      "movieId": "24253",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "324781-geoffrey-nethercott",
+      "peopleType": "Producer",
+      "personName": "Geoffrey Nethercott",
+      "personImgURL": ""
+    },
+    {
+      "id": 12454606,
+      "peopleId": 400135,
+      "movieId": "24253",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "400135-john-bud-cardos",
+      "peopleType": "Producer",
+      "personName": "John 'Bud' Cardos",
+      "personImgURL": ""
+    }
+  ],
+  "budget": "235000.00",
+  "originalCountry": "can",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Le mort-vivant",
+        "language": "fra",
+        "IsPrimary": false
+      },
+      {
+        "name": "Смертельный сон",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "Halálos álom",
+        "language": "hun",
+        "IsPrimary": false
+      },
+      {
+        "name": "Nacht des Terrors",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "name": "La morte dietro la porta",
+        "language": "ita",
+        "IsPrimary": false
+      },
+      {
+        "name": "Mannen är farlig",
+        "language": "swe",
+        "IsPrimary": false
+      },
+      {
+        "name": "Crimen en la noche",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "Dead of Night",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "In Vietnam war, American soldier Andy Brooks is shot by a sniper and falls to the ground. As he dies, he hears his mother's voice calling out, \"Andy, you'll come back. You've got to. You promised.\" The voice becomes sinister and muffled as Andy's eyes close. Sometime later, his family receives notice of his death in combat.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 21796,
+        "name": "Impact Films",
+        "slug": "impact-films",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 35001,
+        "name": "Quadrant Films",
+        "slug": "quadrant-films",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 29558,
+      "country": "can",
+      "name": "Canada"
+    },
+    {
+      "id": 29559,
+      "country": "gbr",
+      "name": "Great Britain"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "1974-08-28"
+  }
+}

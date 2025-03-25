@@ -1,0 +1,331 @@
+{
+  "id": 30785,
+  "name": "Jack's Back",
+  "slug": "jacks-back",
+  "image": "https://artworks.thetvdb.com/banners/movies/30785/posters/30785.jpg",
+  "nameTranslations": [
+    "deu",
+    "spa",
+    "eng"
+  ],
+  "overviewTranslations": [],
+  "aliases": [],
+  "score": 140,
+  "runtime": 97,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 6,
+      "name": "Horror",
+      "slug": "horror"
+    },
+    {
+      "id": 24,
+      "name": "Thriller",
+      "slug": "thriller"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1988-05-06"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2552691,
+      "image": "https://artworks.thetvdb.com/banners/movies/30785/backgrounds/30785.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/30785/backgrounds/30785_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2445467,
+      "image": "https://artworks.thetvdb.com/banners/movies/30785/posters/30785.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/30785/posters/30785_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0095389",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "41959",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12501977,
+      "name": "John Allen Wesford / Richard Wesford",
+      "peopleId": 310407,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 3,
+      "isFeatured": true,
+      "url": "310407-james-spader",
+      "peopleType": "Actor",
+      "personName": "James Spader",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/310407/photo/66688ac31db8f.jpg"
+    },
+    {
+      "id": 12501978,
+      "name": "Christina \"Chris\" Moscari",
+      "peopleId": 287004,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "287004-cynthia-gibb",
+      "peopleType": "Actor",
+      "personName": "Cynthia Gibb",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501979,
+      "name": "Sgt. Gabriel",
+      "peopleId": 309085,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "309085-jim-haynie",
+      "peopleType": "Actor",
+      "personName": "Jim Haynie",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501980,
+      "name": "Dr. Carlos Battera",
+      "peopleId": 273771,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "273771-robert-picardo",
+      "peopleType": "Actor",
+      "personName": "Robert Picardo",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/273771/photo/6555047d24dab.jpg"
+    },
+    {
+      "id": 12501981,
+      "name": "Dr. Sidney Tannerson",
+      "peopleId": 309510,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "309510-rod-loomis",
+      "peopleType": "Actor",
+      "personName": "Rod Loomis",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501982,
+      "name": "Jack Pendler",
+      "peopleId": 274604,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "274604-rex-ryon",
+      "peopleType": "Actor",
+      "personName": "Rex Ryon",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501983,
+      "name": "Scott Morofsky",
+      "peopleId": 255657,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "255657-chris-mulkey",
+      "peopleType": "Actor",
+      "personName": "Chris Mulkey",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/255657/photo/62376625f1da2.jpg"
+    },
+    {
+      "id": 12501984,
+      "name": "Sam Hillard",
+      "peopleId": 279564,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "279564-john-wesley",
+      "peopleType": "Actor",
+      "personName": "John Wesley",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/279564/photo/633ef44476c3d.jpg"
+    },
+    {
+      "id": 12501985,
+      "name": "Tom Dellerton",
+      "peopleId": 263526,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "263526-bobby-hosea",
+      "peopleType": "Actor",
+      "personName": "Bobby Hosea",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501986,
+      "name": "Denise Johnson",
+      "peopleId": 315073,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "315073-danitza-kingsley",
+      "peopleType": "Actor",
+      "personName": "Danitza Kingsley",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501987,
+      "name": "Mary",
+      "peopleId": 252650,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "252650-anne-betancourt",
+      "peopleType": "Actor",
+      "personName": "Anne Betancourt",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501988,
+      "name": "Hooker",
+      "peopleId": 407432,
+      "movieId": "30785",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "407432-kathryn-oreilly",
+      "peopleType": "Actor",
+      "personName": "Kathryn O'Reilly",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501989,
+      "peopleId": 353767,
+      "movieId": "30785",
+      "type": 1,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "353767-rowdy-herrington",
+      "peopleType": "Director",
+      "personName": "Rowdy Herrington",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501990,
+      "peopleId": 353767,
+      "movieId": "30785",
+      "type": 2,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "353767-rowdy-herrington",
+      "peopleType": "Writer",
+      "personName": "Rowdy Herrington",
+      "personImgURL": ""
+    },
+    {
+      "id": 12501991,
+      "peopleId": 270346,
+      "movieId": "30785",
+      "type": 7,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "270346-tim-moore",
+      "peopleType": "Producer",
+      "personName": "Tim Moore",
+      "personImgURL": ""
+    }
+  ],
+  "boxOffice": "492519.00",
+  "originalCountry": "usa",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "The Ripper",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "name": "El regreso de Jack el destripador",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "Jack's Back",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 36136,
+      "country": "usa",
+      "name": "United States of America"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "1988-05-06"
+  }
+}

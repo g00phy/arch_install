@@ -26,7 +26,6 @@ sudo nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 echo "  nvidia docker enabled"
 
-
 echo -ne "rootless docker buildx"
 $AUR_HELPER -S --noconfirm --needed docker-buildx
 

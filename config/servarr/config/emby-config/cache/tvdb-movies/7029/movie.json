@@ -1,0 +1,535 @@
+{
+  "id": 7029,
+  "name": "Vanishing Point",
+  "slug": "vanishing-point",
+  "image": "https://artworks.thetvdb.com/banners/movies/7029/posters/7029.jpg",
+  "nameTranslations": [
+    "fra",
+    "ita",
+    "deu",
+    "hun",
+    "spa",
+    "zho",
+    "rus",
+    "heb",
+    "por",
+    "pol",
+    "swe",
+    "tur",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "fra",
+    "ita",
+    "deu",
+    "hun",
+    "spa",
+    "zho",
+    "rus",
+    "heb",
+    "por",
+    "pol",
+    "swe",
+    "tur",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 730,
+  "runtime": 99,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 19,
+      "name": "Action",
+      "slug": "action"
+    },
+    {
+      "id": 12,
+      "name": "Drama",
+      "slug": "drama"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "1971-01-15"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2584724,
+      "image": "https://artworks.thetvdb.com/banners/movies/7029/backgrounds/7029.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/7029/backgrounds/7029_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2488174,
+      "image": "https://artworks.thetvdb.com/banners/movies/7029/posters/7029.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/7029/posters/7029_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt0067927",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "11951",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12282733,
+      "name": "Kowalski",
+      "peopleId": 291358,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "291358-barry-newman",
+      "peopleType": "Actor",
+      "personName": "Barry Newman",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282734,
+      "name": "Super Soul",
+      "peopleId": 281848,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "281848-cleavon-little",
+      "peopleType": "Actor",
+      "personName": "Cleavon Little",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282735,
+      "name": "Prospector",
+      "peopleId": 256509,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 7,
+      "isFeatured": true,
+      "url": "256509-dean-jagger",
+      "peopleType": "Actor",
+      "personName": "Dean Jagger",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282736,
+      "name": "Jake",
+      "peopleId": 253335,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "253335-lee-weaver",
+      "peopleType": "Actor",
+      "personName": "Lee Weaver",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282737,
+      "name": "Angel",
+      "peopleId": 289560,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 3,
+      "isFeatured": true,
+      "url": "289560-timothy-scott",
+      "peopleType": "Actor",
+      "personName": "Timothy Scott",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282738,
+      "name": "Old Cop",
+      "peopleId": 256600,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "256600-robert-donner",
+      "peopleType": "Actor",
+      "personName": "Robert Donner",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/256600/photo/64f986a9060d1.jpg"
+    },
+    {
+      "id": 12282739,
+      "name": "Young Cop",
+      "peopleId": 286572,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "286572-paul-koslo",
+      "peopleType": "Actor",
+      "personName": "Paul Koslo",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/286572/photo/6335be887eac3.jpg"
+    },
+    {
+      "id": 12282740,
+      "name": "First Girl",
+      "peopleId": 442095,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "442095-cherie-foster",
+      "peopleType": "Actor",
+      "personName": "Cherie Foster",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282741,
+      "name": "The Hitchhiker",
+      "peopleId": 283328,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "283328-charlotte-rampling",
+      "peopleType": "Actor",
+      "personName": "Charlotte Rampling",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/283328/primary.jpg"
+    },
+    {
+      "id": 12282742,
+      "name": "Sheriff",
+      "peopleId": 265732,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "265732-tom-reese",
+      "peopleType": "Actor",
+      "personName": "Tom Reese",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/265732/photo/63179ac9054aa.jpg"
+    },
+    {
+      "id": 12282743,
+      "name": "Second Girl",
+      "peopleId": 442113,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "442113-valerie-kairys",
+      "peopleType": "Actor",
+      "personName": "Valerie Kairys",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282744,
+      "name": "J. Hovah",
+      "peopleId": 257754,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "257754-severn-darden",
+      "peopleType": "Actor",
+      "personName": "Severn Darden",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282745,
+      "name": "Clerk",
+      "peopleId": 257910,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "257910-karl-swenson",
+      "peopleType": "Actor",
+      "personName": "Karl Swenson",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282746,
+      "name": "First Male Hitchhiker",
+      "peopleId": 256372,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "256372-anthony-james",
+      "peopleType": "Actor",
+      "personName": "Anthony James",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/256372/photo/635acdfda14a5.jpg"
+    },
+    {
+      "id": 12282747,
+      "name": "Second Male Hitchhiker",
+      "peopleId": 256529,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "256529-arthur-malet",
+      "peopleType": "Actor",
+      "personName": "Arthur Malet",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282748,
+      "name": "Super Soul's Engineer",
+      "peopleId": 255720,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "255720-john-amos",
+      "peopleType": "Actor",
+      "personName": "John Amos",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/255720/photo/64b9c69d26f06.jpg"
+    },
+    {
+      "id": 12282749,
+      "name": "Communications Officer",
+      "peopleId": 258371,
+      "movieId": "7029",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "258371-owen-bush",
+      "peopleType": "Actor",
+      "personName": "Owen Bush",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282750,
+      "peopleId": 259000,
+      "movieId": "7029",
+      "type": 1,
+      "image": "",
+      "sort": 9,
+      "isFeatured": false,
+      "url": "259000-richard-c-sarafian",
+      "peopleType": "Director",
+      "personName": "Richard C. Sarafian",
+      "personImgURL": ""
+    },
+    {
+      "id": 12282751,
+      "peopleId": 266039,
+      "movieId": "7029",
+      "type": 1,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "266039-john-d-benson",
+      "peopleType": "Director",
+      "personName": "John D. Benson",
+      "personImgURL": ""
+    },
+    {
+      "id": 66021874,
+      "peopleId": 8286420,
+      "movieId": "7029",
+      "type": 2,
+      "image": "",
+      "sort": 0,
+      "isFeatured": false,
+      "url": "8286420-guillermo-cain",
+      "peopleType": "Writer",
+      "personName": "Guillermo Cain",
+      "personImgURL": ""
+    },
+    {
+      "id": 66021875,
+      "peopleId": 8286421,
+      "movieId": "7029",
+      "type": 2,
+      "image": "",
+      "sort": 0,
+      "isFeatured": false,
+      "url": "8286421-malcolm-hart",
+      "peopleType": "Writer",
+      "personName": "Malcolm Hart",
+      "personImgURL": ""
+    }
+  ],
+  "budget": "1580000.00",
+  "boxOffice": "12400000.00",
+  "originalCountry": "usa",
+  "originalLanguage": "eng",
+  "studios": [
+    {
+      "id": 1,
+      "name": "20th Century Studios"
+    }
+  ],
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Point limite zéro",
+        "language": "fra",
+        "IsPrimary": false
+      },
+      {
+        "name": "Punto zero",
+        "language": "ita",
+        "IsPrimary": false
+      },
+      {
+        "name": "Fluchtpunkt San Francisco",
+        "language": "deu",
+        "IsPrimary": false
+      },
+      {
+        "name": "Száguldás a semmibe",
+        "language": "hun",
+        "IsPrimary": false
+      },
+      {
+        "name": "Punto límite: Cero",
+        "language": "spa",
+        "IsPrimary": false
+      },
+      {
+        "name": "粉身碎骨",
+        "language": "zho",
+        "IsPrimary": false
+      },
+      {
+        "name": "Исчезающая точка",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "נקודת היעלמות",
+        "language": "heb",
+        "IsPrimary": false
+      },
+      {
+        "name": "Corrida Contra o Destino",
+        "language": "por",
+        "IsPrimary": false
+      },
+      {
+        "name": "Znikający punkt",
+        "language": "pol",
+        "IsPrimary": false
+      },
+      {
+        "name": "Jakten mot nollpunkten",
+        "language": "swe",
+        "IsPrimary": false
+      },
+      {
+        "name": "Ölüm Noktası",
+        "language": "tur",
+        "IsPrimary": false
+      },
+      {
+        "name": "Vanishing Point",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "Car delivery driver Kowalski (Barry Newman) arrives in Denver, Colorado on a late Friday night with a black Imperial (automobile). The delivery service clerk Sandy (Karl Swenson) urges him to get some rest, but Kowalski insists on getting started with his next assignment to deliver a white 1970 Dodge Challenger R/T 440 Magnum (supposedly supercharged) to San Francisco by Monday. Before leaving Denver, Kowalski pulls into a biker bar parking lot around midnight to buy Benzedrine pills to stay awake for the long drive ahead. He bets his dealer Jake (Lee Weaver) that he will get to San Francisco by 3:00 pm the next day, even though the delivery is not due until Monday.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [
+      {
+        "id": 2048,
+        "name": "20th Century Studios"
+      }
+    ],
+    "network": [],
+    "production": [
+      {
+        "id": 2048,
+        "name": "20th Century Studios",
+        "slug": "20th-century-fox",
+        "primaryCompanyType": 2,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 12362,
+        "name": "Cupid Productions",
+        "slug": "cupid-productions",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 9666,
+      "country": "usa",
+      "name": "United States of America"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "1971-01-15"
+  }
+}

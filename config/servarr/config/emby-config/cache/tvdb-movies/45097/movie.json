@@ -1,0 +1,166 @@
+{
+  "id": 45097,
+  "name": "Action Hero Biju",
+  "slug": "action-hero-biju",
+  "image": "https://artworks.thetvdb.com/banners/movies/45097/posters/45097.jpg",
+  "nameTranslations": [
+    "eng"
+  ],
+  "overviewTranslations": [
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 873,
+  "runtime": 144,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 19,
+      "name": "Action",
+      "slug": "action"
+    },
+    {
+      "id": 15,
+      "name": "Comedy",
+      "slug": "comedy"
+    },
+    {
+      "id": 14,
+      "name": "Crime",
+      "slug": "crime"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "2016-02-04"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2565989,
+      "image": "https://artworks.thetvdb.com/banners/movies/45097/backgrounds/45097.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/45097/backgrounds/45097_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2461058,
+      "image": "https://artworks.thetvdb.com/banners/movies/45097/posters/45097.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/45097/posters/45097_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt5320514",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "381374",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12608392,
+      "name": "Lady Lodges the Complaint",
+      "peopleId": 278413,
+      "movieId": "45097",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "278413-baby",
+      "peopleType": "Actor",
+      "personName": "Baby",
+      "personImgURL": ""
+    }
+  ],
+  "originalCountry": "ind",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "Action Hero Biju",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "The story opens as sub-inspector Biju Poulose (Nivin Pauly) is informed of the location of a few wanted criminals in his jurisdiction. As he corners and apprehends them, he gets injured when one of the criminals stabs him. The story cuts back to a month before the incident when Biju and other officers handle a series of different types of complaints and cases, petty and major, that is registered at the police station.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 18216,
+        "name": "Full On Studios",
+        "slug": "full-on-studios",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 32916,
+        "name": "Pauly Jr. Pictures",
+        "slug": "pauly-jr-pictures",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 50672,
+      "country": "ind",
+      "name": "India"
+    }
+  ],
+  "inspirations": [],
+  "first_release": {
+    "country": "global",
+    "date": "2016-02-04"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "id": 336425,
+  "name": "ハル",
+  "slug": "336425-haru",
+  "image": "https://artworks.thetvdb.com/banners/v4/movie/336425/posters/63f8a02479bec.jpg",
+  "nameTranslations": [
+    "jpn",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "jpn",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 155,
+  "runtime": 118,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2023-02-24 11:33:35",
+  "genres": [
+    {
+      "id": 12,
+      "name": "Drama",
+      "slug": "drama"
+    },
+    {
+      "id": 28,
+      "name": "Romance",
+      "slug": "romance"
+    }
+  ],
+  "releases": [
+    {
+      "country": "jpn",
+      "date": "1996-03-09"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 63386269,
+      "image": "https://artworks.thetvdb.com/banners/v4/movie/336425/backgrounds/63f8a08e44b7f.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/v4/movie/336425/backgrounds/63f8a08e44b7f_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 63386264,
+      "image": "https://artworks.thetvdb.com/banners/v4/movie/336425/posters/63f8a02479bec.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/v4/movie/336425/posters/63f8a02479bec_t.jpg",
+      "language": "jpn",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "10.5240/C6A4-5AC4-DC1B-34DF-1D30-9",
+      "type": 13,
+      "sourceName": "EIDR"
+    },
+    {
+      "id": "tt0115431",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "261560",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 68891261,
+      "name": "Fujima Mitsue",
+      "peopleId": 627068,
+      "movieId": "336425",
+      "type": 3,
+      "image": "",
+      "sort": 1,
+      "isFeatured": true,
+      "url": "627068-eri-fukatsu",
+      "peopleType": "Actor",
+      "personName": "Eri Fukatsu",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/627068/photo/6413887a9e964.jpg"
+    },
+    {
+      "id": 68891262,
+      "name": "Hayami Noboru",
+      "peopleId": 511899,
+      "movieId": "336425",
+      "type": 3,
+      "image": "",
+      "sort": 2,
+      "isFeatured": true,
+      "url": "511899-uchino-seiyō",
+      "peopleType": "Actor",
+      "personName": "Seiyo Uchino",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/511899/photo/61f087c9180f6.jpg"
+    },
+    {
+      "id": 68891265,
+      "name": "Fujima Yuka",
+      "peopleId": 489445,
+      "movieId": "336425",
+      "type": 3,
+      "image": "",
+      "sort": 3,
+      "isFeatured": true,
+      "url": "489445-naho-toda",
+      "peopleType": "Actor",
+      "personName": "Naho Toda",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/489445/photo/633172f68ab8b.jpg"
+    },
+    {
+      "id": 68891267,
+      "name": "Yamagami Hiroyuki",
+      "peopleId": 8888559,
+      "movieId": "336425",
+      "type": 3,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "8888559-kazufumi-miyazawa",
+      "peopleType": "Actor",
+      "personName": "Kazufumi Miyazawa",
+      "personImgURL": ""
+    },
+    {
+      "id": 68891270,
+      "name": "Tobe Shougo",
+      "peopleId": 8925194,
+      "movieId": "336425",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": false,
+      "url": "8925194-ktartakeshita",
+      "peopleType": "Actor",
+      "personName": "Kôtarô Takeshita",
+      "personImgURL": ""
+    }
+  ],
+  "budget": "0.00",
+  "boxOffice": "0.00",
+  "originalCountry": "jpn",
+  "originalLanguage": "jpn",
+  "tagOptions": "[{id:123,tag:5,tagName:Time Period,name:1990s,helpText:null}]",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "ハル",
+        "language": "jpn",
+        "IsPrimary": true
+      },
+      {
+        "name": "Haru",
+        "language": "eng",
+        "IsPrimary": false
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "2人の若い個人がオンラインで出会い、毎日電子メールを送信した後、お互いに興味を持ちます。 秘密は告白され、2人は最終的に直接会うことにしました。",
+        "language": "jpn",
+        "IsPrimary": true
+      },
+      {
+        "overview": "Two young individuals meet online and become interested in each other after e-mailing everyday. Secrets are confessed and the two finally decide to meet in person.",
+        "language": "eng",
+        "IsPrimary": false
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [],
+  "inspirations": [],
+  "first_release": {
+    "country": "jpn",
+    "date": "1996-03-09"
+  }
+}

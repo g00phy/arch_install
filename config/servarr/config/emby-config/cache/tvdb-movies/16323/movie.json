@@ -1,0 +1,391 @@
+{
+  "id": 16323,
+  "name": "Plush",
+  "slug": "plush",
+  "image": "https://artworks.thetvdb.com/banners/movies/16323/posters/16323.jpg",
+  "nameTranslations": [
+    "kor",
+    "zho",
+    "rus",
+    "eng"
+  ],
+  "overviewTranslations": [
+    "kor",
+    "zho",
+    "rus",
+    "eng",
+    "eng"
+  ],
+  "aliases": [],
+  "score": 872,
+  "runtime": 98,
+  "status": {
+    "id": 5,
+    "name": "Released",
+    "recordType": "movie",
+    "keepUpdated": true
+  },
+  "lastUpdated": "2019-03-26 19:25:45",
+  "genres": [
+    {
+      "id": 24,
+      "name": "Thriller",
+      "slug": "thriller"
+    }
+  ],
+  "releases": [
+    {
+      "country": "global",
+      "date": "2013-09-13"
+    }
+  ],
+  "artworks": [
+    {
+      "id": 2539409,
+      "image": "https://artworks.thetvdb.com/banners/movies/16323/backgrounds/16323.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/16323/backgrounds/16323_t.jpg",
+      "type": 15,
+      "score": 100000,
+      "width": 1920,
+      "height": 1080,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    },
+    {
+      "id": 2429527,
+      "image": "https://artworks.thetvdb.com/banners/movies/16323/posters/16323.jpg",
+      "thumbnail": "https://artworks.thetvdb.com/banners/movies/16323/posters/16323_t.jpg",
+      "language": "eng",
+      "type": 14,
+      "score": 100000,
+      "width": 680,
+      "height": 1000,
+      "thumbnailWidth": 0,
+      "thumbnailHeight": 0,
+      "updatedAt": 0
+    }
+  ],
+  "remoteIds": [
+    {
+      "id": "tt2226519",
+      "type": 2,
+      "sourceName": "IMDB"
+    },
+    {
+      "id": "http://plushthemovie.com/",
+      "type": 4,
+      "sourceName": "Official Website"
+    },
+    {
+      "id": "215881",
+      "type": 10,
+      "sourceName": "TheMovieDB.com"
+    }
+  ],
+  "characters": [
+    {
+      "id": 12390899,
+      "name": "Hayley",
+      "peopleId": 539100,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "539100-emily-browning",
+      "peopleType": "Actor",
+      "personName": "Emily Browning",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/539100/637aa81d38962.jpg"
+    },
+    {
+      "id": 12390900,
+      "name": "Enzo",
+      "peopleId": 327235,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "327235-xavier-samuel",
+      "peopleType": "Actor",
+      "personName": "Xavier Samuel",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/327235/photo/626dd905a5d24.jpg"
+    },
+    {
+      "id": 12390901,
+      "name": "Carter",
+      "peopleId": 332117,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "332117-cam-gigandet",
+      "peopleType": "Actor",
+      "personName": "Cam Gigandet",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/332117/primary.jpg"
+    },
+    {
+      "id": 12390902,
+      "name": "Annie",
+      "peopleId": 295876,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "295876-dawn-olivieri",
+      "peopleType": "Actor",
+      "personName": "Dawn Olivieri",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/295876/photo/64c9a862315de.jpg"
+    },
+    {
+      "id": 12390903,
+      "name": "Camila",
+      "peopleId": 303613,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "303613-frances-fisher",
+      "peopleType": "Actor",
+      "personName": "Frances Fisher",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/303613/photo/651f0f2815380.jpg"
+    },
+    {
+      "id": 12390904,
+      "name": "Jack",
+      "peopleId": 285861,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "285861-thomas-dekker",
+      "peopleType": "Actor",
+      "personName": "Thomas Dekker",
+      "personImgURL": "https://artworks.thetvdb.com/banners/person/285861/5f3ad8b6a9723.jpg"
+    },
+    {
+      "id": 12390905,
+      "name": "Dr. Ortiz",
+      "peopleId": 253259,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "253259-marlene-forte",
+      "peopleType": "Actor",
+      "personName": "Marlene Forte",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/253259/photo/60684d27773db.jpg"
+    },
+    {
+      "id": 12390906,
+      "name": "Evie",
+      "peopleId": 366457,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "366457-casey-labow",
+      "peopleType": "Actor",
+      "personName": "Casey LaBow",
+      "personImgURL": ""
+    },
+    {
+      "id": 12390907,
+      "name": "Dr. Lopez",
+      "peopleId": 262638,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "262638-elizabeth-pena",
+      "peopleType": "Actor",
+      "personName": "Elizabeth Peña",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/262638/photo/64dd3d47a3272.jpg"
+    },
+    {
+      "id": 12390908,
+      "name": "Butch Hopkins",
+      "peopleId": 335712,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 5,
+      "isFeatured": true,
+      "url": "335712-brandon-jay-mclaren",
+      "peopleType": "Actor",
+      "personName": "Brandon Jay McLaren",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/335712/photo/64e22eb50a425.jpg"
+    },
+    {
+      "id": 12390909,
+      "name": "Coat & Tie Fan",
+      "peopleId": 556084,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "556084-james-kyson",
+      "peopleType": "Actor",
+      "personName": "James Kyson",
+      "personImgURL": "https://artworks.thetvdb.com/banners/v4/actor/556084/photo/638c9d2149e59.jpg"
+    },
+    {
+      "id": 12390910,
+      "name": "Limo Driver",
+      "peopleId": 330206,
+      "movieId": "16323",
+      "type": 3,
+      "image": "",
+      "sort": 0,
+      "isFeatured": true,
+      "url": "330206-indira-g-wilson",
+      "peopleType": "Actor",
+      "personName": "Indira G. Wilson",
+      "personImgURL": ""
+    },
+    {
+      "id": 12390913,
+      "peopleId": 470962,
+      "movieId": "16323",
+      "type": 1,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "470962-catherine-hardwicke",
+      "peopleType": "Director",
+      "personName": "Catherine Hardwicke",
+      "personImgURL": ""
+    },
+    {
+      "id": 12390914,
+      "peopleId": 470962,
+      "movieId": "16323",
+      "type": 2,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "470962-catherine-hardwicke",
+      "peopleType": "Writer",
+      "personName": "Catherine Hardwicke",
+      "personImgURL": ""
+    },
+    {
+      "id": 12390915,
+      "peopleId": 517092,
+      "movieId": "16323",
+      "type": 2,
+      "image": "",
+      "sort": 4,
+      "isFeatured": false,
+      "url": "517092-arty-nelson",
+      "peopleType": "Writer",
+      "personName": "Arty Nelson",
+      "personImgURL": ""
+    }
+  ],
+  "budget": "2000000.00",
+  "boxOffice": "28864.00",
+  "originalCountry": "usa",
+  "originalLanguage": "eng",
+  "lists": [],
+  "translations": {
+    "nameTranslations": [
+      {
+        "name": "플러쉬",
+        "language": "kor",
+        "IsPrimary": false
+      },
+      {
+        "name": "毛绒",
+        "language": "zho",
+        "IsPrimary": false
+      },
+      {
+        "name": "Зажги меня",
+        "language": "rus",
+        "IsPrimary": false
+      },
+      {
+        "name": "Plush",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ],
+    "overviewTranslations": [
+      {
+        "overview": "After losing her bandmate and brother to a drug overdose, rising rock star Hayley finds herself in a downward spiral. The second album from her band Plush is received as a critical and commercial disaster. She finds new hope and friendship in Enzo, the replacement guitarist who inspires her to reach new creative heights. However, soon their collaboration crosses the line sexually and Hayley, who is married with two children, retreats from Enzo’s advances. As Hayley slowly discovers Enzo’s dark and troubled history, she realizes she may have let a madman into her home and that her mistake may cost the lives of people closest to her.",
+        "language": "eng",
+        "IsPrimary": true
+      }
+    ]
+  },
+  "companies": {
+    "studio": [],
+    "network": [],
+    "production": [
+      {
+        "id": 7845,
+        "name": "Blumhouse Productions",
+        "slug": "blumhouse-productions",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 21682,
+        "name": "IM Global Octane",
+        "slug": "im-global-octane",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      },
+      {
+        "id": 35921,
+        "name": "Reliance",
+        "slug": "reliance",
+        "primaryCompanyType": 3,
+        "companyType": {
+          "companyTypeId": 3,
+          "companyTypeName": "Production Company"
+        },
+        "parentCompany": {
+          "relation": {}
+        }
+      }
+    ],
+    "distributor": [],
+    "special_effects": []
+  },
+  "production_countries": [
+    {
+      "id": 21072,
+      "country": "usa",
+      "name": "United States of America"
+    }
+  ],
+  "inspirations": [],
+  "spoken_languages": "[eng]",
+  "first_release": {
+    "country": "global",
+    "date": "2013-09-13"
+  }
+}
