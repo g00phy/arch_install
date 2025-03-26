@@ -20,3 +20,4 @@ handbrake
 peek
 google-chrome
 yt-dlp
+bash-completion

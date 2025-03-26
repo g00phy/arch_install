@@ -124,7 +124,7 @@ echo "
       - '9696:9696'
 " >>$HOME/arch_install/servarr/docker-compose.yml
 
-generate_compose_entry "qbittorrent" "$(id -u)" "8080:8080 6881:6881" "lscr.io/linuxserver/qbittorrent:latest" "/mnt/servarr/config/deluge-config:/config /mnt/servarr/data/media:/data /mnt/servarr/data/media/movies:/data/movies /mnt/servarr/data/media/tv:/data/tv"
+generate_compose_entry "qbittorrent" "$(id -u)" "8080:8080 6881:6881" "lscr.io/linuxserver/qbittorrent:latest" "/mnt/servarr/config/qbittorrent-config:/config /mnt/servarr/data/media:/data /mnt/servarr/data/media/movies:/data/movies /mnt/servarr/data/media/tv:/data/tv"
 generate_compose_entry "jellyseerr" "$(id -u)" "5056:5055" "fallenbagel/jellyseerr:latest" "/mnt/servarr/config/jellyseerr-config:/app/config"
 generate_compose_entry "flaresolverr" "$(id -u)" "8191:8191" "ghcr.io/flaresolverr/flaresolverr:latest" "/mnt/servarr/config/flaresolverr-config:/app/config"
 

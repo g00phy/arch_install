@@ -8,3 +8,5 @@ logs/
 **/logs/
 **/logs/*
 *.log
+*.torrent
+*.fastresume

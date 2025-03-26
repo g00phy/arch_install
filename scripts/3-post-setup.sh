@@ -34,10 +34,6 @@ echo -ne "
                enabling emby server dirs
 -------------------------------------------------------------------------
 "
-cd /mnt || return
-sudo mkdir -p media
-sudo chmod -R 775 /mnt/media
-#sudo chown g00phy:g00phy /mnt/media
 sudo chmod -R 775 /run/media/g00phy/EVA-2
 sudo chmod -R 775 /run/media/g00phy/EVA-3
 
@@ -72,6 +68,16 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 curl -LsSf https://astral.sh/uv/install.sh | sh
+
+echo -ne "
+-------------------------------------------------------------------------
+                    ENABALING bash completion
+-------------------------------------------------------------------------
+"
+
+echo 'if [ -f /usr/share/bash-completion/bash_completion ]; then' >>"$HOME"/.bashrc && echo '    . /usr/share/bash-completion/bash_completion' >>"$HOME"/.bashrc && echo 'fi' >>"$HOME"/.bashrc
+source "$HOME"/.bashrc
+
 
 echo -ne "
 -------------------------------------------------------------------------
