@@ -22,5 +22,5 @@ google-chrome
 yt-dlp
 bash-completion
 vnstat
-vnstatui
 dunst
+libnotify
