@@ -16,7 +16,7 @@ caps:
     1: PC/Games
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: info_flaresolverr

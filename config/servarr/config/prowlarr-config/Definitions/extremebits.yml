@@ -10,40 +10,40 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "BASE jump" }
-    - { id: 10, cat: Movies, desc: "BMX" }
-    - { id: 3, cat: Movies, desc: "Climbing" }
-    - { id: 19, cat: Other, desc: "Covers" }
-    - { id: 20, cat: Movies, desc: "Fiddy/MiniMX" }
-    - { id: 22, cat: Movies, desc: "Graffiti" }
-    - { id: 18, cat: Movies, desc: "Homevid" }
-    - { id: 16, cat: Movies, desc: "Inline Skate" }
-    - { id: 25, cat: Movies, desc: "Kayaking" }
-    - { id: 28, cat: Movies, desc: "Kiteboard" }
-    - { id: 17, cat: Movies, desc: "MC" }
-    - { id: 13, cat: Other, desc: "Misc" }
-    - { id: 4, cat: Movies, desc: "MotoX" }
-    - { id: 11, cat: Movies, desc: "MTB" }
-    - { id: 21, cat: Audio, desc: "Music" }
-    - { id: 26, cat: Movies, desc: "Paintball" }
-    - { id: 5, cat: Movies, desc: "Parkour" }
-    - { id: 24, cat: Movies, desc: "Quad/ATV" }
-    - { id: 29, cat: Movies, desc: "Rally/4x4" }
-    - { id: 6, cat: Movies, desc: "Skateboard" }
-    - { id: 12, cat: Movies, desc: "Ski" }
-    - { id: 14, cat: Movies, desc: "Skydive" }
-    - { id: 7, cat: Movies, desc: "Snowboard" }
-    - { id: 9, cat: Movies, desc: "Snowmobile" }
-    - { id: 15, cat: Movies, desc: "Streetrace" }
-    - { id: 2, cat: Movies, desc: "Surf" }
-    - { id: 23, cat: TV, desc: "Tv" }
-    - { id: 8, cat: Movies, desc: "Wakeboard/W.Ski" }
+    - {id: 1, cat: Movies, desc: "BASE jump"}
+    - {id: 10, cat: Movies, desc: "BMX"}
+    - {id: 3, cat: Movies, desc: "Climbing"}
+    - {id: 19, cat: Other, desc: "Covers"}
+    - {id: 20, cat: Movies, desc: "Fiddy/MiniMX"}
+    - {id: 22, cat: Movies, desc: "Graffiti"}
+    - {id: 18, cat: Movies, desc: "Homevid"}
+    - {id: 16, cat: Movies, desc: "Inline Skate"}
+    - {id: 25, cat: Movies, desc: "Kayaking"}
+    - {id: 28, cat: Movies, desc: "Kiteboard"}
+    - {id: 17, cat: Movies, desc: "MC"}
+    - {id: 13, cat: Other, desc: "Misc"}
+    - {id: 4, cat: Movies, desc: "MotoX"}
+    - {id: 11, cat: Movies, desc: "MTB"}
+    - {id: 21, cat: Audio, desc: "Music"}
+    - {id: 26, cat: Movies, desc: "Paintball"}
+    - {id: 5, cat: Movies, desc: "Parkour"}
+    - {id: 24, cat: Movies, desc: "Quad/ATV"}
+    - {id: 29, cat: Movies, desc: "Rally/4x4"}
+    - {id: 6, cat: Movies, desc: "Skateboard"}
+    - {id: 12, cat: Movies, desc: "Ski"}
+    - {id: 14, cat: Movies, desc: "Skydive"}
+    - {id: 7, cat: Movies, desc: "Snowboard"}
+    - {id: 9, cat: Movies, desc: "Snowmobile"}
+    - {id: 15, cat: Movies, desc: "Streetrace"}
+    - {id: 2, cat: Movies, desc: "Surf"}
+    - {id: 23, cat: TV, desc: "Tv"}
+    - {id: 8, cat: Movies, desc: "Wakeboard/W.Ski"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
 
 settings:
   - name: username
@@ -127,7 +127,7 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "details.php", "download.php" ]
+          args: ["details.php", "download.php"]
     files:
       selector: td:nth-of-type(5)
     seeders:

@@ -13,24 +13,24 @@ links:
 
 caps:
   categorymappings:
-    - { id: 401, cat: Movies, desc: "Movies/电影" }
-    - { id: 402, cat: TV, desc: "Series/剧集" }
-    - { id: 404, cat: TV/Documentary, desc: "Doc/档案记录" }
-    - { id: 405, cat: TV/Anime, desc: "Anim/动漫" }
-    - { id: 403, cat: TV, desc: "Shows/节目" }
-    - { id: 406, cat: Audio/Video, desc: "MV/音乐视频" }
-    - { id: 407, cat: TV/Sport, desc: "Sports/体育" }
-    - { id: 408, cat: Audio, desc: "Audio/音频" }
-    - { id: 727, cat: XXX, desc: "XXX/家长指引" }
-    - { id: 728, cat: Other, desc: "Edu/文档/教材" }
-    - { id: 729, cat: PC, desc: "Soft/软件" }
-    - { id: 409, cat: Other, desc: "Other/其他" }
+    - {id: 401, cat: Movies, desc: "Movies/电影"}
+    - {id: 402, cat: TV, desc: "Series/剧集"}
+    - {id: 404, cat: TV/Documentary, desc: "Doc/档案记录"}
+    - {id: 405, cat: TV/Anime, desc: "Anim/动漫"}
+    - {id: 403, cat: TV, desc: "Shows/节目"}
+    - {id: 406, cat: Audio/Video, desc: "MV/音乐视频"}
+    - {id: 407, cat: TV/Sport, desc: "Sports/体育"}
+    - {id: 408, cat: Audio, desc: "Audio/音频"}
+    - {id: 727, cat: XXX, desc: "XXX/家长指引"}
+    - {id: 728, cat: Other, desc: "Edu/文档/教材"}
+    - {id: 729, cat: PC, desc: "Soft/软件"}
+    - {id: 409, cat: Other, desc: "Other/其他"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
 
 settings:
   # not entirely sure why cookie method is being used. while the login page uses non-standard field names, the form seems regular enough.
@@ -125,27 +125,27 @@ search:
       default: 0
       filters:
         - name: re_replace
-          args: [ "\\s", "0" ]
+          args: ["\\s", "0"]
     leechers:
       selector: div.trbo div:nth-last-child(6)
       optional: true
       default: 0
       filters:
         - name: re_replace
-          args: [ "\\s", "0" ]
+          args: ["\\s", "0"]
     grabs:
       selector: div.trbo div:nth-last-child(5)
       optional: true
       default: 0
       filters:
         - name: re_replace
-          args: [ "\\s", "0" ]
+          args: ["\\s", "0"]
     date:
       remove: a, span
       selector: div[style="float:right;"]
       filters:
         - name: replace
-          args: [ "@", "" ]
+          args: ["@", ""]
         - name: append
           args: " +08:00" # CST
         - name: dateparse

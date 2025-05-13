@@ -10,20 +10,20 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Фильмы Films" }
-    - { id: 2, cat: TV/Anime, desc: "Мультфильмы Cartoons" }
-    - { id: 3, cat: TV/Documentary, desc: "Документалистика Documentary" }
-    - { id: 4, cat: Audio, desc: "Шоу/Музыка Show/Music" }
-    - { id: 5, cat: TV/Sport, desc: "Спорт Sport" }
-    - { id: 6, cat: TV, desc: "Сериалы TV Series" }
-    - { id: 7, cat: XXX, desc: "Эротика Erotica" }
-    - { id: 8, cat: Other, desc: "Дэмо/Misc Demo/Misc" }
+    - {id: 1, cat: Movies, desc: "Фильмы Films"}
+    - {id: 2, cat: TV/Anime, desc: "Мультфильмы Cartoons"}
+    - {id: 3, cat: TV/Documentary, desc: "Документалистика Documentary"}
+    - {id: 4, cat: Audio, desc: "Шоу/Музыка Show/Music"}
+    - {id: 5, cat: TV/Sport, desc: "Спорт Sport"}
+    - {id: 6, cat: TV, desc: "Сериалы TV Series"}
+    - {id: 7, cat: XXX, desc: "Эротика Erotica"}
+    - {id: 8, cat: Other, desc: "Дэмо/Misc Demo/Misc"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
 
 settings:
   - name: username
@@ -130,7 +130,7 @@ search:
       selector: div#cleft
       filters:
         - name: replace
-          args: [ "Жанр:", "" ]
+          args: ["Жанр:", ""]
     description:
       text: "{{ .Result.genre }}"
     downloadvolumefactor:

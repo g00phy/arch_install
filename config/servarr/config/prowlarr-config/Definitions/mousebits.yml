@@ -11,34 +11,34 @@ links:
 caps:
   categorymappings:
     # Video
-    - { id: 34, cat: TV, desc: "Video (DVD ISO)" }
-    - { id: 14, cat: TV, desc: "Multi-angle tribute" }
-    - { id: 36, cat: TV, desc: "Martin Vid" }
-    - { id: 15, cat: TV, desc: "One-take ride-through" }
-    - { id: 26, cat: TV, desc: "TV Specials" }
-    - { id: 28, cat: TV, desc: "Promotional Content" }
-    - { id: 29, cat: TV, desc: "Vacation Planner" }
+    - {id: 34, cat: TV, desc: "Video (DVD ISO)"}
+    - {id: 14, cat: TV, desc: "Multi-angle tribute"}
+    - {id: 36, cat: TV, desc: "Martin Vid"}
+    - {id: 15, cat: TV, desc: "One-take ride-through"}
+    - {id: 26, cat: TV, desc: "TV Specials"}
+    - {id: 28, cat: TV, desc: "Promotional Content"}
+    - {id: 29, cat: TV, desc: "Vacation Planner"}
     # Audio
-    - { id: 30, cat: Audio/MP3, desc: "Music Album (lossy)" }
-    - { id: 31, cat: Audio/Lossless, desc: "Music Album (FLAC)" }
-    - { id: 32, cat: Audio, desc: "Attraction Series" }
-    - { id: 35, cat: Audio, desc: "Background Series" }
-    - { id: 17, cat: Audio, desc: "Multi-track collection" }
-    - { id: 18, cat: Audio, desc: "Studio mix ride-through" }
-    - { id: 19, cat: Audio, desc: "Live recording" }
-    - { id: 33, cat: Audio, desc: "Induction Recording" }
+    - {id: 30, cat: Audio/MP3, desc: "Music Album (lossy)"}
+    - {id: 31, cat: Audio/Lossless, desc: "Music Album (FLAC)"}
+    - {id: 32, cat: Audio, desc: "Attraction Series"}
+    - {id: 35, cat: Audio, desc: "Background Series"}
+    - {id: 17, cat: Audio, desc: "Multi-track collection"}
+    - {id: 18, cat: Audio, desc: "Studio mix ride-through"}
+    - {id: 19, cat: Audio, desc: "Live recording"}
+    - {id: 33, cat: Audio, desc: "Induction Recording"}
     # Photo
-    - { id: 21, cat: Other, desc: "Park update" }
-    - { id: 22, cat: Other, desc: "Desktops" }
-    - { id: 23, cat: Other, desc: "Vacation photos" }
+    - {id: 21, cat: Other, desc: "Park update"}
+    - {id: 22, cat: Other, desc: "Desktops"}
+    - {id: 23, cat: Other, desc: "Vacation photos"}
     # Other
-    - { id: 25, cat: Other, desc: "Community media" }
-    - { id: 27, cat: Other, desc: "Off-topic" }
+    - {id: 25, cat: Other, desc: "Community media"}
+    - {id: 27, cat: Other, desc: "Off-topic"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    music-search: [q]
 
 settings:
   - name: username

@@ -13,30 +13,30 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 300, cat: Movies/UHD, desc: "Movies UHD-4K" }
-    - { id: 401, cat: Movies/BluRay, desc: "Movies Blu-ray" }
-    - { id: 415, cat: Movies/HD, desc: "Movies REMUX" }
-    - { id: 416, cat: Movies/3D, desc: "Movies 3D" }
-    - { id: 410, cat: Movies/HD, desc: "Movies 1080p" }
-    - { id: 411, cat: Movies/HD, desc: "Movies 720p" }
-    - { id: 414, cat: Movies/DVD, desc: "Movies DVD" }
-    - { id: 412, cat: Movies/WEB-DL, desc: "Movies WEB-DL" }
-    - { id: 413, cat: Movies/HD, desc: "Movies HDTV" }
-    - { id: 417, cat: Movies/Other, desc: "Movies iPad" }
-    - { id: 404, cat: TV/Documentary, desc: "Documentaries" }
-    - { id: 405, cat: TV/Anime, desc: "Animations" }
-    - { id: 402, cat: TV, desc: "TV Series" }
-    - { id: 403, cat: TV, desc: "TV Shows" }
-    - { id: 406, cat: Audio/Video, desc: "Music Videos" }
-    - { id: 407, cat: TV/Sport, desc: "Sports" }
-    - { id: 409, cat: Other, desc: "Misc" }
-    - { id: 408, cat: Audio, desc: "HQ Audio" }
+    - {id: 300, cat: Movies/UHD, desc: "Movies UHD-4K"}
+    - {id: 401, cat: Movies/BluRay, desc: "Movies Blu-ray"}
+    - {id: 415, cat: Movies/HD, desc: "Movies REMUX"}
+    - {id: 416, cat: Movies/3D, desc: "Movies 3D"}
+    - {id: 410, cat: Movies/HD, desc: "Movies 1080p"}
+    - {id: 411, cat: Movies/HD, desc: "Movies 720p"}
+    - {id: 414, cat: Movies/DVD, desc: "Movies DVD"}
+    - {id: 412, cat: Movies/WEB-DL, desc: "Movies WEB-DL"}
+    - {id: 413, cat: Movies/HD, desc: "Movies HDTV"}
+    - {id: 417, cat: Movies/Other, desc: "Movies iPad"}
+    - {id: 404, cat: TV/Documentary, desc: "Documentaries"}
+    - {id: 405, cat: TV/Anime, desc: "Animations"}
+    - {id: 402, cat: TV, desc: "TV Series"}
+    - {id: 403, cat: TV, desc: "TV Shows"}
+    - {id: 406, cat: Audio/Video, desc: "Music Videos"}
+    - {id: 407, cat: TV/Sport, desc: "Sports"}
+    - {id: 409, cat: Other, desc: "Misc"}
+    - {id: 408, cat: Audio, desc: "HQ Audio"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
 
 settings:
   - name: cookie

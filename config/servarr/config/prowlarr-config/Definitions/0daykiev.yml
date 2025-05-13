@@ -12,24 +12,24 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 10, cat: Movies, desc: "Фильмы (Movies)" }
-    - { id: 16, cat: Movies/HD, desc: "HD / Фильмы (HD / Movies)" }
-    - { id: 30, cat: TV/HD, desc: "HD / Сериалы (HD / TV Shows)" }
-    - { id: 27, cat: Movies/HD, desc: "HD / Мультфильмы (HD / Cartoons)" }
-    - { id: 17, cat: PC/Games, desc: "Игры / ПК (Games / PC)" }
-    - { id: 14, cat: Audio, desc: "Музыка / Аудио (Music / Audio)" }
-    - { id: 29, cat: TV, desc: "Мультсериалы (TV Series)" }
-    - { id: 11, cat: Movies, desc: "Мультфильмы (Cartoons)" }
-    - { id: 28, cat: TV/Documentary, desc: "HD / Документальное (HD / Documentary)" }
-    - { id: 18, cat: PC/0day, desc: "Софт / Windows (Software / Windows)" }
-    - { id: 19, cat: TV, desc: "TV / Сериалы (TV shows)" }
-    - { id: 31, cat: Other, desc: "Прочее (Other)" }
+    - {id: 10, cat: Movies, desc: "Фильмы (Movies)"}
+    - {id: 16, cat: Movies/HD, desc: "HD / Фильмы (HD / Movies)"}
+    - {id: 30, cat: TV/HD, desc: "HD / Сериалы (HD / TV Shows)"}
+    - {id: 27, cat: Movies/HD, desc: "HD / Мультфильмы (HD / Cartoons)"}
+    - {id: 17, cat: PC/Games, desc: "Игры / ПК (Games / PC)"}
+    - {id: 14, cat: Audio, desc: "Музыка / Аудио (Music / Audio)"}
+    - {id: 29, cat: TV, desc: "Мультсериалы (TV Series)"}
+    - {id: 11, cat: Movies, desc: "Мультфильмы (Cartoons)"}
+    - {id: 28, cat: TV/Documentary, desc: "HD / Документальное (HD / Documentary)"}
+    - {id: 18, cat: PC/0day, desc: "Софт / Windows (Software / Windows)"}
+    - {id: 19, cat: TV, desc: "TV / Сериалы (TV shows)"}
+    - {id: 31, cat: Other, desc: "Прочее (Other)"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
 
 settings:
   - name: username
@@ -100,11 +100,11 @@ search:
     - name: diacritics
       args: replace
     - name: re_replace # S01 to сезон 1
-      args: [ "(?i)\\bS0*(\\d+)\\b", "сезон $1" ]
+      args: ["(?i)\\bS0*(\\d+)\\b", "сезон $1"]
     - name: re_replace # E01 to сері 1
-      args: [ "(?i)\\bE0*(\\d+)\\b", "сері $1" ]
+      args: ["(?i)\\bE0*(\\d+)\\b", "сері $1"]
     - name: re_replace # S01E01 to сезон 1 сері 1
-      args: [ "(?i)\\bS0*(\\d+)E0*(\\d+)\\b", "сезон $1 сері $2" ]
+      args: ["(?i)\\bS0*(\\d+)E0*(\\d+)\\b", "сезон $1 сері $2"]
 
   rows:
     selector: table > tbody > tr.rowtorrentinfo
@@ -121,53 +121,53 @@ search:
       filters:
         # normalize to SXXEYY format
         - name: re_replace
-          args: [ "(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езони?.+?(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))?", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езони?.+?(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езони?.+?(\\d+(?:-\\d+)?)\\s*(?:[CС]ері[їяй]|Епізоди?)\\s+з\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езони?.+?(\\d+(?:-\\d+)?)\\s*(?:[CС]ері[їяй]|Епізоди?)\\s+з\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))?", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:[CС]ері[їяй]|Епізоди?)\\s+з\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:[CС]ері[їяй]|Епізоди?)\\s+з\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2" ]
+          args: ["(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езони?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))", "S$1E$2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езони?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))", "S$1E$2" ]
+          args: ["(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?)", "S$1" ]
+          args: ["(?i)[CС]езони?[\\s:]*(\\d+(?:-\\d+)?)", "S$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+[CС]езони?", "S$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+[CС]езони?", "S$1"]
         - name: re_replace
-          args: [ "(?i)(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*з\\s*(\\w?)(?:\\s*(?:[CС]ері[їяй]|Епізоди?))", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:[CС]ері[їяй]|Епізоди?)\\s+з\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:[CС]ері[їяй]|Епізоди?)\\s+з\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)", "E$1" ]
+          args: ["(?i)(?:[CС]ері[їяй]|Епізоди?)[\\s:]*(\\d+(?:-\\d+)?)", "E$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:[CС]ері[їяй]|Епізоди?)", "E$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:[CС]ері[їяй]|Епізоди?)", "E$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV\\s?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV\\s?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT\\s?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT\\s?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\s?DL\\s?Rip\\b", "WEBDL" ]
+          args: ["(?i)\\bWEB\\s?DL\\s?Rip\\b", "WEBDL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB Rip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB Rip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB DL\\b", "WEBDL" ]
+          args: ["(?i)\\bWEB DL\\b", "WEBDL"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: re_replace
-          args: [ "(?i)^\\(\\s*([SE]\\d+.*?)\\s*\\)[\\s\\/\\|]*(.+)", "$2 $1" ]
+          args: ["(?i)^\\(\\s*([SE]\\d+.*?)\\s*\\)[\\s\\/\\|]*(.+)", "$2 $1"]
     details:
       selector: a[href^="details.php?id="]
       attribute: href
@@ -185,25 +185,25 @@ search:
       selector: td:nth-child(4)
       filters:
         - name: replace
-          args: [ "ТБ", "TB" ]
+          args: ["ТБ", "TB"]
         - name: replace
-          args: [ "ГБ", "GB" ]
+          args: ["ГБ", "GB"]
         - name: replace
-          args: [ "МБ", "MB" ]
+          args: ["МБ", "MB"]
         - name: replace
-          args: [ "КБ", "KB" ]
+          args: ["КБ", "KB"]
     grabs:
       selector: td:nth-child(5)
     seeders:
       selector: td:nth-child(6)
       filters:
         - name: split
-          args: [ "|", 0 ]
+          args: ["|", 0]
     leechers:
       selector: td:nth-child(6)
       filters:
         - name: split
-          args: [ "|", 1 ]
+          args: ["|", 1]
     downloadvolumefactor:
       case:
         img[src="pic/freedownload.gif"]: 0

@@ -10,42 +10,42 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "FILMI" }
-    - { id: 50, cat: Movies/WEB-DL, desc: "WEBRip-1080" }
-    - { id: 17, cat: Movies/WEB-DL, desc: "WEBRip-720" }
-    - { id: 51, cat: Movies/WEB-DL, desc: "WEBRip" }
-    - { id: 48, cat: Movies/BluRay, desc: "BluRay-1080" }
-    - { id: 49, cat: Movies/BluRay, desc: "BluRay-720" }
-    - { id: 52, cat: Movies/BluRay, desc: "BRRip" }
-    - { id: 44, cat: Movies/BluRay, desc: "BDRip" }
-    - { id: 32, cat: Movies/DVD, desc: "DVDRip" }
-    - { id: 36, cat: Movies/SD, desc: "TVRip" }
-    - { id: 43, cat: Movies/HD, desc: "HDRip" }
-    - { id: 16, cat: Movies/HD, desc: "HDTV" }
-    - { id: 31, cat: Movies/SD, desc: "HDSD" }
-    - { id: 46, cat: Movies/DVD, desc: "DVD" }
-    - { id: 45, cat: Movies/SD, desc: "XviD" }
-    - { id: 38, cat: TV, desc: "TV - Serija" }
-    - { id: 35, cat: TV/Documentary, desc: "Dokumentarni" }
-    - { id: 40, cat: TV, desc: "Slo" }
-    - { id: 33, cat: TV/Anime, desc: "Risanke" }
-    - { id: 34, cat: XXX, desc: "xxx" }
-    - { id: 6, cat: PC, desc: "PROGRAMI" }
-    - { id: 18, cat: PC, desc: "Programi" }
-    - { id: 47, cat: Console, desc: "Igre" }
-    - { id: 37, cat: Books/EBook, desc: "E-Knjiga" }
-    - { id: 19, cat: Other, desc: "Ostalo" }
-    - { id: 39, cat: PC/Mobile-Android, desc: "Android App" }
-    - { id: 7, cat: Audio, desc: "GLASBA" }
-    - { id: 20, cat: Audio/Video, desc: "Video" }
-    - { id: 21, cat: Audio, desc: "Glasba" }
+    - {id: 1, cat: Movies, desc: "FILMI"}
+    - {id: 50, cat: Movies/WEB-DL, desc: "WEBRip-1080"}
+    - {id: 17, cat: Movies/WEB-DL, desc: "WEBRip-720"}
+    - {id: 51, cat: Movies/WEB-DL, desc: "WEBRip"}
+    - {id: 48, cat: Movies/BluRay, desc: "BluRay-1080"}
+    - {id: 49, cat: Movies/BluRay, desc: "BluRay-720"}
+    - {id: 52, cat: Movies/BluRay, desc: "BRRip"}
+    - {id: 44, cat: Movies/BluRay, desc: "BDRip"}
+    - {id: 32, cat: Movies/DVD, desc: "DVDRip"}
+    - {id: 36, cat: Movies/SD, desc: "TVRip"}
+    - {id: 43, cat: Movies/HD, desc: "HDRip"}
+    - {id: 16, cat: Movies/HD, desc: "HDTV"}
+    - {id: 31, cat: Movies/SD, desc: "HDSD"}
+    - {id: 46, cat: Movies/DVD, desc: "DVD"}
+    - {id: 45, cat: Movies/SD, desc: "XviD"}
+    - {id: 38, cat: TV, desc: "TV - Serija"}
+    - {id: 35, cat: TV/Documentary, desc: "Dokumentarni"}
+    - {id: 40, cat: TV, desc: "Slo"}
+    - {id: 33, cat: TV/Anime, desc: "Risanke"}
+    - {id: 34, cat: XXX, desc: "xxx"}
+    - {id: 6, cat: PC, desc: "PROGRAMI"}
+    - {id: 18, cat: PC, desc: "Programi"}
+    - {id: 47, cat: Console, desc: "Igre"}
+    - {id: 37, cat: Books/EBook, desc: "E-Knjiga"}
+    - {id: 19, cat: Other, desc: "Ostalo"}
+    - {id: 39, cat: PC/Mobile-Android, desc: "Android App"}
+    - {id: 7, cat: Audio, desc: "GLASBA"}
+    - {id: 20, cat: Audio/Video, desc: "Video"}
+    - {id: 21, cat: Audio, desc: "Glasba"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -105,9 +105,9 @@ search:
     - path: /
   keywordsfilters:
     - name: re_replace # add brackets to year on searchquery if missing
-      args: [ "\\(*((19|20)\\d{2})\\)*", "($1)" ]
+      args: ["\\(*((19|20)\\d{2})\\)*", "($1)"]
     - name: re_replace
-      args: [ "[^\\w\\d\\(\\)]+", "%" ]
+      args: ["[^\\w\\d\\(\\)]+", "%"]
   inputs:
     p: torrents
     pid: 32
@@ -170,31 +170,31 @@ search:
       remove: span, a, br
       filters:
         - name: replace
-          args: [ "Uploaded ", "" ]
+          args: ["Uploaded ", ""]
         - name: replace
-          args: [ " by", "" ]
+          args: [" by", ""]
         - name: replace
-          args: [ " naložil", "" ] # Uploaded
+          args: [" naložil", ""] # Uploaded
         - name: replace
-          args: [ "ob ", "at " ] # at
+          args: ["ob ", "at "] # at
         - name: replace
-          args: [ "Danes", "Today" ]
+          args: ["Danes", "Today"]
         - name: replace
-          args: [ "Včeraj", "Yesterday" ]
+          args: ["Včeraj", "Yesterday"]
         - name: replace
-          args: [ "Ponedeljek", "Monday" ]
+          args: ["Ponedeljek", "Monday"]
         - name: replace
-          args: [ "Torek", "Tuesday" ]
+          args: ["Torek", "Tuesday"]
         - name: replace
-          args: [ "Sreda", "Wednesday" ]
+          args: ["Sreda", "Wednesday"]
         - name: replace
-          args: [ "Četrtek", "Thursday" ]
+          args: ["Četrtek", "Thursday"]
         - name: replace
-          args: [ "Petek", "Friday" ]
+          args: ["Petek", "Friday"]
         - name: replace
-          args: [ "Sobota", "Saturday" ]
+          args: ["Sobota", "Saturday"]
         - name: replace
-          args: [ "Nedelja", "Sunday" ]
+          args: ["Nedelja", "Sunday"]
         - name: fuzzytime
     date_year:
       selector: td.torrent_name:contains("-")
@@ -203,11 +203,11 @@ search:
       remove: span, a, br
       filters:
         - name: replace
-          args: [ "Uploaded ", "" ]
+          args: ["Uploaded ", ""]
         - name: replace
-          args: [ " by", "" ]
+          args: [" by", ""]
         - name: replace
-          args: [ " naložil", "" ] # Uploaded
+          args: [" naložil", ""] # Uploaded
         - name: dateparse
           args: "dd-MM-yyyy HH:mm"
     date:

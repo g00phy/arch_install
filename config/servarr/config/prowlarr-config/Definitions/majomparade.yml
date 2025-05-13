@@ -12,49 +12,49 @@ links:
 caps:
   # dont forget to update the path categories in the search block
   categorymappings:
-    - { id: 4, cat: Movies/3D, desc: "3D/Magyar", default: true }
-    - { id: 5, cat: Movies/3D, desc: "3D/Külföldi", default: true }
-    - { id: 48, cat: Movies/HD, desc: "Film/BR-BDRIP/Külföldi", default: true }
-    - { id: 50, cat: Movies/HD, desc: "Film/BR-BDRIP/Magyar", default: true }
-    - { id: 75, cat: Movies/SD, desc: "Film/Cam/Külföldi", default: true }
-    - { id: 76, cat: Movies/SD, desc: "Film/Cam/Magyar", default: true }
-    - { id: 26, cat: Movies/DVD, desc: "Film/DVD/Külföldi", default: true }
-    - { id: 25, cat: Movies/DVD, desc: "Film/DVD/Magyar", default: true }
-    - { id: 58, cat: Movies/DVD, desc: "Film/DVD9/Külföld", default: true }
-    - { id: 59, cat: Movies/DVD, desc: "Film/DVD9/Magyar", default: true }
-    - { id: 42, cat: Movies/HD, desc: "Film/HD/Külföldi", default: true }
-    - { id: 51, cat: Movies/HD, desc: "Film/HD/Magyar", default: true }
-    - { id: 38, cat: Movies/SD, desc: "Film/XviD/Külföldi", default: true }
-    - { id: 24, cat: Movies/SD, desc: "Film/XviD/Magyar", default: true }
-    - { id: 85, cat: TV/Sport, desc: "Sport/Külföldi", default: true }
-    - { id: 87, cat: TV/Sport, desc: "Sport/Magyar", default: true }
-    - { id: 47, cat: TV/SD, desc: "Sorozat/Külföldi", default: true }
-    - { id: 36, cat: TV/SD, desc: "Sorozat/Magyar", default: true }
-    - { id: 6, cat: TV/HD, desc: "Sorozat/HD/Magyar", default: true }
-    - { id: 7, cat: TV/HD, desc: "Sorozat/HD/Külföldi", default: true }
-    - { id: 56, cat: Audio/Audiobook, desc: "Hangoskönyv", default: true }
-    - { id: 33, cat: Books, desc: "Könyv/Külföldi", default: true }
-    - { id: 44, cat: Books, desc: "Könyv/Magyar", default: true }
-    - { id: 28, cat: PC/Games, desc: "Játék/ISO", default: true }
-    - { id: 32, cat: Console, desc: "Játék/Konzol", default: true }
-    - { id: 30, cat: PC/Games, desc: "Játék/RIP", default: true }
-    - { id: 53, cat: Audio/Lossless, desc: "Lossless/Külföldi", default: true }
-    - { id: 74, cat: Audio/Lossless, desc: "Lossless/Magyar", default: true }
-    - { id: 40, cat: Audio/Other, desc: "Zene/Külföldi", default: true }
-    - { id: 41, cat: Audio/Other, desc: "Zene/Magyar", default: true }
-    - { id: 34, cat: PC/Mobile-Other, desc: "Mobil", default: true }
-    - { id: 35, cat: PC/ISO, desc: "Programok/ISO", default: true }
-    - { id: 46, cat: PC/0day, desc: "Programok/RIP", default: true }
-    - { id: 70, cat: XXX/DVD, desc: "XXX/DVD", default: false }
-    - { id: 39, cat: XXX/XviD, desc: "XXX/XviD", default: false }
-    - { id: 57, cat: XXX, desc: "XXX/HD", default: false }
+    - {id: 4, cat: Movies/3D, desc: "3D/Magyar", default: true}
+    - {id: 5, cat: Movies/3D, desc: "3D/Külföldi", default: true}
+    - {id: 48, cat: Movies/HD, desc: "Film/BR-BDRIP/Külföldi", default: true}
+    - {id: 50, cat: Movies/HD, desc: "Film/BR-BDRIP/Magyar", default: true}
+    - {id: 75, cat: Movies/SD, desc: "Film/Cam/Külföldi", default: true}
+    - {id: 76, cat: Movies/SD, desc: "Film/Cam/Magyar", default: true}
+    - {id: 26, cat: Movies/DVD, desc: "Film/DVD/Külföldi", default: true}
+    - {id: 25, cat: Movies/DVD, desc: "Film/DVD/Magyar", default: true}
+    - {id: 58, cat: Movies/DVD, desc: "Film/DVD9/Külföld", default: true}
+    - {id: 59, cat: Movies/DVD, desc: "Film/DVD9/Magyar", default: true}
+    - {id: 42, cat: Movies/HD, desc: "Film/HD/Külföldi", default: true}
+    - {id: 51, cat: Movies/HD, desc: "Film/HD/Magyar", default: true}
+    - {id: 38, cat: Movies/SD, desc: "Film/XviD/Külföldi", default: true}
+    - {id: 24, cat: Movies/SD, desc: "Film/XviD/Magyar", default: true}
+    - {id: 85, cat: TV/Sport, desc: "Sport/Külföldi", default: true}
+    - {id: 87, cat: TV/Sport, desc: "Sport/Magyar", default: true}
+    - {id: 47, cat: TV/SD, desc: "Sorozat/Külföldi", default: true}
+    - {id: 36, cat: TV/SD, desc: "Sorozat/Magyar", default: true}
+    - {id: 6, cat: TV/HD, desc: "Sorozat/HD/Magyar", default: true}
+    - {id: 7, cat: TV/HD, desc: "Sorozat/HD/Külföldi", default: true}
+    - {id: 56, cat: Audio/Audiobook, desc: "Hangoskönyv", default: true}
+    - {id: 33, cat: Books, desc: "Könyv/Külföldi", default: true}
+    - {id: 44, cat: Books, desc: "Könyv/Magyar", default: true}
+    - {id: 28, cat: PC/Games, desc: "Játék/ISO", default: true}
+    - {id: 32, cat: Console, desc: "Játék/Konzol", default: true}
+    - {id: 30, cat: PC/Games, desc: "Játék/RIP", default: true}
+    - {id: 53, cat: Audio/Lossless, desc: "Lossless/Külföldi", default: true}
+    - {id: 74, cat: Audio/Lossless, desc: "Lossless/Magyar", default: true}
+    - {id: 40, cat: Audio/Other, desc: "Zene/Külföldi", default: true}
+    - {id: 41, cat: Audio/Other, desc: "Zene/Magyar", default: true}
+    - {id: 34, cat: PC/Mobile-Other, desc: "Mobil", default: true}
+    - {id: 35, cat: PC/ISO, desc: "Programok/ISO", default: true}
+    - {id: 46, cat: PC/0day, desc: "Programok/RIP", default: true}
+    - {id: 70, cat: XXX/DVD, desc: "XXX/DVD", default: false}
+    - {id: 39, cat: XXX/XviD, desc: "XXX/XviD", default: false}
+    - {id: 57, cat: XXX, desc: "XXX/HD", default: false}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -84,15 +84,15 @@ login:
 search:
   paths:
     - path: letoltes.php
-      categories: [ 4, 5, 48, 50, 75, 76, 26, 25, 58, 59, 42, 51, 38, 24, 85, 87, 47, 36, 6, 7, 56, 33, 44, 28, 32, 30, 53, 74, 40, 41, 34, 35, 46 ]
+      categories: [4, 5, 48, 50, 75, 76, 26, 25, 58, 59, 42, 51, 38, 24, 85, 87, 47, 36, 6, 7, 56, 33, 44, 28, 32, 30, 53, 74, 40, 41, 34, 35, 46]
       inputs:
         tipus: 1
     - path: letoltes.php
-      categories: [ 4, 5, 48, 50, 75, 76, 26, 25, 58, 59, 42, 51, 38, 24, 85, 87, 47, 36, 6, 7, 56, 33, 44, 28, 32, 30, 53, 74, 40, 41, 34, 35, 46 ]
+      categories: [4, 5, 48, 50, 75, 76, 26, 25, 58, 59, 42, 51, 38, 24, 85, 87, 47, 36, 6, 7, 56, 33, 44, 28, 32, 30, 53, 74, 40, 41, 34, 35, 46]
       inputs:
         tipus: 2
     - path: xxx.php
-      categories: [ 70, 39, 57 ]
+      categories: [70, 39, 57]
   inputs:
     $raw: "{{ range .Categories }}category[]={{.}}&{{end}}"
     name: "{{ if .Query.IMDBID }}http://www.imdb.com/title/{{ .Query.IMDBID }}{{ else }}{{ .Keywords }}{{ end }}"
@@ -101,7 +101,7 @@ search:
     tipuska: 1
 
   headers:
-    User-Agent: [ "{{ .Config.useragent }}" ]
+    User-Agent: ["{{ .Config.useragent }}"]
 
   rows:
     selector: table#table > tbody > tr:has(a[href^="download.php?torrent="])
@@ -175,7 +175,7 @@ search:
       remove: a, img
       filters:
         - name: re_replace
-          args: [ "(?i)(0.5x|2x|3x|4x)", "" ]
+          args: ["(?i)(0.5x|2x|3x|4x)", ""]
     description:
       case:
         img[src$="/pic/yes.png"]: "Verified: {{ if .Result.genre }}{{ .Result.genre }}<br>{{ else }}{{ end }}{{ .Result.title_hungarian }}"

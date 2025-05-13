@@ -10,14 +10,14 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV/SD }
-    - { id: 2, cat: TV/HD }
+    - {id: 1, cat: TV/SD}
+    - {id: 2, cat: TV/HD}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
+    search: [q]
+    tv-search: [q, season, ep]
 
-settings: [ ]
+settings: []
 
 search:
   paths:

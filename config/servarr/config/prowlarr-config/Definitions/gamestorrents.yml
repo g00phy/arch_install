@@ -15,20 +15,20 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: juegos-pc, cat: PC/Games, desc: "Games PC" }
-    - { id: juegos-psp, cat: Console/PSP, desc: "Games PSP" }
-    - { id: juegos-ps3, cat: Console/PS3, desc: "Games PS3" }
-    - { id: juegos-ps4, cat: Console/PS4, desc: "Games PS4" }
-    - { id: juegos-ps2, cat: Console/PS Vita, desc: "Games PS2" }
-    - { id: juegos-mac, cat: PC/Mac, desc: "Games Mac" }
-    - { id: juegos-xbox360, cat: Console/XBox 360, desc: "Games Xbox 360" }
-    - { id: juegos-wii, cat: Console/Wii, desc: "Games Wii" }
-    - { id: juegos-nds, cat: Console/NDS, desc: "Games NDS" }
+    - {id: juegos-pc, cat: PC/Games, desc: "Games PC"}
+    - {id: juegos-psp, cat: Console/PSP, desc: "Games PSP"}
+    - {id: juegos-ps3, cat: Console/PS3, desc: "Games PS3"}
+    - {id: juegos-ps4, cat: Console/PS4, desc: "Games PS4"}
+    - {id: juegos-ps2, cat: Console/PS Vita, desc: "Games PS2"}
+    - {id: juegos-mac, cat: PC/Mac, desc: "Games Mac"}
+    - {id: juegos-xbox360, cat: Console/XBox 360, desc: "Games Xbox 360"}
+    - {id: juegos-wii, cat: Console/Wii, desc: "Games Wii"}
+    - {id: juegos-nds, cat: Console/NDS, desc: "Games NDS"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
-settings: [ ]
+settings: []
 
 download:
   selectors:
@@ -58,7 +58,7 @@ search:
       attribute: href
       filters:
         - name: split
-          args: [ "/", 3 ]
+          args: ["/", 3]
     download:
       selector: td:nth-child(1) a
       attribute: href
@@ -73,9 +73,9 @@ search:
       selector: td:nth-child(3)
       filters:
         - name: replace
-          args: [ "Undefined", "0 B" ]
+          args: ["Undefined", "0 B"]
         - name: replace
-          args: [ "s", "" ]
+          args: ["s", ""]
     description:
       selector: td:nth-child(4)
     seeders:

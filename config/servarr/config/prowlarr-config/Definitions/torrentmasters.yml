@@ -12,42 +12,42 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 92, cat: Books/EBook, desc: "e-Book (ENG)" }
-    - { id: 78, cat: Books/EBook, desc: "e-Book (HUN)" }
-    - { id: 80, cat: Other, desc: "Egyéb" }
-    - { id: 111, cat: Movies/SD, desc: "Film - Cam (HUN)" }
-    - { id: 85, cat: Movies/DVD, desc: "Film - DVD/9 (ENG)" }
-    - { id: 66, cat: Movies/DVD, desc: "Film - DVD/9 (HUN)" }
-    - { id: 84, cat: Movies/HD, desc: "Film - HD (ENG)" }
-    - { id: 68, cat: Movies/HD, desc: "Film - HD (HUN)" }
-    - { id: 82, cat: Movies/SD, desc: "Film - SD (ENG)" }
-    - { id: 64, cat: Movies/SD, desc: "Film - SD (HUN)" }
-    - { id: 73, cat: Console, desc: "Játék - Konzol" }
-    - { id: 94, cat: PC/Games, desc: "Játék - RIP" }
-    - { id: 72, cat: PC/Games, desc: "Játek - ISO" }
-    - { id: 79, cat: PC/Mobile-Other, desc: "Mobil/PDA" }
-    - { id: 95, cat: PC, desc: "Programok - Egyeb (Win)" }
-    - { id: 74, cat: PC/ISO, desc: "Programok - ISO (Win)" }
-    - { id: 75, cat: PC/Mac, desc: "Programok - Linux/Unix/Mac OS" }
-    - { id: 101, cat: TV/SD, desc: "Sorozat - DVD (ENG)" }
-    - { id: 100, cat: TV/SD, desc: "Sorozat - DVD (HUN)" }
-    - { id: 89, cat: TV/HD, desc: "Sorozat - HD (ENG)" }
-    - { id: 97, cat: TV/HD, desc: "Sorozat - HD (HUN)" }
-    - { id: 86, cat: TV/SD, desc: "Sorozat - SD (ENG)" }
-    - { id: 90, cat: TV/SD, desc: "Sorozat - SD (HUN)" }
-    - { id: 99, cat: XXX/DVD, desc: "XXX - DVD" }
-    - { id: 98, cat: XXX/x264, desc: "XXX - HD" }
-    - { id: 76, cat: XXX/ImageSet, desc: "XXX - Kepek" }
-    - { id: 69, cat: XXX/XviD, desc: "XXX - SD" }
-    - { id: 70, cat: Audio, desc: "Zene - HUN" }
-    - { id: 71, cat: Audio, desc: "Zene - Külföld" }
+    - {id: 92, cat: Books/EBook, desc: "e-Book (ENG)"}
+    - {id: 78, cat: Books/EBook, desc: "e-Book (HUN)"}
+    - {id: 80, cat: Other, desc: "Egyéb"}
+    - {id: 111, cat: Movies/SD, desc: "Film - Cam (HUN)"}
+    - {id: 85, cat: Movies/DVD, desc: "Film - DVD/9 (ENG)"}
+    - {id: 66, cat: Movies/DVD, desc: "Film - DVD/9 (HUN)"}
+    - {id: 84, cat: Movies/HD, desc: "Film - HD (ENG)"}
+    - {id: 68, cat: Movies/HD, desc: "Film - HD (HUN)"}
+    - {id: 82, cat: Movies/SD, desc: "Film - SD (ENG)"}
+    - {id: 64, cat: Movies/SD, desc: "Film - SD (HUN)"}
+    - {id: 73, cat: Console, desc: "Játék - Konzol"}
+    - {id: 94, cat: PC/Games, desc: "Játék - RIP"}
+    - {id: 72, cat: PC/Games, desc: "Játek - ISO"}
+    - {id: 79, cat: PC/Mobile-Other, desc: "Mobil/PDA"}
+    - {id: 95, cat: PC, desc: "Programok - Egyeb (Win)"}
+    - {id: 74, cat: PC/ISO, desc: "Programok - ISO (Win)"}
+    - {id: 75, cat: PC/Mac, desc: "Programok - Linux/Unix/Mac OS"}
+    - {id: 101, cat: TV/SD, desc: "Sorozat - DVD (ENG)"}
+    - {id: 100, cat: TV/SD, desc: "Sorozat - DVD (HUN)"}
+    - {id: 89, cat: TV/HD, desc: "Sorozat - HD (ENG)"}
+    - {id: 97, cat: TV/HD, desc: "Sorozat - HD (HUN)"}
+    - {id: 86, cat: TV/SD, desc: "Sorozat - SD (ENG)"}
+    - {id: 90, cat: TV/SD, desc: "Sorozat - SD (HUN)"}
+    - {id: 99, cat: XXX/DVD, desc: "XXX - DVD"}
+    - {id: 98, cat: XXX/x264, desc: "XXX - HD"}
+    - {id: 76, cat: XXX/ImageSet, desc: "XXX - Kepek"}
+    - {id: 69, cat: XXX/XviD, desc: "XXX - SD"}
+    - {id: 70, cat: Audio, desc: "Zene - HUN"}
+    - {id: 71, cat: Audio, desc: "Zene - Külföld"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -92,7 +92,7 @@ login:
 
 search:
   headers:
-    User-Agent: [ "{{ .Config.useragent }}" ]
+    User-Agent: ["{{ .Config.useragent }}"]
   paths:
     - path: browse/
   inputs:

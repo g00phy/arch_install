@@ -10,23 +10,23 @@ links:
 
 caps:
   categorymappings:
-    - { id: 7, cat: XXX, desc: "Amateur" }
-    - { id: 12, cat: XXX, desc: "Anime &Hentai &JAV" }
-    - { id: 17, cat: XXX, desc: "Appz" }
-    - { id: 3, cat: XXX, desc: "Classics" }
-    - { id: 6, cat: XXX, desc: "Clips &Siterips" }
-    - { id: 16, cat: XXX, desc: "DVD" }
-    - { id: 15, cat: XXX, desc: "EX-V.I.P. Torrents" }
-    - { id: 9, cat: XXX, desc: "Fetish" }
-    - { id: 8, cat: XXX, desc: "Games" }
-    - { id: 11, cat: XXX, desc: "Misc." }
-    - { id: 10, cat: XXX, desc: "Movie" }
-    - { id: 5, cat: XXX, desc: "Solo" }
-    - { id: 14, cat: XXX, desc: "V.I.P." }
-    - { id: 13, cat: XXX, desc: "Watersport" }
+    - {id: 7, cat: XXX, desc: "Amateur"}
+    - {id: 12, cat: XXX, desc: "Anime &Hentai &JAV"}
+    - {id: 17, cat: XXX, desc: "Appz"}
+    - {id: 3, cat: XXX, desc: "Classics"}
+    - {id: 6, cat: XXX, desc: "Clips &Siterips"}
+    - {id: 16, cat: XXX, desc: "DVD"}
+    - {id: 15, cat: XXX, desc: "EX-V.I.P. Torrents"}
+    - {id: 9, cat: XXX, desc: "Fetish"}
+    - {id: 8, cat: XXX, desc: "Games"}
+    - {id: 11, cat: XXX, desc: "Misc."}
+    - {id: 10, cat: XXX, desc: "Movie"}
+    - {id: 5, cat: XXX, desc: "Solo"}
+    - {id: 14, cat: XXX, desc: "V.I.P."}
+    - {id: 13, cat: XXX, desc: "Watersport"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username
@@ -98,9 +98,9 @@ search:
   keywordsfilters:
     # prefix and postfix percent wildcard as well as replacing spaces between words
     - name: re_replace
-      args: [ "\\W+", "%" ]
+      args: ["\\W+", "%"]
     - name: re_replace
-      args: [ "^(.+)$", "%$1%" ]
+      args: ["^(.+)$", "%$1%"]
 
   inputs:
     do: search

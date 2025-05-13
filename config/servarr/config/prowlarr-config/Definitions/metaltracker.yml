@@ -12,14 +12,14 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: Books, cat: Audio/Audiobook, desc: Books }
-    - { id: Video, cat: Audio/Video, desc: Videos }
-    - { id: Music, cat: Audio/MP3, desc: Music }
+    - {id: Books, cat: Audio/Audiobook, desc: Books}
+    - {id: Video, cat: Audio/Video, desc: Videos}
+    - {id: Music, cat: Audio/MP3, desc: Music}
 
   modes:
-    search: [ q ]
-    music-search: [ q, album, artist ]
-    book-search: [ q ]
+    search: [q]
+    music-search: [q, album, artist]
+    book-search: [q]
 
 settings:
   - name: username

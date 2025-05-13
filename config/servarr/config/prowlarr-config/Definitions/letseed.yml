@@ -10,52 +10,53 @@ links:
 
 caps:
   categorymappings:
-    - { id: 3, cat: TV, desc: "Diziler" }
-    - { id: 5, cat: TV/Foreign, desc: "Yabancı Diziler" }
-    - { id: 6, cat: TV/Other, desc: "Yerli Dizi Boxset" }
-    - { id: 4, cat: TV, desc: "Yerli Diziler" }
-    - { id: 44, cat: Books, desc: "Eğitim" }
-    - { id: 46, cat: Books/EBook, desc: "E-Book" }
-    - { id: 45, cat: Books/Other, desc: "Eğitim" }
-    - { id: 1, cat: Movies, desc: "Filmler" }
-    - { id: 15, cat: Movies/UHD, desc: "4K" }
-    - { id: 2, cat: Movies/Other, desc: "Animasyonlar" }
-    - { id: 16, cat: Movies/Other, desc: "BoxSet" }
-    - { id: 14, cat: Movies/Foreign, desc: "Yabancı Yapımlar" }
-    - { id: 13, cat: Movies, desc: "Yerli Yapımlar" }
-    - { id: 32, cat: Audio, desc: "Müzik" }
-    - { id: 35, cat: Audio/Other, desc: "Diskografi" }
-    - { id: 34, cat: Audio/Foreign, desc: "Yabancı" }
-    - { id: 33, cat: Audio, desc: "Yerli" }
-    - { id: 28, cat: PC/Games, desc: "Oyun" }
-    - { id: 29, cat: PC/Games, desc: "PC" }
-    - { id: 31, cat: Console/PS4, desc: "Playstation" }
-    - { id: 30, cat: Console/XBox, desc: "XBOX" }
-    - { id: 19, cat: Other, desc: "Platform Sunumları" }
-    - { id: 21, cat: Movies, desc: "AMZN" }
-    - { id: 23, cat: Movies, desc: "BluTv" }
-    - { id: 22, cat: TV, desc: "DSNP" }
-    - { id: 24, cat: TV, desc: "Exxen" }
-    - { id: 26, cat: TV, desc: "GAIN" }
-    - { id: 20, cat: Movies, desc: "Netflix" }
-    - { id: 42, cat: TV, desc: "Tabii" }
-    - { id: 25, cat: TV, desc: "TOD" }
-    - { id: 27, cat: TV, desc: "TV+" }
-    - { id: 36, cat: PC, desc: "Program" }
-    - { id: 37, cat: PC/ISO, desc: "İşletim Sistemi" }
-    - { id: 38, cat: PC/Mac, desc: "Mac" }
-    - { id: 39, cat: PC/0day, desc: "Windows" }
-    - { id: 40, cat: TV/Sport, desc: "Spor" }
-    - { id: 41, cat: TV/Sport, desc: "Spor Sunumları" }
-    - { id: 17, cat: TV, desc: "VIP Sunumlar" }
-    - { id: 18, cat: TV, desc: "VIP Sunumlar" }
+    - {id: 3, cat: TV, desc: "Diziler"}
+    - {id: 5, cat: TV/Foreign, desc: "Yabancı Diziler"}
+    - {id: 6, cat: TV/Other, desc: "Yerli Dizi Boxset"}
+    - {id: 4, cat: TV, desc: "Yerli Diziler"}
+    - {id: 44, cat: Books, desc: "Eğitim"}
+    - {id: 46, cat: Books/EBook, desc: "E-Book"}
+    - {id: 45, cat: Books/Other, desc: "Eğitim"}
+    - {id: 1, cat: Movies, desc: "Filmler"}
+    - {id: 15, cat: Movies/UHD, desc: "4K"}
+    - {id: 2, cat: Movies/Other, desc: "Animasyonlar"}
+    - {id: 16, cat: Movies/Other, desc: "BoxSet"}
+    - {id: 14, cat: Movies/Foreign, desc: "Yabancı Yapımlar"}
+    - {id: 13, cat: Movies, desc: "Yerli Yapımlar"}
+    - {id: 32, cat: Audio, desc: "Müzik"}
+    - {id: 35, cat: Audio/Other, desc: "Diskografi"}
+    - {id: 34, cat: Audio/Foreign, desc: "Yabancı"}
+    - {id: 33, cat: Audio, desc: "Yerli"}
+    - {id: 28, cat: PC/Games, desc: "Oyun"}
+    - {id: 29, cat: PC/Games, desc: "PC"}
+    - {id: 31, cat: Console/PS4, desc: "Playstation"}
+    - {id: 30, cat: Console/XBox, desc: "XBOX"}
+    - {id: 19, cat: Other, desc: "Platform Sunumları"}
+    - {id: 21, cat: Movies, desc: "AMZN"}
+    - {id: 23, cat: Movies, desc: "BluTv"}
+    - {id: 22, cat: TV, desc: "DSNP"}
+    - {id: 24, cat: TV, desc: "Exxen"}
+    - {id: 26, cat: TV, desc: "GAIN"}
+    - {id: 47, cat: TV, desc: "MAX"}
+    - {id: 20, cat: Movies, desc: "Netflix"}
+    - {id: 42, cat: TV, desc: "Tabii"}
+    - {id: 25, cat: TV, desc: "TOD"}
+    - {id: 27, cat: TV, desc: "TV+"}
+    - {id: 36, cat: PC, desc: "Program"}
+    - {id: 37, cat: PC/ISO, desc: "İşletim Sistemi"}
+    - {id: 38, cat: PC/Mac, desc: "Mac"}
+    - {id: 39, cat: PC/0day, desc: "Windows"}
+    - {id: 40, cat: TV/Sport, desc: "Spor"}
+    - {id: 41, cat: TV/Sport, desc: "Spor Sunumları"}
+    - {id: 17, cat: TV, desc: "VIP Sunumlar"}
+    - {id: 18, cat: TV, desc: "VIP Sunumlar"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -131,7 +132,7 @@ download:
     path: takethanks.php
     method: post
     inputs:
-      torrentid: "{{ re_replace .DownloadUri.AbsolutePath \"/download-torrent-(\\d+).*\" \"$1\"}}"
+      torrentid: "{{ .DownloadUri.Query.id }}"
 
 search:
   paths:
@@ -139,7 +140,7 @@ search:
       method: post
   keywordsfilters:
     - name: re_replace
-      args: [ "[\\s]+", "%" ]
+      args: ["[\\s]+", "%"]
   inputs:
     do: search
     keywords: "{{ if .Query.IMDBID }}{{ .Query.IMDBID }}{{ else }}{{ .Keywords }}{{ end }}"
@@ -153,28 +154,28 @@ search:
     order: "{{ if .Config.freeleech }}asc{{ else }}{{ .Config.type }}{{ end }}"
 
   rows:
-    selector: "table.sortable tr:has(a[href*=\"/download-torrent-\"]){{ if .Config.freeleech }}:has(img[src$=\"/freedownload.gif\"]){{ else }}{{ end }}"
+    selector: "table.sortable tr:has(a[href*=\"download.php?id=\"]){{ if .Config.freeleech }}:has(img[src$=\"/freedownload.gif\"]){{ else }}{{ end }}"
 
   fields:
     category:
-      selector: a[href*="/torrent-category-"]
+      selector: a[href*="browse.php?category="]
       attribute: href
       filters:
-        - name: regexp
-          args: "/torrent-category-([0-9]+)"
+        - name: querystring
+          args: category
     title_default:
       # is usually abbreaviated
-      selector: a[href*="/torrent-details-"]
+      selector: a[href*="details.php?id="]
     title:
       # while still abbreviated, is usually longer than the default
       selector: div.tooltip-content > div
       optional: true
       default: "{{ .Result.title_default }}"
     details:
-      selector: a[href*="/torrent-details-"]
+      selector: a[href*="details.php?id="]
       attribute: href
     download:
-      selector: a[href*="/download-torrent-"]
+      selector: a[href*="download.php?id="]
       attribute: href
     poster:
       selector: img[src*="/torrents/images/"]

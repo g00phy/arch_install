@@ -10,40 +10,40 @@ links:
 
 caps:
   categorymappings:
-    - { id: 32, cat: PC, desc: "Aplikacje PC" }
-    - { id: 33, cat: Books, desc: "eBooki/AudioBooki/Prasa" }
-    - { id: 65, cat: Movies/3D, desc: "Filmy/3D" }
-    - { id: 69, cat: Movies/UHD, desc: "Filmy/4K UHD" }
-    - { id: 28, cat: TV/Anime, desc: "Filmy/Animowane" }
-    - { id: 66, cat: Movies/BluRay, desc: "Filmy/BDRip" }
-    - { id: 61, cat: Movies/BluRay, desc: "Filmy/BRRip" }
-    - { id: 67, cat: Movies, desc: "Filmy/CAM-TC-TS" }
-    - { id: 58, cat: TV/Documentary, desc: "Filmy/Dokumentalne" }
-    - { id: 39, cat: Movies/HD, desc: "Filmy/Full HD" }
-    - { id: 36, cat: Movies/HD, desc: "Filmy/HD Ready" }
-    - { id: 64, cat: Movies, desc: "Filmy/Kino Polskie" }
-    - { id: 59, cat: Movies, desc: "Filmy/PACK" }
-    - { id: 40, cat: Movies/SD, desc: "Filmy/SD" }
-    - { id: 68, cat: Movies/WEB-DL, desc: "Filmy/WEB-DL" }
-    - { id: 62, cat: Console, desc: "Gry/Dodatki" }
-    - { id: 41, cat: Console, desc: "Gry/Konsole" }
-    - { id: 42, cat: PC/Games, desc: "Gry/PC" }
-    - { id: 44, cat: PC/Mobile-Other, desc: "GSM/PDA" }
-    - { id: 57, cat: Audio/Video, desc: "Koncerty/Teledyski" }
-    - { id: 63, cat: Audio/Lossless, desc: "Muzyka/FLAC" }
-    - { id: 46, cat: Audio/MP3, desc: "Muzyka/MP3" }
-    - { id: 47, cat: Other, desc: "Różne" }
-    - { id: 60, cat: TV/Sport, desc: "Sport" }
-    - { id: 53, cat: TV, desc: "TV Seriale" }
-    - { id: 56, cat: XXX, desc: "XXX" }
-    - { id: 70, cat: TV/Anime, desc: "Anime" }
+    - {id: 32, cat: PC, desc: "Aplikacje PC"}
+    - {id: 33, cat: Books, desc: "eBooki/AudioBooki/Prasa"}
+    - {id: 65, cat: Movies/3D, desc: "Filmy/3D"}
+    - {id: 69, cat: Movies/UHD, desc: "Filmy/4K UHD"}
+    - {id: 28, cat: TV/Anime, desc: "Filmy/Animowane"}
+    - {id: 66, cat: Movies/BluRay, desc: "Filmy/BDRip"}
+    - {id: 61, cat: Movies/BluRay, desc: "Filmy/BRRip"}
+    - {id: 67, cat: Movies, desc: "Filmy/CAM-TC-TS"}
+    - {id: 58, cat: TV/Documentary, desc: "Filmy/Dokumentalne"}
+    - {id: 39, cat: Movies/HD, desc: "Filmy/Full HD"}
+    - {id: 36, cat: Movies/HD, desc: "Filmy/HD Ready"}
+    - {id: 64, cat: Movies, desc: "Filmy/Kino Polskie"}
+    - {id: 59, cat: Movies, desc: "Filmy/PACK"}
+    - {id: 40, cat: Movies/SD, desc: "Filmy/SD"}
+    - {id: 68, cat: Movies/WEB-DL, desc: "Filmy/WEB-DL"}
+    - {id: 62, cat: Console, desc: "Gry/Dodatki"}
+    - {id: 41, cat: Console, desc: "Gry/Konsole"}
+    - {id: 42, cat: PC/Games, desc: "Gry/PC"}
+    - {id: 44, cat: PC/Mobile-Other, desc: "GSM/PDA"}
+    - {id: 57, cat: Audio/Video, desc: "Koncerty/Teledyski"}
+    - {id: 63, cat: Audio/Lossless, desc: "Muzyka/FLAC"}
+    - {id: 46, cat: Audio/MP3, desc: "Muzyka/MP3"}
+    - {id: 47, cat: Other, desc: "Różne"}
+    - {id: 60, cat: TV/Sport, desc: "Sport"}
+    - {id: 53, cat: TV, desc: "TV Seriale"}
+    - {id: 56, cat: XXX, desc: "XXX"}
+    - {id: 70, cat: TV/Anime, desc: "Anime"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -105,7 +105,7 @@ search:
   keywordsfilters:
     # remove the year from the titles as the site chokes on them during search #7424
     - name: re_replace
-      args: [ " +(?:19|20)\\d{2} *$", "" ]
+      args: [" +(?:19|20)\\d{2} *$", ""]
 
   rows:
     selector: table[border="1"][cellspacing="0"][cellpadding="5"] > tbody > tr:has(a[href^="details.php?id="])
@@ -125,13 +125,13 @@ search:
       selector: a[href^="details.php?id="]
       filters:
         - name: re_replace
-          args: [ "^(.*/)(.*)$", "$2" ]
+          args: ["^(.*/)(.*)$", "$2"]
         - name: trim
     title:
       text: "{{ if .Config.drop_polish_prefix }}{{ .Result.title_stripped }}{{ else }}{{ .Result.title_raw }}{{ end }}"
       filters:
         - name: re_replace
-          args: [ "(?i)^\\[PACK\\]\\s*", "" ]
+          args: ["(?i)^\\[PACK\\]\\s*", ""]
     details:
       selector: a[href^="details.php?id="]
       attribute: href
@@ -174,12 +174,12 @@ search:
       selector: td:nth-child(7)
       filters:
         - name: split
-          args: [ "/", 0 ]
+          args: ["/", 0]
     leechers:
       selector: td:nth-child(7)
       filters:
         - name: split
-          args: [ "/", 1 ]
+          args: ["/", 1]
     downloadvolumefactor:
       case:
         tr.darmowy: 0

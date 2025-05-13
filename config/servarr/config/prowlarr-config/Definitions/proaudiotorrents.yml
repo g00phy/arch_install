@@ -12,32 +12,32 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 24, cat: PC/0day, desc: "DJ Applications" }
-    - { id: 3, cat: Books/EBook, desc: "Ebooks" }
-    - { id: 4, cat: PC, desc: "Expansions & Addons" }
-    - { id: 5, cat: PC, desc: "HYBRID PC/MAC" }
-    - { id: 26, cat: Other, desc: "Independent" }
-    - { id: 19, cat: PC, desc: "Linux Plugins" }
-    - { id: 2, cat: PC/Mac, desc: "Mac Audio Apps" }
-    - { id: 15, cat: PC/Mac, desc: "Mac Updates" }
-    - { id: 22, cat: PC/Mac, desc: "Mac VST Fx" }
-    - { id: 21, cat: PC/Mac, desc: "Mac VST Instrument" }
-    - { id: 6, cat: Other/Misc, desc: "Misc / Other" }
-    - { id: 20, cat: TV/Documentary, desc: "Music Documentary" }
-    - { id: 18, cat: TV/Documentary, desc: "Musical Training" }
-    - { id: 1, cat: PC/0day, desc: "PC Audio Apps" }
-    - { id: 14, cat: PC/0day, desc: "PC Updates" }
-    - { id: 16, cat: Other, desc: "Refills" }
-    - { id: 7, cat: PC, desc: "RTAS" }
-    - { id: 8, cat: Audio, desc: "Samples / Libraries" }
-    - { id: 12, cat: Audio, desc: "SFX" }
-    - { id: 9, cat: TV/Documentary, desc: "Software Tutorials" }
-    - { id: 11, cat: PC, desc: "VST Instruments" }
-    - { id: 13, cat: PC, desc: "VST Plug-ins" }
+    - {id: 24, cat: PC/0day, desc: "DJ Applications"}
+    - {id: 3, cat: Books/EBook, desc: "Ebooks"}
+    - {id: 4, cat: PC, desc: "Expansions & Addons"}
+    - {id: 5, cat: PC, desc: "HYBRID PC/MAC"}
+    - {id: 26, cat: Other, desc: "Independent"}
+    - {id: 19, cat: PC, desc: "Linux Plugins"}
+    - {id: 2, cat: PC/Mac, desc: "Mac Audio Apps"}
+    - {id: 15, cat: PC/Mac, desc: "Mac Updates"}
+    - {id: 22, cat: PC/Mac, desc: "Mac VST Fx"}
+    - {id: 21, cat: PC/Mac, desc: "Mac VST Instrument"}
+    - {id: 6, cat: Other/Misc, desc: "Misc / Other"}
+    - {id: 20, cat: TV/Documentary, desc: "Music Documentary"}
+    - {id: 18, cat: TV/Documentary, desc: "Musical Training"}
+    - {id: 1, cat: PC/0day, desc: "PC Audio Apps"}
+    - {id: 14, cat: PC/0day, desc: "PC Updates"}
+    - {id: 16, cat: Other, desc: "Refills"}
+    - {id: 7, cat: PC, desc: "RTAS"}
+    - {id: 8, cat: Audio, desc: "Samples / Libraries"}
+    - {id: 12, cat: Audio, desc: "SFX"}
+    - {id: 9, cat: TV/Documentary, desc: "Software Tutorials"}
+    - {id: 11, cat: PC, desc: "VST Instruments"}
+    - {id: 13, cat: PC, desc: "VST Plug-ins"}
 
   modes:
-    search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -128,7 +128,7 @@ search:
       remove: a
       filters:
         - name: replace
-          args: [ "Uploaded ", "" ]
+          args: ["Uploaded ", ""]
         - name: timeago
     minimumratio:
       text: 1.0

@@ -11,56 +11,56 @@ links:
 
 caps:
   categorymappings:
-    - { id: 51, cat: Movies/3D, desc: "3D" }
-    - { id: 12, cat: TV, desc: "Анимация" }
-    - { id: 35, cat: Audio/Audiobook, desc: "Аудио-книги" }
-    - { id: 13, cat: Movies, desc: "Боевик" }
-    - { id: 52, cat: Movies, desc: "Биография" }
-    - { id: 33, cat: Movies, desc: "Военный" }
-    - { id: 45, cat: Audio/Video, desc: "Видеоклипы" }
-    - { id: 48, cat: Movies, desc: "Вестерн" }
-    - { id: 21, cat: Movies, desc: "Драма" }
-    - { id: 32, cat: TV/Documentary, desc: "Документальный" }
-    - { id: 39, cat: Movies, desc: "Детектив" }
-    - { id: 44, cat: Audio, desc: "Зарубежная музыка" }
-    - { id: 5, cat: PC/Games, desc: "Игры" }
-    - { id: 28, cat: Movies, desc: "Исторический" }
-    - { id: 18, cat: Movies, desc: "Катастрофа" }
-    - { id: 24, cat: Movies, desc: "Комедия" }
-    - { id: 36, cat: Movies, desc: "Криминал" }
-    - { id: 38, cat: Books, desc: "Книги и журналы" }
-    - { id: 53, cat: Movies, desc: "Классика" }
-    - { id: 54, cat: Audio, desc: "Классическая музыка" }
-    - { id: 19, cat: Movies, desc: "Мелодрама" }
-    - { id: 20, cat: Movies, desc: "Мультфильм" }
-    - { id: 31, cat: Movies, desc: "Мистика" }
-    - { id: 46, cat: Audio, desc: "Муз. сборники" }
-    - { id: 29, cat: Movies/Foreign, desc: "Наше кино" }
-    - { id: 49, cat: TV, desc: "Научно-популярное" }
-    - { id: 50, cat: TV, desc: "Новости" }
-    - { id: 27, cat: Movies, desc: "Приключения" }
-    - { id: 9, cat: Other, desc: "Разное" }
-    - { id: 43, cat: Audio/Foreign, desc: "Русская музыка" }
-    - { id: 1, cat: PC, desc: "Софт" }
-    - { id: 11, cat: TV, desc: "Сериалы" }
-    - { id: 37, cat: TV/Sport, desc: "Спорт" }
-    - { id: 47, cat: Movies, desc: "Сказки" }
-    - { id: 55, cat: Audio, desc: "Саундтрек" }
-    - { id: 25, cat: TV, desc: "ТВ-шоу" }
-    - { id: 22, cat: Movies, desc: "Триллер" }
-    - { id: 26, cat: Movies, desc: "Ужасы" }
-    - { id: 23, cat: Movies, desc: "Фантастика" }
-    - { id: 30, cat: Movies, desc: "Фэнтази" }
-    - { id: 42, cat: XXX, desc: "Эротика" }
-    - { id: 14, cat: Movies/HD, desc: "HDTV" }
-    - { id: 15, cat: Movies/DVD, desc: "DVD" }
+    - {id: 51, cat: Movies/3D, desc: "3D"}
+    - {id: 12, cat: TV, desc: "Анимация"}
+    - {id: 35, cat: Audio/Audiobook, desc: "Аудио-книги"}
+    - {id: 13, cat: Movies, desc: "Боевик"}
+    - {id: 52, cat: Movies, desc: "Биография"}
+    - {id: 33, cat: Movies, desc: "Военный"}
+    - {id: 45, cat: Audio/Video, desc: "Видеоклипы"}
+    - {id: 48, cat: Movies, desc: "Вестерн"}
+    - {id: 21, cat: Movies, desc: "Драма"}
+    - {id: 32, cat: TV/Documentary, desc: "Документальный"}
+    - {id: 39, cat: Movies, desc: "Детектив"}
+    - {id: 44, cat: Audio, desc: "Зарубежная музыка"}
+    - {id: 5, cat: PC/Games, desc: "Игры"}
+    - {id: 28, cat: Movies, desc: "Исторический"}
+    - {id: 18, cat: Movies, desc: "Катастрофа"}
+    - {id: 24, cat: Movies, desc: "Комедия"}
+    - {id: 36, cat: Movies, desc: "Криминал"}
+    - {id: 38, cat: Books, desc: "Книги и журналы"}
+    - {id: 53, cat: Movies, desc: "Классика"}
+    - {id: 54, cat: Audio, desc: "Классическая музыка"}
+    - {id: 19, cat: Movies, desc: "Мелодрама"}
+    - {id: 20, cat: Movies, desc: "Мультфильм"}
+    - {id: 31, cat: Movies, desc: "Мистика"}
+    - {id: 46, cat: Audio, desc: "Муз. сборники"}
+    - {id: 29, cat: Movies/Foreign, desc: "Наше кино"}
+    - {id: 49, cat: TV, desc: "Научно-популярное"}
+    - {id: 50, cat: TV, desc: "Новости"}
+    - {id: 27, cat: Movies, desc: "Приключения"}
+    - {id: 9, cat: Other, desc: "Разное"}
+    - {id: 43, cat: Audio/Foreign, desc: "Русская музыка"}
+    - {id: 1, cat: PC, desc: "Софт"}
+    - {id: 11, cat: TV, desc: "Сериалы"}
+    - {id: 37, cat: TV/Sport, desc: "Спорт"}
+    - {id: 47, cat: Movies, desc: "Сказки"}
+    - {id: 55, cat: Audio, desc: "Саундтрек"}
+    - {id: 25, cat: TV, desc: "ТВ-шоу"}
+    - {id: 22, cat: Movies, desc: "Триллер"}
+    - {id: 26, cat: Movies, desc: "Ужасы"}
+    - {id: 23, cat: Movies, desc: "Фантастика"}
+    - {id: 30, cat: Movies, desc: "Фэнтази"}
+    - {id: 42, cat: XXX, desc: "Эротика"}
+    - {id: 14, cat: Movies/HD, desc: "HDTV"}
+    - {id: 15, cat: Movies/DVD, desc: "DVD"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: stripcyrillic
@@ -106,7 +106,7 @@ search:
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
-      args: [ "(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", "" ]
+      args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
 
   rows:
     selector: table > tbody#highlighted > tr:has(a[href^="browse.php?cat="])
@@ -123,55 +123,55 @@ search:
       filters:
         # normalize to SXXEYY format
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1"]
         - name: re_replace
-          args: [ "(?i)\\s\\|\\sот\\s([\\w\\p{P}\\p{S}]+)$", "-$1" ]
+          args: ["(?i)\\s\\|\\sот\\s([\\w\\p{P}\\p{S}]+)$", "-$1"]
         - name: re_replace
-          args: [ "\\s\\|\\s(\\w{4,})$", "-$1" ]
+          args: ["\\s\\|\\s(\\w{4,})$", "-$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sRip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB\\sRip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sDL\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB\\sDL\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
     details:
@@ -182,7 +182,7 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "details", "download" ]
+          args: ["details", "download"]
     size:
       selector: td:nth-child(6)
     seeders:
@@ -194,31 +194,31 @@ search:
       attribute: title
       filters:
         - name: replace
-          args: [ " в ", " " ]
+          args: [" в ", " "]
         - name: replace
-          args: [ "января", "January" ]
+          args: ["января", "January"]
         - name: replace
-          args: [ "февраля", "February" ]
+          args: ["февраля", "February"]
         - name: replace
-          args: [ "марта", "March" ]
+          args: ["марта", "March"]
         - name: replace
-          args: [ "апреля", "April" ]
+          args: ["апреля", "April"]
         - name: replace
-          args: [ "мая", "May" ]
+          args: ["мая", "May"]
         - name: replace
-          args: [ "июня", "June" ]
+          args: ["июня", "June"]
         - name: replace
-          args: [ "июля", "July" ]
+          args: ["июля", "July"]
         - name: replace
-          args: [ "августа", "August" ]
+          args: ["августа", "August"]
         - name: replace
-          args: [ "сентября", "September" ]
+          args: ["сентября", "September"]
         - name: replace
-          args: [ "октября", "October" ]
+          args: ["октября", "October"]
         - name: replace
-          args: [ "ноября", "November" ]
+          args: ["ноября", "November"]
         - name: replace
-          args: [ "декабря", "December" ]
+          args: ["декабря", "December"]
         - name: append
           args: " +03:00" # MSK
         - name: dateparse

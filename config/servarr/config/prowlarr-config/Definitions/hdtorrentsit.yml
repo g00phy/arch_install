@@ -10,17 +10,17 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Movies" }
-    - { id: 2, cat: TV, desc: "TV Series" }
-    - { id: 3, cat: Audio, desc: "Music" }
-    - { id: 4, cat: Console, desc: "Game" }
-    - { id: 5, cat: PC, desc: "Application" }
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "TV Series"}
+    - {id: 3, cat: Audio, desc: "Music"}
+    - {id: 4, cat: Console, desc: "Game"}
+    - {id: 5, cat: PC, desc: "Application"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
 
 settings:
   - name: apikey
@@ -58,7 +58,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -74,10 +74,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -92,9 +92,9 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
     - name: re_replace # S01 to Stagione 1
-      args: [ "(?i)\\bS0*(\\d+)\\b", "Stagione $1" ]
+      args: ["(?i)\\bS0*(\\d+)\\b", "Stagione $1"]
 
   rows:
     selector: data
@@ -114,11 +114,11 @@ search:
       text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
       filters:
         - name: re_replace
-          args: [ "\\.", " " ]
+          args: ["\\.", " "]
         - name: re_replace # Stagione X --> S0X
-          args: [ "(?i)\\bStagion[ei]\\s?(\\d{1})\\b|\\bSeason'?s?\\s?(\\d{1})\\b", "S0$1$2" ]
+          args: ["(?i)\\bStagion[ei]\\s?(\\d{1})\\b|\\bSeason'?s?\\s?(\\d{1})\\b", "S0$1$2"]
         - name: re_replace # Stagione XX --> SXX
-          args: [ "(?i)\\bStagion[ei]\\s?(\\d{2,})\\b|\\bSeason'?s?\\s?(\\d{2,})\\b", "S$1$2" ]
+          args: ["(?i)\\bStagion[ei]\\s?(\\d{2,})\\b|\\bSeason'?s?\\s?(\\d{2,})\\b", "S$1$2"]
     details:
       selector: details_link
     download:
@@ -129,7 +129,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -140,11 +140,11 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)(Science Fiction)", "Science_Fiction" ]
+          args: ["(?i)(Science Fiction)", "Science_Fiction"]
         - name: re_replace
-          args: [ "(?i)(TV Movie)", "TV_Movie" ]
+          args: ["(?i)(TV Movie)", "TV_Movie"]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     seeders:

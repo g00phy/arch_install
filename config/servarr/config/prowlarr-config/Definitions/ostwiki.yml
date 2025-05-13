@@ -10,19 +10,19 @@ links:
 
 caps:
   categorymappings:
-    - { id: 12, cat: Audio, desc: "Anime Soundtracks" }
-    - { id: 19, cat: Audio, desc: "Discography" }
-    - { id: 13, cat: Audio, desc: "Game Soundtracks" }
-    - { id: 14, cat: Audio, desc: "Movie Soundtracks" }
-    - { id: 18, cat: Audio/MP3, desc: "MP3 Musical" }
-    - { id: 15, cat: Audio, desc: "Musical Soundtracks" }
-    - { id: 17, cat: Audio, desc: "Other Music" }
-    - { id: 20, cat: Audio/Lossless, desc: "Soundtrack .FLAC" }
-    - { id: 16, cat: Audio, desc: "Television Soundtracks" }
+    - {id: 12, cat: Audio, desc: "Anime Soundtracks"}
+    - {id: 19, cat: Audio, desc: "Discography"}
+    - {id: 13, cat: Audio, desc: "Game Soundtracks"}
+    - {id: 14, cat: Audio, desc: "Movie Soundtracks"}
+    - {id: 18, cat: Audio/MP3, desc: "MP3 Musical"}
+    - {id: 15, cat: Audio, desc: "Musical Soundtracks"}
+    - {id: 17, cat: Audio, desc: "Other Music"}
+    - {id: 20, cat: Audio/Lossless, desc: "Soundtrack .FLAC"}
+    - {id: 16, cat: Audio, desc: "Television Soundtracks"}
 
   modes:
-    search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    music-search: [q]
 
 settings:
   - name: username
@@ -93,7 +93,7 @@ search:
     - path: browse.php
   keywordsfilters:
     - name: re_replace
-      args: [ "[\\s]+", "%" ]
+      args: ["[\\s]+", "%"]
   inputs:
     do: search
     keywords: "{{ .Keywords }}"

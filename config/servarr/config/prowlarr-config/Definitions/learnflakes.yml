@@ -11,39 +11,39 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Books, desc: "LearnFlakes" }
-    - { id: 14, cat: Books, desc: "EMC" }
-    - { id: 16, cat: Books, desc: "SANS" }
-    - { id: 17, cat: Books, desc: "MOC " }
-    - { id: 31, cat: Books, desc: "CareerAcademy" }
-    - { id: 32, cat: Books, desc: "CBTNuggets" }
-    - { id: 33, cat: Books, desc: "INE" }
-    - { id: 34, cat: Books, desc: "Symantec" }
-    - { id: 35, cat: Books, desc: "Infiniteskills" }
-    - { id: 36, cat: Books, desc: "IPExpert" }
-    - { id: 37, cat: Books, desc: "Tuts+" }
-    - { id: 38, cat: Books, desc: "Pluralsight" }
-    - { id: 39, cat: Books/EBook, desc: "E-Books" }
-    - { id: 40, cat: Books, desc: "CBT-Videos" }
-    - { id: 41, cat: Books, desc: "Linux-CBT" }
-    - { id: 42, cat: Books, desc: "VTC" }
-    - { id: 43, cat: Books, desc: "Lynda" }
-    - { id: 44, cat: Books, desc: "TrainSignal" }
-    - { id: 50, cat: Books, desc: "LiveLessons" }
-    - { id: 47, cat: Books, desc: "Health" }
-    - { id: 48, cat: Books/Mags, desc: "Magazines" }
-    - { id: 49, cat: Books, desc: "CourseWare" }
-    - { id: 51, cat: Books, desc: "Programming" }
-    - { id: 52, cat: Books, desc: "Graphic & Design" }
-    - { id: 53, cat: Books, desc: "Udemy" }
-    - { id: 45, cat: Books/Other, desc: "Others" }
-    - { id: 54, cat: Books, desc: "SAP" }
-    - { id: 46, cat: Books, desc: "LF VIP" }
-    - { id: 55, cat: Books, desc: "Exclusive" }
+    - {id: 1, cat: Books, desc: "LearnFlakes"}
+    - {id: 14, cat: Books, desc: "EMC"}
+    - {id: 16, cat: Books, desc: "SANS"}
+    - {id: 17, cat: Books, desc: "MOC "}
+    - {id: 31, cat: Books, desc: "CareerAcademy"}
+    - {id: 32, cat: Books, desc: "CBTNuggets"}
+    - {id: 33, cat: Books, desc: "INE"}
+    - {id: 34, cat: Books, desc: "Symantec"}
+    - {id: 35, cat: Books, desc: "Infiniteskills"}
+    - {id: 36, cat: Books, desc: "IPExpert"}
+    - {id: 37, cat: Books, desc: "Tuts+"}
+    - {id: 38, cat: Books, desc: "Pluralsight"}
+    - {id: 39, cat: Books/EBook, desc: "E-Books"}
+    - {id: 40, cat: Books, desc: "CBT-Videos"}
+    - {id: 41, cat: Books, desc: "Linux-CBT"}
+    - {id: 42, cat: Books, desc: "VTC"}
+    - {id: 43, cat: Books, desc: "Lynda"}
+    - {id: 44, cat: Books, desc: "TrainSignal"}
+    - {id: 50, cat: Books, desc: "LiveLessons"}
+    - {id: 47, cat: Books, desc: "Health"}
+    - {id: 48, cat: Books/Mags, desc: "Magazines"}
+    - {id: 49, cat: Books, desc: "CourseWare"}
+    - {id: 51, cat: Books, desc: "Programming"}
+    - {id: 52, cat: Books, desc: "Graphic & Design"}
+    - {id: 53, cat: Books, desc: "Udemy"}
+    - {id: 45, cat: Books/Other, desc: "Others"}
+    - {id: 54, cat: Books, desc: "SAP"}
+    - {id: 46, cat: Books, desc: "LF VIP"}
+    - {id: 55, cat: Books, desc: "Exclusive"}
 
   modes:
-    search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -146,7 +146,7 @@ search:
       selector: div.torrentDetails > div:has(a[href*="&genre="])
       filters:
         - name: replace
-          args: [ "Genre:", "" ]
+          args: ["Genre:", ""]
     description:
       text: "{{ .Result.genre }}"
     size:

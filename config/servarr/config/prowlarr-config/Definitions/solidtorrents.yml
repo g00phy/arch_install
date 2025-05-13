@@ -46,11 +46,11 @@ caps:
     XXX: XXX
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: prefer_magnet_links
@@ -117,19 +117,19 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ ".", "" ]
+          args: [".", ""]
         - name: replace
-          args: [ "K", "00" ]
+          args: ["K", "00"]
         - name: replace
-          args: [ "M", "00000" ]
+          args: ["M", "00000"]
     grabs_nodot:
       selector: div.stats div:has(img[alt="Download"]):not(:contains("."))
       optional: true
       filters:
         - name: replace
-          args: [ "K", "000" ]
+          args: ["K", "000"]
         - name: replace
-          args: [ "M", "000000" ]
+          args: ["M", "000000"]
     grabs:
       text: "{{ if or .Result.grabs_dot .Result.grabs_nodot }}{{ or .Result.grabs_dot .Result.grabs_nodot }}{{ else }}0{{ end }}"
     size:
@@ -139,19 +139,19 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ ".", "" ]
+          args: [".", ""]
         - name: replace
-          args: [ "K", "00" ]
+          args: ["K", "00"]
         - name: replace
-          args: [ "M", "00000" ]
+          args: ["M", "00000"]
     seeders_nodot:
       selector: div.stats div:has(img[alt="Seeder"]):not(:contains("."))
       optional: true
       filters:
         - name: replace
-          args: [ "K", "000" ]
+          args: ["K", "000"]
         - name: replace
-          args: [ "M", "000000" ]
+          args: ["M", "000000"]
     seeders:
       text: "{{ if or .Result.seeders_dot .Result.seeders_nodot }}{{ or .Result.seeders_dot .Result.seeders_nodot }}{{ else }}0{{ end }}"
     leechers_dot:
@@ -159,19 +159,19 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ ".", "" ]
+          args: [".", ""]
         - name: replace
-          args: [ "K", "00" ]
+          args: ["K", "00"]
         - name: replace
-          args: [ "M", "00000" ]
+          args: ["M", "00000"]
     leechers_nodot:
       selector: div.stats div:has(img[alt="Leecher"]):not(:contains("."))
       optional: true
       filters:
         - name: replace
-          args: [ "K", "000" ]
+          args: ["K", "000"]
         - name: replace
-          args: [ "M", "000000" ]
+          args: ["M", "000000"]
     leechers:
       text: "{{ if or .Result.leechers_dot .Result.leechers_nodot }}{{ or .Result.leechers_dot .Result.leechers_nodot }}{{ else }}0{{ end }}"
     date:

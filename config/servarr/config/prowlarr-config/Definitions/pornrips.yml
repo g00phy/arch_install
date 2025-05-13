@@ -13,9 +13,9 @@ caps:
     XXX: XXX
 
   modes:
-    search: [ q ]
+    search: [q]
 
-settings: [ ]
+settings: []
 
 download:
   selectors:

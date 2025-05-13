@@ -10,18 +10,18 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: PC/Mac, desc: Applications }
-    - { id: 2, cat: PC/Games, desc: Games }
-    - { id: 3, cat: PC/Mobile-iOS, desc: IOS Applications }
-    - { id: 4, cat: PC/Mobile-iOS, desc: IOS Games }
-    - { id: 5, cat: Other, desc: Graphics }
-    - { id: 6, cat: Audio, desc: Audio }
-    - { id: 7, cat: Other, desc: Tutorials }
-    - { id: 8, cat: Other, desc: Other }
+    - {id: 1, cat: PC/Mac, desc: Applications}
+    - {id: 2, cat: PC/Games, desc: Games}
+    - {id: 3, cat: PC/Mobile-iOS, desc: IOS Applications}
+    - {id: 4, cat: PC/Mobile-iOS, desc: IOS Games}
+    - {id: 5, cat: Other, desc: Graphics}
+    - {id: 6, cat: Audio, desc: Audio}
+    - {id: 7, cat: Other, desc: Tutorials}
+    - {id: 8, cat: Other, desc: Other}
 
   modes:
-    search: [ q ]
-    music-search: [ q, year, genre ]
+    search: [q]
+    music-search: [q, year, genre]
 
 settings:
   - name: username

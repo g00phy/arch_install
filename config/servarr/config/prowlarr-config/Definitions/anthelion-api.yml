@@ -14,17 +14,17 @@ links:
 
 caps:
   categorymappings:
-    - { id: 2000, cat: Movies }
-    - { id: 2030, cat: Movies/SD }
-    - { id: 2040, cat: Movies/HD }
-    - { id: 2045, cat: Movies/UHD }
-    - { id: 2050, cat: Movies/BluRay }
-    - { id: 2080, cat: Movies/WEB-DL }
-    - { id: 8000, cat: Other }
+    - {id: 2000, cat: Movies}
+    - {id: 2030, cat: Movies/SD}
+    - {id: 2040, cat: Movies/HD}
+    - {id: 2045, cat: Movies/UHD}
+    - {id: 2050, cat: Movies/BluRay}
+    - {id: 2080, cat: Movies/WEB-DL}
+    - {id: 8000, cat: Other}
 
   modes:
-    search: [ q ]
-    movie-search: [ q, imdbid, tmdbid ]
+    search: [q]
+    movie-search: [q, imdbid, tmdbid]
     # note: the api any supports movie search so there is no tv season/episode support.
     # not using year search because torznab adds it to the q= which results in &q=keyword+2022&year=2022 sent to api !?!
 
@@ -83,7 +83,7 @@ search:
       selector: category
       filters:
         - name: split
-          args: [ ",", -1 ]
+          args: [",", -1]
     year:
       selector: year
       optional: true
@@ -97,7 +97,7 @@ search:
       selector: media
       filters:
         - name: replace
-          args: [ "WEB", "WEB-DL" ]
+          args: ["WEB", "WEB-DL"]
     _resolution:
       selector: resolution
     _audioFormat:
@@ -110,7 +110,7 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ ",", " " ]
+          args: [",", " "]
     _language:
       selector: language
       optional: true
@@ -126,9 +126,9 @@ search:
         - name: append
           args: " {{ .Result.year }} {{ .Result._resolution }} {{ .Result._media }} {{ .Result._container }} {{ .Result._codec }} {{ .Result._audioFormat }}{{ if .Result._subbing }} Subs{{ else }}{{ end }}{{ if .Result._flags }} {{ .Result._flags }}{{ else }}{{ end }}{{ if .Result._language }} {{ .Result._language }}{{ else }}{{ end }}{{ if and (.Result._releaseGroup) (ne .Result._releaseGroup \"NULL\") }}-{{ .Result._releaseGroup }}{{ else }}{{ end }}"
         - name: replace
-          args: [ "M2TS H265", "M2TS HEVC" ]
+          args: ["M2TS H265", "M2TS HEVC"]
         - name: replace
-          args: [ "M2TS H264", "M2TS AVC" ]
+          args: ["M2TS H264", "M2TS AVC"]
     details:
       selector: guid
     download:
@@ -145,7 +145,7 @@ search:
       selector: tags
       filters:
         - name: replace
-          args: [ ".", "_" ]
+          args: [".", "_"]
     description:
       text: "{{ .Result.genre }}"
     files:

@@ -10,10 +10,10 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: XXX, desc: "XXX" }
+    - {id: 1, cat: XXX, desc: "XXX"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username
@@ -82,7 +82,7 @@ search:
       selector: span.subnote
       filters:
         - name: replace
-          args: [ "Added on ", "" ]
+          args: ["Added on ", ""]
         - name: append
           args: " +00:00" # GMT
         - name: dateparse

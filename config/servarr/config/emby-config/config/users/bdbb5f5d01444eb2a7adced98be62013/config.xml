@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<UserConfiguration>
-    <PlayDefaultAudioTrack>true</PlayDefaultAudioTrack>
-    <SubtitleLanguagePreference>en</SubtitleLanguagePreference>
-    <DisplayMissingEpisodes>false</DisplayMissingEpisodes>
-    <SubtitleMode>Smart</SubtitleMode>
-    <OrderedViews/>
-    <LatestItemsExcludes/>
-    <MyMediaExcludes/>
-    <HidePlayedInLatest>true</HidePlayedInLatest>
-    <HidePlayedInMoreLikeThis>false</HidePlayedInMoreLikeThis>
-    <HidePlayedInSuggestions>false</HidePlayedInSuggestions>
-    <RememberAudioSelections>true</RememberAudioSelections>
-    <RememberSubtitleSelections>true</RememberSubtitleSelections>
-    <EnableNextEpisodeAutoPlay>true</EnableNextEpisodeAutoPlay>
-    <ResumeRewindSeconds>0</ResumeRewindSeconds>
-    <IntroSkipMode>ShowButton</IntroSkipMode>
+<UserConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlayDefaultAudioTrack>true</PlayDefaultAudioTrack>
+  <SubtitleLanguagePreference>en</SubtitleLanguagePreference>
+  <DisplayMissingEpisodes>false</DisplayMissingEpisodes>
+  <SubtitleMode>Smart</SubtitleMode>
+  <OrderedViews />
+  <LatestItemsExcludes />
+  <MyMediaExcludes />
+  <HidePlayedInLatest>true</HidePlayedInLatest>
+  <HidePlayedInMoreLikeThis>false</HidePlayedInMoreLikeThis>
+  <HidePlayedInSuggestions>false</HidePlayedInSuggestions>
+  <RememberAudioSelections>true</RememberAudioSelections>
+  <RememberSubtitleSelections>true</RememberSubtitleSelections>
+  <EnableNextEpisodeAutoPlay>true</EnableNextEpisodeAutoPlay>
+  <ResumeRewindSeconds>0</ResumeRewindSeconds>
+  <IntroSkipMode>ShowButton</IntroSkipMode>
 </UserConfiguration>

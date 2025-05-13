@@ -15,7 +15,7 @@ caps:
     XXX: XXX
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: sort
@@ -39,11 +39,11 @@ settings:
 search:
   headers:
     # prevent redirect
-    Accept: [ "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" ]
+    Accept: ["text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"]
   keywordsfilters:
     # replace space between keywords with - to prevent 404 Not Found
     - name: re_replace
-      args: [ " ", "-" ]
+      args: [" ", "-"]
     - name: tolower
   paths:
     # return results for 'of' if there are no search parms supplied (for use with the TEST button)

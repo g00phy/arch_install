@@ -13,25 +13,25 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Films" }
-    - { id: 2, cat: TV, desc: "Séries" }
+    - {id: 1, cat: Movies, desc: "Films"}
+    - {id: 2, cat: TV, desc: "Séries"}
     # Fake ids to match release types by desc
-    - { id: 101, cat: Movies, desc: "Film" }
-    - { id: 103, cat: Movies/Other, desc: "Dessin animé" }
-    - { id: 105, cat: TV, desc: "Série" }
-    - { id: 106, cat: TV/Anime, desc: "Série Animée" }
-    - { id: 107, cat: Movies/Other, desc: "Film d'animation" }
-    - { id: 109, cat: Audio/Video, desc: "Concert" }
-    - { id: 111, cat: TV/Documentary, desc: "Documentaire" }
-    - { id: 113, cat: Movies/Other, desc: "Court-métrage" }
-    - { id: 114, cat: Movies/Other, desc: "Clip" }
-    - { id: 115, cat: Movies/Other, desc: "Démonstration" }
-    - { id: 121, cat: Other, desc: "Autre" }
+    - {id: 101, cat: Movies, desc: "Film"}
+    - {id: 103, cat: Movies/Other, desc: "Dessin animé"}
+    - {id: 105, cat: TV, desc: "Série"}
+    - {id: 106, cat: TV/Anime, desc: "Série Animée"}
+    - {id: 107, cat: Movies/Other, desc: "Film d'animation"}
+    - {id: 109, cat: Audio/Video, desc: "Concert"}
+    - {id: 111, cat: TV/Documentary, desc: "Documentaire"}
+    - {id: 113, cat: Movies/Other, desc: "Court-métrage"}
+    - {id: 114, cat: Movies/Other, desc: "Clip"}
+    - {id: 115, cat: Movies/Other, desc: "Démonstration"}
+    - {id: 121, cat: Other, desc: "Autre"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, tmdbid, genre ]
-    movie-search: [ q, tmdbid, genre ]
+    search: [q]
+    tv-search: [q, season, ep, tmdbid, genre]
+    movie-search: [q, tmdbid, genre]
   allowrawsearch: true
 
 settings:
@@ -120,7 +120,7 @@ search:
   keywordsfilters:
     # strip season
     - name: re_replace
-      args: [ "(?i)\\bS\\d{1,3}\\b", "" ]
+      args: ["(?i)\\bS\\d{1,3}\\b", ""]
     - name: trim
 
   rows:
@@ -144,7 +144,7 @@ search:
       selector: group.tags
       filters:
         - name: re_replace
-          args: [ "(?i)(science.fiction)", "science_fiction" ]
+          args: ["(?i)(science.fiction)", "science_fiction"]
     poster:
       selector: group.cover
       optional: true
@@ -175,34 +175,34 @@ search:
       optional: true
       filters:
         - name: re_replace
-          args: [ "^0$", "" ]
+          args: ["^0$", ""]
         - name: re_replace
-          args: [ "^([1-9])$", "S0$1" ]
+          args: ["^([1-9])$", "S0$1"]
         - name: re_replace
-          args: [ "^(\\d{2,})$", "S$1" ]
+          args: ["^(\\d{2,})$", "S$1"]
     _episode:
       selector: episode
       optional: true
       filters:
         - name: re_replace
-          args: [ "^0$", "" ]
+          args: ["^0$", ""]
         - name: re_replace
-          args: [ "^([1-9])$", "E0$1" ]
+          args: ["^([1-9])$", "E0$1"]
         - name: re_replace
-          args: [ "^(\\d{2,})$", "E$1" ]
+          args: ["^(\\d{2,})$", "E$1"]
     _episode_info:
       text: "{{ .Result._season }}{{ .Result._episode }}"
     _format:
       selector: format
       filters:
         - name: replace
-          args: [ "Blu-Ray Original", "COMPLETE BLURAY" ]
+          args: ["Blu-Ray Original", "COMPLETE BLURAY"]
         - name: re_replace
-          args: [ "Blu-Ray Remux", "Remux" ]
+          args: ["Blu-Ray Remux", "Remux"]
         - name: re_replace
-          args: [ "Blu-Ray Rip", "BluRay.Rip" ]
+          args: ["Blu-Ray Rip", "BluRay.Rip"]
         - name: re_replace
-          args: [ "mHD", "mHD.BluRay.Rip" ]
+          args: ["mHD", "mHD.BluRay.Rip"]
     _encoding:
       selector: encoding
     _release_group:
@@ -246,7 +246,7 @@ search:
         - name: append
           args: "{{ if or (eq .Result._vf2 \"True\") (or (eq .Result._vff \"True\") (or (eq .Result._vfq \"True\") (or (eq .Result._vfi \"True\")  (eq .Result._vf \"True\")))) }}.MULTI{{ else }}{{ end }}"
         - name: re_replace
-          args: [ "(\\.MULTI)\\1", ".MULTI" ]
+          args: ["(\\.MULTI)\\1", ".MULTI"]
         - name: append
           args: "{{ if and (.Config.add_version_francophone_to_title) (eq .Result._vf2 \"True\") }}.VF2{{ else }}{{ end }}"
         - name: append
@@ -260,9 +260,9 @@ search:
         - name: append
           args: "{{ if eq .Result._vof \"True\" }}.FRENCH{{ else }}{{ end }}"
         - name: re_replace
-          args: [ "[\\s.]+", "." ]
+          args: ["[\\s.]+", "."]
         - name: re_replace
-          args: [ "\\.*([\\-:,])\\.*", "$1" ]
+          args: ["\\.*([\\-:,])\\.*", "$1"]
         - name: trim
         - name: trim
           args: .
@@ -273,7 +273,7 @@ search:
       optional: true
       filters:
         - name: re_replace
-          args: [ "\\s÷$", "" ]
+          args: ["\\s÷$", ""]
         - name: append
           args: " {{ if and (.Config.add_hybrid_features_to_filename) (eq .Result._hdr \"True\") }}[HDR]{{ else }}{{ end }}{{ if and (.Config.add_hybrid_features_to_filename) (eq .Result._hdr10plus \"True\") }}[HDR10+]{{ else }}{{ end }}{{ if and (.Config.add_hybrid_features_to_filename) (eq .Result._dovi \"True\") }}[DoVi]{{ else }}{{ end }}"
     title_phase1:
@@ -282,21 +282,21 @@ search:
       text: "{{ .Result.title_phase1 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(vostfr|subfrench)\\b", "ENGLISH" ]
+          args: ["(?i)\\b(vostfr|subfrench)\\b", "ENGLISH"]
     title_phase2:
       text: "{{ if .Config.vostfr }}{{ .Result.title_vostfr }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     title_multilang:
       text: "{{ .Result.title_phase2 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     description:
       text: "{{ .Result.title_filename }}"
       filters:
         - name: re_replace
-          args: [ "\\s÷$", "" ]
+          args: ["\\s÷$", ""]
     _free:
       selector: isFreeleech
     downloadvolumefactor:

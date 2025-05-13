@@ -10,32 +10,32 @@ links:
 
 caps:
   categorymappings:
-    - { id: 2, cat: TV, desc: "TV Show" }
-    - { id: 1, cat: Movies, desc: "Movie" }
-    - { id: 10, cat: Movies/UHD, desc: "4K Movie" }
-    - { id: 13, cat: TV, desc: "TV Boxsets" }
-    - { id: 12, cat: PC/Games, desc: "Linux Game" }
-    - { id: 3, cat: PC/Games, desc: "PC Game" }
-    - { id: 5, cat: Audio/Lossless, desc: "Music" }
-    - { id: 6, cat: TV/Anime, desc: "Anime" }
-    - { id: 4, cat: Console/Other, desc: "NSW Game" }
-    - { id: 8, cat: TV/Sport, desc: "Sports" }
-    - { id: 7, cat: Books/EBook, desc: "E-Books" }
-    - { id: 9, cat: Audio/Audiobook, desc: "Audiobook" }
-    - { id: 15, cat: Other, desc: "Education" }
-    - { id: 16, cat: PC/0day, desc: "Windows" }
-    - { id: 17, cat: PC, desc: "Linux" }
-    - { id: 18, cat: PC/Mac, desc: "macOS" }
-    - { id: 14, cat: Console/PS4, desc: "PS4" }
-    - { id: 19, cat: Console/XBox, desc: "Xbox" }
-    - { id: 11, cat: Other, desc: "Other" }
+    - {id: 2, cat: TV, desc: "TV Show"}
+    - {id: 1, cat: Movies, desc: "Movie"}
+    - {id: 10, cat: Movies/UHD, desc: "4K Movie"}
+    - {id: 13, cat: TV, desc: "TV Boxsets"}
+    - {id: 12, cat: PC/Games, desc: "Linux Game"}
+    - {id: 3, cat: PC/Games, desc: "PC Game"}
+    - {id: 5, cat: Audio/Lossless, desc: "Music"}
+    - {id: 6, cat: TV/Anime, desc: "Anime"}
+    - {id: 4, cat: Console/Other, desc: "NSW Game"}
+    - {id: 8, cat: TV/Sport, desc: "Sports"}
+    - {id: 7, cat: Books/EBook, desc: "E-Books"}
+    - {id: 9, cat: Audio/Audiobook, desc: "Audiobook"}
+    - {id: 15, cat: Other, desc: "Education"}
+    - {id: 16, cat: PC/0day, desc: "Windows"}
+    - {id: 17, cat: PC, desc: "Linux"}
+    - {id: 18, cat: PC/Mac, desc: "macOS"}
+    - {id: 14, cat: Console/PS4, desc: "PS4"}
+    - {id: 19, cat: Console/XBox, desc: "Xbox"}
+    - {id: 11, cat: Other, desc: "Other"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, tmdbid ]
-    movie-search: [ q, tmdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, tmdbid]
+    movie-search: [q, tmdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -88,10 +88,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -104,7 +104,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -132,18 +132,18 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     tmdbid:
       selector: tmdb_id
     genre:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)(Science Fiction)", "Science_Fiction" ]
+          args: ["(?i)(Science Fiction)", "Science_Fiction"]
         - name: re_replace
-          args: [ "(?i)(TV Movie)", "TV_Movie" ]
+          args: ["(?i)(TV Movie)", "TV_Movie"]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     seeders:
@@ -187,9 +187,9 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-    # global MR is 1.0 but torrents must be seeded for 10 days regardless of ratio
-    #    minimumratio:
-    #      text: 1.0
+# global MR is 1.0 but torrents must be seeded for 10 days regardless of ratio
+#    minimumratio:
+#      text: 1.0
     minimumseedtime:
       # 10 days (as seconds = 10 x 24 x 60 x 60)
       text: 864000

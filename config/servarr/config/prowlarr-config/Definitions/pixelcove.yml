@@ -11,57 +11,57 @@ links:
 caps:
   categorymappings:
     # Computer
-    - { id: 10, cat: PC/Games, desc: "Windows" }
-    - { id: 11, cat: PC/Mac, desc: "Macintosh" }
-    - { id: 47, cat: PC, desc: "Linux" }
-    - { id: 56, cat: PC, desc: "VR" }
+    - {id: 10, cat: PC/Games, desc: "Windows"}
+    - {id: 11, cat: PC/Mac, desc: "Macintosh"}
+    - {id: 47, cat: PC, desc: "Linux"}
+    - {id: 56, cat: PC, desc: "VR"}
     # Microsoft
-    - { id: 14, cat: Console/XBox, desc: "Xbox" }
-    - { id: 61, cat: Console/XBox 360, desc: "Xbox 360" }
-    - { id: 62, cat: Console/XBox One, desc: "Xbox One" }
+    - {id: 14, cat: Console/XBox, desc: "Xbox"}
+    - {id: 61, cat: Console/XBox 360, desc: "Xbox 360"}
+    - {id: 62, cat: Console/XBox One, desc: "Xbox One"}
     # Sony
-    - { id: 43, cat: Console/PS3, desc: "Playstation " }
-    - { id: 63, cat: Console/PS3, desc: "Playstation 2" }
-    - { id: 64, cat: Console/PS3, desc: "Playstation 3" }
-    - { id: 67, cat: Console/PS4, desc: "Playstation 4" }
-    - { id: 12, cat: Console/Other, desc: "PSN" }
+    - {id: 43, cat: Console/PS3, desc: "Playstation "}
+    - {id: 63, cat: Console/PS3, desc: "Playstation 2"}
+    - {id: 64, cat: Console/PS3, desc: "Playstation 3"}
+    - {id: 67, cat: Console/PS4, desc: "Playstation 4"}
+    - {id: 12, cat: Console/Other, desc: "PSN"}
     # Nintendo
-    - { id: 57, cat: Console/Other, desc: "Gamecube" }
-    - { id: 44, cat: Console/Wii, desc: "Wii" }
-    - { id: 46, cat: Console/Wii, desc: "Wii U" }
-    - { id: 76, cat: Console/Other, desc: "Switch" }
+    - {id: 57, cat: Console/Other, desc: "Gamecube"}
+    - {id: 44, cat: Console/Wii, desc: "Wii"}
+    - {id: 46, cat: Console/Wii, desc: "Wii U"}
+    - {id: 76, cat: Console/Other, desc: "Switch"}
     # Handheld
-    - { id: 15, cat: Console/NDS, desc: "DS" }
-    - { id: 68, cat: Console/NDS, desc: "3DS" }
-    - { id: 69, cat: Console/PSP, desc: "PSP" }
-    - { id: 70, cat: Console/PS Vita, desc: "PSVita" }
+    - {id: 15, cat: Console/NDS, desc: "DS"}
+    - {id: 68, cat: Console/NDS, desc: "3DS"}
+    - {id: 69, cat: Console/PSP, desc: "PSP"}
+    - {id: 70, cat: Console/PS Vita, desc: "PSVita"}
     # Mobile
-    - { id: 65, cat: PC/Mobile-iOS, desc: "iOS" }
-    - { id: 49, cat: PC/Mobile-Android, desc: "Android" }
-    - { id: 66, cat: PC/Mobile-Other, desc: "Windows Mobile" }
+    - {id: 65, cat: PC/Mobile-iOS, desc: "iOS"}
+    - {id: 49, cat: PC/Mobile-Android, desc: "Android"}
+    - {id: 66, cat: PC/Mobile-Other, desc: "Windows Mobile"}
     # Reading
-    - { id: 53, cat: Books, desc: "Books/Mags" }
-    - { id: 60, cat: Books, desc: "Comics" }
-    - { id: 17, cat: Books, desc: "Guides" }
+    - {id: 53, cat: Books, desc: "Books/Mags"}
+    - {id: 60, cat: Books, desc: "Comics"}
+    - {id: 17, cat: Books, desc: "Guides"}
     # Media
-    - { id: 58, cat: Audio/Video, desc: "Gaming Videos" }
-    - { id: 52, cat: Audio, desc: "OST" }
-    - { id: 55, cat: Other, desc: "Time for a Break" }
-    - { id: 81, cat: Audio/Video, desc: "Videos" }
+    - {id: 58, cat: Audio/Video, desc: "Gaming Videos"}
+    - {id: 52, cat: Audio, desc: "OST"}
+    - {id: 55, cat: Other, desc: "Time for a Break"}
+    - {id: 81, cat: Audio/Video, desc: "Videos"}
     # Various
-    - { id: 59, cat: Other, desc: "Mods" }
-    - { id: 54, cat: Other, desc: "Updates/Fixes" }
-    - { id: 71, cat: PC/0day, desc: "Applications/Tools" }
-    - { id: 48, cat: Other, desc: "Retro" }
-    - { id: 72, cat: Other, desc: "Board Games" }
-    - { id: 75, cat: Other, desc: "Paper Crafting" }
-    - { id: 77, cat: Other, desc: "Arcade" }
-    - { id: 78, cat: Other, desc: "Other" }
+    - {id: 59, cat: Other, desc: "Mods"}
+    - {id: 54, cat: Other, desc: "Updates/Fixes"}
+    - {id: 71, cat: PC/0day, desc: "Applications/Tools"}
+    - {id: 48, cat: Other, desc: "Retro"}
+    - {id: 72, cat: Other, desc: "Board Games"}
+    - {id: 75, cat: Other, desc: "Paper Crafting"}
+    - {id: 77, cat: Other, desc: "Arcade"}
+    - {id: 78, cat: Other, desc: "Other"}
 
   modes:
-    search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -154,9 +154,9 @@ search:
         - name: regexp
           args: "src=\\\\\"(.*?)\\\\\""
         - name: re_replace
-          args: [ "\\\\(.)", "$1" ]
+          args: ["\\\\(.)", "$1"]
         - name: replace
-          args: [ "/static/common/noartwork/noimage.png", "" ]
+          args: ["/static/common/noartwork/noimage.png", ""]
     files:
       selector: td:nth-child(3)
     date_elapsed:
@@ -168,7 +168,7 @@ search:
         - name: dateparse
           args: "MMM dd yyyy, HH:mm"
     date_added:
-      # <td class="nobr"><span class="time" alt="Nov 17 2022, 01:44" title="Nov 17 2022, 01:44">13 hours ago</span></td>
+    # <td class="nobr"><span class="time" alt="Nov 17 2022, 01:44" title="Nov 17 2022, 01:44">13 hours ago</span></td>
       selector: td:nth-child(5) > span:contains("ago")
       attribute: title
       # auto adjusted by site account profile

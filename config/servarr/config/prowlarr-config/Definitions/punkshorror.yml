@@ -10,36 +10,36 @@ links:
 
 caps:
   categorymappings:
-    - { id: 87, cat: Movies, desc: "Action Eng" }
-    - { id: 88, cat: Movies, desc: "Action Hun" }
-    - { id: 79, cat: TV/Documentary, desc: "Dokumentumfilm" }
-    - { id: 72, cat: Movies/HD, desc: "HD Eng" }
-    - { id: 71, cat: Movies/HD, desc: "HD Hun" }
-    - { id: 89, cat: Movies, desc: "Horror Anime" }
-    - { id: 78, cat: Books, desc: "Horror Ebook" }
-    - { id: 66, cat: Movies, desc: "Horror Eng" }
-    - { id: 73, cat: PC/Games, desc: "Horror Game" }
-    - { id: 65, cat: Movies, desc: "Horror Hun" }
-    - { id: 82, cat: XXX, desc: "Horror XXX" }
-    - { id: 94, cat: Movies, desc: "Kamerás filmek" }
-    - { id: 98, cat: Movies/HD, desc: "MD-HD" }
-    - { id: 86, cat: Movies, desc: "Mystery-Fantasy Eng" }
-    - { id: 85, cat: Movies, desc: "Mystery-Fantasy Hun" }
-    - { id: 83, cat: Movies, desc: "Punk Release" }
-    - { id: 76, cat: Movies, desc: "Retro Film" }
-    - { id: 70, cat: Movies, desc: "Scfi Eng" }
-    - { id: 69, cat: Movies, desc: "Scfi Hun" }
-    - { id: 75, cat: TV, desc: "Sorozat Eng" }
-    - { id: 74, cat: TV, desc: "Sorozat Hun" }
-    - { id: 68, cat: Movies, desc: "Thriller Eng" }
-    - { id: 67, cat: Movies, desc: "Thriller Hun" }
-    - { id: 84, cat: Movies/SD, desc: "VHS Ritkaságok" }
+    - {id: 87, cat: Movies, desc: "Action Eng"}
+    - {id: 88, cat: Movies, desc: "Action Hun"}
+    - {id: 79, cat: TV/Documentary, desc: "Dokumentumfilm"}
+    - {id: 72, cat: Movies/HD, desc: "HD Eng"}
+    - {id: 71, cat: Movies/HD, desc: "HD Hun"}
+    - {id: 89, cat: Movies, desc: "Horror Anime"}
+    - {id: 78, cat: Books, desc: "Horror Ebook"}
+    - {id: 66, cat: Movies, desc: "Horror Eng"}
+    - {id: 73, cat: PC/Games, desc: "Horror Game"}
+    - {id: 65, cat: Movies, desc: "Horror Hun"}
+    - {id: 82, cat: XXX, desc: "Horror XXX"}
+    - {id: 94, cat: Movies, desc: "Kamerás filmek"}
+    - {id: 98, cat: Movies/HD, desc: "MD-HD"}
+    - {id: 86, cat: Movies, desc: "Mystery-Fantasy Eng"}
+    - {id: 85, cat: Movies, desc: "Mystery-Fantasy Hun"}
+    - {id: 83, cat: Movies, desc: "Punk Release"}
+    - {id: 76, cat: Movies, desc: "Retro Film"}
+    - {id: 70, cat: Movies, desc: "Scfi Eng"}
+    - {id: 69, cat: Movies, desc: "Scfi Hun"}
+    - {id: 75, cat: TV, desc: "Sorozat Eng"}
+    - {id: 74, cat: TV, desc: "Sorozat Hun"}
+    - {id: 68, cat: Movies, desc: "Thriller Eng"}
+    - {id: 67, cat: Movies, desc: "Thriller Hun"}
+    - {id: 84, cat: Movies/SD, desc: "VHS Ritkaságok"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -132,9 +132,9 @@ search:
       selector: td:nth-child(2) > b > font
       filters:
         - name: replace
-          args: [ "\xA0", "" ]
+          args: ["\xA0", ""]
         - name: replace
-          args: [ "Feltöltve:", "" ]
+          args: ["Feltöltve:", ""]
         - name: append
           args: " +01:00" # CET
         - name: dateparse

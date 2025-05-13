@@ -10,39 +10,39 @@ links:
 
 caps:
   categorymappings:
-    - { id: 75, cat: Movies/UHD, desc: "Movies 4K" }
-    - { id: 49, cat: Movies/DVD, desc: "Movies DVD-R" }
-    - { id: 68, cat: PC/Mobile-Android, desc: "Андроид (Android)" }
-    - { id: 72, cat: PC/Mobile-Android, desc: "Андроид - Апликации (Android)" }
-    - { id: 47, cat: PC, desc: "Апликации (Software)" }
-    - { id: 71, cat: PC/Mac, desc: "Апликации - Mac OS" }
-    - { id: 70, cat: PC/0day, desc: "Апликации - Window 7/8.1/10/11" }
-    - { id: 63, cat: Audio/Audiobook, desc: "Аудио (Audiobooks)" }
-    - { id: 60, cat: TV/Documentary, desc: "Документарци (Documentaries)" }
-    - { id: 61, cat: TV, desc: "Домашни серии (TV Local)" }
-    - { id: 69, cat: TV, desc: "Домашни серии - Српски / Хрватски / Босански (TV Local)" }
-    - { id: 57, cat: Books/EBook, desc: "Е-Книги (EBooks)" }
-    - { id: 53, cat: Console, desc: "Игри (Games)" }
-    - { id: 54, cat: Audio/Video, desc: "Концерти (Concerts)" }
-    - { id: 52, cat: Audio/Video, desc: "Музички Спотови (Music Videos)" }
-    - { id: 67, cat: Other, desc: "Од се по нешто (VIP)" }
-    - { id: 73, cat: Audio, desc: "Рип од Плоча (Music Rips)" }
-    - { id: 65, cat: Other, desc: "Слики (pictures)" }
-    - { id: 55, cat: TV/Sport, desc: "Спорт (sport)" }
-    - { id: 48, cat: TV/Anime, desc: "Цртани (Animations)" }
-    - { id: 64, cat: Audio/Lossless, desc: "FLAC" }
-    - { id: 62, cat: Movies/HD, desc: "Movies HDTV" }
-    - { id: 50, cat: Audio/MP3, desc: "Mp3" }
-    - { id: 56, cat: Movies/SD, desc: "Movies Xvid" }
-    - { id: 59, cat: XXX, desc: "XXX" }
-    - { id: 74, cat: XXX, desc: "XXX 4K" }
+    - {id: 75, cat: Movies/UHD, desc: "Movies 4K"}
+    - {id: 49, cat: Movies/DVD, desc: "Movies DVD-R"}
+    - {id: 68, cat: PC/Mobile-Android, desc: "Андроид (Android)"}
+    - {id: 72, cat: PC/Mobile-Android, desc: "Андроид - Апликации (Android)"}
+    - {id: 47, cat: PC, desc: "Апликации (Software)"}
+    - {id: 71, cat: PC/Mac, desc: "Апликации - Mac OS"}
+    - {id: 70, cat: PC/0day, desc: "Апликации - Window 7/8.1/10/11"}
+    - {id: 63, cat: Audio/Audiobook, desc: "Аудио (Audiobooks)"}
+    - {id: 60, cat: TV/Documentary, desc: "Документарци (Documentaries)"}
+    - {id: 61, cat: TV, desc: "Домашни серии (TV Local)"}
+    - {id: 69, cat: TV, desc: "Домашни серии - Српски / Хрватски / Босански (TV Local)"}
+    - {id: 57, cat: Books/EBook, desc: "Е-Книги (EBooks)"}
+    - {id: 53, cat: Console, desc: "Игри (Games)"}
+    - {id: 54, cat: Audio/Video, desc: "Концерти (Concerts)"}
+    - {id: 52, cat: Audio/Video, desc: "Музички Спотови (Music Videos)"}
+    - {id: 67, cat: Other, desc: "Од се по нешто (VIP)"}
+    - {id: 73, cat: Audio, desc: "Рип од Плоча (Music Rips)"}
+    - {id: 65, cat: Other, desc: "Слики (pictures)"}
+    - {id: 55, cat: TV/Sport, desc: "Спорт (sport)"}
+    - {id: 48, cat: TV/Anime, desc: "Цртани (Animations)"}
+    - {id: 64, cat: Audio/Lossless, desc: "FLAC"}
+    - {id: 62, cat: Movies/HD, desc: "Movies HDTV"}
+    - {id: 50, cat: Audio/MP3, desc: "Mp3"}
+    - {id: 56, cat: Movies/SD, desc: "Movies Xvid"}
+    - {id: 59, cat: XXX, desc: "XXX"}
+    - {id: 74, cat: XXX, desc: "XXX 4K"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -94,7 +94,7 @@ search:
     - path: browse.php
   keywordsfilters:
     - name: re_replace
-      args: [ "[\\s]+", "%" ]
+      args: ["[\\s]+", "%"]
   inputs:
     do: search
     keywords: "{{ .Keywords }}"

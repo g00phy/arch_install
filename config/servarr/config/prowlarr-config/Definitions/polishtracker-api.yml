@@ -12,28 +12,28 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: PC/0day, desc: "0-Day" }
-    - { id: 2, cat: Audio/Video, desc: "Music Video" }
-    - { id: 3, cat: PC/0day, desc: "Apps" }
-    - { id: 4, cat: Console, desc: "Consoles" }
-    - { id: 5, cat: Books, desc: "E-book" }
-    - { id: 6, cat: Movies/HD, desc: "Movies HD" }
-    - { id: 7, cat: Movies/SD, desc: "Movies SD" }
-    - { id: 8, cat: Audio, desc: "Music" }
-    - { id: 9, cat: Movies/UHD, desc: "Movies UHD" }
-    - { id: 10, cat: PC/Games, desc: "PC Games" }
-    - { id: 11, cat: TV/HD, desc: "TV HD" }
-    - { id: 12, cat: TV/SD, desc: "TV SD" }
-    - { id: 13, cat: XXX, desc: "XXX" }
-    - { id: 14, cat: TV/UHD, desc: "TV-UHD" }
-    - { id: 15, cat: Audio/Audiobook, desc: "Audiobook" }
+    - {id: 1, cat: PC/0day, desc: "0-Day"}
+    - {id: 2, cat: Audio/Video, desc: "Music Video"}
+    - {id: 3, cat: PC/0day, desc: "Apps"}
+    - {id: 4, cat: Console, desc: "Consoles"}
+    - {id: 5, cat: Books, desc: "E-book"}
+    - {id: 6, cat: Movies/HD, desc: "Movies HD"}
+    - {id: 7, cat: Movies/SD, desc: "Movies SD"}
+    - {id: 8, cat: Audio, desc: "Music"}
+    - {id: 9, cat: Movies/UHD, desc: "Movies UHD"}
+    - {id: 10, cat: PC/Games, desc: "PC Games"}
+    - {id: 11, cat: TV/HD, desc: "TV HD"}
+    - {id: 12, cat: TV/SD, desc: "TV SD"}
+    - {id: 13, cat: XXX, desc: "XXX"}
+    - {id: 14, cat: TV/UHD, desc: "TV-UHD"}
+    - {id: 15, cat: Audio/Audiobook, desc: "Audiobook"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -84,7 +84,7 @@ search:
     # can search by genre but need range support. &tags[]=Action&tags[]=Comedy for Action and Comedy
 
   headers:
-    API-Key: [ "{{ .Config.apikey }}" ]
+    API-Key: ["{{ .Config.apikey }}"]
 
   rows:
     selector: torrents
@@ -104,9 +104,9 @@ search:
       selector: name
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:POLISH|ENGLISH|\\bPL\\b)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:POLISH|ENGLISH|\\bPL\\b)))\\b", "{{ .Config.multilanguage }}"]
         - name: re_replace
-          args: [ "(?i)\\b(pl)\\b", "POLISH" ]
+          args: ["(?i)\\b(pl)\\b", "POLISH"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     details:

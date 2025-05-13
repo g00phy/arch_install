@@ -10,14 +10,14 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: XXX, desc: "FemDom" }
-    - { id: 2, cat: XXX, desc: "LezDom" }
-    - { id: 4, cat: XXX, desc: "POV" }
-    - { id: 5, cat: XXX, desc: "Scat" }
-    - { id: 3, cat: XXX, desc: "TransDom" }
+    - {id: 1, cat: XXX, desc: "FemDom"}
+    - {id: 2, cat: XXX, desc: "LezDom"}
+    - {id: 4, cat: XXX, desc: "POV"}
+    - {id: 5, cat: XXX, desc: "Scat"}
+    - {id: 3, cat: XXX, desc: "TransDom"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username
@@ -105,9 +105,9 @@ search:
         - name: regexp
           args: "src=\\\\\"(.*?)\\\\\""
         - name: re_replace
-          args: [ "\\\\(.)", "$1" ]
+          args: ["\\\\(.)", "$1"]
         - name: replace
-          args: [ "/static/common/noartwork/noimage.png", "" ]
+          args: ["/static/common/noartwork/noimage.png", ""]
     files:
       selector: td:nth-child(3)
     date:

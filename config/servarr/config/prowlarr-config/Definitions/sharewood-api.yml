@@ -14,68 +14,68 @@ links:
 caps:
   categorymappings:
     # categories
-    #    - {id: 1, cat: Movies, desc: "Vidéo"}
-    #    - {id: 1, cat: TV, desc: "Vidéo"}
-    #    - {id: 2, cat: Audio, desc: "Audio"}
-    #    - {id: 3, cat: PC, desc: "Application"}
-    #    - {id: 4, cat: Books/EBook, desc: "Ebooks"}
-    #    - {id: 5, cat: PC/Games, desc: "Jeu-Vidéo"}
-    #    - {id: 6, cat: Other, desc: "Formation"}
-    #    - {id: 7, cat: XXX, desc: "XXX"}
+#    - {id: 1, cat: Movies, desc: "Vidéo"}
+#    - {id: 1, cat: TV, desc: "Vidéo"}
+#    - {id: 2, cat: Audio, desc: "Audio"}
+#    - {id: 3, cat: PC, desc: "Application"}
+#    - {id: 4, cat: Books/EBook, desc: "Ebooks"}
+#    - {id: 5, cat: PC/Games, desc: "Jeu-Vidéo"}
+#    - {id: 6, cat: Other, desc: "Formation"}
+#    - {id: 7, cat: XXX, desc: "XXX"}
 
     # subcategories
-    - { id: 9, cat: Movies, desc: "Films" }
-    - { id: 10, cat: TV, desc: "Séries" }
-    - { id: 11, cat: Movies/Other, desc: "Films Animations" }
-    - { id: 12, cat: TV/Anime, desc: "Séries Animations" }
-    - { id: 13, cat: TV/Documentary, desc: "Documentaires" }
-    - { id: 14, cat: TV/Other, desc: "Emissions TV" }
-    - { id: 15, cat: TV/Other, desc: "Spectacles/Concerts" }
-    - { id: 16, cat: TV/Sport, desc: "Sports" }
-    - { id: 17, cat: Audio/Video, desc: "Karaoké Vidéo" }
-    - { id: 18, cat: Audio/Other, desc: "Karaoké" }
-    - { id: 20, cat: Audio, desc: "Musiques" }
-    - { id: 21, cat: Audio/Other, desc: "Podcasts" }
-    - { id: 22, cat: Audio/Other, desc: "Samples" }
-    - { id: 23, cat: Audio/Audiobook, desc: "Ebooks Audio" }
-    - { id: 24, cat: Books/EBook, desc: "BDs" }
-    - { id: 25, cat: Books/Comics, desc: "Comics" }
-    - { id: 26, cat: Books/Other, desc: "Mangas" }
-    - { id: 27, cat: Books, desc: "Livres" }
-    - { id: 28, cat: Books/Mags, desc: "Presse" }
-    - { id: 29, cat: PC, desc: "Applications Linux" }
-    - { id: 30, cat: PC/0day, desc: "Applications Windows" }
-    - { id: 31, cat: PC/Mac, desc: "Applications Mac" }
-    - { id: 34, cat: PC/Mobile-iOS, desc: "Applications Smartphone/Tablette" }
-    - { id: 34, cat: PC/Mobile-Android, desc: "Applications Smartphone/Tablette" }
-    - { id: 35, cat: PC/Mobile-Other, desc: "GPS" }
-    - { id: 36, cat: PC/Games, desc: "Jeux Linux" }
-    - { id: 37, cat: PC/Games, desc: "Jeux Windows" }
-    - { id: 38, cat: PC/Mac, desc: "Jeux Mac" }
-    - { id: 39, cat: Console/NDS, desc: "Jeux Nintendo" }
-    - { id: 39, cat: Console/Wii, desc: "Jeux Nintendo" }
-    - { id: 39, cat: Console/Wiiware, desc: "Jeux Nintendo" }
-    - { id: 39, cat: Console/3DS, desc: "Jeux Nintendo" }
-    - { id: 39, cat: Console/WiiU, desc: "Jeux Nintendo" }
-    - { id: 40, cat: Console/PS4, desc: "Jeux Sony" }
-    - { id: 41, cat: PC/Mobile-Android, desc: "Jeux Smartphone/Tablette" }
-    - { id: 42, cat: PC/Games, desc: "Jeux Microsoft" }
-    - { id: 43, cat: Other, desc: "Rétrogaming & Emulation" }
-    - { id: 44, cat: XXX, desc: "Films XXX" }
-    - { id: 45, cat: XXX/Other, desc: "XXX Hentai" }
-    - { id: 47, cat: XXX/ImageSet, desc: "XXX Images" }
-    - { id: 48, cat: XXX/Other, desc: "XXX Jeux-Vidéo" }
-    - { id: 49, cat: Other/Misc, desc: "Formations Vidéos" }
-    - { id: 50, cat: Other/Misc, desc: "Formations Logiciels" }
-    - { id: 51, cat: XXX/Other, desc: "XXX Ebooks" }
-    - { id: 52, cat: Audio/Video, desc: "Vidéos-Clips" }
+    - {id: 9, cat: Movies, desc: "Films"}
+    - {id: 10, cat: TV, desc: "Séries"}
+    - {id: 11, cat: Movies/Other, desc: "Films Animations"}
+    - {id: 12, cat: TV/Anime, desc: "Séries Animations"}
+    - {id: 13, cat: TV/Documentary, desc: "Documentaires"}
+    - {id: 14, cat: TV/Other, desc: "Emissions TV"}
+    - {id: 15, cat: TV/Other, desc: "Spectacles/Concerts"}
+    - {id: 16, cat: TV/Sport, desc: "Sports"}
+    - {id: 17, cat: Audio/Video, desc: "Karaoké Vidéo"}
+    - {id: 18, cat: Audio/Other, desc: "Karaoké"}
+    - {id: 20, cat: Audio, desc: "Musiques"}
+    - {id: 21, cat: Audio/Other, desc: "Podcasts"}
+    - {id: 22, cat: Audio/Other, desc: "Samples"}
+    - {id: 23, cat: Audio/Audiobook, desc: "Ebooks Audio"}
+    - {id: 24, cat: Books/EBook, desc: "BDs"}
+    - {id: 25, cat: Books/Comics, desc: "Comics"}
+    - {id: 26, cat: Books/Other, desc: "Mangas"}
+    - {id: 27, cat: Books, desc: "Livres"}
+    - {id: 28, cat: Books/Mags, desc: "Presse"}
+    - {id: 29, cat: PC, desc: "Applications Linux"}
+    - {id: 30, cat: PC/0day, desc: "Applications Windows"}
+    - {id: 31, cat: PC/Mac, desc: "Applications Mac"}
+    - {id: 34, cat: PC/Mobile-iOS, desc: "Applications Smartphone/Tablette"}
+    - {id: 34, cat: PC/Mobile-Android, desc: "Applications Smartphone/Tablette"}
+    - {id: 35, cat: PC/Mobile-Other, desc: "GPS"}
+    - {id: 36, cat: PC/Games, desc: "Jeux Linux"}
+    - {id: 37, cat: PC/Games, desc: "Jeux Windows"}
+    - {id: 38, cat: PC/Mac, desc: "Jeux Mac"}
+    - {id: 39, cat: Console/NDS, desc: "Jeux Nintendo"}
+    - {id: 39, cat: Console/Wii, desc: "Jeux Nintendo"}
+    - {id: 39, cat: Console/Wiiware, desc: "Jeux Nintendo"}
+    - {id: 39, cat: Console/3DS, desc: "Jeux Nintendo"}
+    - {id: 39, cat: Console/WiiU, desc: "Jeux Nintendo"}
+    - {id: 40, cat: Console/PS4, desc: "Jeux Sony"}
+    - {id: 41, cat: PC/Mobile-Android, desc: "Jeux Smartphone/Tablette"}
+    - {id: 42, cat: PC/Games, desc: "Jeux Microsoft"}
+    - {id: 43, cat: Other, desc: "Rétrogaming & Emulation"}
+    - {id: 44, cat: XXX, desc: "Films XXX"}
+    - {id: 45, cat: XXX/Other, desc: "XXX Hentai"}
+    - {id: 47, cat: XXX/ImageSet, desc: "XXX Images"}
+    - {id: 48, cat: XXX/Other, desc: "XXX Jeux-Vidéo"}
+    - {id: 49, cat: Other/Misc, desc: "Formations Vidéos"}
+    - {id: 50, cat: Other/Misc, desc: "Formations Logiciels"}
+    - {id: 51, cat: XXX/Other, desc: "XXX Ebooks"}
+    - {id: 52, cat: Audio/Video, desc: "Vidéos-Clips"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
   allowrawsearch: true
 
 settings:
@@ -131,7 +131,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "[^\\w]+", " " ]
+      args: ["[^\\w]+", " "]
 
   rows:
     selector: $
@@ -147,14 +147,14 @@ search:
       text: "{{ .Result.title_phase1 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(vostfr|subfrench)\\b", "ENGLISH" ]
+          args: ["(?i)\\b(vostfr|subfrench)\\b", "ENGLISH"]
     title_phase2:
       text: "{{ if .Config.vostfr }}{{ .Result.title_vostfr }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     title_multilang:
       text: "{{ .Result.title_phase2 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     details:

@@ -13,9 +13,9 @@ caps:
     Other: Other
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
 settings:
   - name: info_category_8000
@@ -23,7 +23,9 @@ settings:
 
 search:
   paths:
-    - path: "{{ if .Keywords }}search.php?q={{ .Keywords }}{{ else }}index.php{{ end }}"
+    - path: search.php
+  inputs:
+    q: "{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Today.Year }}{{ end }}"
 
   rows:
     selector: table > tbody > tr
@@ -36,12 +38,12 @@ search:
     details:
       selector: a.name-link
       attribute: href
-    magnet:
+    infohash:
       selector: button.magnet-btn
       attribute: onclick
       filters:
         - name: regexp
-          args: \'(.+?)\'
+          args: ([A-F|a-f|0-9]{40})
     date:
       selector: span.date-added
       optional: true
@@ -55,12 +57,12 @@ search:
       selector: span.seeds
       filters:
         - name: replace
-          args: [ "-1", "0" ]
+          args: ["-1", "0"]
     leechers:
       selector: span.peers
       filters:
         - name: replace
-          args: [ "-1", "0" ]
+          args: ["-1", "0"]
     downloadvolumefactor:
       text: 0
     uploadvolumefactor:

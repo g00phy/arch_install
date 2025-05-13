@@ -16,64 +16,64 @@ legacylinks:
 caps:
   categorymappings:
     # Adult
-    - { id: 12, cat: XXX, desc: "Adult" }
+    - {id: 12, cat: XXX, desc: "Adult"}
     # Applicazioni
-    - { id: 5, cat: PC/Mobile-Android, desc: "Android" }
-    - { id: 30, cat: PC/Mobile-iOS, desc: "iOS / iPhone" }
-    - { id: 7, cat: PC/0day, desc: "Windows" }
-    - { id: 8, cat: PC, desc: "Linux" }
-    - { id: 9, cat: PC/Mac, desc: "Mac" }
-    - { id: 40, cat: PC, desc: "Emulatori" }
-    - { id: 34, cat: PC, desc: "Student's Office" }
+    - {id: 5, cat: PC/Mobile-Android, desc: "Android"}
+    - {id: 30, cat: PC/Mobile-iOS, desc: "iOS / iPhone"}
+    - {id: 7, cat: PC/0day, desc: "Windows"}
+    - {id: 8, cat: PC, desc: "Linux"}
+    - {id: 9, cat: PC/Mac, desc: "Mac"}
+    - {id: 40, cat: PC, desc: "Emulatori"}
+    - {id: 34, cat: PC, desc: "Student's Office"}
     # Books
-    - { id: 6, cat: Books/EBook, desc: "Books" }
-    - { id: 45, cat: Books/Comics, desc: "Fumetti" }
-    - { id: 51, cat: Books/EBook, desc: "Pdf" }
-    - { id: 33, cat: Books/EBook, desc: "Romanzi" }
-    - { id: 26, cat: Books/Mags, desc: "Edicola: Giornali/Quotidiani" }
+    - {id: 6, cat: Books/EBook, desc: "Books"}
+    - {id: 45, cat: Books/Comics, desc: "Fumetti"}
+    - {id: 51, cat: Books/EBook, desc: "Pdf"}
+    - {id: 33, cat: Books/EBook, desc: "Romanzi"}
+    - {id: 26, cat: Books/Mags, desc: "Edicola: Giornali/Quotidiani"}
     # Games
-    - { id: 3, cat: PC/Games, desc: "Games PC" }
-    - { id: 27, cat: Console, desc: "Games Console" }
-    - { id: 41, cat: Console/XBox, desc: "Games Xbox360" }
-    - { id: 43, cat: Console, desc: "Games Retro" }
-    - { id: 47, cat: Console/NDS, desc: "Games Nintendo" }
+    - {id: 3, cat: PC/Games, desc: "Games PC"}
+    - {id: 27, cat: Console, desc: "Games Console"}
+    - {id: 41, cat: Console/XBox, desc: "Games Xbox360"}
+    - {id: 43, cat: Console, desc: "Games Retro"}
+    - {id: 47, cat: Console/NDS, desc: "Games Nintendo"}
     # Music
-    - { id: 2, cat: Audio, desc: "Music" }
-    - { id: 48, cat: Audio/MP3, desc: "Music MP3" }
-    - { id: 49, cat: Audio, desc: "Radio Trasmissioni" }
+    - {id: 2, cat: Audio, desc: "Music"}
+    - {id: 48, cat: Audio/MP3, desc: "Music MP3"}
+    - {id: 49, cat: Audio, desc: "Radio Trasmissioni"}
     # Movies
-    - { id: 17, cat: Movies/HD, desc: "Movie BDRip" }
-    - { id: 39, cat: Movies/HD, desc: "Movie BDRip TNT" }
-    - { id: 21, cat: Movies/Other, desc: "Movie Films" }
-    - { id: 11, cat: Movies/DVD, desc: "Movie DVD-R" }
-    - { id: 14, cat: Movies/HD, desc: "Movie 720p" }
-    - { id: 13, cat: Movies/HD, desc: "Movie 1080p" }
-    - { id: 15, cat: Movies/3D, desc: "Movie 3D" }
-    - { id: 25, cat: Movies/UHD, desc: "Movie UHD" }
-    - { id: 36, cat: Movies, desc: "Movie TNT" }
-    - { id: 24, cat: TV/SD, desc: "TV Show Standard" }
-    - { id: 19, cat: TV/HD, desc: "TV Show 1080p" }
-    - { id: 20, cat: TV/HD, desc: "TV Show 720" }
-    - { id: 50, cat: TV, desc: "TV Show TNT" }
-    - { id: 28, cat: TV/Anime, desc: "Anime" }
-    - { id: 29, cat: TV, desc: "Cartoons" }
-    - { id: 37, cat: TV/Sport, desc: "Sport" }
-    - { id: 35, cat: TV/Documentary, desc: "Documentari" }
-    - { id: 38, cat: Movies, desc: "Commedia" }
-    - { id: 46, cat: Movies, desc: "Movie Parodie" }
+    - {id: 17, cat: Movies/HD, desc: "Movie BDRip"}
+    - {id: 39, cat: Movies/HD, desc: "Movie BDRip TNT"}
+    - {id: 21, cat: Movies/Other, desc: "Movie Films"}
+    - {id: 11, cat: Movies/DVD, desc: "Movie DVD-R"}
+    - {id: 14, cat: Movies/HD, desc: "Movie 720p"}
+    - {id: 13, cat: Movies/HD, desc: "Movie 1080p"}
+    - {id: 15, cat: Movies/3D, desc: "Movie 3D"}
+    - {id: 25, cat: Movies/UHD, desc: "Movie UHD"}
+    - {id: 36, cat: Movies, desc: "Movie TNT"}
+    - {id: 24, cat: TV/SD, desc: "TV Show Standard"}
+    - {id: 19, cat: TV/HD, desc: "TV Show 1080p"}
+    - {id: 20, cat: TV/HD, desc: "TV Show 720"}
+    - {id: 50, cat: TV, desc: "TV Show TNT"}
+    - {id: 28, cat: TV/Anime, desc: "Anime"}
+    - {id: 29, cat: TV, desc: "Cartoons"}
+    - {id: 37, cat: TV/Sport, desc: "Sport"}
+    - {id: 35, cat: TV/Documentary, desc: "Documentari"}
+    - {id: 38, cat: Movies, desc: "Commedia"}
+    - {id: 46, cat: Movies, desc: "Movie Parodie"}
     # Various
-    - { id: 4, cat: Other, desc: "Other" }
-    - { id: 23, cat: Other, desc: "Archive" }
-    - { id: 42, cat: Other, desc: "Disegni e Modelli" }
-    - { id: 16, cat: Other, desc: "V.I.P." }
-    - { id: 32, cat: Other, desc: "Premium" }
+    - {id: 4, cat: Other, desc: "Other"}
+    - {id: 23, cat: Other, desc: "Archive"}
+    - {id: 42, cat: Other, desc: "Disegni e Modelli"}
+    - {id: 16, cat: Other, desc: "V.I.P."}
+    - {id: 32, cat: Other, desc: "Premium"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -129,9 +129,9 @@ search:
     - name: diacritics
       args: replace
     - name: re_replace # S01 to 1
-      args: [ "(?i)\\bS0*(\\d+)\\b", "$1" ]
+      args: ["(?i)\\bS0*(\\d+)\\b", "$1"]
     - name: re_replace # S01E01 to 1 1
-      args: [ "(?i)\\bS0*(\\d+)E0*(\\d+)\\b", "$1 $2" ]
+      args: ["(?i)\\bS0*(\\d+)E0*(\\d+)\\b", "$1 $2"]
   #  https://www.ilcorsaroblu.org/index.php?page=torrents&search=&category=0&options=0&active=0
   inputs:
     page: torrents
@@ -162,45 +162,45 @@ search:
       selector: td:nth-child(2) > a
       filters:
         - name: re_replace # replace special characters with " " (space)
-          args: [ "[\\[!\"#$%&'()*+,\\-.\\/:;<=>?@[\\]^_`{|}~]", " " ]
+          args: ["[\\[!\"#$%&'()*+,\\-.\\/:;<=>?@[\\]^_`{|}~]", " "]
         - name: diacritics
           args: replace
         - name: re_replace # replace multiple spaces
-          args: [ "[ ]{2,}", " " ]
+          args: ["[ ]{2,}", " "]
         # normalize to SXXEYY format
         - name: re_replace # S01 E01 to S01E01
-          args: [ "(?i)\\bS(\\d+)\\sE(\\d+)\\b", "S$1E$2" ]
+          args: ["(?i)\\bS(\\d+)\\sE(\\d+)\\b", "S$1E$2"]
         - name: re_replace # 01x01 to S01E01
-          args: [ "(?i)(\\d{2})x(\\d+)", "S$1E$2" ]
+          args: ["(?i)(\\d{2})x(\\d+)", "S$1E$2"]
         - name: re_replace # 1x01 to S01E01
-          args: [ "(?i)\\b(\\d{1})x(\\d+)", "S0$1E$2" ]
+          args: ["(?i)\\b(\\d{1})x(\\d+)", "S0$1E$2"]
         - name: re_replace # Stagione X --> S0X
-          args: [ "(?i)\\bStagion[ei]\\s?(\\d{1})\\b|\\bSeason'?s?\\s?(\\d{1})\\b", "S0$1$2" ]
+          args: ["(?i)\\bStagion[ei]\\s?(\\d{1})\\b|\\bSeason'?s?\\s?(\\d{1})\\b", "S0$1$2"]
         - name: re_replace # Stagione XX --> SXX
-          args: [ "(?i)\\bStagion[ei]\\s?(\\d{2,})\\b|\\bSeason'?s?\\s?(\\d{2,})\\b", "S$1$2" ]
+          args: ["(?i)\\bStagion[ei]\\s?(\\d{2,})\\b|\\bSeason'?s?\\s?(\\d{2,})\\b", "S$1$2"]
         - name: re_replace # Episodio 4 to E4
-          args: [ "(?i)\\b(?:[\\/\\|]?Episodio\\s?(\\d+)|Puntata\\s?(\\d+))", "E$1$2" ]
+          args: ["(?i)\\b(?:[\\/\\|]?Episodio\\s?(\\d+)|Puntata\\s?(\\d+))", "E$1$2"]
         - name: re_replace # Episodi 4 5 to E04-05
-          args: [ "(?i)\\b(?:Puntate\\s*)(\\d+)\\s?(\\d+)", "E0$1-0$2" ]
+          args: ["(?i)\\b(?:Puntate\\s*)(\\d+)\\s?(\\d+)", "E0$1-0$2"]
         - name: re_replace # rimozioni varie
-          args: [ "(?i)(Serie completa|Completat?a?|in pausa)", "" ]
+          args: ["(?i)(Serie completa|Completat?a?|in pausa)", ""]
         # cleanup for Sonarr
         - name: re_replace # EP 3 4 to E3-4
-          args: [ "(?i)\\sEP\\s(\\d{1,2})\\s(E?\\s?\\d{1,2})\\s", " E$1-$2 " ]
+          args: ["(?i)\\sEP\\s(\\d{1,2})\\s(E?\\s?\\d{1,2})\\s", " E$1-$2 "]
         - name: re_replace # S02E04 05 to S02E04-05
-          args: [ "(?i)\\sS(\\d{1,2})\\s?E\\s?(\\d{1,2})\\s(E?\\s?\\d{1,2})\\s", " S$1E$2-$3 " ]
+          args: ["(?i)\\sS(\\d{1,2})\\s?E\\s?(\\d{1,2})\\s(E?\\s?\\d{1,2})\\s", " S$1E$2-$3 "]
         - name: re_replace
-          args: [ "(?i)AC3\\s?(\\d)\\s(\\d)", "AC3 $1.$2" ]
+          args: ["(?i)AC3\\s?(\\d)\\s(\\d)", "AC3 $1.$2"]
         - name: re_replace
-          args: [ "(?i) DD\\s?(\\d)\\s(\\d)", " DD $1.$2" ]
+          args: ["(?i) DD\\s?(\\d)\\s(\\d)", " DD $1.$2"]
         - name: re_replace
-          args: [ "(?i) DDP\\s?(\\d)\\s(\\d)", " DDP $1.$2" ]
+          args: ["(?i) DDP\\s?(\\d)\\s(\\d)", " DDP $1.$2"]
         - name: re_replace
-          args: [ "(?i)\\sE\\s?AC3", " EAC3" ]
+          args: ["(?i)\\sE\\s?AC3", " EAC3"]
         - name: re_replace
-          args: [ "(?i)WEB\\sDL", "WEB-DL" ]
+          args: ["(?i)WEB\\sDL", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)HDTVRIP", "HDTV" ]
+          args: ["(?i)HDTVRIP", "HDTV"]
     details:
       selector: td:nth-child(2) > a
       attribute: href

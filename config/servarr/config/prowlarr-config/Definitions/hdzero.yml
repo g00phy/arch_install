@@ -10,22 +10,22 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Películas" }
-    - { id: 2, cat: TV, desc: "Series" }
-    - { id: 5, cat: TV, desc: "Series Emision" }
-    - { id: 6, cat: TV/Anime, desc: "Animacion Peliculas" }
-    - { id: 7, cat: TV/Anime, desc: "Animacion Series" }
-    - { id: 8, cat: TV/Anime, desc: "Anime Peliculas" }
-    - { id: 9, cat: TV/Anime, desc: "Anime Series" }
-    - { id: 10, cat: TV/Documentary, desc: "Documentales" }
-    - { id: 11, cat: TV/Documentary, desc: "Documentales Series" }
-    - { id: 12, cat: TV, desc: "Programas TV" }
-    - { id: 13, cat: TV, desc: "Telenovelas" }
-    - { id: 3, cat: Other, desc: "Delete" }
+    - {id: 1, cat: Movies, desc: "Películas"}
+    - {id: 2, cat: TV, desc: "Series"}
+    - {id: 5, cat: TV, desc: "Series Emision"}
+    - {id: 6, cat: TV/Anime, desc: "Animacion Peliculas"}
+    - {id: 7, cat: TV/Anime, desc: "Animacion Series"}
+    - {id: 8, cat: TV/Anime, desc: "Anime Peliculas"}
+    - {id: 9, cat: TV/Anime, desc: "Anime Series"}
+    - {id: 10, cat: TV/Documentary, desc: "Documentales"}
+    - {id: 11, cat: TV/Documentary, desc: "Documentales Series"}
+    - {id: 12, cat: TV, desc: "Programas TV"}
+    - {id: 13, cat: TV, desc: "Telenovelas"}
+    - {id: 3, cat: Other, desc: "Delete"}
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
 
 settings:
   - name: apikey
@@ -78,10 +78,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -96,7 +96,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -124,7 +124,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -135,7 +135,7 @@ search:
       selector: meta.genres
       filters:
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     seeders:
@@ -184,4 +184,4 @@ search:
     minimumseedtime:
       # 5 days (as seconds = 5 x 24 x 60 x 60)
       text: 432000
-# json UNIT3D 8.3.2
+# json UNIT3D 9.0.7 (custom)

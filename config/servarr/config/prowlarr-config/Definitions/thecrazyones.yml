@@ -11,74 +11,74 @@ links:
 caps:
   categorymappings:
     # Anime
-    - { id: 123, cat: TV/Anime, desc: "Anime Alles" }
+    - {id: 123, cat: TV/Anime, desc: "Anime Alles"}
     # Movie
-    - { id: 122, cat: Movies/UHD, desc: "Movie 4K" }
-    - { id: 114, cat: Movies/DVD, desc: "Movie DVD" }
-    - { id: 118, cat: Movies, desc: "Movie Klassiker" }
-    - { id: 124, cat: Movies, desc: "Movie Pack" }
-    - { id: 28, cat: Movies/SD, desc: "Movie SD" }
-    - { id: 32, cat: Movies/HD, desc: "Movie HD" }
-    - { id: 26, cat: Movies/3D, desc: "Movie 3D" }
+    - {id: 122, cat: Movies/UHD, desc: "Movie 4K"}
+    - {id: 114, cat: Movies/DVD, desc: "Movie DVD"}
+    - {id: 118, cat: Movies, desc: "Movie Klassiker"}
+    - {id: 124, cat: Movies, desc: "Movie Pack"}
+    - {id: 28, cat: Movies/SD, desc: "Movie SD"}
+    - {id: 32, cat: Movies/HD, desc: "Movie HD"}
+    - {id: 26, cat: Movies/3D, desc: "Movie 3D"}
     # Serien
-    - { id: 152, cat: TV/SD, desc: "Serien DVD" }
-    - { id: 139, cat: TV/HD, desc: "Serien HD" }
-    - { id: 59, cat: TV, desc: "Serien Pack" }
-    - { id: 57, cat: TV/SD, desc: "Serien SD" }
-    - { id: 60, cat: TV, desc: "Serien Klassiker" }
+    - {id: 152, cat: TV/SD, desc: "Serien DVD"}
+    - {id: 139, cat: TV/HD, desc: "Serien HD"}
+    - {id: 59, cat: TV, desc: "Serien Pack"}
+    - {id: 57, cat: TV/SD, desc: "Serien SD"}
+    - {id: 60, cat: TV, desc: "Serien Klassiker"}
     # Doku
-    - { id: 121, cat: TV/Documentary, desc: "Doku Pack" }
-    - { id: 14, cat: TV/Documentary, desc: "Doku HD" }
-    - { id: 15, cat: TV/Documentary, desc: "Doku SD" }
+    - {id: 121, cat: TV/Documentary, desc: "Doku Pack"}
+    - {id: 14, cat: TV/Documentary, desc: "Doku HD"}
+    - {id: 15, cat: TV/Documentary, desc: "Doku SD"}
     # Software
-    - { id: 12, cat: PC/0day, desc: "App Win" }
-    - { id: 11, cat: PC/Mobile-Other, desc: "App Other" }
-    - { id: 10, cat: PC/Mac, desc: "App Mac" }
-    - { id: 9, cat: PC, desc: "App Linux" }
+    - {id: 12, cat: PC/0day, desc: "App Win"}
+    - {id: 11, cat: PC/Mobile-Other, desc: "App Other"}
+    - {id: 10, cat: PC/Mac, desc: "App Mac"}
+    - {id: 9, cat: PC, desc: "App Linux"}
     # Game
-    - { id: 120, cat: Console/PS3, desc: "Game PlayStation" }
-    - { id: 16, cat: Console, desc: "Game Wimmelbild" }
-    - { id: 17, cat: PC/Games, desc: "Game PC" }
-    - { id: 20, cat: Console/PSP, desc: "Game PSP" }
-    - { id: 22, cat: Console/Wii, desc: "Game Wii" }
-    - { id: 24, cat: Console/XBox, desc: "Game XBOX" }
+    - {id: 120, cat: Console/PS3, desc: "Game PlayStation"}
+    - {id: 16, cat: Console, desc: "Game Wimmelbild"}
+    - {id: 17, cat: PC/Games, desc: "Game PC"}
+    - {id: 20, cat: Console/PSP, desc: "Game PSP"}
+    - {id: 22, cat: Console/Wii, desc: "Game Wii"}
+    - {id: 24, cat: Console/XBox, desc: "Game XBOX"}
     # Music
-    - { id: 48, cat: Audio, desc: "Music Album" }
-    - { id: 49, cat: Audio, desc: "Music Charts" }
-    - { id: 52, cat: Audio, desc: "Music Pack" }
-    - { id: 54, cat: Audio, desc: "Music Single" }
-    - { id: 55, cat: Audio/Video, desc: "Music Video" }
-    - { id: 125, cat: Audio, desc: "Music Mixe" }
-    - { id: 126, cat: Audio, desc: "Music Audio" }
+    - {id: 48, cat: Audio, desc: "Music Album"}
+    - {id: 49, cat: Audio, desc: "Music Charts"}
+    - {id: 52, cat: Audio, desc: "Music Pack"}
+    - {id: 54, cat: Audio, desc: "Music Single"}
+    - {id: 55, cat: Audio/Video, desc: "Music Video"}
+    - {id: 125, cat: Audio, desc: "Music Mixe"}
+    - {id: 126, cat: Audio, desc: "Music Audio"}
     # Sport
-    - { id: 61, cat: TV/Sport, desc: "Sport Other" }
+    - {id: 61, cat: TV/Sport, desc: "Sport Other"}
     # Sonstiges
-    - { id: 63, cat: Audio/Audiobook, desc: "Sonstiges A-Book" }
-    - { id: 96, cat: Books/EBook, desc: "Sonstiges E-Book" }
-    - { id: 69, cat: Books, desc: "Sonstiges Tutorial" }
-    - { id: 71, cat: Books/Other, desc: "Sonstiges Other" }
+    - {id: 63, cat: Audio/Audiobook, desc: "Sonstiges A-Book"}
+    - {id: 96, cat: Books/EBook, desc: "Sonstiges E-Book"}
+    - {id: 69, cat: Books, desc: "Sonstiges Tutorial"}
+    - {id: 71, cat: Books/Other, desc: "Sonstiges Other"}
     # Internt'l
-    - { id: 102, cat: TV/SD, desc: "Internt'l Serie SD" }
-    - { id: 98, cat: Movies/HD, desc: "Internt'l Movie HD" }
-    - { id: 99, cat: TV/HD, desc: "Internt'l Serie HD" }
-    - { id: 105, cat: TV/Documentary, desc: "Internt'l Doku" }
-    - { id: 103, cat: Movies/SD, desc: "Internt'l Movie SD" }
-    - { id: 104, cat: Other, desc: "Internt'l Misc" }
-    - { id: 106, cat: Books/EBook, desc: "Internt'l E-Book" }
-    - { id: 107, cat: Audio/Audiobook, desc: "Internt'l A-Book" }
-    - { id: 115, cat: Movies/DVD, desc: "Internt'l DVD" }
+    - {id: 102, cat: TV/SD, desc: "Internt'l Serie SD"}
+    - {id: 98, cat: Movies/HD, desc: "Internt'l Movie HD"}
+    - {id: 99, cat: TV/HD, desc: "Internt'l Serie HD"}
+    - {id: 105, cat: TV/Documentary, desc: "Internt'l Doku"}
+    - {id: 103, cat: Movies/SD, desc: "Internt'l Movie SD"}
+    - {id: 104, cat: Other, desc: "Internt'l Misc"}
+    - {id: 106, cat: Books/EBook, desc: "Internt'l E-Book"}
+    - {id: 107, cat: Audio/Audiobook, desc: "Internt'l A-Book"}
+    - {id: 115, cat: Movies/DVD, desc: "Internt'l DVD"}
     # XXX
-    - { id: 73, cat: XXX/x264, desc: "XXX HD" }
-    - { id: 75, cat: XXX/Pack, desc: "XXX Pack" }
-    - { id: 76, cat: XXX/SD, desc: "XXX SD" }
-    - { id: 113, cat: XXX/DVD, desc: "XXX DVD" }
+    - {id: 73, cat: XXX/x264, desc: "XXX HD"}
+    - {id: 75, cat: XXX/Pack, desc: "XXX Pack"}
+    - {id: 76, cat: XXX/SD, desc: "XXX SD"}
+    - {id: 113, cat: XXX/DVD, desc: "XXX DVD"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -115,7 +115,7 @@ login:
   path: login.php
   method: form
   form: form[action="/login.php"]
-  cookies: [ "JAVA=OK" ] # avoid jscheck redirect
+  cookies: ["JAVA=OK"] # avoid jscheck redirect
   inputs:
     username: "{{ .Config.username }}"
     password: "{{ .Config.password }}"
@@ -155,7 +155,7 @@ search:
       selector: a.selection_a
       filters:
         - name: re_replace
-          args: [ "^\\[[\\w ]*\\]\\s?", "" ]
+          args: ["^\\[[\\w ]*\\]\\s?", ""]
     details:
       selector: a.selection_a
       attribute: href
@@ -176,9 +176,9 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ "Heute", "Today" ]
+          args: ["Heute", "Today"]
         - name: replace
-          args: [ "Gestern", "Yesterday" ]
+          args: ["Gestern", "Yesterday"]
         - name: append
           args: " +01:00" # CET
     date_year:
@@ -187,7 +187,7 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ " um", "" ]
+          args: [" um", ""]
         - name: append
           args: " +01:00" # CET
         - name: dateparse
@@ -204,9 +204,9 @@ search:
         "*": 1
     uploadvolumefactor:
       text: 1
-    # global MR is 0.7 but torrents must be seeded for 2 days regardless of ratio
-    #    minimumratio:
-    #      text: 0.7
+# global MR is 0.7 but torrents must be seeded for 2 days regardless of ratio
+#    minimumratio:
+#      text: 0.7
     minimumseedtime:
       # 2 days (as seconds = 2 x 24 x 60 x 60)
       text: 172800

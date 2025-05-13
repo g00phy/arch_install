@@ -12,29 +12,29 @@ links:
 caps:
   # dont forget to update the path categories in the search block
   categorymappings:
-    - { id: 18, cat: PC/0day, desc: "Apps: PC", default: true }
-    - { id: 55, cat: TV/Documentary, desc: "Docs: Docs", default: true }
-    - { id: 10, cat: PC/Games, desc: "Games: PC", default: true }
-    - { id: 53, cat: Other, desc: "Miscellaneous: Miscellaneous", default: true }
-    - { id: 58, cat: Movies/BluRay, desc: "Movies: 4K Blu-Ray", default: true }
-    - { id: 2, cat: Movies/SD, desc: "Movies: Divx/Xvid", default: true }
-    - { id: 52, cat: Movies/SD, desc: "Movies: Cam/TS/TC", default: true }
-    - { id: 54, cat: Movies/UHD, desc: "Movies: 4K", default: true }
-    - { id: 59, cat: Movies/BluRay, desc: "Movies: Blu-Ray", default: true }
-    - { id: 60, cat: Movies/HD, desc: "Movies: HD", default: true }
-    - { id: 62, cat: Movies/WEB-DL, desc: "Movies: WebDL/RIP", default: true }
-    - { id: 64, cat: Movies/DVD, desc: "Movies: DVD", default: true }
-    - { id: 65, cat: XXX, desc: "Movies: XXX", default: false }
-    - { id: 66, cat: TV/Anime, desc: "Movies: Anime", default: true }
-    - { id: 22, cat: Audio/MP3, desc: "Music: MP3", default: true }
-    - { id: 63, cat: Audio/Lossless, desc: "Music: FLAC", default: true }
-    - { id: 6, cat: TV, desc: "TV: TV Shows", default: true }
+    - {id: 18, cat: PC/0day, desc: "Apps: PC", default: true}
+    - {id: 55, cat: TV/Documentary, desc: "Docs: Docs", default: true}
+    - {id: 10, cat: PC/Games, desc: "Games: PC", default: true}
+    - {id: 53, cat: Other, desc: "Miscellaneous: Miscellaneous", default: true}
+    - {id: 58, cat: Movies/BluRay, desc: "Movies: 4K Blu-Ray", default: true}
+    - {id: 2, cat: Movies/SD, desc: "Movies: Divx/Xvid", default: true}
+    - {id: 52, cat: Movies/SD, desc: "Movies: Cam/TS/TC", default: true}
+    - {id: 54, cat: Movies/UHD, desc: "Movies: 4K", default: true}
+    - {id: 59, cat: Movies/BluRay, desc: "Movies: Blu-Ray", default: true}
+    - {id: 60, cat: Movies/HD, desc: "Movies: HD", default: true}
+    - {id: 62, cat: Movies/WEB-DL, desc: "Movies: WebDL/RIP", default: true}
+    - {id: 64, cat: Movies/DVD, desc: "Movies: DVD", default: true}
+    - {id: 65, cat: XXX, desc: "Movies: XXX", default: false}
+    - {id: 66, cat: TV/Anime, desc: "Movies: Anime", default: true}
+    - {id: 22, cat: Audio/MP3, desc: "Music: MP3", default: true}
+    - {id: 63, cat: Audio/Lossless, desc: "Music: FLAC", default: true}
+    - {id: 6, cat: TV, desc: "TV: TV Shows", default: true}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tmdbid, genre ]
-    movie-search: [ q, imdbid, tmdbid, genre ]
-    music-search: [ q, genre ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tmdbid, genre]
+    movie-search: [q, imdbid, tmdbid, genre]
+    music-search: [q, genre]
 
 settings:
   - name: username
@@ -79,7 +79,7 @@ login:
 search:
   paths:
     - path: torrents-search.php
-      categories: [ 18, 55, 10, 53, 58, 2, 52, 54, 59, 60, 62, 64, 66, 22, 63, 6 ]
+      categories: [18, 55, 10, 53, 58, 2, 52, 54, 59, 60, 62, 64, 66, 22, 63, 6]
       inputs:
         $raw: "{{ range .Categories }}c{{.}}=1&{{end}}"
         # 0 active, 1 incldead, 2 onlydead
@@ -91,7 +91,7 @@ search:
         # 0 all, 1 romanian, 2 english, 3 english and romanian
         inclrosub: 0
     - path: torrents-search1.php
-      categories: [ 65 ]
+      categories: [65]
   inputs:
     search: "{{ if or .Query.IMDBID .Query.TMDBID }}{{ or .Query.IMDBID .Query.TMDBID }} {{ else }}{{ end }}{{ if .Query.Genre }}{{ .Query.Genre }} {{ else }}{{ end }}{{ .Keywords }}"
     sort: "{{ .Config.sort }}"
@@ -114,12 +114,12 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "&hit=1", "" ] # avoid redirect
+          args: ["&hit=1", ""] # avoid redirect
     download:
       text: "{{ .Result.details }}"
       filters:
         - name: replace
-          args: [ "torrents-details", "download" ]
+          args: ["torrents-details", "download"]
     poster:
       selector: a[href^="torrents-details.php?id="]
       attribute: onmouseover
@@ -142,11 +142,11 @@ search:
       selector: a[href^="torrents-details.php?id="] font div.newt
       filters:
         - name: re_replace
-          args: [ "(?i)(Cult Classic)", "Cult_Classic" ]
+          args: ["(?i)(Cult Classic)", "Cult_Classic"]
         - name: re_replace
-          args: [ "(?i)(Science Fiction)", "Science_Fiction" ]
+          args: ["(?i)(Science Fiction)", "Science_Fiction"]
         - name: re_replace
-          args: [ "(?i)(TV Movie)", "TV_Movie" ]
+          args: ["(?i)(TV Movie)", "TV_Movie"]
     description_subs:
       optional: true
       case:

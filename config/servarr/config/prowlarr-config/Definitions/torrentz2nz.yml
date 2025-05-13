@@ -14,18 +14,20 @@ legacylinks:
 caps:
   # unfortunately torrentz2nz does not display categories anywhere in its search results page :-(
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Movies" }
-    - { id: 2, cat: TV, desc: "TV" }
-    - { id: 3, cat: Other, desc: "Other" }
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "TV"}
+    - {id: 3, cat: Other, desc: "Other"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
 settings:
   - name: info_category_8000
-    type: info_category_8000
+    type: info
+    label: About Torrentz2nz Categories
+    default: Torrentz2nz does not return categories in its search results. To sync to your apps, include 8000(Other) in your Apps' Sync Categories.
 
 search:
   paths:
@@ -51,7 +53,7 @@ search:
       selector: dd  span:nth-child(2)
       filters:
         - name: replace
-          args: [ "a ", "1 " ]
+          args: ["a ", "1 "]
         - name: timeago
     size:
       selector: dd  span:nth-child(3)
@@ -59,16 +61,16 @@ search:
       selector: dd  span:nth-child(4)
       filters:
         - name: re_replace
-          args: [ "(\\d+)\\.(\\d+)K", "$1$200" ]
+          args: ["(\\d+)\\.(\\d+)K", "$1$200"]
         - name: replace
-          args: [ "K", "000" ]
+          args: ["K", "000"]
     leechers:
       selector: dd  span:nth-child(5)
       filters:
         - name: re_replace
-          args: [ "(\\d+)\\.(\\d+)K", "$1$200" ]
+          args: ["(\\d+)\\.(\\d+)K", "$1$200"]
         - name: replace
-          args: [ "K", "000" ]
+          args: ["K", "000"]
     downloadvolumefactor:
       text: 0
     uploadvolumefactor:

@@ -10,42 +10,42 @@ links:
 
 caps:
   categorymappings:
-    - { id: 3_, cat: TV/Anime, desc: "Anime" }
-    - { id: 3_12, cat: TV/Anime, desc: "Anime - Anime Music Video" }
-    - { id: 3_5, cat: TV/Anime, desc: "Anime - English-translated" }
-    - { id: 3_13, cat: TV/Anime, desc: "Anime - Non-English-translated" }
-    - { id: 3_6, cat: TV/Anime, desc: "Anime - Raw" }
+    - {id: 3_, cat: TV/Anime, desc: "Anime"}
+    - {id: 3_12, cat: TV/Anime, desc: "Anime - Anime Music Video"}
+    - {id: 3_5, cat: TV/Anime, desc: "Anime - English-translated"}
+    - {id: 3_13, cat: TV/Anime, desc: "Anime - Non-English-translated"}
+    - {id: 3_6, cat: TV/Anime, desc: "Anime - Raw"}
     # Anime as Movies (Radarr uses t=movie):
-    - { id: 3_, cat: Movies/Other, desc: "Anime" }
-    - { id: 3_12, cat: Movies/Other, desc: "Anime - Anime Music Video" }
-    - { id: 3_5, cat: Movies/Other, desc: "Anime - English-translated" }
-    - { id: 3_13, cat: Movies/Other, desc: "Anime - Non-English-translated" }
-    - { id: 3_6, cat: Movies/Other, desc: "Anime - Raw" }
-    - { id: 2_, cat: Audio, desc: "Audio" }
-    - { id: 2_3, cat: Audio, desc: "Audio - Lossless" }
-    - { id: 2_4, cat: Audio, desc: "Audio - Lossy" }
-    - { id: 4_, cat: Books, desc: "Literature" }
-    - { id: 4_7, cat: Books, desc: "Literature - English-translated" }
-    - { id: 4_14, cat: Books, desc: "Literature - Non-English-translated" }
-    - { id: 4_8, cat: Books, desc: "Literature - Raw" }
-    - { id: 5_, cat: TV, desc: "Live Action" }
-    - { id: 5_9, cat: TV, desc: "Live Action - English-translated" }
-    - { id: 5_10, cat: TV, desc: "Live Action - Idol/Promotional Video" }
-    - { id: 5_18, cat: TV, desc: "Live Action - Non-English-translated" }
-    - { id: 5_11, cat: TV, desc: "Live Action - Raw" }
-    - { id: 6_, cat: Other, desc: "Pictures" }
-    - { id: 6_15, cat: Other, desc: "Pictures - Graphics" }
-    - { id: 6_16, cat: Other, desc: "Pictures - Photos" }
-    - { id: 1_, cat: PC, desc: "Software" }
-    - { id: 1_1, cat: PC/ISO, desc: "Software - Applications" }
-    - { id: 1_2, cat: PC/Games, desc: "Software - Games" }
+    - {id: 3_, cat: Movies/Other, desc: "Anime"}
+    - {id: 3_12, cat: Movies/Other, desc: "Anime - Anime Music Video"}
+    - {id: 3_5, cat: Movies/Other, desc: "Anime - English-translated"}
+    - {id: 3_13, cat: Movies/Other, desc: "Anime - Non-English-translated"}
+    - {id: 3_6, cat: Movies/Other, desc: "Anime - Raw"}
+    - {id: 2_, cat: Audio, desc: "Audio"}
+    - {id: 2_3, cat: Audio, desc: "Audio - Lossless"}
+    - {id: 2_4, cat: Audio, desc: "Audio - Lossy"}
+    - {id: 4_, cat: Books, desc: "Literature"}
+    - {id: 4_7, cat: Books, desc: "Literature - English-translated"}
+    - {id: 4_14, cat: Books, desc: "Literature - Non-English-translated"}
+    - {id: 4_8, cat: Books, desc: "Literature - Raw"}
+    - {id: 5_, cat: TV, desc: "Live Action"}
+    - {id: 5_9, cat: TV, desc: "Live Action - English-translated"}
+    - {id: 5_10, cat: TV, desc: "Live Action - Idol/Promotional Video"}
+    - {id: 5_18, cat: TV, desc: "Live Action - Non-English-translated"}
+    - {id: 5_11, cat: TV, desc: "Live Action - Raw"}
+    - {id: 6_, cat: Other, desc: "Pictures"}
+    - {id: 6_15, cat: Other, desc: "Pictures - Graphics"}
+    - {id: 6_16, cat: Other, desc: "Pictures - Photos"}
+    - {id: 1_, cat: PC, desc: "Software"}
+    - {id: 1_1, cat: PC/ISO, desc: "Software - Applications"}
+    - {id: 1_2, cat: PC/Games, desc: "Software - Games"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: prefer_magnet_links
@@ -144,7 +144,7 @@ search:
       selector: td.date-full
       filters:
         - name: replace
-          args: [ "UTC+0", "+00:00" ]
+          args: ["UTC+0", "+00:00"]
         - name: dateparse
           args: "MM/d/yyyy, h:mm:ss tt zzz"
     seeders:

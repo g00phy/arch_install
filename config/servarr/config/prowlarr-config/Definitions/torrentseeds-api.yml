@@ -11,26 +11,26 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: PC/0day, desc: "Apps" }
-    - { id: 2, cat: PC/Games, desc: "Games" }
-    - { id: 3, cat: Movies, desc: "Movies" }
-    - { id: 4, cat: Audio, desc: "Music" }
-    - { id: 5, cat: TV/Anime, desc: "Anime" }
-    - { id: 6, cat: XXX, desc: "Porn" }
-    - { id: 7, cat: TV/Sport, desc: "Sport" }
-    - { id: 8, cat: Movies, desc: "Movies/Packs" }
-    - { id: 3205, cat: TV, desc: "TV" }
-    - { id: 3206, cat: TV/Foreign, desc: "TV/Foreign" }
-    - { id: 3207, cat: Movies/Foreign, desc: "Movies/Foreign" }
-    - { id: 3208, cat: Books/EBook, desc: "E-Books" }
-    - { id: 3209, cat: TV, desc: "TV/Packs" }
+    - {id: 1, cat: PC/0day, desc: "Apps"}
+    - {id: 2, cat: PC/Games, desc: "Games"}
+    - {id: 3, cat: Movies, desc: "Movies"}
+    - {id: 4, cat: Audio, desc: "Music"}
+    - {id: 5, cat: TV/Anime, desc: "Anime"}
+    - {id: 6, cat: XXX, desc: "Porn"}
+    - {id: 7, cat: TV/Sport, desc: "Sport"}
+    - {id: 8, cat: Movies, desc: "Movies/Packs"}
+    - {id: 3205, cat: TV, desc: "TV"}
+    - {id: 3206, cat: TV/Foreign, desc: "TV/Foreign"}
+    - {id: 3207, cat: Movies/Foreign, desc: "Movies/Foreign"}
+    - {id: 3208, cat: Books/EBook, desc: "E-Books"}
+    - {id: 3209, cat: TV, desc: "TV/Packs"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -64,7 +64,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -80,7 +80,7 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
@@ -95,11 +95,11 @@ search:
 
   keywordsfilters:
     - name: replace # avoid conflict when prepending + to words
-      args: [ "-", " " ]
+      args: ["-", " "]
     - name: re_replace # prepend + to each word >2 characters
-      args: [ "(\\w{3,})", "+$1" ]
+      args: ["(\\w{3,})", "+$1"]
     - name: re_replace # +2023 04 13 > +"2023 04 13"
-      args: [ "\\+\\b(\\d{4}[\\s\\.]\\d{2}[\\s\\.]\\d{2})\\b", "+\"$1\"" ]
+      args: ["\\+\\b(\\d{4}[\\s\\.]\\d{2}[\\s\\.]\\d{2})\\b", "+\"$1\""]
 
   rows:
     selector: data
@@ -118,7 +118,7 @@ search:
       selector: poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:

@@ -11,17 +11,17 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: XXX, desc: "日本AV" }
-    - { id: 2, cat: XXX, desc: "国产视频" }
-    - { id: 3, cat: XXX/ImageSet, desc: "写真" }
-    - { id: 4, cat: XXX/Other, desc: "黄油" }
-    - { id: 5, cat: XXX, desc: "里番" }
-    - { id: 6, cat: XXX/Other, desc: "黄色漫画" }
-    - { id: 7, cat: XXX, desc: "欧美视频" }
-    - { id: 8, cat: XXX, desc: "其他" }
+    - {id: 1, cat: XXX, desc: "日本AV"}
+    - {id: 2, cat: XXX, desc: "国产视频"}
+    - {id: 3, cat: XXX/ImageSet, desc: "写真"}
+    - {id: 4, cat: XXX/Other, desc: "黄油"}
+    - {id: 5, cat: XXX, desc: "里番"}
+    - {id: 6, cat: XXX/Other, desc: "黄色漫画"}
+    - {id: 7, cat: XXX, desc: "欧美视频"}
+    - {id: 8, cat: XXX, desc: "其他"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: apitoken
@@ -50,7 +50,7 @@ settings:
 login:
   path: https://api.fsm.name/Torrents/listTorrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
 
 search:
   paths:
@@ -59,7 +59,7 @@ search:
         type: json
 
   headers:
-    APITOKEN: [ "{{ .Config.apitoken }}" ]
+    APITOKEN: ["{{ .Config.apitoken }}"]
 
   inputs:
     type: 0

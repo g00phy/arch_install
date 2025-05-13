@@ -24,25 +24,25 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: Movies, cat: Movies, desc: "Movies" }
-    - { id: TV, cat: TV, desc: "TV" }
-    - { id: Games, cat: PC/Games, desc: "Games" }
-    - { id: Music, cat: Audio, desc: "Music" }
-    - { id: Anime, cat: TV/Anime, desc: "Anime" }
-    - { id: Documentaries, cat: TV/Documentary, desc: "Documentaries" }
-    - { id: Apps, cat: PC/0day, desc: "Apps" }
-    - { id: Other, cat: Other, desc: "Other" }
-    - { id: Books, cat: Books, desc: "Books" }
-    - { id: XXX, cat: XXX, desc: "XXX" }
-    - { id: TV shows, cat: TV, desc: "TV shows" }
-    - { id: E-books, cat: Books/EBook, desc: "E-books" }
+    - {id: Movies, cat: Movies, desc: "Movies"}
+    - {id: TV, cat: TV, desc: "TV"}
+    - {id: Games, cat: PC/Games, desc: "Games"}
+    - {id: Music, cat: Audio, desc: "Music"}
+    - {id: Anime, cat: TV/Anime, desc: "Anime"}
+    - {id: Documentaries, cat: TV/Documentary, desc: "Documentaries"}
+    - {id: Apps, cat: PC/0day, desc: "Apps"}
+    - {id: Other, cat: Other, desc: "Other"}
+    - {id: Books, cat: Books, desc: "Books"}
+    - {id: XXX, cat: XXX, desc: "XXX"}
+    - {id: TV shows, cat: TV, desc: "TV shows"}
+    - {id: E-books, cat: Books/EBook, desc: "E-books"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: sort
@@ -78,7 +78,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\W+", " " ]
+      args: ["\\W+", " "]
     - name: trim
 
   rows:
@@ -96,7 +96,7 @@ search:
       filters:
         - name: tolower
         - name: re_replace
-          args: [ " ", "-" ]
+          args: [" ", "-"]
     details:
       text: "/post-detail/{{ .Result._id }}/{{ .Result.details_url }}/"
     download:
@@ -107,7 +107,7 @@ search:
       selector: i
       filters:
         - name: replace
-          args: [ "B", "" ]
+          args: ["B", ""]
     date:
       selector: a
     size:

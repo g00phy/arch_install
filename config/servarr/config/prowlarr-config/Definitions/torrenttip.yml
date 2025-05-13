@@ -9,41 +9,48 @@ followredirect: true
 requestDelay: 2
 # to fetch current domain use https://tzip.top/
 links:
-  - https://Torrenttip168.com/
+  - https://torrenttip175.com/
 legacylinks:
   - https://Torrenttip165.com/
   - https://Torrenttip166.com/
   - https://Torrenttip167.com/
+  - https://Torrenttip168.com/
+  - https://Torrenttip169.com/
+  - https://torrenttip170.com/
+  - https://torrenttip171.com/
+  - https://torrenttip172.com/
+  - https://torrenttip173.com/
+  - https://torrenttip174.com/
 
 caps:
   categorymappings:
-    - { id: "한국영화", cat: Movies, desc: "한국영화 (Korean Movies)" }
-    - { id: "해외영화", cat: Movies/Foreign, desc: "해외영화 (Foreign Movies)" }
-    - { id: "해외드라마", cat: TV, desc: "해외드라마 (Foreign TV)" }
-    - { id: "한국드라마", cat: TV, desc: "한국드라마 (Korean TV)" }
-    - { id: "넷플릭스 영화", cat: Movies, desc: "넷플릭스 영화 (Netflix Movies)" }
-    - { id: "넷플릭스 시리즈", cat: TV, desc: "넷플릭스 시리즈 (Netflix TV)" }
-    - { id: "예능·오락", cat: Audio/Video, desc: "예능·오락 (Entertainment)" }
-    - { id: "다큐·교양", cat: TV/Documentary, desc: "다큐·교양 (Documentary)" }
-    - { id: "스포츠", cat: TV/Sport, desc: "스포츠 (Sport)" }
-    - { id: "음악", cat: Audio, desc: "음악 (Music)" }
-    - { id: "유아·어린이", cat: TV, desc: "유아·어린이 (Children)" }
-    - { id: "유튜브", cat: TV, desc: "유튜브 (Youtube)" }
-    - { id: "애니메이션", cat: TV/Anime, desc: "애니메이션 (Anime)" }
-    - { id: "만화", cat: Books/Comics, desc: "만화 (Manga)" }
-    - { id: "게임", cat: Console, desc: "게임 (Games)" }
-    - { id: "모바일", cat: PC/Mobile-Other, desc: "모바일 (Mobile)" }
-    - { id: "유틸리티", cat: PC, desc: "유틸리티 (Software)" }
-    - { id: "전자북·강좌", cat: Books/EBook, desc: "전자북·강좌 (EBooks)" }
+    - {id: "한국영화", cat: Movies, desc: "한국영화 (Korean Movies)"}
+    - {id: "해외영화", cat: Movies/Foreign, desc: "해외영화 (Foreign Movies)"}
+    - {id: "해외드라마", cat: TV, desc: "해외드라마 (Foreign TV)"}
+    - {id: "한국드라마", cat: TV, desc: "한국드라마 (Korean TV)"}
+    - {id: "넷플릭스 영화", cat: Movies, desc: "넷플릭스 영화 (Netflix Movies)"}
+    - {id: "넷플릭스 시리즈", cat: TV, desc: "넷플릭스 시리즈 (Netflix TV)"}
+    - {id: "예능·오락", cat: Audio/Video, desc: "예능·오락 (Entertainment)"}
+    - {id: "다큐·교양", cat: TV/Documentary, desc: "다큐·교양 (Documentary)"}
+    - {id: "스포츠", cat: TV/Sport, desc: "스포츠 (Sport)"}
+    - {id: "음악", cat: Audio, desc: "음악 (Music)"}
+    - {id: "유아·어린이", cat: TV, desc: "유아·어린이 (Children)"}
+    - {id: "유튜브", cat: TV, desc: "유튜브 (Youtube)"}
+    - {id: "애니메이션", cat: TV/Anime, desc: "애니메이션 (Anime)"}
+    - {id: "만화", cat: Books/Comics, desc: "만화 (Manga)"}
+    - {id: "게임", cat: Console, desc: "게임 (Games)"}
+    - {id: "모바일", cat: PC/Mobile-Other, desc: "모바일 (Mobile)"}
+    - {id: "유틸리티", cat: PC, desc: "유틸리티 (Software)"}
+    - {id: "전자북·강좌", cat: Books/EBook, desc: "전자북·강좌 (EBooks)"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
-settings: [ ]
+settings: []
 
 download:
   infohash:

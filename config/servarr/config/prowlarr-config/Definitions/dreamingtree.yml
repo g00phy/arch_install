@@ -10,11 +10,11 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Audio, desc: Music }
+    - {id: 1, cat: Audio, desc: Music}
 
   modes:
-    search: [ q ]
-    music-search: [ q, year, genre ]
+    search: [q]
+    music-search: [q, year, genre]
 
 settings:
   - name: username
@@ -110,7 +110,7 @@ search:
       attribute: src
       filters:
         - name: replace
-          args: [ "static/common/noartwork/music.png", "" ]
+          args: ["static/common/noartwork/music.png", ""]
     genre:
       selector: div.tags
     description_info:

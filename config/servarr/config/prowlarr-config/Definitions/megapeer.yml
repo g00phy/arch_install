@@ -13,31 +13,31 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 79, cat: Movies, desc: "Наши фильмы (Russian Movies)" }
-    - { id: 5, cat: TV, desc: "Наши сериалы (Russian Series)" }
-    - { id: 174, cat: Movies/Foreign, desc: "Зарубежные фильмы (Foreign Movies)" }
-    - { id: 6, cat: TV/Foreign, desc: "Зарубежные сериалы (Foreign Series)" }
-    - { id: 76, cat: TV/Anime, desc: "Мультипликация (Animation)" }
-    - { id: 89, cat: Audio/Video, desc: "Концерты / Клипы (Concerts / Clips)" }
-    - { id: 57, cat: TV, desc: "Телепередачи / Шоу / Юмор (TV)" }
-    - { id: 145, cat: TV/Other, desc: "Обучающее видео (Instructional Video)" }
-    - { id: 55, cat: TV/Documentary, desc: "Документалистика (Documentary)" }
-    - { id: 164, cat: TV/Other, desc: "Прочее (Other)" }
-    - { id: 21, cat: TV/Sport, desc: "Спорт (Sport)" }
-    - { id: 94, cat: Audio, desc: "Музыка (Music)" }
-    - { id: 28, cat: Console, desc: "Игры (Games)" }
-    - { id: 107, cat: PC/0day, desc: "Софт / ОС / Оформление (Software)" }
-    - { id: 41, cat: PC/Mobile-Other, desc: "Мобильные устройства (Mobile)" }
-    - { id: 52, cat: Books, desc: "Книги / Журналы (Books)" }
-    - { id: 169, cat: Other/Misc, desc: "Разное (Misc)" }
-    - { id: 178, cat: Other, desc: "Страницы (Pages)" }
+    - {id: 79, cat: Movies, desc: "Наши фильмы (Russian Movies)"}
+    - {id: 5, cat: TV, desc: "Наши сериалы (Russian Series)"}
+    - {id: 174, cat: Movies/Foreign, desc: "Зарубежные фильмы (Foreign Movies)"}
+    - {id: 6, cat: TV/Foreign, desc: "Зарубежные сериалы (Foreign Series)"}
+    - {id: 76, cat: TV/Anime, desc: "Мультипликация (Animation)"}
+    - {id: 89, cat: Audio/Video, desc: "Концерты / Клипы (Concerts / Clips)"}
+    - {id: 57, cat: TV, desc: "Телепередачи / Шоу / Юмор (TV)"}
+    - {id: 145, cat: TV/Other, desc: "Обучающее видео (Instructional Video)"}
+    - {id: 55, cat: TV/Documentary, desc: "Документалистика (Documentary)"}
+    - {id: 164, cat: TV/Other, desc: "Прочее (Other)"}
+    - {id: 21, cat: TV/Sport, desc: "Спорт (Sport)"}
+    - {id: 94, cat: Audio, desc: "Музыка (Music)"}
+    - {id: 28, cat: Console, desc: "Игры (Games)"}
+    - {id: 107, cat: PC/0day, desc: "Софт / ОС / Оформление (Software)"}
+    - {id: 41, cat: PC/Mobile-Other, desc: "Мобильные устройства (Mobile)"}
+    - {id: 52, cat: Books, desc: "Книги / Журналы (Books)"}
+    - {id: 169, cat: Other/Misc, desc: "Разное (Misc)"}
+    - {id: 178, cat: Other, desc: "Страницы (Pages)"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: stripcyrillic
@@ -79,18 +79,18 @@ search:
 
   headers:
     # prevent redirect
-    Referer: [ "{{ .Config.sitelink }}browse.php" ]
+    Referer: ["{{ .Config.sitelink }}browse.php"]
 
   keywordsfilters:
     - name: re_replace # S01 to сезон 1
-      args: [ "(?i)\\bS0*(\\d+)\\b", "сезон $1" ]
+      args: ["(?i)\\bS0*(\\d+)\\b", "сезон $1"]
     - name: re_replace # E02 to сери 1
-      args: [ "(?i)\\bE0*(\\d+)\\b", "сери $1" ]
+      args: ["(?i)\\bE0*(\\d+)\\b", "сери $1"]
     - name: re_replace # S01E02 to сезон 1 сери 2
-      args: [ "(?i)\\bS0*(\\d+)E0*(\\d+)\\b", "сезон $1 сери $2" ]
+      args: ["(?i)\\bS0*(\\d+)E0*(\\d+)\\b", "сезон $1 сери $2"]
     # prepend % to each word - allow 1 character keywords
     - name: re_replace
-      args: [ "(\\w+)", "%$1" ]
+      args: ["(\\w+)", "%$1"]
 
   rows:
     selector: tr.table_fon
@@ -103,57 +103,57 @@ search:
       filters:
         # normalize to SXXEYY format
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1"]
         - name: re_replace
-          args: [ "(?i)\\bFiles-х\\b", "Files-x" ]
+          args: ["(?i)\\bFiles-х\\b", "Files-x"]
         - name: re_replace
-          args: [ "(?i)\\sот\\s([\\w\\p{P}\\p{S}]+)$", "-$1" ]
+          args: ["(?i)\\sот\\s([\\w\\p{P}\\p{S}]+)$", "-$1"]
         - name: re_replace
-          args: [ "\\s\\|\\s(\\w{4,})$", "-$1" ]
+          args: ["\\s\\|\\s(\\w{4,})$", "-$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sRip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB\\sRip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sDL\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB\\sDL\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
     details:
@@ -173,29 +173,29 @@ search:
       selector: td:first-child
       filters:
         - name: replace
-          args: [ "Янв", "January" ]
+          args: ["Янв", "January"]
         - name: replace
-          args: [ "Фев", "February" ]
+          args: ["Фев", "February"]
         - name: replace
-          args: [ "Мар", "March" ]
+          args: ["Мар", "March"]
         - name: replace
-          args: [ "Апр", "Apr" ]
+          args: ["Апр", "Apr"]
         - name: replace
-          args: [ "Мая", "May" ]
+          args: ["Мая", "May"]
         - name: replace
-          args: [ "Июн", "Jun" ]
+          args: ["Июн", "Jun"]
         - name: replace
-          args: [ "Июл", "Jul" ]
+          args: ["Июл", "Jul"]
         - name: replace
-          args: [ "Авг", "Aug" ]
+          args: ["Авг", "Aug"]
         - name: replace
-          args: [ "Сен", "Sep" ]
+          args: ["Сен", "Sep"]
         - name: replace
-          args: [ "Окт", "Oct" ]
+          args: ["Окт", "Oct"]
         - name: replace
-          args: [ "Ноя", "Nov" ]
+          args: ["Ноя", "Nov"]
         - name: replace
-          args: [ "Дек", "Dec" ]
+          args: ["Дек", "Dec"]
         - name: append
           args: " +03:00" # MSK
         - name: dateparse

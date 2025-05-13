@@ -10,13 +10,13 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Movies" }
-    - { id: 2, cat: TV, desc: "TV" }
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "TV"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
 
 settings:
   - name: apikey
@@ -62,7 +62,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -76,13 +76,12 @@ search:
     - path: api/torrents/filter
       response:
         type: json
-        noResultsMessage: "No Torrents Found"
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -97,7 +96,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -128,7 +127,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -139,13 +138,13 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)(Екшн і Пригоди)", "Екшн_і_Пригоди" ]
+          args: ["(?i)(Екшн і Пригоди)", "Екшн_і_Пригоди"]
         - name: re_replace
-          args: [ "(?i)(Мильна опера)", "Мильна_опера" ]
+          args: ["(?i)(Мильна опера)", "Мильна_опера"]
         - name: re_replace
-          args: [ "(?i)(Науково фантастичний)", "Науково_фантастичний" ]
+          args: ["(?i)(Науково фантастичний)", "Науково_фантастичний"]
         - name: re_replace
-          args: [ "(?i)(Політика та війна)", "Політика_та_війна" ]
+          args: ["(?i)(Політика та війна)", "Політика_та_війна"]
     description:
       text: "{{ .Result.genre }}"
     seeders:
@@ -189,10 +188,10 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-    # global MR is 0.4 but torrents must be seeded for 3 days regardless of ratio
-    #    minimumratio:
-    #      text: 0.4
+# global MR is 0.4 but torrents must be seeded for 3 days regardless of ratio
+#    minimumratio:
+#      text: 0.4
     minimumseedtime:
       # 3 days (as seconds = 3 x 24 x 60 x 60)
       text: 259200
-# json UNIT3D 8.3.0
+# json UNIT3D 8.3.6

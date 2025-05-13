@@ -10,11 +10,11 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Books/EBook, desc: "Ebooks" }
+    - {id: 1, cat: Books/EBook, desc: "Ebooks"}
 
   modes:
-    search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    book-search: [q]
 
 settings:
   - name: username

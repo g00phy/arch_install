@@ -85,11 +85,11 @@ caps:
     iPhone/iPad软件: PC/Mobile-iOS # Apple - Software - iPhone/iPad
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -113,7 +113,7 @@ search:
       inputs:
         c: M
     - path: browse.php
-      categories: [ 1000, 1010, 1020, 1030, 1040, 1050, 1060, 1070, 1080, 1090, 1100, 1110, 1120, 1130, 1140, 1150, 1160, 1170, 1180, 4000, 4010, 4020, 4030, 4040, 4050, 4060, 4070, 7000, 7010, 7020, 7030, 7040, 7050, 7060 ]
+      categories: [1000, 1010, 1020, 1030, 1040, 1050, 1060, 1070, 1080, 1090, 1100, 1110, 1120, 1130, 1140, 1150, 1160, 1170, 1180, 4000, 4010, 4020, 4030, 4040, 4050, 4060, 4070, 7000, 7010, 7020, 7030, 7040, 7050, 7060]
       inputs:
         c: G
   inputs:
@@ -134,7 +134,7 @@ search:
         - name: querystring
           args: search_field
         - name: replace
-          args: [ "category:", "" ]
+          args: ["category:", ""]
         - name: trim
           args: "\""
     details:
@@ -151,14 +151,14 @@ search:
       selector: td:nth-child(9)
       filters:
         - name: split
-          args: [ "/", 0 ]
+          args: ["/", 0]
     leechers:
       selector: td:nth-child(9)
       filters:
         - name: split
-          args: [ "/", 1 ]
+          args: ["/", 1]
         - name: replace
-          args: [ "\n", "" ]
+          args: ["\n", ""]
     grabs:
       selector: td:nth-child(8)
     date:

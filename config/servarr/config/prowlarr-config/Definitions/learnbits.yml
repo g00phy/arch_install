@@ -10,88 +10,88 @@ links:
 
 caps:
   categorymappings:
-    - { id: 7, cat: TV/Documentary, desc: "Documentary" }
-    - { id: 83, cat: TV/Documentary, desc: "Documentary - Architecture" }
-    - { id: 61, cat: TV/Documentary, desc: "Documentary - Biography" }
-    - { id: 76, cat: TV/Documentary, desc: "Documentary - Culture" }
-    - { id: 75, cat: TV/Documentary, desc: "Documentary - EarthScience" }
-    - { id: 67, cat: TV/Documentary, desc: "Documentary - History" }
-    - { id: 80, cat: TV/Documentary, desc: "Documentary - MilitaryWar" }
-    - { id: 81, cat: TV/Documentary, desc: "Documentary - Politics" }
-    - { id: 82, cat: TV/Documentary, desc: "Documentary - Technology" }
-    - { id: 77, cat: TV/Documentary, desc: "Documentary - Travel" }
-    - { id: 74, cat: TV/Documentary, desc: "Documentary - Wildlife" }
-    - { id: 79", cat: TV/Documentary, desc: "Documentary Channels" }
-    - { id: 65, cat: TV/Documentary, desc: "Documentary Channels - BBC" }
-    - { id: 69, cat: TV/Documentary, desc: "Documentary Channels - Discovery" }
-    - { id: 56, cat: TV/Documentary, desc: "Documentary Channels - HistoryChannel" }
-    - { id: 55, cat: TV/Documentary, desc: "Documentary Channels - NationalGeo" }
-    - { id: 73, cat: TV/Documentary, desc: "Documentary Channels - PBS" }
-    - { id: 78, cat: TV/Documentary, desc: "Documentary Series" }
-    - { id: 58, cat: TV/Documentary, desc: "Documentary Series - AnimalPlanet" }
-    - { id: 66, cat: TV/Documentary, desc: "Documentary Series - ExtremeWorld" }
-    - { id: 70, cat: TV/Documentary, desc: "Documentary Series - Frontline" }
-    - { id: 62, cat: TV/Documentary, desc: "Documentary Series - Horizon" }
-    - { id: 59, cat: TV/Documentary, desc: "Documentary Series - HowItIsMade" }
-    - { id: 10, cat: TV/Documentary, desc: "Documentary Series - MegaFactories" }
-    - { id: 57, cat: TV/Documentary, desc: "Documentary Series - ModernMarvels" }
-    - { id: 63, cat: TV/Documentary, desc: "Documentary Series - NaturalWorld" }
-    - { id: 71, cat: TV/Documentary, desc: "Documentary Series - NatureOfThings" }
-    - { id: 54, cat: TV/Documentary, desc: "Documentary Series - Nova" }
-    - { id: 72, cat: TV/Documentary, desc: "Documentary Series - PBSNature" }
-    - { id: 68, cat: TV/Documentary, desc: "Documentary Series - ThroughTheWormhole" }
-    - { id: 60, cat: Other, desc: "General-Education" }
-    - { id: 34, cat: Other, desc: "General-Education - 3D-4D" }
-    - { id: 49, cat: Books/EBook, desc: "General-Education - Biographies" }
-    - { id: 3, cat: Books/EBook, desc: "General-Education - Business" }
-    - { id: 6, cat: Other, desc: "General-Education - Digital-Art" }
-    - { id: 36, cat: Other, desc: "General-Education - Early-Learning" }
-    - { id: 42, cat: Other, desc: "General-Education - Electronics" }
-    - { id: 48, cat: Other, desc: "General-Education - Graphic-Arts" }
-    - { id: 25, cat: Books/EBook, desc: "General-Education - History" }
-    - { id: 16, cat: Other, desc: "General-Education - Languages" }
-    - { id: 4, cat: Other, desc: "General-Education - Legal" }
-    - { id: 20, cat: Other, desc: "General-Education - Math" }
-    - { id: 21, cat: Other, desc: "General-Education - Medical" }
-    - { id: 41, cat: Other, desc: "General-Education - Philosophy" }
-    - { id: 53, cat: Other, desc: "General-Education - Photography" }
-    - { id: 45, cat: Other, desc: "General-Education - Politics" }
-    - { id: 39, cat: Other, desc: "General-Education - Psychology" }
-    - { id: 50, cat: Other, desc: "General-Education - Science" }
-    - { id: 35, cat: Other, desc: "General-Education - Trade-Skills" }
-    - { id: 38, cat: Other, desc: "General-Education - Writing" }
-    - { id: 46, cat: Other, desc: "Computer Science" }
-    - { id: 5, cat: Other, desc: "General-Education - Database" }
-    - { id: 9, cat: Other, desc: "General-Education - Exam-Guides" }
-    - { id: 11, cat: Other, desc: "General-Education - Forensics" }
-    - { id: 14, cat: Other, desc: "General-Education - IT-Manager" }
-    - { id: 15, cat: Other, desc: "General-Education - IT-Security" }
-    - { id: 17, cat: Other, desc: "General-Education - Linux-Unix" }
-    - { id: 18, cat: Other, desc: "General-Education - Mac-Apple" }
-    - { id: 31, cat: Other, desc: "General-Education - Microsoft" }
-    - { id: 22, cat: Other, desc: "General-Education - Network" }
-    - { id: 26, cat: Other, desc: "General-Education - Programming" }
-    - { id: 27, cat: Other, desc: "General-Education - Server-Admin" }
-    - { id: 29, cat: Other, desc: "General-Education - VOIP" }
-    - { id: 30, cat: Other, desc: "General-Education - Web-Design" }
-    - { id: 64, cat: Other, desc: "Just-4-Fun" }
-    - { id: 51, cat: Other, desc: "Just-4-Fun - Culinary" }
-    - { id: 12, cat: Other, desc: "Just-4-Fun - Fitness" }
-    - { id: 13, cat: Other, desc: "Just-4-Fun - Hobbies" }
-    - { id: 47, cat: Other, desc: "Just-4-Fun - Horticulture" }
-    - { id: 33, cat: Other, desc: "Just-4-Fun - International" }
-    - { id: 19, cat: Books/Mags, desc: "Just-4-Fun - Magazines" }
-    - { id: 52, cat: Other, desc: "Just-4-Fun - Magic" }
-    - { id: 32, cat: Other/Misc, desc: "Just-4-Fun - Miscellaneous" }
-    - { id: 23, cat: Other, desc: "Just-4-Fun - Music-Dance" }
-    - { id: 24, cat: Other, desc: "Just-4-Fun - Personal Growth" }
-    - { id: 28, cat: Other, desc: "Just-4-Fun - Sports-Self-Defence" }
-    - { id: 37, cat: Other, desc: "Just-4-Fun - VIP" }
+    - {id: 7, cat: TV/Documentary, desc: "Documentary"}
+    - {id: 83, cat: TV/Documentary, desc: "Documentary - Architecture"}
+    - {id: 61, cat: TV/Documentary, desc: "Documentary - Biography"}
+    - {id: 76, cat: TV/Documentary, desc: "Documentary - Culture"}
+    - {id: 75, cat: TV/Documentary, desc: "Documentary - EarthScience"}
+    - {id: 67, cat: TV/Documentary, desc: "Documentary - History"}
+    - {id: 80, cat: TV/Documentary, desc: "Documentary - MilitaryWar"}
+    - {id: 81, cat: TV/Documentary, desc: "Documentary - Politics"}
+    - {id: 82, cat: TV/Documentary, desc: "Documentary - Technology"}
+    - {id: 77, cat: TV/Documentary, desc: "Documentary - Travel"}
+    - {id: 74, cat: TV/Documentary, desc: "Documentary - Wildlife"}
+    - {id: 79", cat: TV/Documentary, desc: "Documentary Channels"}
+    - {id: 65, cat: TV/Documentary, desc: "Documentary Channels - BBC"}
+    - {id: 69, cat: TV/Documentary, desc: "Documentary Channels - Discovery"}
+    - {id: 56, cat: TV/Documentary, desc: "Documentary Channels - HistoryChannel"}
+    - {id: 55, cat: TV/Documentary, desc: "Documentary Channels - NationalGeo"}
+    - {id: 73, cat: TV/Documentary, desc: "Documentary Channels - PBS"}
+    - {id: 78, cat: TV/Documentary, desc: "Documentary Series"}
+    - {id: 58, cat: TV/Documentary, desc: "Documentary Series - AnimalPlanet"}
+    - {id: 66, cat: TV/Documentary, desc: "Documentary Series - ExtremeWorld"}
+    - {id: 70, cat: TV/Documentary, desc: "Documentary Series - Frontline"}
+    - {id: 62, cat: TV/Documentary, desc: "Documentary Series - Horizon"}
+    - {id: 59, cat: TV/Documentary, desc: "Documentary Series - HowItIsMade"}
+    - {id: 10, cat: TV/Documentary, desc: "Documentary Series - MegaFactories"}
+    - {id: 57, cat: TV/Documentary, desc: "Documentary Series - ModernMarvels"}
+    - {id: 63, cat: TV/Documentary, desc: "Documentary Series - NaturalWorld"}
+    - {id: 71, cat: TV/Documentary, desc: "Documentary Series - NatureOfThings"}
+    - {id: 54, cat: TV/Documentary, desc: "Documentary Series - Nova"}
+    - {id: 72, cat: TV/Documentary, desc: "Documentary Series - PBSNature"}
+    - {id: 68, cat: TV/Documentary, desc: "Documentary Series - ThroughTheWormhole"}
+    - {id: 60, cat: Other, desc: "General-Education"}
+    - {id: 34, cat: Other, desc: "General-Education - 3D-4D"}
+    - {id: 49, cat: Books/EBook, desc: "General-Education - Biographies"}
+    - {id: 3, cat: Books/EBook, desc: "General-Education - Business"}
+    - {id: 6, cat: Other, desc: "General-Education - Digital-Art"}
+    - {id: 36, cat: Other, desc: "General-Education - Early-Learning"}
+    - {id: 42, cat: Other, desc: "General-Education - Electronics"}
+    - {id: 48, cat: Other, desc: "General-Education - Graphic-Arts"}
+    - {id: 25, cat: Books/EBook, desc: "General-Education - History"}
+    - {id: 16, cat: Other, desc: "General-Education - Languages"}
+    - {id: 4, cat: Other, desc: "General-Education - Legal"}
+    - {id: 20, cat: Other, desc: "General-Education - Math"}
+    - {id: 21, cat: Other, desc: "General-Education - Medical"}
+    - {id: 41, cat: Other, desc: "General-Education - Philosophy"}
+    - {id: 53, cat: Other, desc: "General-Education - Photography"}
+    - {id: 45, cat: Other, desc: "General-Education - Politics"}
+    - {id: 39, cat: Other, desc: "General-Education - Psychology"}
+    - {id: 50, cat: Other, desc: "General-Education - Science"}
+    - {id: 35, cat: Other, desc: "General-Education - Trade-Skills"}
+    - {id: 38, cat: Other, desc: "General-Education - Writing"}
+    - {id: 46, cat: Other, desc: "Computer Science"}
+    - {id: 5, cat: Other, desc: "General-Education - Database"}
+    - {id: 9, cat: Other, desc: "General-Education - Exam-Guides"}
+    - {id: 11, cat: Other, desc: "General-Education - Forensics"}
+    - {id: 14, cat: Other, desc: "General-Education - IT-Manager"}
+    - {id: 15, cat: Other, desc: "General-Education - IT-Security"}
+    - {id: 17, cat: Other, desc: "General-Education - Linux-Unix"}
+    - {id: 18, cat: Other, desc: "General-Education - Mac-Apple"}
+    - {id: 31, cat: Other, desc: "General-Education - Microsoft"}
+    - {id: 22, cat: Other, desc: "General-Education - Network"}
+    - {id: 26, cat: Other, desc: "General-Education - Programming"}
+    - {id: 27, cat: Other, desc: "General-Education - Server-Admin"}
+    - {id: 29, cat: Other, desc: "General-Education - VOIP"}
+    - {id: 30, cat: Other, desc: "General-Education - Web-Design"}
+    - {id: 64, cat: Other, desc: "Just-4-Fun"}
+    - {id: 51, cat: Other, desc: "Just-4-Fun - Culinary"}
+    - {id: 12, cat: Other, desc: "Just-4-Fun - Fitness"}
+    - {id: 13, cat: Other, desc: "Just-4-Fun - Hobbies"}
+    - {id: 47, cat: Other, desc: "Just-4-Fun - Horticulture"}
+    - {id: 33, cat: Other, desc: "Just-4-Fun - International"}
+    - {id: 19, cat: Books/Mags, desc: "Just-4-Fun - Magazines"}
+    - {id: 52, cat: Other, desc: "Just-4-Fun - Magic"}
+    - {id: 32, cat: Other/Misc, desc: "Just-4-Fun - Miscellaneous"}
+    - {id: 23, cat: Other, desc: "Just-4-Fun - Music-Dance"}
+    - {id: 24, cat: Other, desc: "Just-4-Fun - Personal Growth"}
+    - {id: 28, cat: Other, desc: "Just-4-Fun - Sports-Self-Defence"}
+    - {id: 37, cat: Other, desc: "Just-4-Fun - VIP"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    book-search: [q]
 
 settings:
   - name: username
@@ -144,7 +144,7 @@ search:
       method: post
   keywordsfilters:
     - name: re_replace
-      args: [ "[^a-zA-Z0-9]+", "%" ]
+      args: ["[^a-zA-Z0-9]+", "%"]
   inputs:
     do: search
     keywords: "{{ .Keywords }}"
@@ -209,7 +209,7 @@ search:
       remove: a, b, img, span
       filters:
         - name: replace
-          args: [ "|", "" ]
+          args: ["|", ""]
         - name: dateparse
           args: "yyyy-MM-dd hh:mm tt"
     date:

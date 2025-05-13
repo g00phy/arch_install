@@ -13,8 +13,8 @@ caps:
     1: Audio
 
   modes:
-    search: [ q ]
-    music-search: [ q, artist ]
+    search: [q]
+    music-search: [q, artist]
 
 settings:
   - name: username
@@ -67,7 +67,7 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "&hit=1", "" ] # avoid redirect
+          args: ["&hit=1", ""] # avoid redirect
     date:
       selector: td:nth-child(6)
       # auto adjusted by site account profile

@@ -32,21 +32,21 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: applications, cat: PC, desc: Apps }
-    - { id: books, cat: Books, desc: Books }
-    - { id: games, cat: Console, desc: Games }
-    - { id: movies, cat: Movies, desc: Movies }
-    - { id: music, cat: Audio, desc: Music }
-    - { id: other, cat: Other, desc: Other }
-    - { id: tv, cat: TV, desc: TV }
-    - { id: xxx, cat: XXX, desc: XXX }
+    - {id: applications, cat: PC, desc: Apps}
+    - {id: books, cat: Books, desc: Books}
+    - {id: games, cat: Console, desc: Games}
+    - {id: movies, cat: Movies, desc: Movies}
+    - {id: music, cat: Audio, desc: Music}
+    - {id: other, cat: Other, desc: Other}
+    - {id: tv, cat: TV, desc: TV}
+    - {id: xxx, cat: XXX, desc: XXX}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: sort
@@ -105,12 +105,12 @@ search:
       selector: td:nth-child(4)
       filters:
         - name: replace
-          args: [ "N/A", 0 ]
+          args: ["N/A", 0]
     leechers:
       selector: td:nth-child(5)
       filters:
         - name: replace
-          args: [ "N/A", 0 ]
+          args: ["N/A", 0]
     downloadvolumefactor:
       text: 0
     uploadvolumefactor:

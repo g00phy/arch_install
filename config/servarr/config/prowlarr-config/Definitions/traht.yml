@@ -15,9 +15,11 @@ caps:
     xxx: XXX
 
   modes:
-    search: [ q ]
+    search: [q]
 
-settings: [ ]
+settings:
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 search:
   paths:
@@ -54,12 +56,12 @@ search:
       selector: td:nth-child(6)
       filters:
         - name: split
-          args: [ "|", 0 ]
+          args: ["|", 0]
     leechers:
       selector: td:nth-child(6)
       filters:
         - name: split
-          args: [ "|", 1 ]
+          args: ["|", 1]
     description:
       selector: img
       attribute: title

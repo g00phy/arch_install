@@ -10,7 +10,7 @@ type: public
 encoding: UTF-8
 # to fetch current domain use https://www.rantop.my/
 links:
-  - https://www.nortorrent3.com/
+  - https://www.nortorrent6.com/
 legacylinks:
   # latest domains list
   - https://www.rantop.my/
@@ -24,9 +24,6 @@ legacylinks:
   - https://www.torrent.onl/
   - https://www.rantop.org/
   # actual legacylinks
-  - https://www.torrent9.pe/
-  - https://www.torrent9.gl/
-  - https://www.torrent9.cyou/
   - https://www.torrent9.gd/
   - https://www.torrent9.ing/
   - https://www.torrent9.run/
@@ -39,32 +36,35 @@ legacylinks:
   - https://www.nortorrent.com/
   - https://www.nortorrent1.com/
   - https://www.nortorrent2.com/
+  - https://www.nortorrent3.com/
+  - https://www.nortorrent4.com/
+  - https://www.nortorrent5.com/
 
 caps:
   categorymappings:
-    - { id: Films, cat: Movies, desc: "Movies" }
-    - { id: Animes, cat: TV/Anime, desc: "Anime" }
-    - { id: Documentaires, cat: TV/Documentary, desc: "Documentaires" }
-    - { id: Séries, cat: TV, desc: "TV" }
-    - { id: Musiques, cat: Audio, desc: "Music" }
-    - { id: Ebooks, cat: Books, desc: "Books" }
-    - { id: Livres, cat: Books, desc: "Livres" }
-    - { id: Logiciels, cat: PC, desc: "Software" }
-    - { id: Applications, cat: PC, desc: "Applications" }
-    - { id: Jeux-PC, cat: PC/Games, desc: "PC Games" }
-    - { id: Jeux-Consoles, cat: Console/XBox 360, desc: "Console Games" }
-    - { id: Porno, cat: XXX, desc: "Porno" }
-    - { id: Spectacles, cat: TV/Other, desc: "Spectacles" }
-    - { id: Sports, cat: TV/Sport, desc: "Sports" }
-    - { id: Formations, cat: Other, desc: "Formations" }
-    - { id: Vidéos, cat: TV, desc: "Vidéos" }
+    - {id: Films, cat: Movies, desc: "Movies"}
+    - {id: Animes, cat: TV/Anime, desc: "Anime"}
+    - {id: Documentaires, cat: TV/Documentary, desc: "Documentaires"}
+    - {id: Séries, cat: TV, desc: "TV"}
+    - {id: Musiques, cat: Audio, desc: "Music"}
+    - {id: Ebooks, cat: Books, desc: "Books"}
+    - {id: Livres, cat: Books, desc: "Livres"}
+    - {id: Logiciels, cat: PC, desc: "Software"}
+    - {id: Applications, cat: PC, desc: "Applications"}
+    - {id: Jeux-PC, cat: PC/Games, desc: "PC Games"}
+    - {id: Jeux-Consoles, cat: Console/XBox 360, desc: "Console Games"}
+    - {id: Porno, cat: XXX, desc: "Porno"}
+    - {id: Spectacles, cat: TV/Other, desc: "Spectacles"}
+    - {id: Sports, cat: TV/Sport, desc: "Sports"}
+    - {id: Formations, cat: Other, desc: "Formations"}
+    - {id: Vidéos, cat: TV, desc: "Vidéos"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
   allowrawsearch: true
 
 settings:
@@ -105,9 +105,9 @@ search:
   keywordsfilters:
     # if searching for season packs swith S01 to saison 1 #9712
     - name: re_replace
-      args: [ "(?i)(S0)(\\d{1,2})$", "saison $2" ]
+      args: ["(?i)(S0)(\\d{1,2})$", "saison $2"]
     - name: re_replace
-      args: [ "(?i)(S)(\\d{1,3})$", "saison $2" ]
+      args: ["(?i)(S)(\\d{1,3})$", "saison $2"]
 
   rows:
     selector: table.table-striped > tbody > tr
@@ -120,19 +120,19 @@ search:
       selector: td:nth-child(1) a
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(FRENCH|MULTI|TRUEFRENCH|VOSTFR|SUBFRENCH)\\b(.+?)(\\b(19|20\\d{2})\\b)$", "$3 $1$2" ]
+          args: ["(?i)\\b(FRENCH|MULTI|TRUEFRENCH|VOSTFR|SUBFRENCH)\\b(.+?)(\\b(19|20\\d{2})\\b)$", "$3 $1$2"]
     title_vostfr:
       text: "{{ .Result.title_phase1 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(vostfr|subfrench)\\b", "ENGLISH" ]
+          args: ["(?i)\\b(vostfr|subfrench)\\b", "ENGLISH"]
     title_phase2:
       text: "{{ if .Config.vostfr }}{{ .Result.title_vostfr }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     title_multilang:
       text: "{{ .Result.title_phase2 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     details_href:

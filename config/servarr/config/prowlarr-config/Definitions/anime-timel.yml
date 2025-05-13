@@ -15,9 +15,9 @@ caps:
     books: Books
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    book-search: [q]
 
 settings:
   - name: username
@@ -52,7 +52,7 @@ search:
   keywordsfilters:
     - name: trim
     - name: re_replace
-      args: [ "\\W+", "%" ]
+      args: ["\\W+", "%"]
 
   rows:
     selector: div.flow-root > div.divide-y > div.p-2.space-y-2
@@ -89,11 +89,11 @@ search:
       selector: span.badge.badge-secondary, span.badge.badge-error
       filters:
         - name: replace
-          args: [ "non english", "non_english" ]
+          args: ["non english", "non_english"]
         - name: replace
-          args: [ "music video", "music_video" ]
+          args: ["music video", "music_video"]
         - name: replace
-          args: [ "Anime Time", "Anime_Time" ]
+          args: ["Anime Time", "Anime_Time"]
     description:
       text: "{{ .Result.genre }}"
     downloadvolumefactor:

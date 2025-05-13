@@ -13,23 +13,23 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Movie" }
-    - { id: 2, cat: TV, desc: "Serie TV" }
-    - { id: 15, cat: Books/EBook, desc: "Ebook" }
-    - { id: 17, cat: Books/Mags, desc: "Riviste e Giornali" }
-    - { id: 19, cat: XXX, desc: "XXX" }
-    - { id: 3, cat: Audio, desc: "Music" }
-    - { id: 7, cat: PC/Games, desc: "Games" }
-    - { id: 23, cat: PC, desc: "Software" }
-    - { id: 24, cat: TV/Sport, desc: "EVENTI SPORTIVI" }
-    - { id: 25, cat: Other, desc: "Misc" }
+    - {id: 1, cat: Movies, desc: "Movie"}
+    - {id: 2, cat: TV, desc: "Serie TV"}
+    - {id: 15, cat: Books/EBook, desc: "Ebook"}
+    - {id: 17, cat: Books/Mags, desc: "Riviste e Giornali"}
+    - {id: 19, cat: XXX, desc: "XXX"}
+    - {id: 3, cat: Audio, desc: "Music"}
+    - {id: 7, cat: PC/Games, desc: "Games"}
+    - {id: 23, cat: PC, desc: "Software"}
+    - {id: 24, cat: TV/Sport, desc: "EVENTI SPORTIVI"}
+    - {id: 25, cat: Other, desc: "Misc"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -71,7 +71,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -87,10 +87,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -106,11 +106,11 @@ search:
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
-      args: [ "\\b([SE]\\d{1,4}){1,2}\\b", "" ]
+      args: ["\\b([SE]\\d{1,4}){1,2}\\b", ""]
     - name: diacritics
       args: replace
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -130,28 +130,28 @@ search:
       text: "{{ if and (.Config.single_file_release_use_filename) (eq .Result.files \"1\") (.Result.title_filename) }}{{ .Result.title_filename }}{{ else }}{{ .Result.title_optional }}{{ end }}"
       filters:
         - name: re_replace # replace special characters with " " (space)
-          args: [ "[\\[!\"#$%&'()*+,\\-.\\/:;<=>?@[\\]^_`{|}~]", " " ]
+          args: ["[\\[!\"#$%&'()*+,\\-.\\/:;<=>?@[\\]^_`{|}~]", " "]
         - name: diacritics
           args: replace
         - name: re_replace # replace multiple spaces
-          args: [ "[ ]{2,}", " " ]
+          args: ["[ ]{2,}", " "]
         # normalize to SXXEYY format
         - name: re_replace # S01 E01 to S01E01
-          args: [ "(?i)\\bS(\\d+)\\sE(\\d+)\\b", "S$1E$2" ]
+          args: ["(?i)\\bS(\\d+)\\sE(\\d+)\\b", "S$1E$2"]
         - name: re_replace # 01x01 to S01E01
-          args: [ "(?i)(\\d{2})x(\\d+)", "S$1E$2" ]
+          args: ["(?i)(\\d{2})x(\\d+)", "S$1E$2"]
         - name: re_replace # 1x01 to S01E01
-          args: [ "(?i)\\b(\\d{1})x(\\d+)", "S0$1E$2" ]
+          args: ["(?i)\\b(\\d{1})x(\\d+)", "S0$1E$2"]
         - name: re_replace # Stagione X --> S0X
-          args: [ "(?i)\\bStagion[ei]\\s?(\\d{1})\\b|\\bSeason'?s?\\s?(\\d{1})\\b", "S0$1$2" ]
+          args: ["(?i)\\bStagion[ei]\\s?(\\d{1})\\b|\\bSeason'?s?\\s?(\\d{1})\\b", "S0$1$2"]
         - name: re_replace # Stagione XX --> SXX
-          args: [ "(?i)\\bStagion[ei]\\s?(\\d{2,})\\b|\\bSeason'?s?\\s?(\\d{2,})\\b", "S$1$2" ]
+          args: ["(?i)\\bStagion[ei]\\s?(\\d{2,})\\b|\\bSeason'?s?\\s?(\\d{2,})\\b", "S$1$2"]
         - name: re_replace # Episodio 4 to E4
-          args: [ "(?i)\\b(?:[\\/\\|]?Episodio\\s?(\\d+)|Puntata\\s?(\\d+))", "E$1$2" ]
+          args: ["(?i)\\b(?:[\\/\\|]?Episodio\\s?(\\d+)|Puntata\\s?(\\d+))", "E$1$2"]
         - name: re_replace # Episodi 4 5 to E04-05
-          args: [ "(?i)\\b(?:Puntate\\s*)(\\d+)\\s?(\\d+)", "E0$1-0$2" ]
+          args: ["(?i)\\b(?:Puntate\\s*)(\\d+)\\s?(\\d+)", "E0$1-0$2"]
         - name: re_replace # rimozioni varie
-          args: [ "(?i)(Serie completa|Completat?a?|in pausa)", "" ]
+          args: ["(?i)(Serie completa|Completat?a?|in pausa)", ""]
     details:
       selector: details_link
     download:
@@ -162,7 +162,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -173,9 +173,9 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)(televisione film)", "televisione_film" ]
+          args: ["(?i)(televisione film)", "televisione_film"]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     seeders:
@@ -219,10 +219,10 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-    # global MR is 0.4 but torrents must be seeded for 6 days regardless of ratio
-    #    minimumratio:
-    #      text: 0.4
+# global MR is 0.4 but torrents must be seeded for 6 days regardless of ratio
+#    minimumratio:
+#      text: 0.4
     minimumseedtime:
       # 6 days (as seconds = 6 x 24 x 60 x 60)
       text: 518400
-# json UNIT3D 9.0.1 (custom)
+# json UNIT3D 9.0.5 (custom)

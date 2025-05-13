@@ -9,7 +9,7 @@ requestDelay: 2.5 # 2.5 requests per second (2 causes problems)
 links:
   # if the primary domain changes then don't forget to update the details, download and poster replace args
   - https://yts.mx/
-  # official domain list are at https://yifystatus.com/ and  official proxies list are at https://ytsproxies.com/
+# official domain list are at https://yifystatus.com/ and  official proxies list are at https://ytsproxies.com/
   - https://yts.unblockninja.com/
   - https://yts.ninjaproxy1.com/
   - https://yts.proxyninja.org/
@@ -28,16 +28,16 @@ caps:
   categorymappings:
     # note: the API does not support searching with categories, so these are dummy ones for torznab compatibility
     # we map these newznab cats with the returned quality value in the releases routine.
-    - { id: 45, cat: Movies/HD, desc: "Movies/x264/720p" }
-    - { id: 44, cat: Movies/HD, desc: "Movies/x264/1080p" }
-    - { id: 46, cat: Movies/UHD, desc: "Movies/x264/2160p" }
-    - { id: 47, cat: Movies/3D, desc: "Movies/x264/3D" }
+    - {id: 45, cat: Movies/HD, desc: "Movies/x264/720p"}
+    - {id: 44, cat: Movies/HD, desc: "Movies/x264/1080p"}
+    - {id: 46, cat: Movies/UHD, desc: "Movies/x264/2160p"}
+    - {id: 47, cat: Movies/3D, desc: "Movies/x264/3D"}
 
   modes:
-    search: [ q ]
-    movie-search: [ q, imdbid ]
+    search: [q]
+    movie-search: [q, imdbid]
 
-settings: [ ]
+settings: []
 
 search:
   paths:
@@ -54,7 +54,7 @@ search:
   keywordsfilters:
     # ignore ' (e.g. search for america's Next Top Model)
     - name: re_replace
-      args: [ "[^\\w]+", " " ]
+      args: ["[^\\w]+", " "]
 
   rows:
     selector: data.movies
@@ -97,26 +97,26 @@ search:
       default: "{{ .Result.title_default }}"
       filters:
         - name: replace
-          args: [ ":", "" ]
+          args: [":", ""]
         - name: append
           args: " {{ .Result._quality }} {{ if eq .Result._type \"web\" }}WEBRip{{ else }}BRRip{{ end }} {{ if eq .Result._audio \"5.1\" }}5.1 {{ else }}{{ end }}{{ if eq .Result._depth \"10\" }}10Bit {{ else }}{{ end }}{{ .Result._codec }} -YTS"
     details:
       selector: ..url
       filters:
         - name: re_replace
-          args: [ "^https?:\\/\\/yts\\.mx\\/", "{{ .Config.sitelink }}" ] # fix for 12494
+          args: ["^https?:\\/\\/yts\\.mx\\/", "{{ .Config.sitelink }}"] # fix for 12494
     download:
       selector: url
       filters:
         - name: re_replace
-          args: [ "^https?:\\/\\/yts\\.mx\\/", "{{ .Config.sitelink }}" ] # fix for 12494
+          args: ["^https?:\\/\\/yts\\.mx\\/", "{{ .Config.sitelink }}"] # fix for 12494
     infohash:
       selector: hash
     poster:
       selector: ..large_cover_image
       filters:
         - name: re_replace
-          args: [ "^https?:\\/\\/yts\\.mx\\/", "{{ .Config.sitelink }}" ] # fix for 12494
+          args: ["^https?:\\/\\/yts\\.mx\\/", "{{ .Config.sitelink }}"] # fix for 12494
     imdbid:
       selector: ..imdb_code
     date:

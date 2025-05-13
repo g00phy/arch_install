@@ -13,7 +13,7 @@ caps:
     PC: PC
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: sort

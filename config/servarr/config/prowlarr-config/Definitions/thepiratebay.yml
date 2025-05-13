@@ -65,72 +65,72 @@ legacylinks:
 caps:
   categorymappings:
     # Audio
-    - { id: 100, cat: Audio, desc: "Audio" }
-    - { id: 101, cat: Audio, desc: "Music" }
-    - { id: 102, cat: Audio/Audiobook, desc: "Audio Books" }
-    - { id: 103, cat: Audio, desc: "Sound Clips" }
-    - { id: 104, cat: Audio/Lossless, desc: "FLAC" }
-    - { id: 199, cat: Audio/Other, desc: "Audio Other" }
+    - {id: 100, cat: Audio, desc: "Audio"}
+    - {id: 101, cat: Audio, desc: "Music"}
+    - {id: 102, cat: Audio/Audiobook, desc: "Audio Books"}
+    - {id: 103, cat: Audio, desc: "Sound Clips"}
+    - {id: 104, cat: Audio/Lossless, desc: "FLAC"}
+    - {id: 199, cat: Audio/Other, desc: "Audio Other"}
     # Video
-    - { id: 200, cat: Movies, desc: "Video" }
-    - { id: 201, cat: Movies, desc: "Movies" }
-    - { id: 202, cat: Movies, desc: "Movies DVDR" }
-    - { id: 203, cat: Audio/Video, desc: "Music Videos" }
-    - { id: 204, cat: Movies/Other, desc: "Movie Clips" }
-    - { id: 205, cat: TV, desc: "TV Shows" }
-    - { id: 206, cat: TV/Other, desc: "Handheld" }
-    - { id: 207, cat: Movies/HD, desc: "HD - Movies" }
-    - { id: 208, cat: TV/HD, desc: "HD - TV shows" }
-    - { id: 209, cat: Movies/3D, desc: "3D" }
-    - { id: 210, cat: Movies/SD, desc: "CAM/TS" }
-    - { id: 211, cat: Movies/UHD, desc: "UHD/4k - Movies" }
-    - { id: 212, cat: TV/UHD, desc: "UHD/4k - TV shows" }
-    - { id: 299, cat: Movies/Other, desc: "Video Other" }
+    - {id: 200, cat: Movies, desc: "Video"}
+    - {id: 201, cat: Movies, desc: "Movies"}
+    - {id: 202, cat: Movies, desc: "Movies DVDR"}
+    - {id: 203, cat: Audio/Video, desc: "Music Videos"}
+    - {id: 204, cat: Movies/Other, desc: "Movie Clips"}
+    - {id: 205, cat: TV, desc: "TV Shows"}
+    - {id: 206, cat: TV/Other, desc: "Handheld"}
+    - {id: 207, cat: Movies/HD, desc: "HD - Movies"}
+    - {id: 208, cat: TV/HD, desc: "HD - TV shows"}
+    - {id: 209, cat: Movies/3D, desc: "3D"}
+    - {id: 210, cat: Movies/SD, desc: "CAM/TS"}
+    - {id: 211, cat: Movies/UHD, desc: "UHD/4k - Movies"}
+    - {id: 212, cat: TV/UHD, desc: "UHD/4k - TV shows"}
+    - {id: 299, cat: Movies/Other, desc: "Video Other"}
     # Applications
-    - { id: 300, cat: PC, desc: "Applications" }
-    - { id: 301, cat: PC, desc: "Windows" }
-    - { id: 302, cat: PC/Mac, desc: "Mac" }
-    - { id: 303, cat: PC, desc: "UNIX" }
-    - { id: 304, cat: PC/Mobile-Other, desc: "Handheld" }
-    - { id: 305, cat: PC/Mobile-iOS, desc: "IOS (iPad/iPhone)" }
-    - { id: 306, cat: PC/Mobile-Android, desc: "Android" }
-    - { id: 399, cat: PC, desc: "Other OS" }
+    - {id: 300, cat: PC, desc: "Applications"}
+    - {id: 301, cat: PC, desc: "Windows"}
+    - {id: 302, cat: PC/Mac, desc: "Mac"}
+    - {id: 303, cat: PC, desc: "UNIX"}
+    - {id: 304, cat: PC/Mobile-Other, desc: "Handheld"}
+    - {id: 305, cat: PC/Mobile-iOS, desc: "IOS (iPad/iPhone)"}
+    - {id: 306, cat: PC/Mobile-Android, desc: "Android"}
+    - {id: 399, cat: PC, desc: "Other OS"}
     # Games
-    - { id: 400, cat: Console, desc: "Games" }
-    - { id: 401, cat: PC/Games, desc: "PC" }
-    - { id: 402, cat: PC/Mac, desc: "Mac" }
-    - { id: 403, cat: Console/PS4, desc: "PSx" }
-    - { id: 404, cat: Console/XBox, desc: "XBOX360" }
-    - { id: 405, cat: Console/Wii, desc: "Wii" }
-    - { id: 406, cat: Console/Other, desc: "Handheld" }
-    - { id: 407, cat: Console/Other, desc: "IOS (iPad/iPhone)" }
-    - { id: 408, cat: Console/Other, desc: "Android" }
-    - { id: 499, cat: Console/Other, desc: "Games Other" }
+    - {id: 400, cat: Console, desc: "Games"}
+    - {id: 401, cat: PC/Games, desc: "PC"}
+    - {id: 402, cat: PC/Mac, desc: "Mac"}
+    - {id: 403, cat: Console/PS4, desc: "PSx"}
+    - {id: 404, cat: Console/XBox, desc: "XBOX360"}
+    - {id: 405, cat: Console/Wii, desc: "Wii"}
+    - {id: 406, cat: Console/Other, desc: "Handheld"}
+    - {id: 407, cat: Console/Other, desc: "IOS (iPad/iPhone)"}
+    - {id: 408, cat: Console/Other, desc: "Android"}
+    - {id: 499, cat: Console/Other, desc: "Games Other"}
     # Porn
-    - { id: 500, cat: XXX, desc: "Porn" }
-    - { id: 501, cat: XXX, desc: "Movies" }
-    - { id: 502, cat: XXX/DVD, desc: "Movies DVDR" }
-    - { id: 503, cat: XXX/ImageSet, desc: "Pictures" }
-    - { id: 504, cat: XXX, desc: "Games" }
-    - { id: 505, cat: XXX/x264, desc: "HD - Movies" }
-    - { id: 506, cat: XXX, desc: "Movie Clips" }
-    - { id: 507, cat: XXX/UHD, desc: "UHD/4k - Movies" }
-    - { id: 599, cat: XXX/Other, desc: "Porn other" }
+    - {id: 500, cat: XXX, desc: "Porn"}
+    - {id: 501, cat: XXX, desc: "Movies"}
+    - {id: 502, cat: XXX/DVD, desc: "Movies DVDR"}
+    - {id: 503, cat: XXX/ImageSet, desc: "Pictures"}
+    - {id: 504, cat: XXX, desc: "Games"}
+    - {id: 505, cat: XXX/x264, desc: "HD - Movies"}
+    - {id: 506, cat: XXX, desc: "Movie Clips"}
+    - {id: 507, cat: XXX/UHD, desc: "UHD/4k - Movies"}
+    - {id: 599, cat: XXX/Other, desc: "Porn other"}
     # Other
-    - { id: 600, cat: Other, desc: "Other" }
-    - { id: 601, cat: Books/EBook, desc: "E-books" }
-    - { id: 602, cat: Books/Comics, desc: "Comics" }
-    - { id: 603, cat: Books, desc: "Pictures" }
-    - { id: 604, cat: Books, desc: "Covers" }
-    - { id: 605, cat: Books, desc: "Physibles" }
-    - { id: 699, cat: Books/Other, desc: "Other Other" }
+    - {id: 600, cat: Other, desc: "Other"}
+    - {id: 601, cat: Books/EBook, desc: "E-books"}
+    - {id: 602, cat: Books/Comics, desc: "Comics"}
+    - {id: 603, cat: Books, desc: "Pictures"}
+    - {id: 604, cat: Books, desc: "Covers"}
+    - {id: 605, cat: Books, desc: "Physibles"}
+    - {id: 699, cat: Books/Other, desc: "Other Other"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: info_api
@@ -148,17 +148,17 @@ search:
   keywordsfilters:
     # remove it's #8829
     - name: re_replace
-      args: [ "(?i)\\bit's\\b", "" ]
+      args: ["(?i)\\bit's\\b", ""]
     # replace simplified Chinese as this confuses TPB search engine #7291
     - name: re_replace
-      args: [ "([\\p{IsCJKUnifiedIdeographs}\\W]+)", "." ]
+      args: ["([\\p{IsCJKUnifiedIdeographs}\\W]+)", "."]
     # search for both S01 and Season 01
     - name: re_replace
-      args: [ "(?i)\\b(S(\\d{2,3}))\\b", "$1|\"Season.$2\"" ]
+      args: ["(?i)\\b(S(\\d{2,3}))\\b", "$1|\"Season.$2\""]
     # currently, the only uploader for General Hospital puts a space between season and episode
     # this filter searches both formats, so 'General Hospital S01E02' becomes 'General Hospital S01E02|"S01 E02"'
     - name: re_replace
-      args: [ "(?i)\\b(General\\.Hospital)\\.((S\\d{2,3})(E\\d{2,3}))\\b", "$1.$2|\"$3.$4\"" ]
+      args: ["(?i)\\b(General\\.Hospital)\\.((S\\d{2,3})(E\\d{2,3}))\\b", "$1.$2|\"$3.$4\""]
     - name: tolower
 
   rows:
@@ -175,11 +175,11 @@ search:
       selector: name
       filters:
         - name: re_replace
-          args: [ "- (\\w+-?\\w*)$", "-$1" ]
+          args: ["- (\\w+-?\\w*)$", "-$1"]
         - name: re_replace # Season X / Season X Complete --> S0X
-          args: [ "(?i)\\bSeason[\\s\\.]+(\\d)([\\s\\.]+Complete)?\\b", "S0$1" ]
+          args: ["(?i)\\bSeason[\\s\\.]+(\\d)([\\s\\.]+Complete)?\\b", "S0$1"]
         - name: re_replace # Season XX / Season XX Complete --> SXX
-          args: [ "(?i)\\bSeason[\\s\\.]+(\\d{1,2})([\\s\\.]+Complete)?\\b", "S$1" ]
+          args: ["(?i)\\bSeason[\\s\\.]+(\\d{1,2})([\\s\\.]+Complete)?\\b", "S$1"]
     description:
       selector: name
     details:

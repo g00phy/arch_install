@@ -14,7 +14,7 @@ caps:
     XXX: XXX
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: info_flaresolverr

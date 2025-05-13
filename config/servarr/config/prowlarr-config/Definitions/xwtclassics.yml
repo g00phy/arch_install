@@ -12,23 +12,23 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV/Sport, desc: "DVD" }
-    - { id: 9, cat: TV/Sport, desc: "Florida" }
-    - { id: 7, cat: TV/Sport, desc: "International" }
-    - { id: 6, cat: TV/Sport, desc: "Japan" }
-    - { id: 8, cat: TV/Sport, desc: "Misc" }
-    - { id: 11, cat: TV/Sport, desc: "NWA" }
-    - { id: 4, cat: TV/Sport, desc: "UWF/Mid-South" }
-    - { id: 12, cat: TV/Sport, desc: "WCW" }
-    - { id: 5, cat: TV/Sport, desc: "World Class" }
-    - { id: 10, cat: TV/Sport, desc: "WWE 24/7" }
-    - { id: 13, cat: TV/Sport, desc: "WWE Network" }
-    - { id: 2, cat: TV/Sport, desc: "WWF" }
+    - {id: 1, cat: TV/Sport, desc: "DVD"}
+    - {id: 9, cat: TV/Sport, desc: "Florida"}
+    - {id: 7, cat: TV/Sport, desc: "International"}
+    - {id: 6, cat: TV/Sport, desc: "Japan"}
+    - {id: 8, cat: TV/Sport, desc: "Misc"}
+    - {id: 11, cat: TV/Sport, desc: "NWA"}
+    - {id: 4, cat: TV/Sport, desc: "UWF/Mid-South"}
+    - {id: 12, cat: TV/Sport, desc: "WCW"}
+    - {id: 5, cat: TV/Sport, desc: "World Class"}
+    - {id: 10, cat: TV/Sport, desc: "WWE 24/7"}
+    - {id: 13, cat: TV/Sport, desc: "WWE Network"}
+    - {id: 2, cat: TV/Sport, desc: "WWF"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
 settings:
   - name: username

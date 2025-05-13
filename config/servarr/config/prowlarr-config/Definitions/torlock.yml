@@ -19,24 +19,24 @@ legacylinks:
 caps:
   # dont forget to update the search fields category case block
   categorymappings:
-    - { id: TELEVISION, cat: TV, desc: "TV Shows" }
-    - { id: MOVIES, cat: Movies, desc: "Movies" }
-    - { id: MUSIC, cat: Audio, desc: "Music" }
-    - { id: GAMES, cat: PC/Games, desc: "Games" }
-    - { id: SOFTWARE, cat: PC, desc: "Software" }
-    - { id: ANIME, cat: TV/Anime, desc: "Anime" }
-    - { id: EBOOKS, cat: Books/EBook, desc: "Books" }
-    - { id: OTHER, cat: Other, desc: "Other" }
-    - { id: ADULT, cat: XXX, desc: "Adult" }
-    - { id: AUDIOBOOK, cat: Audio/Audiobook, desc: "Audiobook" }
-    - { id: IMAGES, cat: Other/Misc, desc: "Images" }
+    - {id: TELEVISION, cat: TV, desc: "TV Shows"}
+    - {id: MOVIES, cat: Movies, desc: "Movies"}
+    - {id: MUSIC, cat: Audio, desc: "Music"}
+    - {id: GAMES, cat: PC/Games, desc: "Games"}
+    - {id: SOFTWARE, cat: PC, desc: "Software"}
+    - {id: ANIME, cat: TV/Anime, desc: "Anime"}
+    - {id: EBOOKS, cat: Books/EBook, desc: "Books"}
+    - {id: OTHER, cat: Other, desc: "Other"}
+    - {id: ADULT, cat: XXX, desc: "Adult"}
+    - {id: AUDIOBOOK, cat: Audio/Audiobook, desc: "Audiobook"}
+    - {id: IMAGES, cat: Other/Misc, desc: "Images"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: sort
@@ -58,33 +58,33 @@ settings:
 search:
   paths:
     - path: "/all/torrents/{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Today.Year }}{{ end }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}"
-      categories: [ "!", TELEVISION, MOVIES, MUSIC, GAMES, SOFTWARE, ANIME, EBOOKS, OTHER, ADULT, AUDIOBOOK, IMAGES ]
+      categories: ["!", TELEVISION, MOVIES, MUSIC, GAMES, SOFTWARE, ANIME, EBOOKS, OTHER, ADULT, AUDIOBOOK, IMAGES]
     - path: "{{ if .Keywords }}/television/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/television/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ TELEVISION ]
+      categories: [TELEVISION]
     - path: "{{ if .Keywords }}/movie/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/movies/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ MOVIES ]
+      categories: [MOVIES]
     - path: "{{ if .Keywords }}/music/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/music/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ MUSIC ]
+      categories: [MUSIC]
     - path: "{{ if .Keywords }}/game/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/games/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ GAMES ]
+      categories: [GAMES]
     - path: "{{ if .Keywords }}/software/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/software/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ SOFTWARE ]
+      categories: [SOFTWARE]
     - path: "{{ if .Keywords }}/anime/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/anime/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ ANIME ]
+      categories: [ANIME]
     - path: "{{ if .Keywords }}/ebook/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/ebooks/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ EBOOKS ]
+      categories: [EBOOKS]
     - path: "{{ if .Keywords }}/unknown/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/unknown.html{{end}}" # sorting is broken for unknown
-      categories: [ OTHER ]
+      categories: [OTHER]
     - path: "{{ if .Keywords }}/adult/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/adult/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ ADULT ]
+      categories: [ADULT]
     - path: "{{ if .Keywords }}/audiobook/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/audiobook/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ AUDIOBOOK ]
+      categories: [AUDIOBOOK]
     - path: "{{ if .Keywords }}/image/torrents/{{ .Keywords }}.html?sort={{ .Config.sort }}&order={{ .Config.type }}{{else}}/images/1/{{ .Config.sort }}/{{ .Config.type }}.html{{end}}"
-      categories: [ IMAGES ]
+      categories: [IMAGES]
   keywordsfilters:
     - name: tolower
     - name: re_replace
-      args: [ "[^a-zA-Z0-9]+", "-" ]
+      args: ["[^a-zA-Z0-9]+", "-"]
 
   rows:
     selector: table > tbody > tr:has(td:has(div:has(a[href^="/torrent/"])))
@@ -119,7 +119,7 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "/torrent/", "/tor/" ]
+          args: ["/torrent/", "/tor/"]
         - name: regexp
           args: (^/tor/\d*)
         - name: append
@@ -142,7 +142,7 @@ search:
       optional: true
       filters:
         - name: re_replace
-          args: [ "(min|mins)", "minutes" ]
+          args: ["(min|mins)", "minutes"]
         - name: timeago
     date:
       text: "{{ if or .Result.date_year .Result.date_ago .Result.date_day }}{{ or .Result.date_year  .Result.date_ago .Result.date_day }}{{ else }}now{{ end }}"

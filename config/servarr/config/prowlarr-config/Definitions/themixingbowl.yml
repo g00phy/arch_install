@@ -11,11 +11,11 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Audio, desc: Music }
+    - {id: 1, cat: Audio, desc: Music}
 
   modes:
-    search: [ q ]
-    music-search: [ q, artist ]
+    search: [q]
+    music-search: [q, artist]
 
 settings:
   - name: info_nojs
@@ -129,7 +129,7 @@ search:
       # auto adjusted by site account profile
       filters:
         - name: replace
-          args: [ "at", "" ]
+          args: ["at", ""]
         - name: dateparse
           args: "d MMM yyyy  HH:mm"
     downloadvolumefactor:

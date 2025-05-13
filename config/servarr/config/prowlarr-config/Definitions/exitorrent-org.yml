@@ -10,37 +10,37 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: PC, desc: "Aplikacje PC" }
-    - { id: 43, cat: Audio/Audiobook, desc: "Audiobooki" }
-    - { id: 33, cat: Movies/BluRay, desc: "BluRay" }
-    - { id: 28, cat: Movies/Other, desc: "Dla dzieci" }
-    - { id: 20, cat: Movies/DVD, desc: "DVD-R 5/9" }
-    - { id: 37, cat: Movies/SD, desc: "DVDFan" }
-    - { id: 31, cat: Books/EBook, desc: "eBooki / PDF" }
-    - { id: 30, cat: Movies/3D, desc: "Filmy/3D " }
-    - { id: 38, cat: Movies/SD, desc: "Filmy/BDRip-BRRip" }
-    - { id: 35, cat: Movies/HD, desc: "Filmy/x264-BluRay/HD" }
-    - { id: 45, cat: Movies/HD, desc: "Filmy/x265-BluRay/HD" }
-    - { id: 4, cat: PC/Games, desc: "Gry PC" }
-    - { id: 21, cat: PC/Mobile-Other, desc: "GSM/PDA" }
-    - { id: 2, cat: TV/HD, desc: "HDTV" }
-    - { id: 19, cat: Movies/SD, desc: "HQ / DVDRip" }
-    - { id: 6, cat: Audio, desc: "Muzyka" }
-    - { id: 39, cat: Movies/HD, desc: "Remux" }
-    - { id: 29, cat: Other, desc: "Różne" }
-    - { id: 7, cat: TV, desc: "Seriale" }
-    - { id: 22, cat: Audio/Video, desc: "Teledyski / Koncerty" }
-    - { id: 44, cat: Movies/UHD, desc: "UHD BluRay" }
-    - { id: 42, cat: Movies/UHD, desc: "UHD Remux" }
-    - { id: 23, cat: Movies/WEB-DL, desc: "WEB-DL / WEBRip" }
-    - { id: 9, cat: XXX, desc: "XXX" }
+    - {id: 1, cat: PC, desc: "Aplikacje PC"}
+    - {id: 43, cat: Audio/Audiobook, desc: "Audiobooki"}
+    - {id: 33, cat: Movies/BluRay, desc: "BluRay"}
+    - {id: 28, cat: Movies/Other, desc: "Dla dzieci"}
+    - {id: 20, cat: Movies/DVD, desc: "DVD-R 5/9"}
+    - {id: 37, cat: Movies/SD, desc: "DVDFan"}
+    - {id: 31, cat: Books/EBook, desc: "eBooki / PDF"}
+    - {id: 30, cat: Movies/3D, desc: "Filmy/3D "}
+    - {id: 38, cat: Movies/SD, desc: "Filmy/BDRip-BRRip"}
+    - {id: 35, cat: Movies/HD, desc: "Filmy/x264-BluRay/HD"}
+    - {id: 45, cat: Movies/HD, desc: "Filmy/x265-BluRay/HD"}
+    - {id: 4, cat: PC/Games, desc: "Gry PC"}
+    - {id: 21, cat: PC/Mobile-Other, desc: "GSM/PDA"}
+    - {id: 2, cat: TV/HD, desc: "HDTV"}
+    - {id: 19, cat: Movies/SD, desc: "HQ / DVDRip"}
+    - {id: 6, cat: Audio, desc: "Muzyka"}
+    - {id: 39, cat: Movies/HD, desc: "Remux"}
+    - {id: 29, cat: Other, desc: "Różne"}
+    - {id: 7, cat: TV, desc: "Seriale"}
+    - {id: 22, cat: Audio/Video, desc: "Teledyski / Koncerty"}
+    - {id: 44, cat: Movies/UHD, desc: "UHD BluRay"}
+    - {id: 42, cat: Movies/UHD, desc: "UHD Remux"}
+    - {id: 23, cat: Movies/WEB-DL, desc: "WEB-DL / WEBRip"}
+    - {id: 9, cat: XXX, desc: "XXX"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -102,7 +102,7 @@ search:
   keywordsfilters:
     # remove the year from the titles as the site chokes on them during search #7424
     - name: re_replace
-      args: [ " +(?:19|20)\\d{2} *$", "" ]
+      args: [" +(?:19|20)\\d{2} *$", ""]
 
   rows:
     selector: table[class="text"][border="0"][cellspacing="0"][cellpadding="4"] > tbody > tr:has(a[href^="details.php?id="]):has(td[class*="tableBody1"], td[class*="tableBody1B"])
@@ -122,7 +122,7 @@ search:
       selector: div[class="span_title"] > a[href^="details.php?id="]
       filters:
         - name: re_replace
-          args: [ "^(.*/)(.*)$", "$2" ]
+          args: ["^(.*/)(.*)$", "$2"]
         - name: trim
     title:
       text: "{{ if .Config.drop_polish_prefix }}{{ .Result.title_stripped }}{{ else }}{{ .Result.title_raw }}{{ end }}"
@@ -134,7 +134,7 @@ search:
       attribute: onclick
       filters:
         - name: re_replace
-          args: [ "^return downloadTorrent\\('([^']+)', '([^']+)', '[^']*'\\);$", "download.php/$1/$2.torrent" ]
+          args: ["^return downloadTorrent\\('([^']+)', '([^']+)', '[^']*'\\);$", "download.php/$1/$2.torrent"]
     genre:
       selector: div.span_title span div
     _language:

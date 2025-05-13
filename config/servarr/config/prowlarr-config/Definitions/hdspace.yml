@@ -10,35 +10,35 @@ links:
 
 caps:
   categorymappings:
-    - { id: 15, cat: Movies/BluRay, desc: "Movie / Blu-ray" }
-    - { id: 40, cat: Movies/HD, desc: "Movie / Remux" }
-    - { id: 18, cat: Movies/HD, desc: "Movie / 720p" }
-    - { id: 19, cat: Movies/HD, desc: "Movie / 1080p" }
-    - { id: 46, cat: Movies/UHD, desc: "Movie / 2160p" }
-    - { id: 21, cat: TV/HD, desc: "TV Show / 720p HDTV" }
-    - { id: 22, cat: TV/HD, desc: "TV Show / 1080p HDTV" }
-    - { id: 45, cat: TV/UHD, desc: "TV Show / 2160p HDTV" }
-    - { id: 24, cat: TV/Documentary, desc: "Documentary / 720p" }
-    - { id: 25, cat: TV/Documentary, desc: "Documentary / 1080p" }
-    - { id: 47, cat: TV/Documentary, desc: "Documentary / 2160p" }
-    - { id: 27, cat: TV/Anime, desc: "Animation / 720p" }
-    - { id: 28, cat: TV/Anime, desc: "Animation / 1080p" }
-    - { id: 48, cat: TV/Anime, desc: "Animation / 2160p" }
-    - { id: 30, cat: Audio/Lossless, desc: "Music / HQ Audio" }
-    - { id: 31, cat: Audio/Video, desc: "Music / Videos" }
-    - { id: 33, cat: XXX, desc: "XXX / 720p" }
-    - { id: 34, cat: XXX, desc: "XXX / 1080p" }
-    - { id: 49, cat: XXX, desc: "XXX / 2160p" }
-    - { id: 36, cat: Movies/Other, desc: "Trailers" }
-    - { id: 37, cat: PC, desc: "Software" }
-    - { id: 38, cat: Other, desc: "Others" }
-    - { id: 41, cat: Movies/UHD, desc: "Movie / 4K UHD" }
+    - {id: 15, cat: Movies/BluRay, desc: "Movie / Blu-ray"}
+    - {id: 40, cat: Movies/HD, desc: "Movie / Remux"}
+    - {id: 18, cat: Movies/HD, desc: "Movie / 720p"}
+    - {id: 19, cat: Movies/HD, desc: "Movie / 1080p"}
+    - {id: 46, cat: Movies/UHD, desc: "Movie / 2160p"}
+    - {id: 21, cat: TV/HD, desc: "TV Show / 720p HDTV"}
+    - {id: 22, cat: TV/HD, desc: "TV Show / 1080p HDTV"}
+    - {id: 45, cat: TV/UHD, desc: "TV Show / 2160p HDTV"}
+    - {id: 24, cat: TV/Documentary, desc: "Documentary / 720p"}
+    - {id: 25, cat: TV/Documentary, desc: "Documentary / 1080p"}
+    - {id: 47, cat: TV/Documentary, desc: "Documentary / 2160p"}
+    - {id: 27, cat: TV/Anime, desc: "Animation / 720p"}
+    - {id: 28, cat: TV/Anime, desc: "Animation / 1080p"}
+    - {id: 48, cat: TV/Anime, desc: "Animation / 2160p"}
+    - {id: 30, cat: Audio/Lossless, desc: "Music / HQ Audio"}
+    - {id: 31, cat: Audio/Video, desc: "Music / Videos"}
+    - {id: 33, cat: XXX, desc: "XXX / 720p"}
+    - {id: 34, cat: XXX, desc: "XXX / 1080p"}
+    - {id: 49, cat: XXX, desc: "XXX / 2160p"}
+    - {id: 36, cat: Movies/Other, desc: "Trailers"}
+    - {id: 37, cat: PC, desc: "Software"}
+    - {id: 38, cat: Other, desc: "Others"}
+    - {id: 41, cat: Movies/UHD, desc: "Movie / 4K UHD"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
 
 settings:
   - name: username
@@ -136,7 +136,7 @@ search:
       optional: true
       filters:
         - name: re_replace
-          args: [ "[ ]at|[//\xa0\\s,]+", " " ]
+          args: ["[ ]at|[//\xa0\\s,]+", " "]
     date_year:
       # January 30, 2024, 20:23:21
       selector: td:nth-child(5):not(:contains("day"))
@@ -144,7 +144,7 @@ search:
       optional: true
       filters:
         - name: re_replace
-          args: [ "[//\xa0\\s,]+", " " ]
+          args: ["[//\xa0\\s,]+", " "]
         - name: dateparse
           args: "MMMM dd yyyy HH:mm:ss"
     date:

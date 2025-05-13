@@ -16,11 +16,11 @@ caps:
     Other: Other
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: stripcyrillic
@@ -41,7 +41,7 @@ search:
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
-      args: [ "(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", "" ]
+      args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
 
   rows:
     selector: tr[class^="ttable_col"]
@@ -54,33 +54,33 @@ search:
       filters:
         # normalize to SXXEYY format
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)[xх](\\d+(?:-\\d+)?)\\s*из\\s*(\\d+)", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)[xх](\\d+(?:-\\d+)?)\\s*из\\s*(\\d+)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)[xх](\\d+(?:-\\d+)?)", "S$1E$2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)[xх](\\d+(?:-\\d+)?)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\d+)", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\d+)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)\\bFiles-х\\b", "Files-x" ]
+          args: ["(?i)\\bFiles-х\\b", "Files-x"]
         - name: re_replace
-          args: [ "(?i)\\sот\\s([\\w\\p{P}\\p{S}]+)$", "-$1" ]
+          args: ["(?i)\\sот\\s([\\w\\p{P}\\p{S}]+)$", "-$1"]
         - name: re_replace
-          args: [ "\\s\\|\\s(\\w{4,})$", "-$1" ]
+          args: ["\\s\\|\\s(\\w{4,})$", "-$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sRip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB\\sRip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sDL\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB\\sDL\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
     details:
@@ -103,9 +103,9 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ "Вчера", "Yesterday" ]
+          args: ["Вчера", "Yesterday"]
         - name: replace
-          args: [ "Сегодня", "Today" ]
+          args: ["Сегодня", "Today"]
         - name: fuzzytime
     date_year:
       selector: td:nth-child(1):contains("-")

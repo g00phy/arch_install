@@ -10,21 +10,21 @@ links:
 
 caps:
   categorymappings:
-    - { id: 501, cat: Movies, desc: "Movies(电影)" }
-    - { id: 502, cat: TV, desc: "TV Series(剧集)" }
-    - { id: 503, cat: TV/Documentary, desc: "Docs(纪录)" }
-    - { id: 504, cat: TV/Anime, desc: "Animations(动画)" }
-    - { id: 505, cat: TV, desc: "TV Shows(综艺)" }
-    - { id: 506, cat: TV/Sport, desc: "Sports(体育)" }
-    - { id: 507, cat: Audio/Video, desc: "MV(音乐视频)" }
-    - { id: 508, cat: Audio, desc: "Music(音乐)" }
-    - { id: 509, cat: Other, desc: "Others(其他)" }
+    - {id: 501, cat: Movies, desc: "Movies(电影)"}
+    - {id: 502, cat: TV, desc: "TV Series(剧集)"}
+    - {id: 503, cat: TV/Documentary, desc: "Docs(纪录)"}
+    - {id: 504, cat: TV/Anime, desc: "Animations(动画)"}
+    - {id: 505, cat: TV, desc: "TV Shows(综艺)"}
+    - {id: 506, cat: TV/Sport, desc: "Sports(体育)"}
+    - {id: 507, cat: Audio/Video, desc: "MV(音乐视频)"}
+    - {id: 508, cat: Audio, desc: "Music(音乐)"}
+    - {id: 509, cat: Other, desc: "Others(其他)"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, doubanid ]
-    movie-search: [ q, imdbid, doubanid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, doubanid]
+    movie-search: [q, imdbid, doubanid]
+    music-search: [q]
 
 settings:
   - name: cookie
@@ -149,17 +149,17 @@ search:
       selector: td.rowfollow:nth-last-child(2)
     downloadvolumefactor:
       case:
-        img.pro_free: 0
-        img.pro_free2up: 0
-        img.pro_50pctdown: 0.5
-        img.pro_50pctdown2up: 0.5
-        img.pro_30pctdown: 0.3
+        span.torrent-pro-free: 0
+        span.torrent-pro-twoupfree: 0
+        span.torrent-pro-halfdown: 0.5
+        span.torrent-pro-twouphalfdown: 0.5
+        span.torrent-pro-thirtypercent: 0.3
         "*": 1
     uploadvolumefactor:
       case:
-        img.pro_50pctdown2up: 2
-        img.pro_free2up: 2
-        img.pro_2up: 2
+        span.torrent-pro-twouphalfdown: 2
+        span.torrent-pro-twoupfree: 2
+        span.torrent-pro-twoup: 2
         "*": 1
     description:
       selector: td:nth-child(2)

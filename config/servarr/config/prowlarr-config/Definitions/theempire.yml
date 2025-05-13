@@ -12,44 +12,44 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 55, cat: TV, desc: "Adverts" }
-    - { id: 60, cat: TV, desc: "Educational" }
-    - { id: 63, cat: TV, desc: "Game Shows" }
-    - { id: 67, cat: TV, desc: "Music" }
-    - { id: 72, cat: TV, desc: "QuizComedy" }
-    - { id: 77, cat: TV, desc: "Special Events" }
-    - { id: 81, cat: TV, desc: "Trains & Planes" }
-    - { id: 54, cat: TV, desc: "Arts & Culture" }
-    - { id: 61, cat: TV, desc: "Entertainment" }
-    - { id: 53, cat: TV, desc: "Gardening" }
-    - { id: 68, cat: TV, desc: "Mystery & Crime Fiction" }
-    - { id: 73, cat: TV, desc: "Radio" }
-    - { id: 78, cat: TV, desc: "Special Interest" }
-    - { id: 82, cat: TV, desc: "Travel" }
-    - { id: 56, cat: TV, desc: "Comedy" }
-    - { id: 85, cat: TV, desc: "Euro-Noir" }
-    - { id: 64, cat: TV, desc: "Kids" }
-    - { id: 69, cat: TV, desc: "News" }
-    - { id: 74, cat: TV, desc: "Reality" }
-    - { id: 79, cat: TV, desc: "Sport" }
-    - { id: 83, cat: TV, desc: "Wildlife & Nature" }
-    - { id: 58, cat: TV, desc: "Documentary" }
-    - { id: 57, cat: TV, desc: "Fly on the Wall/Lifestyle" }
-    - { id: 65, cat: TV, desc: "Magazine" }
-    - { id: 70, cat: TV, desc: "Occult & Horror" }
-    - { id: 75, cat: TV, desc: "Sci-Fi" }
-    - { id: 84, cat: TV, desc: "Style & Fashion" }
-    - { id: 62, cat: TV, desc: "Food Drink & Cooking" }
-    - { id: 66, cat: TV, desc: "Motoring" }
-    - { id: 71, cat: TV, desc: "Property" }
-    - { id: 76, cat: TV, desc: "Soaps" }
-    - { id: 200, cat: TV, desc: "Soaps : Classic" }
-    - { id: 80, cat: TV, desc: "Talkshow" }
-    - { id: 59, cat: TV, desc: "Drama" }
+    - {id: 55, cat: TV, desc: "Adverts"}
+    - {id: 60, cat: TV, desc: "Educational"}
+    - {id: 63, cat: TV, desc: "Game Shows"}
+    - {id: 67, cat: TV, desc: "Music"}
+    - {id: 72, cat: TV, desc: "QuizComedy"}
+    - {id: 77, cat: TV, desc: "Special Events"}
+    - {id: 81, cat: TV, desc: "Trains & Planes"}
+    - {id: 54, cat: TV, desc: "Arts & Culture"}
+    - {id: 61, cat: TV, desc: "Entertainment"}
+    - {id: 53, cat: TV, desc: "Gardening"}
+    - {id: 68, cat: TV, desc: "Mystery & Crime Fiction"}
+    - {id: 73, cat: TV, desc: "Radio"}
+    - {id: 78, cat: TV, desc: "Special Interest"}
+    - {id: 82, cat: TV, desc: "Travel"}
+    - {id: 56, cat: TV, desc: "Comedy"}
+    - {id: 85, cat: TV, desc: "Euro-Noir"}
+    - {id: 64, cat: TV, desc: "Kids"}
+    - {id: 69, cat: TV, desc: "News"}
+    - {id: 74, cat: TV, desc: "Reality"}
+    - {id: 79, cat: TV, desc: "Sport"}
+    - {id: 83, cat: TV, desc: "Wildlife & Nature"}
+    - {id: 58, cat: TV, desc: "Documentary"}
+    - {id: 57, cat: TV, desc: "Fly on the Wall/Lifestyle"}
+    - {id: 65, cat: TV, desc: "Magazine"}
+    - {id: 70, cat: TV, desc: "Occult & Horror"}
+    - {id: 75, cat: TV, desc: "Sci-Fi"}
+    - {id: 84, cat: TV, desc: "Style & Fashion"}
+    - {id: 62, cat: TV, desc: "Food Drink & Cooking"}
+    - {id: 66, cat: TV, desc: "Motoring"}
+    - {id: 71, cat: TV, desc: "Property"}
+    - {id: 76, cat: TV, desc: "Soaps"}
+    - {id: 200, cat: TV, desc: "Soaps : Classic"}
+    - {id: 80, cat: TV, desc: "Talkshow"}
+    - {id: 59, cat: TV, desc: "Drama"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
+    search: [q]
+    tv-search: [q, season, ep]
 
 settings:
   - name: cookie
@@ -112,9 +112,9 @@ search:
   keywordsfilters:
     # if searching for season packs switch S01 to Series 1
     - name: re_replace
-      args: [ "(?i)\\bS0(\\d{1,2})\\b", "Series $1" ]
+      args: ["(?i)\\bS0(\\d{1,2})\\b", "Series $1"]
     - name: re_replace
-      args: [ "(?i)\\bS(\\d{1,3})\\b", "Series $1" ]
+      args: ["(?i)\\bS(\\d{1,3})\\b", "Series $1"]
 
   rows:
     selector: table[border="0"] > tbody > tr.ttable:has(a[href^="browse.php?cat="]):not(:has(font[color="blue"])):not(:contains("*TCG*"))
@@ -131,7 +131,7 @@ search:
       attribute: title
       filters:
         - name: re_replace
-          args: [ "(?i)\\bSeries[\\s]+(\\d+)\\b", "S$1" ]
+          args: ["(?i)\\bSeries[\\s]+(\\d+)\\b", "S$1"]
     details:
       selector: a[href^="details.php?id="]
       attribute: href
@@ -142,7 +142,7 @@ search:
       selector: td:nth-child(8)
       filters:
         - name: replace
-          args: [ "Never", "0" ]
+          args: ["Never", "0"]
     files:
       selector: td:nth-child(4)
     size:

@@ -12,55 +12,55 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 119, cat: Other, desc: "Bilder" }
-    - { id: 139, cat: TV/Documentary, desc: "Doku - HD" }
-    - { id: 141, cat: TV/Documentary, desc: "Doku - Pack" }
-    - { id: 140, cat: TV/Documentary, desc: "Doku - SD" }
-    - { id: 142, cat: TV/Documentary, desc: "Doku - Sonstige" }
-    - { id: 120, cat: Books, desc: "Ebook" }
-    - { id: 135, cat: Movies/UHD, desc: "Filme - 2160p" }
-    - { id: 131, cat: TV/Anime, desc: "Filme - Animie" }
-    - { id: 101, cat: Movies/BluRay, desc: "Filme - Blue Ray" }
-    - { id: 102, cat: Movies/Other, desc: "Filme - Bollywood" }
-    - { id: 149, cat: Movies/DVD, desc: "Filme - DVD" }
-    - { id: 104, cat: Movies/DVD, desc: "Filme - DVD-R" }
-    - { id: 135, cat: Movies/HD, desc: "Filme - HD" }
-    - { id: 130, cat: Movies, desc: "Filme - Klassiker" }
-    - { id: 147, cat: Movies, desc: "Filme - Pack" }
-    - { id: 134, cat: Movies/SD, desc: "Filme - SD" }
-    - { id: 136, cat: Movies/UHD, desc: "Filme - UHD" }
-    - { id: 105, cat: Movies/HD, desc: "Filme - x264/x265" }
-    - { id: 106, cat: Movies/SD, desc: "Filme - XviD / DivX" }
-    - { id: 127, cat: Movies, desc: "Für Unsere kleinsten" }
-    - { id: 121, cat: PC/Mobile-Other, desc: "Handy Stuff" }
-    - { id: 124, cat: Audio, desc: "Musik - Alben" }
-    - { id: 123, cat: Audio, desc: "Musik - Discography" }
-    - { id: 122, cat: Audio/Audiobook, desc: "Musik - Hörbuch" }
-    - { id: 133, cat: Audio/MP3, desc: "Musik - MP3/Mp4" }
-    - { id: 146, cat: Audio, desc: "Musik - Pack" }
-    - { id: 125, cat: Audio/Video, desc: "Musik - Video" }
-    - { id: 113, cat: PC, desc: "Programme - Linux" }
-    - { id: 114, cat: PC/Mac, desc: "Programme - Mac" }
-    - { id: 115, cat: PC/0day, desc: "Programme - Windows" }
-    - { id: 137, cat: TV/HD, desc: "Serien - HD" }
-    - { id: 116, cat: TV, desc: "Serien - Pack" }
-    - { id: 138, cat: TV/SD, desc: "Serien - SD" }
-    - { id: 143, cat: TV/Other, desc: "Serien - Sonstige" }
-    - { id: 144, cat: TV/UHD, desc: "Serien - UHD" }
-    - { id: 129, cat: Other, desc: "Sonstiges" }
-    - { id: 109, cat: PC/Mobile-Other, desc: "Spiele - Handy" }
-    - { id: 112, cat: Console, desc: "Spiele - Konsolen" }
-    - { id: 111, cat: PC/Games, desc: "Spiele - Mac / Linux" }
-    - { id: 110, cat: PC/Games, desc: "Spiele - PC" }
-    - { id: 118, cat: TV/Sport, desc: "WWE - Sport" }
-    - { id: 69, cat: XXX, desc: "XXX" }
+    - {id: 119, cat: Other, desc: "Bilder"}
+    - {id: 139, cat: TV/Documentary, desc: "Doku - HD"}
+    - {id: 141, cat: TV/Documentary, desc: "Doku - Pack"}
+    - {id: 140, cat: TV/Documentary, desc: "Doku - SD"}
+    - {id: 142, cat: TV/Documentary, desc: "Doku - Sonstige"}
+    - {id: 120, cat: Books, desc: "Ebook"}
+    - {id: 150, cat: Movies/UHD, desc: "Filme - 2160p"}
+    - {id: 131, cat: TV/Anime, desc: "Filme - Animie"}
+    - {id: 101, cat: Movies/BluRay, desc: "Filme - Blue Ray"}
+    - {id: 102, cat: Movies/Other, desc: "Filme - Bollywood"}
+    - {id: 149, cat: Movies/DVD, desc: "Filme - DVD"}
+    - {id: 104, cat: Movies/DVD, desc: "Filme - DVD-R"}
+    - {id: 135, cat: Movies/HD, desc: "Filme - HD"}
+    - {id: 130, cat: Movies, desc: "Filme - Klassiker"}
+    - {id: 147, cat: Movies, desc: "Filme - Pack"}
+    - {id: 134, cat: Movies/SD, desc: "Filme - SD"}
+    - {id: 136, cat: Movies/UHD, desc: "Filme - UHD"}
+    - {id: 105, cat: Movies/HD, desc: "Filme - x264/x265"}
+    - {id: 106, cat: Movies/SD, desc: "Filme - XviD / DivX"}
+    - {id: 127, cat: Movies, desc: "Für Unsere kleinsten"}
+    - {id: 121, cat: PC/Mobile-Other, desc: "Handy Stuff"}
+    - {id: 124, cat: Audio, desc: "Musik - Alben"}
+    - {id: 123, cat: Audio, desc: "Musik - Discography"}
+    - {id: 122, cat: Audio/Audiobook, desc: "Musik - Hörbuch"}
+    - {id: 133, cat: Audio/MP3, desc: "Musik - MP3/Mp4"}
+    - {id: 146, cat: Audio, desc: "Musik - Pack"}
+    - {id: 125, cat: Audio/Video, desc: "Musik - Video"}
+    - {id: 113, cat: PC, desc: "Programme - Linux"}
+    - {id: 114, cat: PC/Mac, desc: "Programme - Mac"}
+    - {id: 115, cat: PC/0day, desc: "Programme - Windows"}
+    - {id: 137, cat: TV/HD, desc: "Serien - HD"}
+    - {id: 116, cat: TV, desc: "Serien - Pack"}
+    - {id: 138, cat: TV/SD, desc: "Serien - SD"}
+    - {id: 143, cat: TV/Other, desc: "Serien - Sonstige"}
+    - {id: 144, cat: TV/UHD, desc: "Serien - UHD"}
+    - {id: 129, cat: Other, desc: "Sonstiges"}
+    - {id: 109, cat: PC/Mobile-Other, desc: "Spiele - Handy"}
+    - {id: 112, cat: Console, desc: "Spiele - Konsolen"}
+    - {id: 111, cat: PC/Games, desc: "Spiele - Mac / Linux"}
+    - {id: 110, cat: PC/Games, desc: "Spiele - PC"}
+    - {id: 118, cat: TV/Sport, desc: "WWE - Sport"}
+    - {id: 69, cat: XXX, desc: "XXX"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -116,7 +116,8 @@ login:
 
 search:
   # https://the-new-fun.spdns.eu/browse.php?showsearch=1&c140=1&c142=1&search=2022+1080p&incldead=1&orderby=added&sort=desc
-  path: browse.php
+  paths:
+    - path: browse.php
   inputs:
     $raw: "{{ range .Categories }}c{{.}}=1&{{end}}"
     showsearch: 1
@@ -164,7 +165,7 @@ search:
         - name: append
           args: " +01:00" # CET
         - name: replace
-          args: [ "\xA0", " " ]
+          args: ["\xA0", " "]
         - name: dateparse
           args: "dd.MM.yyyy HH:mm:ss zzz"
     downloadvolumefactor:

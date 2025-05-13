@@ -15,22 +15,22 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV/Anime, desc: "Anime" }
-    - { id: 2, cat: PC/0day, desc: "Software" }
-    - { id: 3, cat: PC/Games, desc: "Games" }
-    - { id: 4, cat: XXX, desc: "Adult" }
-    - { id: 5, cat: Movies, desc: "Movies" }
-    - { id: 6, cat: Audio, desc: "Music" }
-    - { id: 7, cat: Other, desc: "Other" }
-    - { id: 8, cat: TV, desc: "Series & TV" }
-    - { id: 9, cat: Books, desc: "Books" }
+    - {id: 1, cat: TV/Anime, desc: "Anime"}
+    - {id: 2, cat: PC/0day, desc: "Software"}
+    - {id: 3, cat: PC/Games, desc: "Games"}
+    - {id: 4, cat: XXX, desc: "Adult"}
+    - {id: 5, cat: Movies, desc: "Movies"}
+    - {id: 6, cat: Audio, desc: "Music"}
+    - {id: 7, cat: Other, desc: "Other"}
+    - {id: 8, cat: TV, desc: "Series & TV"}
+    - {id: 9, cat: Books, desc: "Books"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: category

@@ -10,23 +10,23 @@ links:
 
 caps:
   categorymappings:
-    - { id: 29, cat: Movies/HD, desc: "Movies Фильмы" }
-    - { id: 25, cat: TV/Anime, desc: "Cartoons Мультфильмы" }
-    - { id: 26, cat: Audio/Lossless, desc: "Hi-Res Audio" }
-    - { id: 27, cat: Other, desc: "Demo Демо" }
-    - { id: 28, cat: TV/Documentary, desc: "Documentary Документальное кино" }
-    - { id: 30, cat: Audio/Video, desc: "Music Video Музыкальное видео" }
-    - { id: 31, cat: TV/Sport, desc: "Sport Спорт" }
-    - { id: 32, cat: TV/HD, desc: "TV Show ТВ Шоу" }
-    - { id: 33, cat: TV/HD, desc: "Soaps Сериалы" }
-    - { id: 34, cat: TV/HD, desc: "Other" }
-    - { id: 35, cat: Movies, desc: "Content w/o subs Контент без перевода" }
+    - {id: 29, cat: Movies/HD, desc: "Movies Фильмы"}
+    - {id: 25, cat: TV/Anime, desc: "Cartoons Мультфильмы"}
+    - {id: 26, cat: Audio/Lossless, desc: "Hi-Res Audio"}
+    - {id: 27, cat: Other, desc: "Demo Демо"}
+    - {id: 28, cat: TV/Documentary, desc: "Documentary Документальное кино"}
+    - {id: 30, cat: Audio/Video, desc: "Music Video Музыкальное видео"}
+    - {id: 31, cat: TV/Sport, desc: "Sport Спорт"}
+    - {id: 32, cat: TV/HD, desc: "TV Show ТВ Шоу"}
+    - {id: 33, cat: TV/HD, desc: "Soaps Сериалы"}
+    - {id: 34, cat: TV/HD, desc: "Other"}
+    - {id: 35, cat: Movies, desc: "Content w/o subs Контент без перевода"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
 
 settings:
   - name: cookie
@@ -74,18 +74,18 @@ search:
     free: "{{ if .Config.freeleech }}1{{ else }}{{ end }}"
 
   headers:
-    User-Agent: [ "{{ .Config.useragent }}" ]
+    User-Agent: ["{{ .Config.useragent }}"]
 
   keywordsfilters:
     # remove the year from the titles as the site chokes on them during search https://github.com/Jackett/Jackett/issues/4397#issuecomment-623148789
     - name: re_replace
-      args: [ " +(?:19|20)\\d{2} *$", "" ]
+      args: [" +(?:19|20)\\d{2} *$", ""]
     # if season only then S01 -> Season 1
     - name: re_replace
-      args: [ "(?i) S0(\\d{1})$", " Season $1" ]
+      args: ["(?i) S0(\\d{1})$", " Season $1"]
     # if season only then S10 -> Season 10
     - name: re_replace
-      args: [ "(?i) S(\\d{2})$", " Season $1" ]
+      args: ["(?i) S(\\d{2})$", " Season $1"]
 
   rows:
     selector: table.browse > tbody > tr
@@ -98,16 +98,16 @@ search:
       selector: a[href^="/details/id"]
       filters:
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         # convert Season xx -> Sxx
         - name: re_replace
-          args: [ "(?i)Season (\\d{2})", "S$1" ]
+          args: ["(?i)Season (\\d{2})", "S$1"]
         # convert Season x -> S0x
         - name: re_replace
-          args: [ "(?i)Season (\\d{1})", "S0$1" ]
+          args: ["(?i)Season (\\d{1})", "S0$1"]
         # remove []
         - name: re_replace
-          args: [ "[\\[|\\]]", "" ]
+          args: ["[\\[|\\]]", ""]
     details:
       selector: a[href^="/details/id"]
       attribute: href
@@ -127,12 +127,12 @@ search:
       selector: td:nth-child(4)
       filters:
         - name: split
-          args: [ "|", 0 ]
+          args: ["|", 0]
     leechers:
       selector: td:nth-child(4)
       filters:
         - name: split
-          args: [ "|", 1 ]
+          args: ["|", 1]
     grabs:
       selector: td:nth-child(5) strong
     size:

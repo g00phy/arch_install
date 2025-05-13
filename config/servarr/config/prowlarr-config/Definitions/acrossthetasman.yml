@@ -13,7 +13,7 @@ caps:
     1: TV/Sport
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username
@@ -77,7 +77,7 @@ search:
       selector: td:nth-child(4) > span:nth-child(1)
       filters:
         - name: re_replace
-          args: [ "[\\s]+Uploaded.*", "" ]
+          args: ["[\\s]+Uploaded.*", ""]
     download:
       selector: a[href*="attachment.php?attachmentid="]
       attribute: href

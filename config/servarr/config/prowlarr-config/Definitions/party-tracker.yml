@@ -10,38 +10,38 @@ links:
 
 caps:
   categorymappings:
-    - { id: 47, cat: Console/XBox, desc: "Játék/Xbox" }
-    - { id: 46, cat: Console/PS3, desc: "Játék/Ps2" }
-    - { id: 45, cat: PC/Games, desc: "Játék/Pc" }
-    - { id: 44, cat: Movies/SD, desc: "Cam/hun" }
-    - { id: 69, cat: Movies/SD, desc: "Cam/eng" }
-    - { id: 43, cat: Movies/SD, desc: "Film/Hun/XviD" }
-    - { id: 42, cat: Movies/SD, desc: "Film/Eng/XviD" }
-    - { id: 41, cat: Movies/DVD, desc: "Film/Hun/DVD" }
-    - { id: 40, cat: Movies/DVD, desc: "Film/Eng/DVD" }
-    - { id: 39, cat: Books/EBook, desc: "E-book" }
-    - { id: 38, cat: TV/HD, desc: "HD/Hun" }
-    - { id: 57, cat: TV/SD, desc: "Sorozat/Eng" }
-    - { id: 66, cat: TV/HD, desc: "HD/Eng" }
-    - { id: 50, cat: PC/Mobile-Other, desc: "Mobil" }
-    - { id: 51, cat: PC/0day, desc: "Programok" }
-    - { id: 52, cat: TV/SD, desc: "Sorozat/Hun" }
-    - { id: 53, cat: XXX/x264, desc: "XXX/Film" }
-    - { id: 54, cat: XXX/ImageSet, desc: "XXX/Kép" }
-    - { id: 48, cat: Other, desc: "Képek" }
-    - { id: 49, cat: TV/Anime, desc: "Mese" }
-    - { id: 55, cat: Audio, desc: "Zene/Eng" }
-    - { id: 56, cat: Audio, desc: "Zene/Hun" }
-    - { id: 65, cat: Audio/Audiobook, desc: "Hangoskönyv" }
-    - { id: 67, cat: Audio/Video, desc: "Klipp" }
-    - { id: 68, cat: Books/EBook, desc: "Ebook/eng" }
+    - {id: 47, cat: Console/XBox, desc: "Játék/Xbox"}
+    - {id: 46, cat: Console/PS3, desc: "Játék/Ps2"}
+    - {id: 45, cat: PC/Games, desc: "Játék/Pc"}
+    - {id: 44, cat: Movies/SD, desc: "Cam/hun"}
+    - {id: 69, cat: Movies/SD, desc: "Cam/eng"}
+    - {id: 43, cat: Movies/SD, desc: "Film/Hun/XviD"}
+    - {id: 42, cat: Movies/SD, desc: "Film/Eng/XviD"}
+    - {id: 41, cat: Movies/DVD, desc: "Film/Hun/DVD"}
+    - {id: 40, cat: Movies/DVD, desc: "Film/Eng/DVD"}
+    - {id: 39, cat: Books/EBook, desc: "E-book"}
+    - {id: 38, cat: TV/HD, desc: "HD/Hun"}
+    - {id: 57, cat: TV/SD, desc: "Sorozat/Eng"}
+    - {id: 66, cat: TV/HD, desc: "HD/Eng"}
+    - {id: 50, cat: PC/Mobile-Other, desc: "Mobil"}
+    - {id: 51, cat: PC/0day, desc: "Programok"}
+    - {id: 52, cat: TV/SD, desc: "Sorozat/Hun"}
+    - {id: 53, cat: XXX/x264, desc: "XXX/Film"}
+    - {id: 54, cat: XXX/ImageSet, desc: "XXX/Kép"}
+    - {id: 48, cat: Other, desc: "Képek"}
+    - {id: 49, cat: TV/Anime, desc: "Mese"}
+    - {id: 55, cat: Audio, desc: "Zene/Eng"}
+    - {id: 56, cat: Audio, desc: "Zene/Hun"}
+    - {id: 65, cat: Audio/Audiobook, desc: "Hangoskönyv"}
+    - {id: 67, cat: Audio/Video, desc: "Klipp"}
+    - {id: 68, cat: Books/EBook, desc: "Ebook/eng"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -103,7 +103,7 @@ search:
   keywordsfilters:
     # replace spaces between words with percent wildcard
     - name: re_replace
-      args: [ "\\W+", "%" ]
+      args: ["\\W+", "%"]
 
   rows:
     selector: table.main > tbody > tr:has(a[href^="letoltes.php?tipus="])
@@ -144,7 +144,7 @@ search:
       remove: font
       filters:
         - name: replace
-          args: [ "\xA0", "" ]
+          args: ["\xA0", ""]
         - name: append
           args: " +01:00" # CET
         - name: dateparse

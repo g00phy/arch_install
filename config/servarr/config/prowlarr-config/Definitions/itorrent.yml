@@ -12,20 +12,20 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: app, cat: PC, desc: Apps }
-    - { id: book, cat: Books, desc: Books }
-    - { id: game, cat: PC/Games, desc: Games }
-    - { id: movies, cat: Movies, desc: Movies }
-    - { id: music, cat: Audio, desc: Music }
-    - { id: heart, cat: XXX, desc: XXX }
-    - { id: tv, cat: TV, desc: TV }
+    - {id: app, cat: PC, desc: Apps}
+    - {id: book, cat: Books, desc: Books}
+    - {id: game, cat: PC/Games, desc: Games}
+    - {id: movies, cat: Movies, desc: Movies}
+    - {id: music, cat: Audio, desc: Music}
+    - {id: heart, cat: XXX, desc: XXX}
+    - {id: tv, cat: TV, desc: TV}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: sort
@@ -65,7 +65,7 @@ search:
       attribute: class
       filters:
         - name: replace
-          args: [ "zqf zqf-", "" ]
+          args: ["zqf zqf-", ""]
     title:
       selector: td:nth-child(2) a
     details:

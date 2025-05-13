@@ -13,12 +13,12 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: PC/Games, desc: "Games" }
+    - {id: 1, cat: PC/Games, desc: "Games"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
-settings: [ ]
+settings: []
 
 download:
   selectors:

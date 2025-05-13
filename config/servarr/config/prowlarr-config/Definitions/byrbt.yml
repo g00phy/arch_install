@@ -10,22 +10,22 @@ links:
 
 caps:
   categorymappings:
-    - { id: 408, cat: Movies, desc: "电影Movies" }
-    - { id: 401, cat: TV, desc: "剧集TV Series" }
-    - { id: 404, cat: TV/Anime, desc: "动漫Animations" }
-    - { id: 402, cat: Audio, desc: "音乐Music" }
-    - { id: 405, cat: Other, desc: "综艺Arts" }
-    - { id: 403, cat: Console, desc: "游戏Games" }
-    - { id: 406, cat: PC, desc: "软件Software" }
-    - { id: 407, cat: TV/Documentary, desc: "资料Documentaries" }
-    - { id: 409, cat: TV/Sport, desc: "体育Sports" }
-    - { id: 410, cat: Other/Misc, desc: "纪录Records" }
+    - {id: 408, cat: Movies, desc: "电影Movies"}
+    - {id: 401, cat: TV, desc: "剧集TV Series"}
+    - {id: 404, cat: TV/Anime, desc: "动漫Animations"}
+    - {id: 402, cat: Audio, desc: "音乐Music"}
+    - {id: 405, cat: Other, desc: "综艺Arts"}
+    - {id: 403, cat: Console, desc: "游戏Games"}
+    - {id: 406, cat: PC, desc: "软件Software"}
+    - {id: 407, cat: TV/Documentary, desc: "资料Documentaries"}
+    - {id: 409, cat: TV/Sport, desc: "体育Sports"}
+    - {id: 410, cat: Other/Misc, desc: "纪录Records"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, doubanid ]
-    movie-search: [ q, imdbid, doubanid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, doubanid]
+    movie-search: [q, imdbid, doubanid]
+    music-search: [q]
 
 settings:
   - name: cookie

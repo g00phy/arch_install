@@ -32,11 +32,11 @@ settings:
 
 caps:
   categorymappings:
-    - { id: Anime, cat: TV/Anime, desc: Anime }
+    - {id: Anime, cat: TV/Anime, desc: Anime}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
+    search: [q]
+    tv-search: [q, season, ep]
 
 search:
   paths:
@@ -49,7 +49,7 @@ search:
   keywordsfilters:
     # strip season and ep
     - name: re_replace
-      args: [ "(?i)(?:\\s?[SE]?\\d{1,4}){1,2}$", "" ]
+      args: ["(?i)(?:\\s?[SE]?\\d{1,4}){1,2}$", ""]
 
   rows:
     selector: div.grid_12 > div[id^="rel"]
@@ -61,9 +61,9 @@ search:
       selector: div.release_leftover > div.release_text_contents
       filters:
         - name: re_replace
-          args: [ "^(\\[.*\\]) (.*)", "$2 $1" ]
+          args: ["^(\\[.*\\]) (.*)", "$2 $1"]
         - name: re_replace
-          args: [ "(?i)(.mkv)", "" ]
+          args: ["(?i)(.mkv)", ""]
     details:
       selector: a
       attribute: href
@@ -76,17 +76,17 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ ".", "" ]
+          args: [".", ""]
         - name: replace
-          args: [ "Sept", "Sep" ]
+          args: ["Sept", "Sep"]
         - name: replace
-          args: [ "July", "Jul" ]
+          args: ["July", "Jul"]
         - name: replace
-          args: [ "June", "Jun" ]
+          args: ["June", "Jun"]
         - name: re_replace
-          args: [ "April", "Apr" ]
+          args: ["April", "Apr"]
         - name: re_replace
-          args: [ "March", "Mar" ]
+          args: ["March", "Mar"]
         - name: append
           args: " +00:00" # GMT
         - name: dateparse
@@ -97,17 +97,17 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ ".", "" ]
+          args: [".", ""]
         - name: replace
-          args: [ "Sept", "Sep" ]
+          args: ["Sept", "Sep"]
         - name: replace
-          args: [ "July", "Jul" ]
+          args: ["July", "Jul"]
         - name: replace
-          args: [ "June", "Jun" ]
+          args: ["June", "Jun"]
         - name: re_replace
-          args: [ "April", "Apr" ]
+          args: ["April", "Apr"]
         - name: re_replace
-          args: [ "March", "Mar" ]
+          args: ["March", "Mar"]
         - name: append
           args: " +00:00" # GMT
         - name: dateparse
@@ -118,19 +118,19 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ ".", "" ]
+          args: [".", ""]
         - name: replace
-          args: [ "Sept", "Sep" ]
+          args: ["Sept", "Sep"]
         - name: replace
-          args: [ "July", "Jul" ]
+          args: ["July", "Jul"]
         - name: replace
-          args: [ "June", "Jun" ]
+          args: ["June", "Jun"]
         - name: re_replace
-          args: [ "April", "Apr" ]
+          args: ["April", "Apr"]
         - name: re_replace
-          args: [ "March", "Mar" ]
+          args: ["March", "Mar"]
         - name: re_replace
-          args: [ " noon", " 12 pm" ]
+          args: [" noon", " 12 pm"]
         - name: append
           args: " +00:00" # GMT
         - name: dateparse

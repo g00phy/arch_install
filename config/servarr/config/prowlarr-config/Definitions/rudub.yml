@@ -9,47 +9,47 @@ type: semi-private
 encoding: windows-1251
 followredirect: true
 links:
-  - https://25mar.rudub.online/
+  - https://may13.rudub.run/
 legacylinks:
-  - http://10mar.rudub.online/
-  - https://10mar.rudub.online/
-  - http://11mar.rudub.online/
-  - https://11mar.rudub.online/
-  - http://12mar.rudub.online/
-  - https://12mar.rudub.online/
-  - http://13mar.rudub.online/
-  - https://13mar.rudub.online/
-  - http://14mar.rudub.online/
-  - https://14mar.rudub.online/
-  - http://15mar.rudub.online/
-  - https://15mar.rudub.online/
-  - http://16mar.rudub.online/
-  - https://16mar.rudub.online/
-  - http://17mar.rudub.online/
-  - https://17mar.rudub.online/
-  - http://18mar.rudub.online/
-  - https://18mar.rudub.online/
-  - http://19mar.rudub.online/
-  - https://19mar.rudub.online/
-  - http://20mar.rudub.online/
-  - https://20mar.rudub.online/
-  - http://21mar.rudub.online/
-  - https://21mar.rudub.online/
-  - http://22mar.rudub.online/
-  - https://22mar.rudub.online/
-  - http://23mar.rudub.online/
-  - https://23mar.rudub.online/
-  - http://24mar.rudub.online/
-  - https://24mar.rudub.online/
-  - http://25mar.rudub.online/
+  - http://apr28.rudub.biz/
+  - https://apr28.rudub.biz/
+  - http://apr29.rudub.biz/
+  - https://apr29.rudub.biz/
+  - http://apr30.rudub.biz/
+  - https://apr30.rudub.biz/
+  - http://may01.rudub.biz/
+  - https://may01.rudub.biz/
+  - http://may02.rudub.biz/
+  - https://may02.rudub.biz/
+  - http://may03.rudub.biz/
+  - https://may03.rudub.biz/
+  - http://may04.rudub.biz/
+  - https://may04.rudub.biz/
+  - http://may05.rudub.biz/
+  - https://may05.rudub.biz/
+  - http://may06.rudub.biz/
+  - https://may06.rudub.biz/
+  - http://may07.rudub.biz/
+  - https://may07.rudub.biz/
+  - http://may08.rudub.biz/
+  - https://may08.rudub.biz/
+  - http://may09.rudub.biz/
+  - https://may09.rudub.biz/
+  - http://may10.rudub.biz/
+  - https://may10.rudub.biz/
+  - http://may11.rudub.biz/
+  - https://may11.rudub.biz/
+  - http://may12.rudub.run/
+  - https://may12.rudub.run/
+  - http://may13.rudub.run/
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV, desc: "TV" }
+    - {id: 1, cat: TV, desc: "TV"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
+    search: [q]
+    tv-search: [q, season, ep]
   allowrawsearch: true
 
 settings:
@@ -114,7 +114,7 @@ search:
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
-      args: [ "(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", "" ]
+      args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
 
   rows:
     selector: div.card__torlist__browse_2
@@ -127,67 +127,67 @@ search:
       filters:
         # normalize to SXXEYY format
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sRip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB\\sRip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sDL\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB\\sDL\\b", "WEB-DL"]
         - name: replace
-          args: [ "BD720p", "BD 720p" ]
+          args: ["BD720p", "BD 720p"]
         - name: replace
-          args: [ "HD720p", "HD 720p" ]
+          args: ["HD720p", "HD 720p"]
         - name: replace
-          args: [ "HDR720p", "HDR 720p" ]
+          args: ["HDR720p", "HDR 720p"]
         - name: replace
-          args: [ "BD1080p", "BD 1080p" ]
+          args: ["BD1080p", "BD 1080p"]
         - name: replace
-          args: [ "HD1080p", "HD 1080p" ]
+          args: ["HD1080p", "HD 1080p"]
         - name: replace
-          args: [ "HDR1080p", "HDR 1080p" ]
+          args: ["HDR1080p", "HDR 1080p"]
         - name: replace
-          args: [ " (Золото)", "" ] # remove gold tag
+          args: [" (Золото)", ""] # remove gold tag
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: re_replace
-          args: [ "^\\((.+?)\\s?\\)", "$1 " ]
+          args: ["^\\((.+?)\\s?\\)", "$1 "]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
     details:

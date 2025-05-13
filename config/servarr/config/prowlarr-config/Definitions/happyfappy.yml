@@ -10,21 +10,21 @@ links:
 
 caps:
   categorymappings:
-    - { id: 11, cat: XXX, desc: "Asian" }
-    - { id: 6, cat: XXX, desc: "Fansite" }
-    - { id: 13, cat: XXX, desc: "Games" }
-    - { id: 3, cat: XXX, desc: "Gay" }
-    - { id: 4, cat: XXX, desc: "Interracial" }
-    - { id: 5, cat: XXX, desc: "Lesbian" }
-    - { id: 9, cat: XXX, desc: "Packs" }
-    - { id: 10, cat: XXX, desc: "Pics" }
-    - { id: 1, cat: XXX, desc: "Pron" }
-    - { id: 8, cat: XXX, desc: "Retro" }
-    - { id: 12, cat: XXX, desc: "Transsexual" }
-    - { id: 7, cat: XXX, desc: "VR" }
+    - {id: 11, cat: XXX, desc: "Asian"}
+    - {id: 6, cat: XXX, desc: "Fansite"}
+    - {id: 13, cat: XXX, desc: "Games"}
+    - {id: 3, cat: XXX, desc: "Gay"}
+    - {id: 4, cat: XXX, desc: "Interracial"}
+    - {id: 5, cat: XXX, desc: "Lesbian"}
+    - {id: 9, cat: XXX, desc: "Packs"}
+    - {id: 10, cat: XXX, desc: "Pics"}
+    - {id: 1, cat: XXX, desc: "Pron"}
+    - {id: 8, cat: XXX, desc: "Retro"}
+    - {id: 12, cat: XXX, desc: "Transsexual"}
+    - {id: 7, cat: XXX, desc: "VR"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username
@@ -117,9 +117,9 @@ search:
         - name: regexp
           args: "src=\\\\\"(.*?)\\\\\""
         - name: re_replace
-          args: [ "\\\\(.)", "$1" ]
+          args: ["\\\\(.)", "$1"]
         - name: replace
-          args: [ "/static/common/noartwork/noimage.png", "" ]
+          args: ["/static/common/noartwork/noimage.png", ""]
     files:
       selector: td:nth-child(3)
     date:

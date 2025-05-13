@@ -14,58 +14,58 @@ legacylinks:
 caps:
   categorymappings:
     # Movies
-    - { id: 73, cat: Movies, desc: "FuzePacks -סרטים" }
-    - { id: 7, cat: Movies/SD, desc: "סרטים" }
-    - { id: 60, cat: Movies/SD, desc: "סרטים ישראליים" }
-    - { id: 9, cat: Movies/HD, desc: "סרטים HD" }
-    - { id: 101, cat: Movies/HD, desc: "סרטים x265" }
-    - { id: 59, cat: Movies/HD, desc: "סרטי BDRIP-BRRip" }
-    - { id: 61, cat: Movies/HD, desc: "סרטים ישראליים HD" }
-    - { id: 97, cat: Movies/UHD, desc: "סרטים UHD" }
-    - { id: 58, cat: Movies/DVD, desc: "סרטים DVD-R" }
-    - { id: 83, cat: Movies/Other, desc: "סרטים מדובבים" }
+    - {id: 73, cat: Movies, desc: "FuzePacks -סרטים"}
+    - {id: 7, cat: Movies/SD, desc: "סרטים"}
+    - {id: 60, cat: Movies/SD, desc: "סרטים ישראליים"}
+    - {id: 9, cat: Movies/HD, desc: "סרטים HD"}
+    - {id: 101, cat: Movies/HD, desc: "סרטים x265"}
+    - {id: 59, cat: Movies/HD, desc: "סרטי BDRIP-BRRip"}
+    - {id: 61, cat: Movies/HD, desc: "סרטים ישראליים HD"}
+    - {id: 97, cat: Movies/UHD, desc: "סרטים UHD"}
+    - {id: 58, cat: Movies/DVD, desc: "סרטים DVD-R"}
+    - {id: 83, cat: Movies/Other, desc: "סרטים מדובבים"}
     # TV
-    - { id: 76, cat: TV, desc: "FuzePacks - סדרות" }
-    - { id: 8, cat: TV/SD, desc: "סדרות" }
-    - { id: 62, cat: TV/SD, desc: "סדרות ישראליות" }
-    - { id: 10, cat: TV/HD, desc: "Tסדרות HD" }
-    - { id: 63, cat: TV/HD, desc: "סדרות ישראליות HD" }
-    - { id: 100, cat: TV/UHD, desc: "סדרות UHD" }
-    - { id: 84, cat: TV/Other, desc: "סדרות מדובבות" }
-    - { id: 65, cat: TV/Anime, desc: "אנימה" }
-    - { id: 64, cat: TV/Sport, desc: "ספורט" }
+    - {id: 76, cat: TV, desc: "FuzePacks - סדרות"}
+    - {id: 8, cat: TV/SD, desc: "סדרות"}
+    - {id: 62, cat: TV/SD, desc: "סדרות ישראליות"}
+    - {id: 10, cat: TV/HD, desc: "Tסדרות HD"}
+    - {id: 63, cat: TV/HD, desc: "סדרות ישראליות HD"}
+    - {id: 100, cat: TV/UHD, desc: "סדרות UHD"}
+    - {id: 84, cat: TV/Other, desc: "סדרות מדובבות"}
+    - {id: 65, cat: TV/Anime, desc: "אנימה"}
+    - {id: 64, cat: TV/Sport, desc: "ספורט"}
     # PC
-    - { id: 74, cat: PC, desc: "FuzePacks - תוכנות" }
-    - { id: 15, cat: PC/0day, desc: "תוכנות PC" }
-    - { id: 11, cat: PC/Games, desc: "משחקים PC" }
-    - { id: 13, cat: PC/Mobile-Android, desc: "אפליקציות לאנדרואיד" }
-    - { id: 70, cat: PC/Mobile-iOS, desc: "אפליקציות לאייפון" }
-    - { id: 71, cat: PC/Mac, desc: "תוכנות MAC" }
+    - {id: 74, cat: PC, desc: "FuzePacks - תוכנות"}
+    - {id: 15, cat: PC/0day, desc: "תוכנות PC"}
+    - {id: 11, cat: PC/Games, desc: "משחקים PC"}
+    - {id: 13, cat: PC/Mobile-Android, desc: "אפליקציות לאנדרואיד"}
+    - {id: 70, cat: PC/Mobile-iOS, desc: "אפליקציות לאייפון"}
+    - {id: 71, cat: PC/Mac, desc: "תוכנות MAC"}
     # XXX
-    - { id: 16, cat: XXX, desc: "למבוגרים בלבד" }
+    - {id: 16, cat: XXX, desc: "למבוגרים בלבד"}
     # Games
-    - { id: 72, cat: Console, desc: "FuzePacks - משחקים" }
-    - { id: 55, cat: Console/XBox, desc: "משחקים XBOX" }
-    - { id: 12, cat: Console/PSP, desc: "משחקים PS" }
-    - { id: 56, cat: Console/Wii, desc: "משחקים WII" }
-    - { id: 57, cat: PC/Mobile-Other, desc: "משחקי קונסולות ניידות" }
+    - {id: 72, cat: Console, desc: "FuzePacks - משחקים"}
+    - {id: 55, cat: Console/XBox, desc: "משחקים XBOX"}
+    - {id: 12, cat: Console/PSP, desc: "משחקים PS"}
+    - {id: 56, cat: Console/Wii, desc: "משחקים WII"}
+    - {id: 57, cat: PC/Mobile-Other, desc: "משחקי קונסולות ניידות"}
     # Music
-    - { id: 75, cat: Audio, desc: "FuzePacks - שירים" }
-    - { id: 14, cat: Audio, desc: "מוזיקה עולמית" }
-    - { id: 66, cat: Audio, desc: "מוזיקה ישראלית" }
-    - { id: 68, cat: Audio, desc: "פסקולים" }
-    - { id: 67, cat: Audio/Lossless, desc: "FLAC" }
+    - {id: 75, cat: Audio, desc: "FuzePacks - שירים"}
+    - {id: 14, cat: Audio, desc: "מוזיקה עולמית"}
+    - {id: 66, cat: Audio, desc: "מוזיקה ישראלית"}
+    - {id: 68, cat: Audio, desc: "פסקולים"}
+    - {id: 67, cat: Audio/Lossless, desc: "FLAC"}
     # Books
-    - { id: 69, cat: Books, desc: "Ebooks" }
+    - {id: 69, cat: Books, desc: "Ebooks"}
     # Other
-    - { id: 17, cat: Other, desc: "שונות" }
+    - {id: 17, cat: Other, desc: "שונות"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -149,24 +149,24 @@ search:
       selector: td.inline_info:nth-last-child(3)
       filters:
         - name: replace
-          args: [ ",", "" ]
+          args: [",", ""]
     seeders:
       selector: td.inline_info:nth-last-child(2)
       filters:
         - name: replace
-          args: [ ",", "" ]
+          args: [",", ""]
     leechers:
       selector: td.inline_info:nth-last-child(1)
       filters:
         - name: replace
-          args: [ ",", "" ]
+          args: [",", ""]
     date:
       selector: div[class^="up_info"]
       filters:
         - name: append
           args: " +02:00" # IST
         - name: re_replace
-          args: [ "[^:]+: ", "" ]
+          args: ["[^:]+: ", ""]
         - name: dateparse
           args: "dd/MM/yy HH:mm zzz"
     description:

@@ -10,30 +10,30 @@ links:
 
 caps:
   categorymappings:
-    - { id: 14, cat: Movies/SD, desc: "Movies XviD" }
-    - { id: 15, cat: Movies/DVD, desc: "Movies DVD-R" }
-    - { id: 11, cat: Movies/HD, desc: "Movies 720p" }
-    - { id: 13, cat: Movies/HD, desc: "Movies 1080p" }
-    - { id: 16, cat: Movies/3D, desc: "Movies 3DTV" }
-    - { id: 17, cat: Movies/BluRay, desc: "Movies Blu-ray" }
-    - { id: 27, cat: Movies/BluRay, desc: "Movies BD25 Encode" }
-    - { id: 33, cat: Movies/BluRay, desc: "Movies BD9 AVCHD" }
-    - { id: 22, cat: Movies, desc: "Movies 2D to 3D Conv" }
-    - { id: 32, cat: Movies, desc: "Bluray MKV Remux" }
-    - { id: 23, cat: Movies/3D, desc: "Movies Evo 3D" }
-    - { id: 36, cat: Movies/UHD, desc: "Movies 4K UHD Bluray" }
-    - { id: 37, cat: Movies/UHD, desc: "Movies 4K UHD Encode" }
-    - { id: 21, cat: PC, desc: "3D Software" }
-    - { id: 28, cat: XXX, desc: "Adult 720p" }
-    - { id: 29, cat: XXX, desc: "Adult 1080p" }
-    - { id: 30, cat: XXX, desc: "Adult Blu-ray" }
-    - { id: 31, cat: Other, desc: "Misc" }
-    - { id: 19, cat: Audio, desc: "Audio Packs" }
+    - {id: 14, cat: Movies/SD, desc: "Movies XviD"}
+    - {id: 15, cat: Movies/DVD, desc: "Movies DVD-R"}
+    - {id: 11, cat: Movies/HD, desc: "Movies 720p"}
+    - {id: 13, cat: Movies/HD, desc: "Movies 1080p"}
+    - {id: 16, cat: Movies/3D, desc: "Movies 3DTV"}
+    - {id: 17, cat: Movies/BluRay, desc: "Movies Blu-ray"}
+    - {id: 27, cat: Movies/BluRay, desc: "Movies BD25 Encode"}
+    - {id: 33, cat: Movies/BluRay, desc: "Movies BD9 AVCHD"}
+    - {id: 22, cat: Movies, desc: "Movies 2D to 3D Conv"}
+    - {id: 32, cat: Movies, desc: "Bluray MKV Remux"}
+    - {id: 23, cat: Movies/3D, desc: "Movies Evo 3D"}
+    - {id: 36, cat: Movies/UHD, desc: "Movies 4K UHD Bluray"}
+    - {id: 37, cat: Movies/UHD, desc: "Movies 4K UHD Encode"}
+    - {id: 21, cat: PC, desc: "3D Software"}
+    - {id: 28, cat: XXX, desc: "Adult 720p"}
+    - {id: 29, cat: XXX, desc: "Adult 1080p"}
+    - {id: 30, cat: XXX, desc: "Adult Blu-ray"}
+    - {id: 31, cat: Other, desc: "Misc"}
+    - {id: 19, cat: Audio, desc: "Audio Packs"}
 
   modes:
-    search: [ q ]
-    movie-search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    movie-search: [q]
+    music-search: [q]
 
 settings:
   - name: username
@@ -113,7 +113,7 @@ search:
         - name: querystring
           args: category
         - name: re_replace
-          args: [ "(\\b0\\b)", "31" ]
+          args: ["(\\b0\\b)", "31"]
     title:
       selector: a[href^="index.php?page=torrent-details&id="]
     details:
@@ -124,7 +124,7 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "index.php?page=torrent-details&id=", "download.php?id=" ]
+          args: ["index.php?page=torrent-details&id=", "download.php?id="]
     poster:
       selector: a[href^="index.php?page=torrent-details&id="]
       attribute: onmouseover

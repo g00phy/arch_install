@@ -13,57 +13,57 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 149, cat: Movies, desc: "Movies/Turkish" }
-    - { id: 151, cat: Movies/HD, desc: "Movies/Turkish/1080p" }
-    - { id: 152, cat: Movies/HD, desc: "Movies/Turkish/720p" }
-    - { id: 153, cat: Movies/DVD, desc: "Movies/Turkish/DVD5-DVD9" }
-    - { id: 154, cat: Movies/WEB-DL, desc: "Movies/Turkish/BRRip-HDRip-DVDRip-WebDL" }
-    - { id: 155, cat: Movies/Other, desc: "Movies/Turkish/Boxset" }
-    - { id: 156, cat: Movies, desc: "Movies/Foreign" }
-    - { id: 157, cat: Movies/UHD, desc: "Movies/Foreign/4K / 3D" }
-    - { id: 159, cat: Movies/HD, desc: "Movies/Foreign/1080p" }
-    - { id: 160, cat: Movies/HD, desc: "Movies/Foreign/720p" }
-    - { id: 161, cat: Movies/DVD, desc: "Movies/Foreign/DVD5-DVD9" }
-    - { id: 162, cat: Movies/WEB-DL, desc: "Movies/Foreign/BRRip-HDRip-DVDRip-WebDL" }
-    - { id: 163, cat: Movies/Other, desc: "Movies/Foreign/Boxset" }
-    - { id: 164, cat: TV, desc: "TV" }
-    - { id: 165, cat: TV, desc: "TV/Turkish" }
-    - { id: 166, cat: TV, desc: "TV/Foreign" }
-    - { id: 167, cat: TV/Other, desc: "TV Programs" }
-    - { id: 185, cat: TV/Documentary, desc: "TV/Documentary" }
-    - { id: 168, cat: TV/Other, desc: "TV/Other" }
-    - { id: 169, cat: TV/Other, desc: "TV/Boxset" }
-    - { id: 191, cat: TV, desc: "TV/BluTv" }
-    - { id: 192, cat: TV, desc: "TV/BluTv Series" }
-    - { id: 193, cat: Movies, desc: "Movies/BluTv Film" }
-    - { id: 188, cat: TV, desc: "TV/Netflix" }
-    - { id: 189, cat: TV, desc: "TV/Netflix Series" }
-    - { id: 190, cat: Movies, desc: "Movies/Netflix Film" }
-    - { id: 195, cat: TV, desc: "TV/Exxen" }
-    - { id: 199, cat: TV, desc: "TV/GAİN" }
-    - { id: 201, cat: TV, desc: "TV/Tabii" }
-    - { id: 171, cat: Audio, desc: "Music" }
-    - { id: 172, cat: Audio, desc: "Music/Turkish" }
-    - { id: 173, cat: Audio, desc: "Music/Foreign" }
-    - { id: 184, cat: Audio, desc: "Music/Discography" }
-    - { id: 174, cat: Audio/Video, desc: "Music/Video" }
-    - { id: 175, cat: PC, desc: "Apps / Game / Graphics" }
-    - { id: 176, cat: PC, desc: "Apps" }
-    - { id: 177, cat: Other, desc: "Pictures" }
-    - { id: 183, cat: Books/EBook, desc: "EBook" }
-    - { id: 178, cat: Books/Technical, desc: "Training Sets" }
-    - { id: 179, cat: PC, desc: "OS" }
-    - { id: 180, cat: PC/Games, desc: "PC/Games" }
-    - { id: 181, cat: Console, desc: "Playstation" }
-    - { id: 198, cat: Movies, desc: "Movies/Amazon Prime" }
-    - { id: 200, cat: Movies, desc: "Movies/Disney+" }
+    - {id: 149, cat: Movies, desc: "Movies/Turkish"}
+    - {id: 151, cat: Movies/HD, desc: "Movies/Turkish/1080p"}
+    - {id: 152, cat: Movies/HD, desc: "Movies/Turkish/720p"}
+    - {id: 153, cat: Movies/DVD, desc: "Movies/Turkish/DVD5-DVD9"}
+    - {id: 154, cat: Movies/WEB-DL, desc: "Movies/Turkish/BRRip-HDRip-DVDRip-WebDL"}
+    - {id: 155, cat: Movies/Other, desc: "Movies/Turkish/Boxset"}
+    - {id: 156, cat: Movies, desc: "Movies/Foreign"}
+    - {id: 157, cat: Movies/UHD, desc: "Movies/Foreign/4K / 3D"}
+    - {id: 159, cat: Movies/HD, desc: "Movies/Foreign/1080p"}
+    - {id: 160, cat: Movies/HD, desc: "Movies/Foreign/720p"}
+    - {id: 161, cat: Movies/DVD, desc: "Movies/Foreign/DVD5-DVD9"}
+    - {id: 162, cat: Movies/WEB-DL, desc: "Movies/Foreign/BRRip-HDRip-DVDRip-WebDL"}
+    - {id: 163, cat: Movies/Other, desc: "Movies/Foreign/Boxset"}
+    - {id: 164, cat: TV, desc: "TV"}
+    - {id: 165, cat: TV, desc: "TV/Turkish"}
+    - {id: 166, cat: TV, desc: "TV/Foreign"}
+    - {id: 167, cat: TV/Other, desc: "TV Programs"}
+    - {id: 185, cat: TV/Documentary, desc: "TV/Documentary"}
+    - {id: 168, cat: TV/Other, desc: "TV/Other"}
+    - {id: 169, cat: TV/Other, desc: "TV/Boxset"}
+    - {id: 191, cat: TV, desc: "TV/BluTv"}
+    - {id: 192, cat: TV, desc: "TV/BluTv Series"}
+    - {id: 193, cat: Movies, desc: "Movies/BluTv Film"}
+    - {id: 188, cat: TV, desc: "TV/Netflix"}
+    - {id: 189, cat: TV, desc: "TV/Netflix Series"}
+    - {id: 190, cat: Movies, desc: "Movies/Netflix Film"}
+    - {id: 195, cat: TV, desc: "TV/Exxen"}
+    - {id: 199, cat: TV, desc: "TV/GAİN"}
+    - {id: 201, cat: TV, desc: "TV/Tabii"}
+    - {id: 171, cat: Audio, desc: "Music"}
+    - {id: 172, cat: Audio, desc: "Music/Turkish"}
+    - {id: 173, cat: Audio, desc: "Music/Foreign"}
+    - {id: 184, cat: Audio, desc: "Music/Discography"}
+    - {id: 174, cat: Audio/Video, desc: "Music/Video"}
+    - {id: 175, cat: PC, desc: "Apps / Game / Graphics"}
+    - {id: 176, cat: PC, desc: "Apps"}
+    - {id: 177, cat: Other, desc: "Pictures"}
+    - {id: 183, cat: Books/EBook, desc: "EBook"}
+    - {id: 178, cat: Books/Technical, desc: "Training Sets"}
+    - {id: 179, cat: PC, desc: "OS"}
+    - {id: 180, cat: PC/Games, desc: "PC/Games"}
+    - {id: 181, cat: Console, desc: "Playstation"}
+    - {id: 198, cat: Movies, desc: "Movies/Amazon Prime"}
+    - {id: 200, cat: Movies, desc: "Movies/Disney+"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie

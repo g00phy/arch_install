@@ -12,31 +12,31 @@ links:
 caps:
   # dont forget to update the path categories in the search block
   categorymappings:
-    - { id: 409, cat: Other, desc: "Misc其他", default: true }
-    - { id: 407, cat: TV/Sport, desc: "Sports体育", default: true }
-    - { id: 406, cat: Audio/Video, desc: "Music Videos音乐MV", default: true }
-    - { id: 408, cat: Audio, desc: "HQ Audio无损音乐", default: true }
-    - { id: 418, cat: TV, desc: "TV Shows综艺(分集)", default: true }
-    - { id: 403, cat: TV, desc: "TV Shows综艺(Packs合集)", default: true }
-    - { id: 402, cat: TV, desc: "TV Series剧集(分集)", default: true }
-    - { id: 414, cat: TV, desc: "TV Series剧集(Packs合集)", default: true }
-    - { id: 413, cat: TV/Anime, desc: "Animation series动漫剧集(分集)", default: true }
-    - { id: 423, cat: TV/Anime, desc: "Animation series动漫剧集(Packs合集)", default: true }
-    - { id: 422, cat: TV/Anime, desc: "Animation flims动漫电影", default: true }
-    - { id: 410, cat: TV/Documentary, desc: "Documentaries纪录片", default: true }
-    - { id: 401, cat: Movies, desc: "Movies电影", default: true }
-    - { id: 427, cat: PC, desc: "Software软件/程序/代码", default: false }
-    - { id: 426, cat: Books/Technical, desc: "Papers期刊/论文", default: false }
-    - { id: 428, cat: Books/EBook, desc: "Books图书", default: false }
-    - { id: 425, cat: Other, desc: "Database数据/数据库", default: false }
-    - { id: 424, cat: Other, desc: "Course课程", default: false }
+    - {id: 409, cat: Other, desc: "Misc其他", default: true}
+    - {id: 407, cat: TV/Sport, desc: "Sports体育", default: true}
+    - {id: 406, cat: Audio/Video, desc: "Music Videos音乐MV", default: true}
+    - {id: 408, cat: Audio, desc: "HQ Audio无损音乐", default: true}
+    - {id: 418, cat: TV, desc: "TV Shows综艺(分集)", default: true}
+    - {id: 403, cat: TV, desc: "TV Shows综艺(Packs合集)", default: true}
+    - {id: 402, cat: TV, desc: "TV Series剧集(分集)", default: true}
+    - {id: 414, cat: TV, desc: "TV Series剧集(Packs合集)", default: true}
+    - {id: 413, cat: TV/Anime, desc: "Animation series动漫剧集(分集)", default: true}
+    - {id: 423, cat: TV/Anime, desc: "Animation series动漫剧集(Packs合集)", default: true}
+    - {id: 422, cat: TV/Anime, desc: "Animation flims动漫电影", default: true}
+    - {id: 410, cat: TV/Documentary, desc: "Documentaries纪录片", default: true}
+    - {id: 401, cat: Movies, desc: "Movies电影", default: true}
+    - {id: 427, cat: PC, desc: "Software软件/程序/代码", default: false}
+    - {id: 426, cat: Books/Technical, desc: "Papers期刊/论文", default: false}
+    - {id: 428, cat: Books/EBook, desc: "Books图书", default: false}
+    - {id: 425, cat: Other, desc: "Database数据/数据库", default: false}
+    - {id: 424, cat: Other, desc: "Course课程", default: false}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, doubanid ]
-    movie-search: [ q, imdbid, doubanid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, doubanid]
+    movie-search: [q, imdbid, doubanid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -103,9 +103,9 @@ login:
 search:
   paths:
     - path: torrents.php
-      categories: [ 409, 407, 406, 408, 418, 403, 402, 414, 413, 423, 422, 410, 401 ]
+      categories: [409, 407, 406, 408, 418, 403, 402, 414, 413, 423, 422, 410, 401]
     - path: special.php
-      categories: [ 427, 426, 428, 425, 424 ]
+      categories: [427, 426, 428, 425, 424]
   inputs:
     $raw: "{{ range .Categories }}cat{{.}}=1&{{end}}"
     search: "{{ if .Query.IMDBID }}{{ .Query.IMDBID }}{{ else }}{{ end }}{{ if or .Query.IMDBID .Query.DoubanID }} {{ else }}{{ .Keywords }}{{ end }}{{ if .Query.DoubanID }}{{ .Query.DoubanID }}{{ else }}{{ end }}"

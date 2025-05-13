@@ -15,8 +15,8 @@ caps:
     Music: Audio/Lossless
 
   modes:
-    search: [ q ]
-    music-search: [ q, artist ]
+    search: [q]
+    music-search: [q, artist]
 
 settings:
   - name: sort
@@ -59,7 +59,7 @@ search:
       selector: td:nth-child(5)
       filters:
         - name: replace
-          args: [ "  ", " 0" ]
+          args: ["  ", " 0"]
         - name: dateparse
           args: "MM/dd HH:mm"
     size:

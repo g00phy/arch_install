@@ -10,21 +10,21 @@ links:
 
 caps:
   categorymappings:
-    - { id: 29, cat: Audio, desc: "Audio Tracks" }
-    - { id: 26, cat: Movies/UHD, desc: "BETA UHD HDR-X" }
-    - { id: 32, cat: Movies, desc: "Dolby Vision" }
-    - { id: 28, cat: Movies, desc: "INTERNAL HDR-X" }
-    - { id: 37, cat: Movies, desc: "Member Grades" }
-    - { id: 37, cat: TV, desc: "Member Grades" }
-    - { id: 37, cat: Audio/Video, desc: "Member Grades" }
-    - { id: 31, cat: Other, desc: "YouTube HDR" }
-    - { id: 30, cat: Other, desc: "[SAMPLES] INTERNAL HDR-X" }
+    - {id: 29, cat: Audio, desc: "Audio Tracks"}
+    - {id: 26, cat: Movies/UHD, desc: "BETA UHD HDR-X"}
+    - {id: 32, cat: Movies, desc: "Dolby Vision"}
+    - {id: 28, cat: Movies, desc: "INTERNAL HDR-X"}
+    - {id: 37, cat: Movies, desc: "Member Grades"}
+    - {id: 37, cat: TV, desc: "Member Grades"}
+    - {id: 37, cat: Audio/Video, desc: "Member Grades"}
+    - {id: 31, cat: Other, desc: "YouTube HDR"}
+    - {id: 30, cat: Other, desc: "[SAMPLES] INTERNAL HDR-X"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
 
 settings:
   - name: username
@@ -90,7 +90,7 @@ search:
     type: "{{ .Config.type }}"
   keywordsfilters:
     - name: re_replace
-      args: [ "(\\w+)", "+$1" ] # prepend + to each word
+      args: ["(\\w+)", "+$1"] # prepend + to each word
 
   rows:
     selector: tr.highlight, tr.browse_color, tr.freeleech_color, tr[id^="kdescr"]
@@ -108,9 +108,9 @@ search:
       attribute: onmouseover
       filters:
         - name: split
-          args: [ ">", "1" ]
+          args: [">", "1"]
         - name: replace
-          args: [ "</b", "" ]
+          args: ["</b", ""]
     details:
       selector: a[href^="details.php?id="]
       attribute: href
@@ -152,7 +152,7 @@ search:
       selector: td[colspan="14"]
       filters:
         - name: replace
-          args: [ "\n", "<br>\n" ]
+          args: ["\n", "<br>\n"]
         - name: prepend
           args: "{{ if .Result.genre }}{{ .Result.genre }}</br>{{ else }}{{ end }}"
     downloadvolumefactor:

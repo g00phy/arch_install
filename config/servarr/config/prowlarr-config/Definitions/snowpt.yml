@@ -10,11 +10,11 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV/Anime, desc: "Anime" }
+    - {id: 1, cat: TV/Anime, desc: "Anime"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
+    search: [q]
+    tv-search: [q, season, ep]
 
 settings:
   - name: username
@@ -108,6 +108,6 @@ search:
         "*": 1
     uploadvolumefactor:
       case:
-        #          img.sp_0: 2 # do not know what a flag of 2xSFC means, but I dont think this is a 2xupload
+#          img.sp_0: 2 # do not know what a flag of 2xSFC means, but I dont think this is a 2xupload
         "*": 1
 # Discuz! X3.4

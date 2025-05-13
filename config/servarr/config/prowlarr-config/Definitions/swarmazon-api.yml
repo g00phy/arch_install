@@ -10,23 +10,23 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Movies" }
-    - { id: 2, cat: TV, desc: "Television" }
-    - { id: 3, cat: Other, desc: "Video Courses" }
-    - { id: 4, cat: Audio, desc: "Music" }
-    - { id: 5, cat: PC/Games, desc: "Games" }
-    - { id: 6, cat: PC, desc: "Software" }
-    - { id: 7, cat: TV/Anime, desc: "Anime" }
-    - { id: 8, cat: Books/EBook, desc: "E-Books" }
-    - { id: 9, cat: Audio/Audiobook, desc: "Audio Books" }
-    - { id: 10, cat: Books/Comics, desc: "Comics" }
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "Television"}
+    - {id: 3, cat: Other, desc: "Video Courses"}
+    - {id: 4, cat: Audio, desc: "Music"}
+    - {id: 5, cat: PC/Games, desc: "Games"}
+    - {id: 6, cat: PC, desc: "Software"}
+    - {id: 7, cat: TV/Anime, desc: "Anime"}
+    - {id: 8, cat: Books/EBook, desc: "E-Books"}
+    - {id: 9, cat: Audio/Audiobook, desc: "Audio Books"}
+    - {id: 10, cat: Books/Comics, desc: "Comics"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -79,7 +79,7 @@ search:
       selector: media_poster
       filters:
         - name: replace
-          args: [ "N\/A", "" ]
+          args: ["N\/A", ""]
     genre:
       selector: media_genre
     description:

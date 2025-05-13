@@ -11,11 +11,11 @@ links:
 caps:
   categorymappings:
     # there is a cat 2 Video but it is not supported by this indexer.
-    - { id: 1, cat: Audio, desc: "Music" }
+    - {id: 1, cat: Audio, desc: "Music"}
 
   modes:
-    search: [ q ]
-    music-search: [ q, album, artist ]
+    search: [q]
+    music-search: [q, album, artist]
 
 settings:
   - name: username

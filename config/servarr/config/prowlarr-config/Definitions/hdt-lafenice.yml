@@ -10,32 +10,33 @@ links:
 
 caps:
   categorymappings:
-    - { id: 32, cat: Movies/BluRay, desc: "BluRay" }
-    - { id: 33, cat: Movies/UHD, desc: "Film-2160p" }
-    - { id: 34, cat: Movies/HD, desc: "Film-1080p" }
-    - { id: 35, cat: Movies/HD, desc: "Film-720p" }
-    - { id: 37, cat: Movies/DVD, desc: "Film-DVD" }
-    - { id: 50, cat: Movies/SD, desc: "Film-DVDRip" }
-    - { id: 48, cat: TV/Other, desc: "Cartoni" }
-    - { id: 39, cat: TV/Anime, desc: "Anime" }
-    - { id: 51, cat: Movies/SD, desc: "Film-Cine" }
-    - { id: 40, cat: TV/HD, desc: "TV-HD" }
-    - { id: 41, cat: TV/SD, desc: "TV-SD" }
-    - { id: 46, cat: Audio, desc: "Musica" }
-    - { id: 42, cat: PC/Games, desc: "PC-Giochi" }
-    - { id: 43, cat: PC/0day, desc: "App-Win" }
-    - { id: 44, cat: PC/Mac, desc: "App-Mac" }
-    - { id: 45, cat: PC/Mobile-Android, desc: "Android" }
-    - { id: 47, cat: Books/EBook, desc: "E-Book" }
-    - { id: 52, cat: Books/Mags, desc: "Edicola" }
-    - { id: 49, cat: Other, desc: "Altro" }
+    - {id: 32, cat: Movies/BluRay, desc: "BluRay"}
+    - {id: 33, cat: Movies/UHD, desc: "Film-2160p"}
+    - {id: 34, cat: Movies/HD, desc: "Film-1080p"}
+    - {id: 35, cat: Movies/HD, desc: "Film-720p"}
+    - {id: 37, cat: Movies/DVD, desc: "Film-DVD"}
+    - {id: 50, cat: Movies/SD, desc: "Film-DVDRip"}
+    - {id: 48, cat: TV/Other, desc: "Cartoni"}
+    - {id: 39, cat: TV/Anime, desc: "Anime"}
+    - {id: 51, cat: Movies/SD, desc: "Film-Cine"}
+    - {id: 40, cat: TV/HD, desc: "TV-HD"}
+    - {id: 41, cat: TV/SD, desc: "TV-SD"}
+    - {id: 53, cat: TV/Documentary, desc: "Documentario"}
+    - {id: 46, cat: Audio, desc: "Musica"}
+    - {id: 42, cat: PC/Games, desc: "PC-Giochi"}
+    - {id: 43, cat: PC/0day, desc: "App-Win"}
+    - {id: 44, cat: PC/Mac, desc: "App-Mac"}
+    - {id: 45, cat: PC/Mobile-Android, desc: "Android"}
+    - {id: 47, cat: Books/EBook, desc: "E-Book"}
+    - {id: 52, cat: Books/Mags, desc: "Edicola"}
+    - {id: 49, cat: Other, desc: "Altro"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -89,7 +90,7 @@ search:
       method: post
   keywordsfilters:
     - name: re_replace
-      args: [ "[^a-zA-Z0-9]+", "%25" ]
+      args: ["[^a-zA-Z0-9]+", "%25"]
   inputs:
     $raw: "{{ range .Categories }}cid[]={{.}}&{{end}}"
     keywords: "{{ .Keywords }}"

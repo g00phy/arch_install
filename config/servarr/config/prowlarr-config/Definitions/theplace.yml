@@ -12,23 +12,23 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 41, cat: Other, desc: "Dance / Singing / Voice" }
-    - { id: 64, cat: Other, desc: "Fighting / Martial Arts" }
-    - { id: 43, cat: Other, desc: "Hypnosis / NLP" }
-    - { id: 201, cat: Other, desc: "Migrated" }
-    - { id: 39, cat: Other, desc: "Seduction" }
-    - { id: 57, cat: Other, desc: "Everything Else" }
-    - { id: 42, cat: Other, desc: "Food / Drink / Cooking" }
-    - { id: 44, cat: Other, desc: "Languages / Accents" }
-    - { id: 200, cat: Other, desc: "Migration" }
-    - { id: 40, cat: Other, desc: "Sex" }
-    - { id: 58, cat: Other, desc: "Fashion / Clothing / Grooming" }
-    - { id: 47, cat: Other, desc: "Health / Fitness / Massage" }
-    - { id: 45, cat: Other, desc: "Magic / Illusions / Tricks" }
-    - { id: 59, cat: Other, desc: "Psychology / Body Language" }
+    - {id: 41, cat: Other, desc: "Dance / Singing / Voice"}
+    - {id: 64, cat: Other, desc: "Fighting / Martial Arts"}
+    - {id: 43, cat: Other, desc: "Hypnosis / NLP"}
+    - {id: 201, cat: Other, desc: "Migrated"}
+    - {id: 39, cat: Other, desc: "Seduction"}
+    - {id: 57, cat: Other, desc: "Everything Else"}
+    - {id: 42, cat: Other, desc: "Food / Drink / Cooking"}
+    - {id: 44, cat: Other, desc: "Languages / Accents"}
+    - {id: 200, cat: Other, desc: "Migration"}
+    - {id: 40, cat: Other, desc: "Sex"}
+    - {id: 58, cat: Other, desc: "Fashion / Clothing / Grooming"}
+    - {id: 47, cat: Other, desc: "Health / Fitness / Massage"}
+    - {id: 45, cat: Other, desc: "Magic / Illusions / Tricks"}
+    - {id: 59, cat: Other, desc: "Psychology / Body Language"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: cookie
@@ -122,7 +122,7 @@ search:
       selector: td:nth-child(8)
       filters:
         - name: replace
-          args: [ "Never", "0" ]
+          args: ["Never", "0"]
     seeders:
       selector: td:nth-child(9)
     leechers:

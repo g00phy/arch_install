@@ -11,15 +11,15 @@ links:
 
 caps:
   categorymappings:
-    - { id: 70, cat: XXX, desc: "Animation" }
-    - { id: 22, cat: XXX, desc: "Girl on Girl" }
-    - { id: 43, cat: XXX, desc: "Images" }
-    - { id: 52, cat: XXX, desc: "Straight" }
-    - { id: 82, cat: XXX, desc: "X Play Hard" }
-    - { id: 92, cat: XXX, desc: "X Play Soft" }
+    - {id: 70, cat: XXX, desc: "Animation"}
+    - {id: 22, cat: XXX, desc: "Girl on Girl"}
+    - {id: 43, cat: XXX, desc: "Images"}
+    - {id: 52, cat: XXX, desc: "Straight"}
+    - {id: 82, cat: XXX, desc: "X Play Hard"}
+    - {id: 92, cat: XXX, desc: "X Play Soft"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username

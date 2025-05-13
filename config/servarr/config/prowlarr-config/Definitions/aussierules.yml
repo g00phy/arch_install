@@ -13,7 +13,7 @@ caps:
     1: TV/Sport
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username

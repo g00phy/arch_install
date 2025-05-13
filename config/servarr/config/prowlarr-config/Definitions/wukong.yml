@@ -10,21 +10,21 @@ links:
 
 caps:
   categorymappings:
-    - { id: 402, cat: Other, desc: "模型" }
-    - { id: 407, cat: Other, desc: "整合包" }
-    - { id: 401, cat: Other, desc: "源码" }
-    - { id: 408, cat: Other, desc: "音乐生成" }
-    - { id: 406, cat: Other, desc: "文字语料" }
-    - { id: 403, cat: Other, desc: "训练教程" }
-    - { id: 405, cat: Other, desc: "动画生成" }
-    - { id: 411, cat: Other, desc: "作品" }
-    - { id: 404, cat: Books/Technical, desc: "文档" }
-    - { id: 410, cat: Books/Technical, desc: "电子书" }
-    - { id: 409, cat: Other/Misc, desc: "其他" }
+    - {id: 402, cat: Other, desc: "模型"}
+    - {id: 407, cat: Other, desc: "整合包"}
+    - {id: 401, cat: Other, desc: "源码"}
+    - {id: 408, cat: Other, desc: "音乐生成"}
+    - {id: 406, cat: Other, desc: "文字语料"}
+    - {id: 403, cat: Other, desc: "训练教程"}
+    - {id: 405, cat: Other, desc: "动画生成"}
+    - {id: 411, cat: Other, desc: "作品"}
+    - {id: 404, cat: Books/Technical, desc: "文档"}
+    - {id: 410, cat: Books/Technical, desc: "电子书"}
+    - {id: 409, cat: Other/Misc, desc: "其他"}
 
   modes:
-    search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    book-search: [q]
 
 settings:
   - name: username

@@ -11,21 +11,21 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV/Anime, desc: "动画(Anime)" }
-    - { id: 2, cat: Books/Comics, desc: "漫画(Manga)" }
-    - { id: 3, cat: Audio, desc: "音乐(Music)" }
-    - { id: 4, cat: TV/Anime, desc: "周边(Peripheral)" }
-    - { id: 5, cat: Other, desc: "其它(Other)" }
-    - { id: 6, cat: TV/Anime, desc: "Raw" }
+    - {id: 1, cat: TV/Anime, desc: "动画(Anime)"}
+    - {id: 2, cat: Books/Comics, desc: "漫画(Manga)"}
+    - {id: 3, cat: Audio, desc: "音乐(Music)"}
+    - {id: 4, cat: TV/Anime, desc: "周边(Peripheral)"}
+    - {id: 5, cat: Other, desc: "其它(Other)"}
+    - {id: 6, cat: TV/Anime, desc: "Raw"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
-settings: [ ]
+settings: []
 
 login:
   path: addon.php?r=document/view&page=visitor-test
@@ -78,7 +78,7 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ "今天", "" ]
+          args: ["今天", ""]
         - name: append
           args: " +08:00" # CST (China)
         - name: timeparse
@@ -88,14 +88,14 @@ search:
       optional: true
       filters:
         - name: re_replace
-          args: [ ".+", "yesterday" ]
+          args: [".+", "yesterday"]
         - name: fuzzytime
     date_ago:
       selector: td:nth-child(1):contains("前天")
       optional: true
       filters:
         - name: re_replace
-          args: [ ".+", "2 days" ]
+          args: [".+", "2 days"]
         - name: timeago
     date:
       text: "{{ if or .Result.date_year .Result.date_today .Result.date_yday .Result.date_ago }}{{ or .Result.date_year .Result.date_today .Result.date_yday .Result.date_ago }}{{ else }}now{{ end }}"

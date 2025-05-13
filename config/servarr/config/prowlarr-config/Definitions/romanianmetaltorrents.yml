@@ -14,37 +14,37 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 86, cat: Audio/Video, desc: "BluRay video" }
-    - { id: 84, cat: Audio/Video, desc: "HD video" }
-    - { id: 20, cat: Audio/Video, desc: "MusicDVD" }
-    - { id: 36, cat: Audio/Video, desc: "SD video" }
-    - { id: 63, cat: Audio, desc: "Discography/Album Pack" }
-    - { id: 65, cat: Audio, desc: "E-Learning" }
-    - { id: 51, cat: Audio, desc: "Alternative" }
-    - { id: 46, cat: Audio, desc: "Avant/Experimental" }
-    - { id: 38, cat: Audio, desc: "Black Metal" }
-    - { id: 45, cat: Audio, desc: "Darkwave/Ambient" }
-    - { id: 39, cat: Audio, desc: "Death Metal" }
-    - { id: 64, cat: Audio, desc: "Doom/Sludge" }
-    - { id: 40, cat: Audio, desc: "Gothic Metal" }
-    - { id: 71, cat: Audio, desc: "Grindcore" }
-    - { id: 85, cat: Audio, desc: "Groove" }
-    - { id: 74, cat: Audio, desc: "Hard Rock" }
-    - { id: 41, cat: Audio, desc: "Heavy Metal" }
-    - { id: 43, cat: Audio, desc: "Industrial/Goth" }
-    - { id: 73, cat: Audio, desc: "Melodic Death" }
-    - { id: 75, cat: Audio, desc: "Power Metal" }
-    - { id: 53, cat: Audio, desc: "Progressive Metal" }
-    - { id: 44, cat: Audio, desc: "Punk" }
-    - { id: 2, cat: Audio, desc: "Rock" }
-    - { id: 42, cat: Audio, desc: "Thrash Metal" }
-    - { id: 52, cat: Audio, desc: "Viking/Folk " }
-    - { id: 69, cat: Audio, desc: "[RMT Pack]" }
-    - { id: 54, cat: Audio, desc: "[V A/Compilation]" }
+    - {id: 86, cat: Audio/Video, desc: "BluRay video"}
+    - {id: 84, cat: Audio/Video, desc: "HD video"}
+    - {id: 20, cat: Audio/Video, desc: "MusicDVD"}
+    - {id: 36, cat: Audio/Video, desc: "SD video"}
+    - {id: 63, cat: Audio, desc: "Discography/Album Pack"}
+    - {id: 65, cat: Audio, desc: "E-Learning"}
+    - {id: 51, cat: Audio, desc: "Alternative"}
+    - {id: 46, cat: Audio, desc: "Avant/Experimental"}
+    - {id: 38, cat: Audio, desc: "Black Metal"}
+    - {id: 45, cat: Audio, desc: "Darkwave/Ambient"}
+    - {id: 39, cat: Audio, desc: "Death Metal"}
+    - {id: 64, cat: Audio, desc: "Doom/Sludge"}
+    - {id: 40, cat: Audio, desc: "Gothic Metal"}
+    - {id: 71, cat: Audio, desc: "Grindcore"}
+    - {id: 85, cat: Audio, desc: "Groove"}
+    - {id: 74, cat: Audio, desc: "Hard Rock"}
+    - {id: 41, cat: Audio, desc: "Heavy Metal"}
+    - {id: 43, cat: Audio, desc: "Industrial/Goth"}
+    - {id: 73, cat: Audio, desc: "Melodic Death"}
+    - {id: 75, cat: Audio, desc: "Power Metal"}
+    - {id: 53, cat: Audio, desc: "Progressive Metal"}
+    - {id: 44, cat: Audio, desc: "Punk"}
+    - {id: 2, cat: Audio, desc: "Rock"}
+    - {id: 42, cat: Audio, desc: "Thrash Metal"}
+    - {id: 52, cat: Audio, desc: "Viking/Folk "}
+    - {id: 69, cat: Audio, desc: "[RMT Pack]"}
+    - {id: 54, cat: Audio, desc: "[V A/Compilation]"}
 
   modes:
-    search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    music-search: [q]
 
 settings:
   - name: username
@@ -138,7 +138,7 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "download2.php?id=", "download.php/" ]
+          args: ["download2.php?id=", "download.php/"]
         - name: append
           args: "/{{ .Result.title }}.torrent"
     poster:
@@ -148,7 +148,7 @@ search:
         - name: regexp
           args: 'img src=(.+?) >'
         - name: replace
-          args: [ "./pic/noposter.jpg", "" ]
+          args: ["./pic/noposter.jpg", ""]
     date:
       text: now
     size:

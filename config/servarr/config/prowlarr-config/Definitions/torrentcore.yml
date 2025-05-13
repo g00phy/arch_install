@@ -11,35 +11,35 @@ links:
 
 caps:
   categorymappings:
-    - { id: 0DAY, cat: PC/0day, desc: Software 0DAY }
-    - { id: DVDR, cat: Movies/DVD, desc: Movies DVDR }
-    - { id: EBOOK, cat: Books, desc: Ebook }
-    - { id: FLAC, cat: Audio/Lossless, desc: Music FLAC }
-    - { id: GAMES, cat: PC/Games, desc: Games }
-    - { id: MP3, cat: Audio/MP3, desc: Music MP3 }
-    - { id: MP4, cat: Movies, desc: Movies MP4 }
-    - { id: PDA, cat: PC/Mobile-Other, desc: Software PDA }
-    - { id: PS3, cat: Console/PS3, desc: Games PS3 }
-    - { id: TV, cat: TV, desc: TV }
-    - { id: TV-DVDRIP, cat: TV/SD, desc: TV DVDRIP }
-    - { id: TV-X265, cat: TV/HD, desc: TV X265 }
-    - { id: TV-XVID, cat: TV/SD, desc: TV XVID }
-    - { id: UNKNOWN, cat: Other, desc: Unknown }
-    - { id: X264, cat: Movies/HD, desc: Movies X264 }
-    - { id: XBOX360, cat: Console/XBox 360, desc: Games XBOX360 }
-    - { id: XVID, cat: Movies/SD, desc: Movies XVID }
-    - { id: XXX, cat: XXX, desc: Adult }
-    - { id: XXX-0DAY, cat: XXX, desc: Adult 0DAY }
-    - { id: XXX-IMGSET, cat: XXX/ImageSet, desc: Adult IMGSET }
-    - { id: XXX-X264, cat: XXX, desc: Adult X264 }
-    - { id: XXX-X265, cat: XXX, desc: Adult X265 }
+    - {id: 0DAY, cat: PC/0day, desc: Software 0DAY}
+    - {id: DVDR, cat: Movies/DVD, desc: Movies DVDR}
+    - {id: EBOOK, cat: Books, desc: Ebook}
+    - {id: FLAC, cat: Audio/Lossless, desc: Music FLAC}
+    - {id: GAMES, cat: PC/Games, desc: Games}
+    - {id: MP3, cat: Audio/MP3, desc: Music MP3}
+    - {id: MP4, cat: Movies, desc: Movies MP4}
+    - {id: PDA, cat: PC/Mobile-Other, desc: Software PDA}
+    - {id: PS3, cat: Console/PS3, desc: Games PS3}
+    - {id: TV, cat: TV, desc: TV}
+    - {id: TV-DVDRIP, cat: TV/SD, desc: TV DVDRIP}
+    - {id: TV-X265, cat: TV/HD, desc: TV X265}
+    - {id: TV-XVID, cat: TV/SD, desc: TV XVID}
+    - {id: UNKNOWN, cat: Other, desc: Unknown}
+    - {id: X264, cat: Movies/HD, desc: Movies X264}
+    - {id: XBOX360, cat: Console/XBox 360, desc: Games XBOX360}
+    - {id: XVID, cat: Movies/SD, desc: Movies XVID}
+    - {id: XXX, cat: XXX, desc: Adult}
+    - {id: XXX-0DAY, cat: XXX, desc: Adult 0DAY}
+    - {id: XXX-IMGSET, cat: XXX/ImageSet, desc: Adult IMGSET}
+    - {id: XXX-X264, cat: XXX, desc: Adult X264}
+    - {id: XXX-X265, cat: XXX, desc: Adult X265}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: info_flaresolverr

@@ -10,27 +10,27 @@ links:
 
 caps:
   categorymappings:
-    - { id: 2, cat: Audio, desc: "华语流行(Pop)" }
-    - { id: 3, cat: Audio, desc: "古典音乐(Classical)" }
-    - { id: 11, cat: Audio, desc: "民族音乐(Instrumental)" }
-    - { id: 4, cat: Audio, desc: "原声配乐(OST)" }
-    - { id: 5, cat: Audio, desc: "泛摇滚乐(Rock)" }
-    - { id: 8, cat: Audio, desc: "爵士乡村(Jazz)" }
-    - { id: 12, cat: Audio, desc: "新世纪(NewAge)" }
-    - { id: 13, cat: Audio, desc: "舞曲(Dance)" }
-    - { id: 14, cat: Audio, desc: "电子(Electronic)" }
-    - { id: 15, cat: Audio, desc: "民谣(Folk)" }
-    - { id: 16, cat: Audio, desc: "独立(Indie)" }
-    - { id: 17, cat: Audio, desc: "嘻哈(Hip Hop)" }
-    - { id: 18, cat: Audio, desc: "音乐剧(Musical)" }
-    - { id: 19, cat: Audio, desc: "乡村(Country)" }
-    - { id: 20, cat: Audio, desc: "另类(Alternative)" }
-    - { id: 21, cat: Audio, desc: "世界音樂(World))" }
-    - { id: 9, cat: Audio, desc: "其它类型(Others)" }
+    - {id: 2, cat: Audio, desc: "华语流行(Pop)"}
+    - {id: 3, cat: Audio, desc: "古典音乐(Classical)"}
+    - {id: 11, cat: Audio, desc: "民族音乐(Instrumental)"}
+    - {id: 4, cat: Audio, desc: "原声配乐(OST)"}
+    - {id: 5, cat: Audio, desc: "泛摇滚乐(Rock)"}
+    - {id: 8, cat: Audio, desc: "爵士乡村(Jazz)"}
+    - {id: 12, cat: Audio, desc: "新世纪(NewAge)"}
+    - {id: 13, cat: Audio, desc: "舞曲(Dance)"}
+    - {id: 14, cat: Audio, desc: "电子(Electronic)"}
+    - {id: 15, cat: Audio, desc: "民谣(Folk)"}
+    - {id: 16, cat: Audio, desc: "独立(Indie)"}
+    - {id: 17, cat: Audio, desc: "嘻哈(Hip Hop)"}
+    - {id: 18, cat: Audio, desc: "音乐剧(Musical)"}
+    - {id: 19, cat: Audio, desc: "乡村(Country)"}
+    - {id: 20, cat: Audio, desc: "另类(Alternative)"}
+    - {id: 21, cat: Audio, desc: "世界音樂(World))"}
+    - {id: 9, cat: Audio, desc: "其它类型(Others)"}
 
   modes:
-    search: [ q ]
-    music-search: [ q, artist ]
+    search: [q]
+    music-search: [q, artist]
 
 settings:
   - name: cookie

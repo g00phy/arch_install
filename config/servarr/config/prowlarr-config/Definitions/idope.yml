@@ -22,23 +22,23 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 0, cat: Other, desc: Others }
-    - { id: 1, cat: Movies, desc: Movies }
-    - { id: 2, cat: Other, desc: Video }
-    - { id: 3, cat: TV, desc: TV }
-    - { id: 4, cat: TV/Anime, desc: Anime }
-    - { id: 5, cat: XXX, desc: XXX }
-    - { id: 6, cat: Audio, desc: Music }
-    - { id: 7, cat: PC/Games, desc: Games }
-    - { id: 8, cat: PC, desc: Apps }
-    - { id: 9, cat: Books, desc: Books }
+    - {id: 0, cat: Other, desc: Others}
+    - {id: 1, cat: Movies, desc: Movies}
+    - {id: 2, cat: Other, desc: Video}
+    - {id: 3, cat: TV, desc: TV}
+    - {id: 4, cat: TV/Anime, desc: Anime}
+    - {id: 5, cat: XXX, desc: XXX}
+    - {id: 6, cat: Audio, desc: Music}
+    - {id: 7, cat: PC/Games, desc: Games}
+    - {id: 8, cat: PC, desc: Apps}
+    - {id: 9, cat: Books, desc: Books}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: itorrents-links
@@ -69,6 +69,10 @@ search:
     # sort torrent-list by age in descending order
     - path: "{{ if .Keywords }}torrent-list/{{ .Keywords }}?o={{ .Config.sort }}&c={{ range .Categories }}{{.}}{{end}}{{ else }}browse.html{{ end }}"
     - path: "{{ if .Keywords }}torrent-list/{{ .Keywords }}?p=2&o={{ .Config.sort }}&c={{ range .Categories }}{{.}}{{end}}{{ else }}browse.html?&p=2{{ end }}"
+
+  headers:
+    # Using a custom user-agent to return the desktop layout.
+    User-Agent: ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203"]
 
   rows:
     selector: div.resultdiv

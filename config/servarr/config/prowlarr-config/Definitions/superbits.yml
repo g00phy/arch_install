@@ -11,41 +11,41 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies/DVD, desc: DVD-R Swesub }
-    - { id: 2, cat: TV, desc: DVD-R TV }
-    - { id: 3, cat: Books/EBook, desc: eBok }
-    - { id: 4, cat: Movies/HD, desc: Film 1080 }
-    - { id: 5, cat: Movies/3D, desc: Film 3D }
-    - { id: 6, cat: Movies/HD, desc: Film 720 }
-    - { id: 7, cat: Movies/BluRay, desc: Film Bluray }
-    - { id: 24, cat: Movies/UHD, desc: Film 4K }
-    - { id: 8, cat: TV, desc: Svensk TV }
-    - { id: 9, cat: Audio/Audiobook, desc: Ljudböcker }
-    - { id: 10, cat: Audio/Video, desc: Musikvideos }
-    - { id: 11, cat: Books/Mags, desc: E-tidningar }
-    - { id: 12, cat: Audio, desc: MP3 }
-    - { id: 13, cat: Other, desc: Omslag }
-    - { id: 14, cat: Other, desc: Övrigt }
-    - { id: 15, cat: PC/Games, desc: PC-Spel }
-    - { id: 16, cat: PC/0day, desc: Program }
-    - { id: 17, cat: Console/PS4, desc: Playstation }
-    - { id: 18, cat: TV, desc: TV }
-    - { id: 19, cat: Console/Other, desc: Nintendo }
-    - { id: 20, cat: Console/XBox, desc: Xbox }
-    - { id: 21, cat: Movies/SD, desc: Xvid }
-    - { id: 25, cat: Movies/Foreign, desc: Subpacks }
-    - { id: 22, cat: XXX, desc: XXX }
-    - { id: 23, cat: Audio/Lossless, desc: FLAC }
-    - { id: 26, cat: TV, desc: TV DK }
-    - { id: 27, cat: TV, desc: TV NO }
-    - { id: 28, cat: TV, desc: TV FI }
+    - {id: 1, cat: Movies/DVD, desc: DVD-R Swesub}
+    - {id: 2, cat: TV, desc: DVD-R TV}
+    - {id: 3, cat: Books/EBook, desc: eBok}
+    - {id: 4, cat: Movies/HD, desc: Film 1080}
+    - {id: 5, cat: Movies/3D, desc: Film 3D}
+    - {id: 6, cat: Movies/HD, desc: Film 720}
+    - {id: 7, cat: Movies/BluRay, desc: Film Bluray}
+    - {id: 24, cat: Movies/UHD, desc: Film 4K}
+    - {id: 8, cat: TV, desc: Svensk TV}
+    - {id: 9, cat: Audio/Audiobook, desc: Ljudböcker}
+    - {id: 10, cat: Audio/Video, desc: Musikvideos}
+    - {id: 11, cat: Books/Mags, desc: E-tidningar}
+    - {id: 12, cat: Audio, desc: MP3}
+    - {id: 13, cat: Audio, desc: Pod}
+    - {id: 14, cat: Other, desc: Övrigt}
+    - {id: 15, cat: PC/Games, desc: PC-Spel}
+    - {id: 16, cat: PC/0day, desc: Program}
+    - {id: 17, cat: Console/PS4, desc: Playstation}
+    - {id: 18, cat: TV, desc: TV}
+    - {id: 19, cat: Console/Other, desc: Nintendo}
+    - {id: 20, cat: Console/XBox, desc: Xbox}
+    - {id: 21, cat: Movies/SD, desc: Xvid}
+    - {id: 25, cat: Movies/Foreign, desc: Subpacks}
+    - {id: 22, cat: XXX, desc: XXX}
+    - {id: 23, cat: Audio/Lossless, desc: FLAC}
+    - {id: 26, cat: TV, desc: TV DK}
+    - {id: 27, cat: TV, desc: TV NO}
+    - {id: 28, cat: TV, desc: TV FI}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -199,7 +199,7 @@ search:
       selector: rating
       filters:
         - name: re_replace
-          args: [ "^0$", "" ]
+          args: ["^0$", ""]
     _plot_desc:
       optional: true
       selector: plot
@@ -210,7 +210,7 @@ search:
       selector: preDate
       filters:
         - name: re_replace
-          args: [ "1970-01-01 01:00:00", "" ]
+          args: ["1970-01-01 01:00:00", ""]
     _p2ptag:
       selector: p2p
       case:

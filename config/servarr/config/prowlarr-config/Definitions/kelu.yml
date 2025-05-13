@@ -10,18 +10,18 @@ links:
 
 caps:
   categorymappings:
-    - { id: 408, cat: XXX/Other, desc: "其他" }
-    - { id: 409, cat: XXX/Other, desc: "动漫/二次元" }
-    - { id: 403, cat: XXX, desc: "SM" }
-    - { id: 402, cat: XXX, desc: "日韩" }
-    - { id: 405, cat: XXX, desc: "欧美" }
-    - { id: 404, cat: XXX, desc: "国产" }
-    - { id: 401, cat: XXX/ImageSet, desc: "写真" }
-    - { id: 410, cat: XXX, desc: "影视" }
-    - { id: 411, cat: PC/Games, desc: "游戏" }
+    - {id: 408, cat: XXX/Other, desc: "其他"}
+    - {id: 409, cat: XXX/Other, desc: "动漫/二次元"}
+    - {id: 403, cat: XXX, desc: "SM"}
+    - {id: 402, cat: XXX, desc: "日韩"}
+    - {id: 405, cat: XXX, desc: "欧美"}
+    - {id: 404, cat: XXX, desc: "国产"}
+    - {id: 401, cat: XXX/ImageSet, desc: "写真"}
+    - {id: 410, cat: XXX, desc: "影视"}
+    - {id: 411, cat: PC/Games, desc: "游戏"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username

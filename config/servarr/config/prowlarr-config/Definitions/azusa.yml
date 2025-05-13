@@ -10,16 +10,16 @@ links:
 
 caps:
   categorymappings:
-    - { id: 404, cat: PC/Games, desc: "Game" }
-    - { id: 402, cat: Books/Comics, desc: "Comic" }
-    - { id: 403, cat: Books/EBook, desc: "Light Novel" }
-    - { id: 407, cat: Other, desc: "CG" }
-    - { id: 409, cat: Audio, desc: "Music" }
+    - {id: 404, cat: PC/Games, desc: "Game"}
+    - {id: 402, cat: Books/Comics, desc: "Comic"}
+    - {id: 403, cat: Books/EBook, desc: "Light Novel"}
+    - {id: 407, cat: Other, desc: "CG"}
+    - {id: 409, cat: Audio, desc: "Music"}
 
   modes:
-    search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie

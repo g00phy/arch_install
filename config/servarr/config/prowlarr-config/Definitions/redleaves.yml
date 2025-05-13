@@ -10,21 +10,21 @@ links:
 
 caps:
   categorymappings:
-    - { id: 408, cat: Audio, desc: "HQ Audio (高清音频/音乐)" }
-    - { id: 409, cat: Other, desc: "Misc (杂项/软件/其他)" }
-    - { id: 407, cat: TV/Sport, desc: "Sports (竞技体育)" }
-    - { id: 406, cat: Audio/Video, desc: "Music Videos (音乐录影带)" }
-    - { id: 403, cat: TV, desc: "TV Shows (电视节目)" }
-    - { id: 402, cat: TV, desc: "TV Series (剧集)" }
-    - { id: 405, cat: TV/Anime, desc: "Animations (动画)" }
-    - { id: 404, cat: TV/Documentary, desc: "Documentaries (纪实)" }
-    - { id: 401, cat: Movies, desc: "Movies (电影)" }
+    - {id: 408, cat: Audio, desc: "HQ Audio (高清音频/音乐)"}
+    - {id: 409, cat: Other, desc: "Misc (杂项/软件/其他)"}
+    - {id: 407, cat: TV/Sport, desc: "Sports (竞技体育)"}
+    - {id: 406, cat: Audio/Video, desc: "Music Videos (音乐录影带)"}
+    - {id: 403, cat: TV, desc: "TV Shows (电视节目)"}
+    - {id: 402, cat: TV, desc: "TV Series (剧集)"}
+    - {id: 405, cat: TV/Anime, desc: "Animations (动画)"}
+    - {id: 404, cat: TV/Documentary, desc: "Documentaries (纪实)"}
+    - {id: 401, cat: Movies, desc: "Movies (电影)"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, doubanid ]
-    movie-search: [ q, imdbid, doubanid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, doubanid]
+    movie-search: [q, imdbid, doubanid]
+    music-search: [q]
 
 settings:
   - name: username

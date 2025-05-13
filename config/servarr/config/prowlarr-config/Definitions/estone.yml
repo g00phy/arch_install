@@ -12,35 +12,35 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 24, cat: Movies/SD, desc: "Film/XviD/Hun" }
-    - { id: 38, cat: Movies/SD, desc: "Film/XviD/Eng" }
-    - { id: 51, cat: Movies/SD, desc: "Film/SD/Hun" }
-    - { id: 52, cat: Movies/SD, desc: "Film/SD/Eng" }
-    - { id: 25, cat: Movies/DVD, desc: "Film/DVD/Hun" }
-    - { id: 26, cat: Movies/DVD, desc: "Film/DVD/Eng" }
-    - { id: 42, cat: Movies/HD, desc: "Film/HD/Hun" }
-    - { id: 50, cat: Movies/HD, desc: "Film/HD/Eng" }
-    - { id: 36, cat: TV, desc: "Sorozat/Hun" }
-    - { id: 47, cat: TV, desc: "Sorozat/Eng" }
-    - { id: 41, cat: Audio/MP3, desc: "Mp3/Hun" }
-    - { id: 40, cat: Audio/MP3, desc: "Mp3/Eng" }
-    - { id: 35, cat: PC/0day, desc: "Program" }
-    - { id: 28, cat: PC/Games, desc: "Játék/ISO" }
-    - { id: 30, cat: PC/Games, desc: "Játék/Rip" }
-    - { id: 32, cat: Console, desc: "Konzol" }
-    - { id: 34, cat: PC/Mobile-Other, desc: "Mobil" }
-    - { id: 44, cat: Books, desc: "Könyv/Hun" }
-    - { id: 33, cat: Books, desc: "Könyv/Eng" }
-    - { id: 31, cat: Other, desc: "Képek" }
-    - { id: 39, cat: XXX, desc: "XXX/Film" }
-    - { id: 49, cat: XXX/ImageSet, desc: "XXX/Kép" }
+    - {id: 24, cat: Movies/SD, desc: "Film/XviD/Hun"}
+    - {id: 38, cat: Movies/SD, desc: "Film/XviD/Eng"}
+    - {id: 51, cat: Movies/SD, desc: "Film/SD/Hun"}
+    - {id: 52, cat: Movies/SD, desc: "Film/SD/Eng"}
+    - {id: 25, cat: Movies/DVD, desc: "Film/DVD/Hun"}
+    - {id: 26, cat: Movies/DVD, desc: "Film/DVD/Eng"}
+    - {id: 42, cat: Movies/HD, desc: "Film/HD/Hun"}
+    - {id: 50, cat: Movies/HD, desc: "Film/HD/Eng"}
+    - {id: 36, cat: TV, desc: "Sorozat/Hun"}
+    - {id: 47, cat: TV, desc: "Sorozat/Eng"}
+    - {id: 41, cat: Audio/MP3, desc: "Mp3/Hun"}
+    - {id: 40, cat: Audio/MP3, desc: "Mp3/Eng"}
+    - {id: 35, cat: PC/0day, desc: "Program"}
+    - {id: 28, cat: PC/Games, desc: "Játék/ISO"}
+    - {id: 30, cat: PC/Games, desc: "Játék/Rip"}
+    - {id: 32, cat: Console, desc: "Konzol"}
+    - {id: 34, cat: PC/Mobile-Other, desc: "Mobil"}
+    - {id: 44, cat: Books, desc: "Könyv/Hun"}
+    - {id: 33, cat: Books, desc: "Könyv/Eng"}
+    - {id: 31, cat: Other, desc: "Képek"}
+    - {id: 39, cat: XXX, desc: "XXX/Film"}
+    - {id: 49, cat: XXX/ImageSet, desc: "XXX/Kép"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, genre ]
-    movie-search: [ q, genre ]
-    music-search: [ q, genre ]
-    book-search: [ q, genre ]
+    search: [q]
+    tv-search: [q, season, ep, genre]
+    movie-search: [q, genre]
+    music-search: [q, genre]
+    book-search: [q, genre]
 
 settings:
   - name: username
@@ -85,9 +85,9 @@ login:
         selector: script:contains("hiba(\"")
         filters:
           - name: replace
-            args: [ "hiba(\"", "" ]
+            args: ["hiba(\"", ""]
           - name: replace
-            args: [ "\");", "" ]
+            args: ["\");", ""]
   test:
     path: index.php
     selector: a[href="logout.php"]
@@ -122,12 +122,12 @@ search:
       attribute: id
       filters:
         - name: replace
-          args: [ "torrent_", "adatlap.php?id=" ]
+          args: ["torrent_", "adatlap.php?id="]
     download:
       attribute: id
       filters:
         - name: replace
-          args: [ "torrent_", "download.php?id=" ]
+          args: ["torrent_", "download.php?id="]
     poster:
       selector: img[onmouseover]
       attribute: onmouseover
@@ -147,7 +147,7 @@ search:
       selector: div:nth-child(4)
       filters:
         - name: split
-          args: [ "(", 0 ]
+          args: ["(", 0]
         - name: append
           args: "+01:00" # CET
         - name: dateparse

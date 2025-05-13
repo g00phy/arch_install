@@ -1,45 +1,65 @@
 ---
 id: proporno
 name: ProPorno
-description: "ProPorno is a RUSSIAN Public tracker for 3X"
+description: "ProPorno is a RUSSIAN Semi-Private tracker for 3X"
 language: ru-RU
-type: public
+type: semi-private
 encoding: UTF-8
 links:
   - https://proporno.org/
 
 caps:
   categorymappings:
-    - { id: 2, cat: XXX, desc: "порно видео" }
-    - { id: 4, cat: XXX, desc: "Порно с блондинками" }
-    - { id: 5, cat: XXX, desc: "лесбиянки" }
-    - { id: 19, cat: XXX, desc: "эротика" }
-    - { id: 20, cat: XXX, desc: "груповушка" }
-    - { id: 16, cat: XXX, desc: "анальный секс" }
-    - { id: 22, cat: XXX, desc: "Молодые девушки" }
-    - { id: 24, cat: XXX, desc: "Минет / куннилингус / оральный секс" }
-    - { id: 25, cat: XXX, desc: "большая грудь" }
-    - { id: 28, cat: XXX, desc: "порно видео зрелых" }
-    - { id: 29, cat: XXX, desc: "видео кастинг" }
-    - { id: 32, cat: XXX, desc: "девушки с красивыми попами" }
-    - { id: 33, cat: XXX, desc: "порно с мулатками" }
-    - { id: 21, cat: XXX, desc: "любительское видео" }
-    - { id: 3, cat: XXX, desc: "порно фильмы" }
-    - { id: 30, cat: XXX, desc: "зарубежные порно фильмы" }
-    - { id: 31, cat: XXX, desc: "фильмы с русским переводом" }
-    - { id: 7, cat: XXX, desc: "русское порно видео" }
-    - { id: 27, cat: XXX, desc: "убойная эротика" }
-    - { id: 26, cat: XXX, desc: "онлайн порно" }
+    - {id: 2, cat: XXX, desc: "порно видео"}
+    - {id: 4, cat: XXX, desc: "Порно с блондинками"}
+    - {id: 5, cat: XXX, desc: "лесбиянки"}
+    - {id: 19, cat: XXX, desc: "эротика"}
+    - {id: 20, cat: XXX, desc: "груповушка"}
+    - {id: 16, cat: XXX, desc: "анальный секс"}
+    - {id: 22, cat: XXX, desc: "Молодые девушки"}
+    - {id: 24, cat: XXX, desc: "Минет / куннилингус / оральный секс"}
+    - {id: 25, cat: XXX, desc: "большая грудь"}
+    - {id: 28, cat: XXX, desc: "порно видео зрелых"}
+    - {id: 29, cat: XXX, desc: "видео кастинг"}
+    - {id: 32, cat: XXX, desc: "девушки с красивыми попами"}
+    - {id: 33, cat: XXX, desc: "порно с мулатками"}
+    - {id: 21, cat: XXX, desc: "любительское видео"}
+    - {id: 3, cat: XXX, desc: "порно фильмы"}
+    - {id: 30, cat: XXX, desc: "зарубежные порно фильмы"}
+    - {id: 31, cat: XXX, desc: "фильмы с русским переводом"}
+    - {id: 7, cat: XXX, desc: "русское порно видео"}
+    - {id: 27, cat: XXX, desc: "убойная эротика"}
+    - {id: 26, cat: XXX, desc: "онлайн порно"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
-settings: [ ]
+settings:
+  - name: username
+    type: text
+    label: Username
+  - name: password
+    type: password
+    label: Password
 
 download:
   selectors:
     - selector: a[href^="magnet:?xt="]
       attribute: href
+
+login:
+  path: /
+  method: form
+  form: form[onSubmit]
+  inputs:
+    login_name: "{{ .Config.username }}"
+    login_password: "{{ .Config.password }}"
+    login: submit
+  error:
+    - selector: div.berrors:contains("Ошибка авторизации")
+  test:
+    path: /
+    selector: a[href$="/index.php?action=logout"]
 
 search:
   paths:
@@ -86,9 +106,9 @@ search:
         - name: regexp
           args: "((Вчера|Сегодня)(, \\d{2}:\\d{2}))"
         - name: replace
-          args: [ "Вчера", "Yesterday" ]
+          args: ["Вчера", "Yesterday"]
         - name: replace
-          args: [ "Сегодня", "Today" ]
+          args: ["Сегодня", "Today"]
         - name: fuzzytime
     date_year:
       # 20-09-2020, 19:41
@@ -113,4 +133,4 @@ search:
       text: 0
     uploadvolumefactor:
       text: 1
-# engine n/a
+# DataLife v24

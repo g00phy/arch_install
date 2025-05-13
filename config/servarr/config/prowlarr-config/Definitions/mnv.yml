@@ -11,27 +11,27 @@ links:
 caps:
   categorymappings:
 
-    - { id: 1, cat: TV/Anime, desc: "Anime" }
-    - { id: 2, cat: PC, desc: "Appz" }
-    - { id: 13, cat: TV/Documentary, desc: "Doku" }
-    - { id: 3, cat: Books/EBook, desc: "E-Books/Bücher" }
-    - { id: 24, cat: PC/Games, desc: "Games/PC" }
-    - { id: 32, cat: TV/Anime, desc: "Hentai" }
-    - { id: 4, cat: Audio/Audiobook, desc: "Hörspiel/Hörbuch" }
-    - { id: 6, cat: Movies/HD, desc: "Movies/H.26x" }
-    - { id: 18, cat: Audio, desc: "Musik" }
-    - { id: 19, cat: Audio/Video, desc: "Musik Videos" }
-    - { id: 30, cat: Other, desc: "Sonstiges" }
-    - { id: 5, cat: Books/Mags, desc: "Tageszeitung" }
-    - { id: 14, cat: TV, desc: "TV-Serien" }
-    - { id: 29, cat: XXX, desc: "XXX" }
+    - {id: 1, cat: TV/Anime, desc: "Anime"}
+    - {id: 2, cat: PC, desc: "Appz"}
+    - {id: 13, cat: TV/Documentary, desc: "Doku"}
+    - {id: 3, cat: Books/EBook, desc: "E-Books/Bücher"}
+    - {id: 24, cat: PC/Games, desc: "Games/PC"}
+    - {id: 32, cat: TV/Anime, desc: "Hentai"}
+    - {id: 4, cat: Audio/Audiobook, desc: "Hörspiel/Hörbuch"}
+    - {id: 6, cat: Movies/HD, desc: "Movies/H.26x"}
+    - {id: 18, cat: Audio, desc: "Musik"}
+    - {id: 19, cat: Audio/Video, desc: "Musik Videos"}
+    - {id: 30, cat: Other, desc: "Sonstiges"}
+    - {id: 5, cat: Books/Mags, desc: "Tageszeitung"}
+    - {id: 14, cat: TV, desc: "TV-Serien"}
+    - {id: 29, cat: XXX, desc: "XXX"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -91,7 +91,8 @@ login:
 
 search:
   # https://mnvv2.info/browse.php?showsearch=1&c13=1&c3=1&search=&blah=0&incldead=1&team=0&orderby=added&sort=desc&language=all
-  path: browse.php
+  paths:
+    - path: browse.php
   inputs:
     $raw: "{{ range .Categories }}c{{.}}=1&{{end}}"
     search: "{{ .Keywords }}"
@@ -137,7 +138,7 @@ search:
         - name: append
           args: " +01:00" # CET
         - name: replace
-          args: [ "\xA0", " " ]
+          args: ["\xA0", " "]
         - name: dateparse
           args: "dd.MM.yyyy HH:mm:ss zzz"
     grabs:

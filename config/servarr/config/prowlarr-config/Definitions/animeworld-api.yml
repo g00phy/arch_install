@@ -10,28 +10,28 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies/Other, desc: "Anime Filme" }
-    - { id: 2, cat: TV/Anime, desc: "Anime Serien" }
-    - { id: 3, cat: Audio, desc: "Anime Musik / OSTs" }
-    - { id: 4, cat: PC/Games, desc: "Anime Spiele" }
-    - { id: 5, cat: XXX, desc: "Anime Hentai" }
-    - { id: 6, cat: PC, desc: "Software" }
-    - { id: 7, cat: Other, desc: "Sonstiges" }
-    - { id: 8, cat: Movies, desc: "Filme" }
-    - { id: 9, cat: TV, desc: "Serien" }
-    - { id: 10, cat: PC/Games, desc: "Spiele" }
-    - { id: 11, cat: Audio, desc: "Musik" }
-    - { id: 12, cat: Books, desc: "Manga" }
-    - { id: 13, cat: Movies, desc: "Cartoon Filme" }
-    - { id: 14, cat: TV, desc: "Cartoon Serie" }
-    - { id: 15, cat: XXX, desc: "H-Manga / Doujinshi" }
+    - {id: 1, cat: Movies/Other, desc: "Anime Filme"}
+    - {id: 2, cat: TV/Anime, desc: "Anime Serien"}
+    - {id: 3, cat: Audio, desc: "Anime Musik / OSTs"}
+    - {id: 4, cat: PC/Games, desc: "Anime Spiele"}
+    - {id: 5, cat: XXX, desc: "Anime Hentai"}
+    - {id: 6, cat: PC, desc: "Software"}
+    - {id: 7, cat: Other, desc: "Sonstiges"}
+    - {id: 8, cat: Movies, desc: "Filme"}
+    - {id: 9, cat: TV, desc: "Serien"}
+    - {id: 10, cat: PC/Games, desc: "Spiele"}
+    - {id: 11, cat: Audio, desc: "Musik"}
+    - {id: 12, cat: Books, desc: "Manga"}
+    - {id: 13, cat: Movies, desc: "Cartoon Filme"}
+    - {id: 14, cat: TV, desc: "Cartoon Serie"}
+    - {id: 15, cat: XXX, desc: "H-Manga / Doujinshi"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, tvdbid, tmdbid ]
-    movie-search: [ q, tmdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, tvdbid, tmdbid]
+    movie-search: [q, tmdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -73,7 +73,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -89,10 +89,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     # seasonNumber: "{{ .Query.Season }}" # disabled due to Prowlarr/Indexers#486
@@ -107,7 +107,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -135,7 +135,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -146,9 +146,9 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)(Science Fiction)", "Science_Fiction" ]
+          args: ["(?i)(Science Fiction)", "Science_Fiction"]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     seeders:
@@ -192,9 +192,9 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-    # global MR is 1.0 but torrents must be seeded for 7 days regardless of ratio
-    #    minimumratio:
-    #      text: 1.0
+# global MR is 1.0 but torrents must be seeded for 7 days regardless of ratio
+#    minimumratio:
+#      text: 1.0
     minimumseedtime:
       # 7 days (as seconds = 7 x 24 x 60 x 60)
       text: 604800

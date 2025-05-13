@@ -9,15 +9,15 @@ requestDelay: 2
 links:
   - https://e-hentai.org/
 
-settings: [ ]
+settings: []
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV/Anime, desc: "Anime" }
+    - {id: 1, cat: TV/Anime, desc: "Anime"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
+    search: [q]
+    tv-search: [q, season, ep]
 
 download:
   selectors:

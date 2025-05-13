@@ -13,21 +13,21 @@ links:
 
 caps:
   categorymappings:
-    - { id: 动画, cat: TV/Anime, desc: 动画 (Animation Series and Movies) }
-    - { id: 漫画, cat: Books/Comics, desc: 漫画 (Comics and Manga) }
-    - { id: 音乐, cat: Audio, desc: 音乐 (Music OST and Singles) }
-    - { id: 周边, cat: TV/Other, desc: 周边 (Live Action) }
-    - { id: 其它, cat: TV/Anime, desc: 其它 (Other) }
-    - { id: Raw, cat: TV/Anime, desc: Raw }
+    - {id: 动画, cat: TV/Anime, desc: 动画 (Animation Series and Movies)}
+    - {id: 漫画, cat: Books/Comics, desc: 漫画 (Comics and Manga)}
+    - {id: 音乐, cat: Audio, desc: 音乐 (Music OST and Singles)}
+    - {id: 周边, cat: TV/Other, desc: 周边 (Live Action)}
+    - {id: 其它, cat: TV/Anime, desc: 其它 (Other)}
+    - {id: Raw, cat: TV/Anime, desc: Raw}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
-settings: [ ]
+settings: []
 
 login:
   path: addon.php?r=document/view&page=visitor-test
@@ -65,9 +65,9 @@ search:
       selector: td:nth-child(1):contains("今天"),  td:nth-child(1):contains("昨天")
       filters:
         - name: replace
-          args: [ "今天", "Today" ]
+          args: ["今天", "Today"]
         - name: replace
-          args: [ "昨天", "Yesterday" ]
+          args: ["昨天", "Yesterday"]
         - name: append
           args: " +08:00" # CST
         - name: fuzzytime

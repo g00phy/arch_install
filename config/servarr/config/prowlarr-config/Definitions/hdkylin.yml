@@ -11,27 +11,27 @@ links:
 
 caps:
   categorymappings:
-    - { id: 401, cat: Movies, desc: "Movies/电影" }
-    - { id: 402, cat: TV, desc: "TV Series/电视剧" }
-    - { id: 404, cat: Other, desc: "Record Education/纪录教育" }
-    - { id: 408, cat: Audio, desc: "HQ Audio/音乐" }
-    - { id: 421, cat: TV/Other, desc: "Playlet/短剧" }
-    - { id: 405, cat: TV/Anime, desc: "Animations/动漫" }
-    - { id: 419, cat: Other, desc: "Study/学习" }
-    - { id: 407, cat: TV/Sport, desc: "Sports/体育运动" }
-    - { id: 406, cat: Audio/Video, desc: "Music Videos/音乐视频" }
-    - { id: 411, cat: PC, desc: "software/软件" }
-    - { id: 412, cat: Console, desc: "Game/游戏" }
-    - { id: 413, cat: Books, desc: "Ebook/电子书" }
-    - { id: 409, cat: Other, desc: "Misc/其他" }
-    - { id: 420, cat: TV, desc: "TV Shows/综艺" }
+    - {id: 401, cat: Movies, desc: "Movies/电影"}
+    - {id: 402, cat: TV, desc: "TV Series/电视剧"}
+    - {id: 404, cat: Other, desc: "Record Education/纪录教育"}
+    - {id: 408, cat: Audio, desc: "HQ Audio/音乐"}
+    - {id: 421, cat: TV/Other, desc: "Playlet/短剧"}
+    - {id: 405, cat: TV/Anime, desc: "Animations/动漫"}
+    - {id: 419, cat: Other, desc: "Study/学习"}
+    - {id: 407, cat: TV/Sport, desc: "Sports/体育运动"}
+    - {id: 406, cat: Audio/Video, desc: "Music Videos/音乐视频"}
+    - {id: 411, cat: PC, desc: "software/软件"}
+    - {id: 412, cat: Console, desc: "Game/游戏"}
+    - {id: 413, cat: Books, desc: "Ebook/电子书"}
+    - {id: 409, cat: Other, desc: "Misc/其他"}
+    - {id: 420, cat: TV, desc: "TV Shows/综艺"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, doubanid ]
-    movie-search: [ q, imdbid, doubanid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, doubanid]
+    movie-search: [q, imdbid, doubanid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie

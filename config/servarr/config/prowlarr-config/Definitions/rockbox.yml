@@ -13,8 +13,8 @@ caps:
     Music: Audio
 
   modes:
-    search: [ q ]
-    music-search: [ q, album, artist ]
+    search: [q]
+    music-search: [q, album, artist]
 
 settings:
   - name: username

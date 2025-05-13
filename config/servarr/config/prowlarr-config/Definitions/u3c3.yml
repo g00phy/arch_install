@@ -17,23 +17,23 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 國產原创, cat: XXX, desc: 國產原创 }
-    - { id: U3C3, cat: XXX, desc: U3C3 }
-    - { id: Video, cat: XXX, desc: Video }
-    - { id: Photo, cat: XXX/ImageSet, desc: Photo }
-    - { id: Book, cat: Books, desc: Book }
-    - { id: Game, cat: Console, desc: Game }
-    - { id: Software, cat: PC, desc: Software }
-    - { id: Other, cat: Other, desc: Other }
+    - {id: 國產原创, cat: XXX, desc: 國產原创}
+    - {id: U3C3, cat: XXX, desc: U3C3}
+    - {id: Video, cat: XXX, desc: Video}
+    - {id: Photo, cat: XXX/ImageSet, desc: Photo}
+    - {id: Book, cat: Books, desc: Book}
+    - {id: Game, cat: Console, desc: Game}
+    - {id: Software, cat: PC, desc: Software}
+    - {id: Other, cat: Other, desc: Other}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
-settings: [ ]
+settings: []
 
 search:
   paths:

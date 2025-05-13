@@ -15,20 +15,21 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Movies" }
-    - { id: 2, cat: TV, desc: "TV" }
-    - { id: 5, cat: PC/0day, desc: "Apps" }
-    - { id: 4, cat: PC/Games, desc: "Games" }
-    - { id: 3, cat: Audio, desc: "Sound" }
-    - { id: 8, cat: Books, desc: "Books" }
-    - { id: 17, cat: Audio/Audiobook, desc: "AudioBooks" }
+    - {id: 1, cat: Movies, desc: "Movies"}
+    - {id: 2, cat: TV, desc: "TV"}
+    - {id: 5, cat: PC/0day, desc: "Apps"}
+    - {id: 4, cat: PC/Games, desc: "Games"}
+    - {id: 3, cat: Audio, desc: "Music"}
+    - {id: 8, cat: Books, desc: "Books"}
+    - {id: 17, cat: Audio/Audiobook, desc: "AudioBooks"}
+    - {id: 19, cat: Audio, desc: "Podcasts"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -73,7 +74,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -86,7 +87,7 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
@@ -124,13 +125,13 @@ search:
       selector: meta_genres
       filters:
         - name: re_replace
-          args: [ "(?i)(Action og eventyr)", "Action_og_eventyr" ]
+          args: ["(?i)(Action og eventyr)", "Action_og_eventyr"]
         - name: re_replace
-          args: [ "(?i)(Sci-fi og Fantasy)", "Sci-fi_og_Fantasy" ]
+          args: ["(?i)(Sci-fi og Fantasy)", "Sci-fi_og_Fantasy"]
         - name: re_replace
-          args: [ "(?i)(Stand-Up Comedy)", "Stand-Up_Comedy" ]
+          args: ["(?i)(Stand-Up Comedy)", "Stand-Up_Comedy"]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     imdbid:

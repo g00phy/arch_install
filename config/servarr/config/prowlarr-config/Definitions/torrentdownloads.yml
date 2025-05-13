@@ -20,23 +20,23 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 8, cat: TV, desc: "TV Shows" }
-    - { id: 4, cat: Movies, desc: "Movies" }
-    - { id: 5, cat: Audio, desc: "Music" }
-    - { id: 3, cat: PC/Games, desc: "Games" }
-    - { id: 7, cat: PC, desc: "Software" }
-    - { id: 1, cat: TV/Anime, desc: "Anime" }
-    - { id: 2, cat: Books, desc: "Books" }
-    - { id: 9, cat: Other, desc: "Other" }
-    - { id: 0, cat: Other, desc: "Other" }
-    - { id: 6, cat: Other, desc: "Pics" }
+    - {id: 8, cat: TV, desc: "TV Shows"}
+    - {id: 4, cat: Movies, desc: "Movies"}
+    - {id: 5, cat: Audio, desc: "Music"}
+    - {id: 3, cat: PC/Games, desc: "Games"}
+    - {id: 7, cat: PC, desc: "Software"}
+    - {id: 1, cat: TV/Anime, desc: "Anime"}
+    - {id: 2, cat: Books, desc: "Books"}
+    - {id: 9, cat: Other, desc: "Other"}
+    - {id: 0, cat: Other, desc: "Other"}
+    - {id: 6, cat: Other, desc: "Pics"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
   allowrawsearch: true
 
 settings:
@@ -76,7 +76,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\W+", " " ]
+      args: ["\\W+", " "]
     - name: trim
 
   rows:
@@ -94,7 +94,7 @@ search:
       attribute: title
       filters:
         - name: replace
-          args: [ "View torrent info : ", "" ]
+          args: ["View torrent info : ", ""]
     details:
       selector: p:nth-child(1) > a[href^="/torrent/"]
       attribute: href

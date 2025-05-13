@@ -10,20 +10,20 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "电影 (Movies)" }
-    - { id: 2, cat: TV/Documentary, desc: "演示/纪录片 (Demo/Docu)" }
-    - { id: 3, cat: TV, desc: "连续剧 (TV)" }
-    - { id: 4, cat: TV/Anime, desc: "动画片 (Animation)" }
-    - { id: 5, cat: Audio/Video, desc: "演唱会/MV (Music Video)" }
-    - { id: 6, cat: TV/Sport, desc: "体育节目 (Sports)" }
-    - { id: 7, cat: Audio/Other, desc: "电影音轨 (Soundtracks" }
-    - { id: 8, cat: Audio/Lossless, desc: "无损音乐 (Lossless)" }
-    - { id: 9, cat: Other, desc: "其他 (Other)" }
+    - {id: 1, cat: Movies, desc: "电影 (Movies)"}
+    - {id: 2, cat: TV/Documentary, desc: "演示/纪录片 (Demo/Docu)"}
+    - {id: 3, cat: TV, desc: "连续剧 (TV)"}
+    - {id: 4, cat: TV/Anime, desc: "动画片 (Animation)"}
+    - {id: 5, cat: Audio/Video, desc: "演唱会/MV (Music Video)"}
+    - {id: 6, cat: TV/Sport, desc: "体育节目 (Sports)"}
+    - {id: 7, cat: Audio/Other, desc: "电影音轨 (Soundtracks"}
+    - {id: 8, cat: Audio/Lossless, desc: "无损音乐 (Lossless)"}
+    - {id: 9, cat: Other, desc: "其他 (Other)"}
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
 
 login:
   path: login.php?action=login
@@ -70,7 +70,7 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "details.php", "download.php" ]
+          args: ["details.php", "download.php"]
     size:
       selector: div.torrent_size
     date:
@@ -88,7 +88,7 @@ search:
       attribute: src
       filters:
         - name: replace
-          args: [ "./img/theme1/default.jpg", "" ]
+          args: ["./img/theme1/default.jpg", ""]
     seeders:
       selector: div.torrent-content-right div:nth-child(5)
     leechers:

@@ -13,20 +13,20 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV, desc: "Series" }
-    - { id: 2, cat: Movies, desc: "Movies" }
-    - { id: 3, cat: TV/Documentary, desc: "Documentaries" }
-    - { id: 4, cat: TV/Anime, desc: "Anime" }
-    - { id: 5, cat: PC/Games, desc: "Games" }
-    - { id: 6, cat: PC, desc: "Applications" }
-    - { id: 7, cat: Books/EBook, desc: "Ebooks" }
-    - { id: 9, cat: TV, desc: "Emissions" }
+    - {id: 1, cat: TV, desc: "Series"}
+    - {id: 2, cat: Movies, desc: "Movies"}
+    - {id: 3, cat: TV/Documentary, desc: "Documentaries"}
+    - {id: 4, cat: TV/Anime, desc: "Anime"}
+    - {id: 5, cat: PC/Games, desc: "Games"}
+    - {id: 6, cat: PC, desc: "Applications"}
+    - {id: 7, cat: Books/EBook, desc: "Ebooks"}
+    - {id: 9, cat: TV, desc: "Emissions"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -133,14 +133,14 @@ search:
       text: "{{ .Result.title_phase1 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(vostfr|subfrench)\\b", "ENGLISH" ]
+          args: ["(?i)\\b(vostfr|subfrench)\\b", "ENGLISH"]
     title_phase2:
       text: "{{ if .Config.vostfr }}{{ .Result.title_vostfr }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     title_multilang:
       text: "{{ .Result.title_phase2 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     details:
@@ -155,9 +155,9 @@ search:
       selector: td:nth-child(6)
       filters:
         - name: re_replace
-          args: [ ",", "." ]
+          args: [",", "."]
         - name: replace
-          args: [ "o", "B" ]
+          args: ["o", "B"]
     seeders:
       selector: td:nth-child(7)
     leechers:

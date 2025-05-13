@@ -10,36 +10,36 @@ links:
 
 caps:
   categorymappings:
-    - { id: 14, cat: Movies/HD, desc: "Фильмы HDTV" }
-    - { id: 15, cat: Movies/DVD, desc: "Фильмы DVD" }
-    - { id: 13, cat: Movies/SD, desc: "Фильмы XviD" }
-    - { id: 12, cat: Movies/Other, desc: "Мультфильмы" }
-    - { id: 9, cat: TV/Documentary, desc: "Документальные" }
-    - { id: 11, cat: TV, desc: "Сериалы" }
-    - { id: 10, cat: Audio, desc: "Музыка" }
-    - { id: 16, cat: Books, desc: "Книги" }
-    - { id: 22, cat: Other, desc: "Картинки" }
-    - { id: 1, cat: PC, desc: "Приложения Windows" }
-    - { id: 3, cat: PC, desc: "Приложения Unix/Linux" }
-    - { id: 4, cat: PC/Mac, desc: "Приложения Mac" }
-    - { id: 2, cat: PC/Mobile-Other, desc: "Приложения PDA" }
-    - { id: 5, cat: PC/Games, desc: "Игры PC" }
-    - { id: 23, cat: PC/Games, desc: "Игры Unix/Linux" }
-    - { id: 6, cat: Console/PS3, desc: "Игры PlayStation 3" }
-    - { id: 7, cat: Console/XBox, desc: "Игры X-Box" }
-    - { id: 8, cat: Console/PSP, desc: "Игры PSP" }
-    - { id: 18, cat: Other, desc: "Эксклюзивы" }
-    - { id: 21, cat: Other, desc: "Лавка субтитров" }
-    - { id: 20, cat: Other, desc: "DEMO" }
-    - { id: 17, cat: Other/Misc, desc: "VIP" }
-    - { id: 24, cat: Other/Misc, desc: "SuperVIP" }
+    - {id: 14, cat: Movies/HD, desc: "Фильмы HDTV"}
+    - {id: 15, cat: Movies/DVD, desc: "Фильмы DVD"}
+    - {id: 13, cat: Movies/SD, desc: "Фильмы XviD"}
+    - {id: 12, cat: Movies/Other, desc: "Мультфильмы"}
+    - {id: 9, cat: TV/Documentary, desc: "Документальные"}
+    - {id: 11, cat: TV, desc: "Сериалы"}
+    - {id: 10, cat: Audio, desc: "Музыка"}
+    - {id: 16, cat: Books, desc: "Книги"}
+    - {id: 22, cat: Other, desc: "Картинки"}
+    - {id: 1, cat: PC, desc: "Приложения Windows"}
+    - {id: 3, cat: PC, desc: "Приложения Unix/Linux"}
+    - {id: 4, cat: PC/Mac, desc: "Приложения Mac"}
+    - {id: 2, cat: PC/Mobile-Other, desc: "Приложения PDA"}
+    - {id: 5, cat: PC/Games, desc: "Игры PC"}
+    - {id: 23, cat: PC/Games, desc: "Игры Unix/Linux"}
+    - {id: 6, cat: Console/PS3, desc: "Игры PlayStation 3"}
+    - {id: 7, cat: Console/XBox, desc: "Игры X-Box"}
+    - {id: 8, cat: Console/PSP, desc: "Игры PSP"}
+    - {id: 18, cat: Other, desc: "Эксклюзивы"}
+    - {id: 21, cat: Other, desc: "Лавка субтитров"}
+    - {id: 20, cat: Other, desc: "DEMO"}
+    - {id: 17, cat: Other/Misc, desc: "VIP"}
+    - {id: 24, cat: Other/Misc, desc: "SuperVIP"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -72,6 +72,8 @@ settings:
     options:
       desc: desc
       asc: asc
+  - name: info_flaresolverr
+    type: info_flaresolverr
 
 login:
   path: takelogin.php
@@ -94,7 +96,7 @@ download:
       attribute: href
       filters:
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", ""]
 
 search:
   # https://dxp.ru/torrents.php?search=&sort=4&type=desc
@@ -111,10 +113,10 @@ search:
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
-      args: [ "(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", "" ]
+      args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
 
   headers:
-    Referer: [ "{{ .Config.sitelink }}torrents.php" ]
+    Referer: ["{{ .Config.sitelink }}torrents.php"]
 
   rows:
     selector: table#loading-table tbody#highlighted tr:has(a[href^="torrents.php?cat="]), table#loading-table tbody#highlighted tr:has(a[href^="details.php?id="])
@@ -135,53 +137,53 @@ search:
       filters:
         # normalize to SXXEYY format
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sRip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB\\sRip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sDL\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB\\sDL\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: re_replace
-          args: [ "(?i)^\\(\\s*([SE]\\d+.*?)\\s*\\)[\\s\\/\\|]*(.+)", "$2 $1" ]
+          args: ["(?i)^\\(\\s*([SE]\\d+.*?)\\s*\\)[\\s\\/\\|]*(.+)", "$2 $1"]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
     details:
@@ -202,12 +204,12 @@ search:
       selector: td:nth-child(7)
       filters:
         - name: split
-          args: [ "|", 0 ]
+          args: ["|", 0]
     leechers:
       selector: td:nth-child(7)
       filters:
         - name: split
-          args: [ "|", 1 ]
+          args: ["|", 1]
     downloadvolumefactor:
       case:
         a[href="torrents.php?cat=17"]: 1 # vip

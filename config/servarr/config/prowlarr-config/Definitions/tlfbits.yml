@@ -10,24 +10,24 @@ links:
 
 caps:
   categorymappings:
-    - { id: 438, cat: Movies, desc: "电影 (Movie)" }
-    - { id: 440, cat: TV, desc: "电视剧(TV series)" }
-    - { id: 441, cat: TV, desc: "综艺 (TV Show)" }
-    - { id: 442, cat: TV/Anime, desc: "动漫 (Anime)" }
-    - { id: 443, cat: TV/Documentary, desc: "纪录片 (Documentary)" }
-    - { id: 444, cat: TV/Sport, desc: "体育 (Sport)" }
-    - { id: 445, cat: Audio/Video, desc: "音乐视频 (Music Video)" }
-    - { id: 446, cat: Audio, desc: "音乐(Music)" }
-    - { id: 447, cat: PC/Games, desc: "游戏 (Game)" }
-    - { id: 448, cat: PC/0day, desc: "软件 (Software)" }
-    - { id: 449, cat: Other/Misc, desc: "资料（E-Learning）" }
-    - { id: 450, cat: Other, desc: "其它 (Other)" }
+    - {id: 438, cat: Movies, desc: "电影 (Movie)"}
+    - {id: 440, cat: TV, desc: "电视剧(TV series)"}
+    - {id: 441, cat: TV, desc: "综艺 (TV Show)"}
+    - {id: 442, cat: TV/Anime, desc: "动漫 (Anime)"}
+    - {id: 443, cat: TV/Documentary, desc: "纪录片 (Documentary)"}
+    - {id: 444, cat: TV/Sport, desc: "体育 (Sport)"}
+    - {id: 445, cat: Audio/Video, desc: "音乐视频 (Music Video)"}
+    - {id: 446, cat: Audio, desc: "音乐(Music)"}
+    - {id: 447, cat: PC/Games, desc: "游戏 (Game)"}
+    - {id: 448, cat: PC/0day, desc: "软件 (Software)"}
+    - {id: 449, cat: Other/Misc, desc: "资料（E-Learning）"}
+    - {id: 450, cat: Other, desc: "其它 (Other)"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
 
 settings:
   - name: username

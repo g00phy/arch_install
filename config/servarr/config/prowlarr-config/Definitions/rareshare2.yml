@@ -10,32 +10,32 @@ links:
 
 caps:
   categorymappings:
-    - { id: 3, cat: TV, desc: "Music" }
-    - { id: 4, cat: Console, desc: "Game" }
-    - { id: 5, cat: PC, desc: "Application" }
-    - { id: 6, cat: TV, desc: "Comedy" }
-    - { id: 24, cat: TV/Documentary, desc: "Documentary" }
-    - { id: 7, cat: TV, desc: "Drama" }
-    - { id: 9, cat: TV, desc: "Entertaiment" }
-    - { id: 10, cat: TV, desc: "Factual" }
-    - { id: 11, cat: TV, desc: "Kids/Family" }
-    - { id: 12, cat: TV, desc: "News" }
-    - { id: 13, cat: TV, desc: "Soaps" }
-    - { id: 14, cat: TV, desc: "SciFi" }
-    - { id: 15, cat: TV/Sport, desc: "Sport" }
-    - { id: 16, cat: TV, desc: "True Crime" }
-    - { id: 17, cat: Audio, desc: "Radio" }
-    - { id: 18, cat: TV, desc: "Reality" }
-    - { id: 19, cat: TV, desc: "TV Movie" }
-    - { id: 21, cat: TV, desc: "Action-Adventure" }
-    - { id: 22, cat: TV, desc: "Music" }
-    - { id: 23, cat: TV, desc: "Comedy-Drama" }
-    - { id: 20, cat: TV, desc: "0" }
-    - { id: 8, cat: TV, desc: "0" }
+    - {id: 3, cat: TV, desc: "Music"}
+    - {id: 4, cat: Console, desc: "Game"}
+    - {id: 5, cat: PC, desc: "Application"}
+    - {id: 6, cat: TV, desc: "Comedy"}
+    - {id: 24, cat: TV/Documentary, desc: "Documentary"}
+    - {id: 7, cat: TV, desc: "Drama"}
+    - {id: 9, cat: TV, desc: "Entertaiment"}
+    - {id: 10, cat: TV, desc: "Factual"}
+    - {id: 11, cat: TV, desc: "Kids/Family"}
+    - {id: 12, cat: TV, desc: "News"}
+    - {id: 13, cat: TV, desc: "Soaps"}
+    - {id: 14, cat: TV, desc: "SciFi"}
+    - {id: 15, cat: TV/Sport, desc: "Sport"}
+    - {id: 16, cat: TV, desc: "True Crime"}
+    - {id: 17, cat: Audio, desc: "Radio"}
+    - {id: 18, cat: TV, desc: "Reality"}
+    - {id: 19, cat: TV, desc: "TV Movie"}
+    - {id: 21, cat: TV, desc: "Action-Adventure"}
+    - {id: 22, cat: TV, desc: "Music"}
+    - {id: 23, cat: TV, desc: "Comedy-Drama"}
+    - {id: 20, cat: TV, desc: "0"}
+    - {id: 8, cat: TV, desc: "0"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
 
 settings:
   - name: apikey
@@ -69,7 +69,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -85,10 +85,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -103,7 +103,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -124,7 +124,7 @@ search:
       selector: poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -165,9 +165,9 @@ search:
       case:
         0: 1 # normal
         1: 2 # double
-    # global MR is 0.4 but torrents must be seeded for 3 days regardless of ratio
-    #    minimumratio:
-    #      text: 0.4
+# global MR is 0.4 but torrents must be seeded for 3 days regardless of ratio
+#    minimumratio:
+#      text: 0.4
     minimumseedtime:
       # 1 day (as seconds = 1 x 24 x 60 x 60) for Single episodes
       # 3 days (as seconds = 3 x 24 x 60 x 60) for Packs

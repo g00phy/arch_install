@@ -17,60 +17,60 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 8, cat: Movies/SD, desc: "Movies Cam" }
-    - { id: 9, cat: Movies/SD, desc: "Movies TS/TC" }
-    - { id: 11, cat: Movies/SD, desc: "Movies DVDRip/DVDScreener" }
-    - { id: 37, cat: Movies/WEB-DL, desc: "Movies WEBRip" }
-    - { id: 43, cat: Movies/HD, desc: "Movies HDRip" }
-    - { id: 14, cat: Movies/HD, desc: "Movies BlurayRip" }
-    - { id: 12, cat: Movies/DVD, desc: "Movies DVD-R" }
-    - { id: 13, cat: Movies/BluRay, desc: "Movies Bluray" }
-    - { id: 47, cat: Movies/UHD, desc: "Movies 4K" }
-    - { id: 15, cat: Movies, desc: "Movies Boxsets" }
-    - { id: 29, cat: TV/Documentary, desc: "Documentaries" }
+    - {id: 8, cat: Movies/SD, desc: "Movies Cam"}
+    - {id: 9, cat: Movies/SD, desc: "Movies TS/TC"}
+    - {id: 11, cat: Movies/SD, desc: "Movies DVDRip/DVDScreener"}
+    - {id: 37, cat: Movies/WEB-DL, desc: "Movies WEBRip"}
+    - {id: 43, cat: Movies/HD, desc: "Movies HDRip"}
+    - {id: 14, cat: Movies/HD, desc: "Movies BlurayRip"}
+    - {id: 12, cat: Movies/DVD, desc: "Movies DVD-R"}
+    - {id: 13, cat: Movies/BluRay, desc: "Movies Bluray"}
+    - {id: 47, cat: Movies/UHD, desc: "Movies 4K"}
+    - {id: 15, cat: Movies, desc: "Movies Boxsets"}
+    - {id: 29, cat: TV/Documentary, desc: "Documentaries"}
 
-    - { id: 26, cat: TV/SD, desc: "TV Episodes" }
-    - { id: 32, cat: TV/HD, desc: "TV Episodes HD" }
-    - { id: 27, cat: TV, desc: "TV Boxsets" }
+    - {id: 26, cat: TV/SD, desc: "TV Episodes"}
+    - {id: 32, cat: TV/HD, desc: "TV Episodes HD"}
+    - {id: 27, cat: TV, desc: "TV Boxsets"}
 
-    - { id: 17, cat: PC/Games, desc: "Games PC" }
-    - { id: 42, cat: PC/Mac, desc: "Games Mac" }
-    - { id: 18, cat: Console/XBox, desc: "Games XBOX" }
-    - { id: 19, cat: Console/XBox 360, desc: "Games XBOX360" }
-    - { id: 40, cat: Console/XBox One, desc: "Games XBOXONE" }
-    - { id: 20, cat: Console/PS3, desc: "Games PS2" }
-    - { id: 21, cat: Console/PS3, desc: "Games Mac" }
-    - { id: 39, cat: Console/PS4, desc: "Games PS4" }
-    - { id: 49, cat: Console/PS4, desc: "Games PS5" }
-    - { id: 22, cat: Console/PSP, desc: "Games PSP" }
-    - { id: 28, cat: Console/Wii, desc: "Games Wii" }
-    - { id: 30, cat: Console/NDS, desc: "Games Nintendo DS" }
-    - { id: 48, cat: Console/Other, desc: "Games Nintendo Switch" }
+    - {id: 17, cat: PC/Games, desc: "Games PC"}
+    - {id: 42, cat: PC/Mac, desc: "Games Mac"}
+    - {id: 18, cat: Console/XBox, desc: "Games XBOX"}
+    - {id: 19, cat: Console/XBox 360, desc: "Games XBOX360"}
+    - {id: 40, cat: Console/XBox One, desc: "Games XBOXONE"}
+    - {id: 20, cat: Console/PS3, desc: "Games PS2"}
+    - {id: 21, cat: Console/PS3, desc: "Games Mac"}
+    - {id: 39, cat: Console/PS4, desc: "Games PS4"}
+    - {id: 49, cat: Console/PS4, desc: "Games PS5"}
+    - {id: 22, cat: Console/PSP, desc: "Games PSP"}
+    - {id: 28, cat: Console/Wii, desc: "Games Wii"}
+    - {id: 30, cat: Console/NDS, desc: "Games Nintendo DS"}
+    - {id: 48, cat: Console/Other, desc: "Games Nintendo Switch"}
 
-    - { id: 23, cat: PC/ISO, desc: "PC ISO" }
-    - { id: 24, cat: PC/Mac, desc: "PC Mac" }
-    - { id: 25, cat: PC/Mobile-Other, desc: "PC Mobile" }
-    - { id: 33, cat: PC/0day, desc: "PC 0-day" }
-    - { id: 38, cat: Other, desc: "Education" }
+    - {id: 23, cat: PC/ISO, desc: "PC ISO"}
+    - {id: 24, cat: PC/Mac, desc: "PC Mac"}
+    - {id: 25, cat: PC/Mobile-Other, desc: "PC Mobile"}
+    - {id: 33, cat: PC/0day, desc: "PC 0-day"}
+    - {id: 38, cat: Other, desc: "Education"}
 
-    - { id: 34, cat: TV/Anime, desc: "TV Anime" }
-    - { id: 35, cat: TV, desc: "TV Cartoons" }
+    - {id: 34, cat: TV/Anime, desc: "TV Anime"}
+    - {id: 35, cat: TV, desc: "TV Cartoons"}
 
-    - { id: 45, cat: Books/EBook, desc: "Books EBooks" }
-    - { id: 46, cat: Books/Comics, desc: "Books Comics" }
+    - {id: 45, cat: Books/EBook, desc: "Books EBooks"}
+    - {id: 46, cat: Books/Comics, desc: "Books Comics"}
 
-    - { id: 31, cat: Audio, desc: "Audio" }
-    - { id: 16, cat: Audio/Video, desc: "Music videos" }
+    - {id: 31, cat: Audio, desc: "Audio"}
+    - {id: 16, cat: Audio/Video, desc: "Music videos"}
 
-    - { id: 36, cat: Movies/Foreign, desc: "Movies Foreign" }
-    - { id: 44, cat: TV/Foreign, desc: "TV Foreign" }
+    - {id: 36, cat: Movies/Foreign, desc: "Movies Foreign"}
+    - {id: 44, cat: TV/Foreign, desc: "TV Foreign"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
   allowrawsearch: true
 
 settings:
@@ -153,7 +153,7 @@ search:
   keywordsfilters:
     # remove dashes at the beginning of keywords as they exclude search strings (see issue #3096)
     - name: re_replace
-      args: [ "(^|\\s)-", " " ]
+      args: ["(^|\\s)-", " "]
     - name: append
       args: "{{ if .Config.exclude_archives }} -tags:rar{{ else }}{{ end }}"
   rows:
@@ -170,7 +170,7 @@ search:
       filters:
         # remove [REQ]/[REQUEST]
         - name: re_replace
-          args: [ "(?i)^\\[REQ(UEST(ED)?)?\\]\\s*", "" ]
+          args: ["(?i)^\\[REQ(UEST(ED)?)?\\]\\s*", ""]
     title:
       text: "{{ if .Result.title_test }}{{ .Result.title_test }}{{ else }}TorrentLeech did not provide a title{{ end }}"
     _id:

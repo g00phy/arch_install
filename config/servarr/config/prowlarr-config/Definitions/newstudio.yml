@@ -13,11 +13,11 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 6, cat: TV, desc: "TV series" }
+    - {id: 6, cat: TV, desc: "TV series"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
+    search: [q]
+    tv-search: [q, season, ep]
 
 settings:
   - name: stripcyrillic
@@ -59,7 +59,7 @@ search:
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
-      args: [ "(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", "" ]
+      args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
 
   rows:
     selector: table.well > tbody > tr:has(a[href^="./viewtopic.php?t="])
@@ -74,27 +74,27 @@ search:
       selector: a[href^="./viewtopic.php?t="] > b
       filters:
         - name: re_replace
-          args: [ "(?i)Сезон\\s*(\\d+).+Серия\\s*(\\d+)", "S$1E$2" ]
+          args: ["(?i)Сезон\\s*(\\d+).+Серия\\s*(\\d+)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)Сезон\\s*(\\d+)", "S$1" ]
+          args: ["(?i)Сезон\\s*(\\d+)", "S$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sRip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB\\sRip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sDL\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB\\sDL\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: re_replace
-          args: [ "(?i)^\\(\\s*([SE]\\d+.*?)\\s*\\)[\\s\\/\\|]*(.+)", "$2 $1" ]
+          args: ["(?i)^\\(\\s*([SE]\\d+.*?)\\s*\\)[\\s\\/\\|]*(.+)", "$2 $1"]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
         - name: append
@@ -121,34 +121,34 @@ search:
       filters:
         # replace white spaces
         - name: re_replace
-          args: [ "(Сегодня|Вчера|\\s|,|-)+", " " ]
+          args: ["(Сегодня|Вчера|\\s|,|-)+", " "]
         - name: re_replace
-          args: [ "(Today|Yesterday|\\s|,|-)+", " " ]
+          args: ["(Today|Yesterday|\\s|,|-)+", " "]
         # replace month abbreviations
         - name: replace
-          args: [ "Янв", "Jan" ]
+          args: ["Янв", "Jan"]
         - name: replace
-          args: [ "Фев", "Feb" ]
+          args: ["Фев", "Feb"]
         - name: replace
-          args: [ "Мар", "Mar" ]
+          args: ["Мар", "Mar"]
         - name: replace
-          args: [ "Апр", "Apr" ]
+          args: ["Апр", "Apr"]
         - name: replace
-          args: [ "Май", "May" ]
+          args: ["Май", "May"]
         - name: replace
-          args: [ "Июн", "Jun" ]
+          args: ["Июн", "Jun"]
         - name: replace
-          args: [ "Июл", "Jul" ]
+          args: ["Июл", "Jul"]
         - name: replace
-          args: [ "Авг", "Aug" ]
+          args: ["Авг", "Aug"]
         - name: replace
-          args: [ "Сен", "Sep" ]
+          args: ["Сен", "Sep"]
         - name: replace
-          args: [ "Окт", "Oct" ]
+          args: ["Окт", "Oct"]
         - name: replace
-          args: [ "Ноя", "Nov" ]
+          args: ["Ноя", "Nov"]
         - name: replace
-          args: [ "Дек", "Dec" ]
+          args: ["Дек", "Dec"]
         - name: append
           args: ":00 +03:00" # MSK
         - name: dateparse

@@ -10,22 +10,22 @@ links:
 
 caps:
   categorymappings:
-    - { id: 8, cat: TV/Anime, desc: "Anime TV" }
-    - { id: 6, cat: Movies/Other, desc: "Anime Movie" }
-    - { id: 2, cat: TV, desc: "TV" }
-    - { id: 1, cat: Movies, desc: "Movie" }
-    - { id: 9, cat: Audio, desc: "Music of TV" }
-    - { id: 3, cat: Audio, desc: "Music of Movie" }
-    - { id: 7, cat: Movies/Other, desc: "Anime Live" }
-    - { id: 5, cat: Movies, desc: "Action Live" }
-    - { id: 4, cat: PC, desc: "Game" }
-    - { id: 11, cat: TV/Anime, desc: "Airing Anime TV" }
+    - {id: 8, cat: TV/Anime, desc: "Anime TV"}
+    - {id: 6, cat: Movies/Other, desc: "Anime Movie"}
+    - {id: 2, cat: TV, desc: "TV"}
+    - {id: 1, cat: Movies, desc: "Movie"}
+    - {id: 9, cat: Audio, desc: "Music of TV"}
+    - {id: 3, cat: Audio, desc: "Music of Movie"}
+    - {id: 7, cat: Movies/Other, desc: "Anime Live"}
+    - {id: 5, cat: Movies, desc: "Action Live"}
+    - {id: 4, cat: PC, desc: "Game"}
+    - {id: 11, cat: TV/Anime, desc: "Airing Anime TV"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
 
 settings:
   - name: apikey
@@ -63,7 +63,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -79,10 +79,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -97,7 +97,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -118,7 +118,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -129,9 +129,9 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)^None$", "" ]
+          args: ["(?i)^None$", ""]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     seeders:

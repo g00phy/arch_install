@@ -13,15 +13,15 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: "filmy", cat: Movies, desc: "Фильмы (Movies)" }
-    - { id: "muzyka", cat: Audio, desc: "Музыка (Music)" }
-    - { id: "igry", cat: Console, desc: "Игры (Games)" }
-    - { id: "serialy", cat: TV, desc: "Сериалы (TV series)" }
-    - { id: "programmy", cat: PC, desc: "Программы (Software)" }
-    - { id: "prilozheniya", cat: Other, desc: "prilozheniya (Other)" }
+    - {id: "filmy", cat: Movies, desc: "Фильмы (Movies)"}
+    - {id: "muzyka", cat: Audio, desc: "Музыка (Music)"}
+    - {id: "igry", cat: Console, desc: "Игры (Games)"}
+    - {id: "serialy", cat: TV, desc: "Сериалы (TV series)"}
+    - {id: "programmy", cat: PC, desc: "Программы (Software)"}
+    - {id: "prilozheniya", cat: Other, desc: "prilozheniya (Other)"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: info_flaresolverr
@@ -55,7 +55,7 @@ search:
       attribute: href
       filters:
         - name: split
-          args: [ "/", 3 ]
+          args: ["/", 3]
     title:
       selector: div.name
     details:

@@ -13,8 +13,8 @@ caps:
     1: Audio/Lossless
 
   modes:
-    search: [ q ]
-    music-search: [ q, artist ]
+    search: [q]
+    music-search: [q, artist]
 
 settings:
   - name: username
@@ -86,7 +86,7 @@ search:
       remove: a, i
       filters:
         - name: replace
-          args: [ "by", "" ]
+          args: ["by", ""]
         - name: append
           args: " +03:00" # MSK
         - name: dateparse

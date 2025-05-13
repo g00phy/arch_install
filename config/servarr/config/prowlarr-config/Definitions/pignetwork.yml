@@ -12,28 +12,28 @@ links:
 caps:
   # dont forget to update the path categories in the search block
   categorymappings:
-    - { id: 401, cat: Movies, desc: "Movies/电影", default: true }
-    - { id: 404, cat: TV/Documentary, desc: "Documentaries/纪录片", default: true }
-    - { id: 405, cat: TV/Anime, desc: "Animations/动漫", default: true }
-    - { id: 402, cat: TV, desc: "TV Series/电视剧", default: true }
-    - { id: 403, cat: TV, desc: "TV Shows/综艺", default: true }
-    - { id: 406, cat: Audio/Video, desc: "MusicVideo/MV", default: true }
-    - { id: 407, cat: TV/Sport, desc: "Sports/体育", default: true }
-    - { id: 409, cat: Other, desc: "Misc/其他", default: true }
-    - { id: 408, cat: Audio, desc: "Music/音乐", default: true }
-    - { id: 909, cat: Movies, desc: "Movies/电  影 🎬", default: false }
-    - { id: 908, cat: TV/Anime, desc: "Animation Series/剧集动画", default: false }
-    - { id: 905, cat: Audio, desc: "Audiobooks/有声读物", default: false }
-    - { id: 910, cat: Books, desc: "Picture Books/读书绘本", default: false }
-    - { id: 907, cat: TV/Documentary, desc: "Documentaries/纪录片🏞️", default: false }
-    - { id: 911, cat: Audio, desc: "Music/音  乐 🎧", default: true }
+    - {id: 401, cat: Movies, desc: "Movies/电影", default: true}
+    - {id: 404, cat: TV/Documentary, desc: "Documentaries/纪录片", default: true}
+    - {id: 405, cat: TV/Anime, desc: "Animations/动漫", default: true}
+    - {id: 402, cat: TV, desc: "TV Series/电视剧", default: true}
+    - {id: 403, cat: TV, desc: "TV Shows/综艺", default: true}
+    - {id: 406, cat: Audio/Video, desc: "MusicVideo/MV", default: true}
+    - {id: 407, cat: TV/Sport, desc: "Sports/体育", default: true}
+    - {id: 409, cat: Other, desc: "Misc/其他", default: true}
+    - {id: 408, cat: Audio, desc: "Music/音乐", default: true}
+    - {id: 909, cat: Movies, desc: "Movies/电  影 🎬", default: false}
+    - {id: 908, cat: TV/Anime, desc: "Animation Series/剧集动画", default: false}
+    - {id: 905, cat: Audio, desc: "Audiobooks/有声读物", default: false}
+    - {id: 910, cat: Books, desc: "Picture Books/读书绘本", default: false}
+    - {id: 907, cat: TV/Documentary, desc: "Documentaries/纪录片🏞️", default: false}
+    - {id: 911, cat: Audio, desc: "Music/音  乐 🎧", default: true}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, doubanid ]
-    movie-search: [ q, imdbid, doubanid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, doubanid]
+    movie-search: [q, imdbid, doubanid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -41,11 +41,6 @@ settings:
     label: Cookie
   - name: info_cookie
     type: info_cookie
-  - name: useragent
-    type: text
-    label: User-Agent
-  - name: info_useragent
-    type: info_useragent
   - name: freeleech
     type: checkbox
     label: Search freeleech only
@@ -91,9 +86,9 @@ login:
 search:
   paths:
     - path: torrents.php
-      categories: [ 401, 402, 403, 404, 405, 406, 407, 408, 409 ]
+      categories: [401, 402, 403, 404, 405, 406, 407, 408, 409]
     - path: special.php
-      categories: [ 909, 908, 905, 910, 907, 911 ]
+      categories: [909, 908, 905, 910, 907, 911]
   inputs:
     $raw: "{{ range .Categories }}cat{{.}}=1&{{end}}"
     search: "{{ if .Query.IMDBID }}{{ .Query.IMDBID }}{{ else }}{{ end }}{{ if or .Query.IMDBID .Query.DoubanID }} {{ else }}{{ .Keywords }}{{ end }}{{ if .Query.DoubanID }}{{ .Query.DoubanID }}{{ else }}{{ end }}"
@@ -108,9 +103,6 @@ search:
     sort: "{{ .Config.sort }}"
     type: "{{ .Config.type }}"
     notnewword: 1
-
-  headers:
-    User-Agent: [ "{{ .Config.useragent }}" ]
 
   rows:
     selector: table.torrents > tbody > tr:has(a[href^="details.php?id="])

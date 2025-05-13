@@ -10,20 +10,20 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: Movies }
-    - { id: 2, cat: TV, desc: TV }
-    - { id: 3, cat: Audio, desc: Music }
-    - { id: 4, cat: PC/Games, desc: Games }
-    - { id: 5, cat: Books, desc: Ebook }
-    - { id: 6, cat: PC, desc: Apps }
-    - { id: 7, cat: XXX, desc: Adult }
+    - {id: 1, cat: Movies, desc: Movies}
+    - {id: 2, cat: TV, desc: TV}
+    - {id: 3, cat: Audio, desc: Music}
+    - {id: 4, cat: PC/Games, desc: Games}
+    - {id: 5, cat: Books, desc: Ebook}
+    - {id: 6, cat: PC, desc: Apps}
+    - {id: 7, cat: XXX, desc: Adult}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -36,7 +36,7 @@ settings:
 
 search:
   headers:
-    x-milkie-auth: [ "{{ .Config.apikey }}" ]
+    x-milkie-auth: ["{{ .Config.apikey }}"]
 
   paths:
     - path: api/v1/torrents

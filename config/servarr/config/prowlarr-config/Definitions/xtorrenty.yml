@@ -10,38 +10,38 @@ links:
 
 caps:
   categorymappings:
-    - { id: 15, cat: Movies/SD, desc: "Filmy XviD/DivX" }
-    - { id: 20, cat: Movies/Other, desc: "Filmy/Bajki" }
-    - { id: 21, cat: Movies/DVD, desc: "Filmy DVD" }
-    - { id: 22, cat: Movies/SD, desc: "Filmy RMVB" }
-    - { id: 23, cat: Movies/HD, desc: "Filmy x264" }
-    - { id: 24, cat: Movies/UHD, desc: "Filmy 4K UHD" }
-    - { id: 25, cat: Movies/HD, desc: "Filmy HD" }
-    - { id: 26, cat: Movies/3D, desc: "Filmy 3D" }
-    - { id: 27, cat: Movies/HD, desc: "Filmy x265" }
-    - { id: 28, cat: Movies/SD, desc: "Filmy TS/CAM" }
-    - { id: 84, cat: PC/0day, desc: "Programy" }
-    - { id: 85, cat: Console, desc: "Konsole" }
-    - { id: 16, cat: PC/Games, desc: "Gry" }
-    - { id: 86, cat: Audio, desc: "Muzyka" }
-    - { id: 88, cat: Audio/Video, desc: "Teledyski" }
-    - { id: 89, cat: TV, desc: "TV" }
-    - { id: 90, cat: XXX, desc: "Erotyka" }
-    - { id: 91, cat: Books/EBook, desc: "Książki" }
-    - { id: 92, cat: Books/Comics, desc: "Komiksy" }
-    - { id: 93, cat: PC/Mac, desc: "Linux/Mac" }
-    - { id: 94, cat: TV/Sport, desc: "Sport" }
-    - { id: 95, cat: TV/Anime, desc: "Anime" }
-    - { id: 96, cat: Other, desc: "Dla dzieci" }
-    - { id: 97, cat: PC/Mobile-Other, desc: "GSM/PDA" }
-    - { id: 344, cat: Other/Misc, desc: "Inne" }
+    - {id: 15, cat: Movies/SD, desc: "Filmy XviD/DivX"}
+    - {id: 20, cat: Movies/Other, desc: "Filmy/Bajki"}
+    - {id: 21, cat: Movies/DVD, desc: "Filmy DVD"}
+    - {id: 22, cat: Movies/SD, desc: "Filmy RMVB"}
+    - {id: 23, cat: Movies/HD, desc: "Filmy x264"}
+    - {id: 24, cat: Movies/UHD, desc: "Filmy 4K UHD"}
+    - {id: 25, cat: Movies/HD, desc: "Filmy HD"}
+    - {id: 26, cat: Movies/3D, desc: "Filmy 3D"}
+    - {id: 27, cat: Movies/HD, desc: "Filmy x265"}
+    - {id: 28, cat: Movies/SD, desc: "Filmy TS/CAM"}
+    - {id: 84, cat: PC/0day, desc: "Programy"}
+    - {id: 85, cat: Console, desc: "Konsole"}
+    - {id: 16, cat: PC/Games, desc: "Gry"}
+    - {id: 86, cat: Audio, desc: "Muzyka"}
+    - {id: 88, cat: Audio/Video, desc: "Teledyski"}
+    - {id: 89, cat: TV, desc: "TV"}
+    - {id: 90, cat: XXX, desc: "Erotyka"}
+    - {id: 91, cat: Books/EBook, desc: "Książki"}
+    - {id: 92, cat: Books/Comics, desc: "Komiksy"}
+    - {id: 93, cat: PC/Mac, desc: "Linux/Mac"}
+    - {id: 94, cat: TV/Sport, desc: "Sport"}
+    - {id: 95, cat: TV/Anime, desc: "Anime"}
+    - {id: 96, cat: Other, desc: "Dla dzieci"}
+    - {id: 97, cat: PC/Mobile-Other, desc: "GSM/PDA"}
+    - {id: 344, cat: Other/Misc, desc: "Inne"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: email
@@ -153,9 +153,9 @@ search:
       selector: a
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:POLISH|ENGLISH|\\bPL\\b)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:POLISH|ENGLISH|\\bPL\\b)))\\b", "{{ .Config.multilanguage }}"]
         - name: re_replace
-          args: [ "(?i)\\b(pl)\\b", "POLISH" ]
+          args: ["(?i)\\b(pl)\\b", "POLISH"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     details:

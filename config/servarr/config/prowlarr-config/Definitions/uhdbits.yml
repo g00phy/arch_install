@@ -10,15 +10,15 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: Movies }
-    - { id: 2, cat: Audio, desc: Music }
-    - { id: 3, cat: TV, desc: TV }
+    - {id: 1, cat: Movies, desc: Movies}
+    - {id: 2, cat: Audio, desc: Music}
+    - {id: 3, cat: TV, desc: TV}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid ]
-    movie-search: [ q, imdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid]
+    movie-search: [q, imdbid]
+    music-search: [q]
 
 settings:
   - name: username
@@ -89,10 +89,10 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
     # if searching for season packs switch S01 to season 1 #10423
     - name: re_replace
-      args: [ "(?i)\\bS(\\d{1,3})(E\\d+)?$", "season $1" ]
+      args: ["(?i)\\bS(\\d{1,3})(E\\d+)?$", "season $1"]
 
   rows:
     selector: table#torrent_table > tbody > tr.torrent
@@ -112,13 +112,13 @@ search:
       attribute: href
       filters:
         - name: replace
-          args: [ "\t", " " ]
+          args: ["\t", " "]
     details:
       selector: a.torrent_name
       attribute: href
       filters:
         - name: replace
-          args: [ "\t", " " ]
+          args: ["\t", " "]
         - name: regexp
           args: (.*)#torrent\d+$
     size:
@@ -136,7 +136,7 @@ search:
       attribute: title
       filters:
         - name: replace
-          args: [ ",", "" ]
+          args: [",", ""]
         - name: append
           args: " +07:00" # ICT
         - name: dateparse
@@ -159,35 +159,35 @@ search:
       remove: .torrent_label.red, .torrent_label.blink_me, .torrent_label:contains("User"), .torrent_label:contains("ViE"), .torrent_label:contains("Exclusive")
       filters:
         - name: re_replace
-          args: [ "[\\s\\/]+$", "" ]
+          args: ["[\\s\\/]+$", ""]
         - name: replace
-          args: [ " / ", " " ]
+          args: [" / ", " "]
         - name: re_replace
-          args: [ "\\s+([\\w@\\.\\[\\]\\$\\-\\!\\u2122]+)$", " -$1" ]
+          args: ["\\s+([\\w@\\.\\[\\]\\$\\-\\!\\u2122]+)$", " -$1"]
         - name: re_replace
-          args: [ "\\bEncode\\b", "Blu-Ray" ]
+          args: ["\\bEncode\\b", "Blu-Ray"]
         - name: re_replace
-          args: [ "\\b(H\\.264 )?Blu-ray\\b", "BR-DISK" ]
+          args: ["\\b(H\\.264 )?Blu-ray\\b", "BR-DISK"]
         - name: re_replace
-          args: [ "\\bRemux\\b", "Blu-Ray Remux" ]
+          args: ["\\bRemux\\b", "Blu-Ray Remux"]
         - name: re_replace
-          args: [ "\\s+", " " ]
+          args: ["\\s+", " "]
     _release_info_music:
       selector: div.torrent_info
       remove: .torrent_label.red, .torrent_label.blink_me
       filters:
         - name: re_replace
-          args: [ "[\\s\\/]+$", "" ]
+          args: ["[\\s\\/]+$", ""]
         - name: replace
-          args: [ " / ", " " ]
+          args: [" / ", " "]
         - name: re_replace
-          args: [ "\\s+", " " ]
+          args: ["\\s+", " "]
     title:
       selector: div.group_info
       remove: span, div.tags, div.torrent_info
       filters:
         - name: re_replace
-          args: [ "(?i)\\bSeason (\\d+)\\b", "S$1" ]
+          args: ["(?i)\\bSeason (\\d+)\\b", "S$1"]
         - name: trim
         - name: append
           args: " {{ if eq .Result.category_id \"2\" }}{{ .Result._release_info_music }}{{ else }}{{ .Result._release_info }}{{ end }}"

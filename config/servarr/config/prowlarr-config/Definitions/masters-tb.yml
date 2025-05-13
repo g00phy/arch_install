@@ -10,41 +10,41 @@ links:
 
 caps:
   categorymappings:
-    - { id: 23, cat: TV/Anime, desc: "Анимации" }
-    - { id: 56, cat: PC/Mobile-Android, desc: "Android" }
-    - { id: 53, cat: Books/EBook, desc: "e-Books" }
-    - { id: 17, cat: Console, desc: "Игри/конзоли" }
-    - { id: 4, cat: PC/Games, desc: "Игри/PC ISO" }
-    - { id: 21, cat: PC/Games, desc: "Игри/PC Rip" }
-    - { id: 1, cat: PC/ISO, desc: "Програми/PC ISO" }
-    - { id: 22, cat: PC, desc: "Програми/други" }
-    - { id: 57, cat: TV, desc: "Препоръчано MastersTB" }
-    - { id: 57, cat: Movies, desc: "Препоръчано MastersTB" }
-    - { id: 6, cat: Audio, desc: "Музика" }
-    - { id: 12, cat: Audio/Video, desc: "Музика/Видео" }
-    - { id: 33, cat: Audio/Video, desc: "Музика/DVD-R" }
-    - { id: 52, cat: Audio/Lossless, desc: "Музика/Lossless" }
-    - { id: 35, cat: TV, desc: "Сериали/BoxSet" }
-    - { id: 7, cat: TV, desc: "Сериали/TV" }
-    - { id: 32, cat: Movies, desc: "Филми/БГ" }
-    - { id: 55, cat: Movies, desc: "Филми/Asian" }
-    - { id: 36, cat: Movies, desc: "Филми/BoxSet" }
-    - { id: 28, cat: Movies, desc: "Филми/Руски" }
-    - { id: 34, cat: Movies/DVD, desc: "Филми/Руски DVD-R" }
-    - { id: 20, cat: Movies/DVD, desc: "Филми/DVD-R" }
-    - { id: 37, cat: Movies/HD, desc: "Филми/HD" }
-    - { id: 30, cat: TV/Sport, desc: "Филми/Спорт" }
-    - { id: 19, cat: Movies/SD, desc: "Филми/XviD" }
-    - { id: 29, cat: TV/Documentary, desc: "Филми/Документални" }
-    - { id: 54, cat: TV, desc: "TV Show" }
-    - { id: 2, cat: Other, desc: "Други" }
+    - {id: 23, cat: TV/Anime, desc: "Анимации"}
+    - {id: 56, cat: PC/Mobile-Android, desc: "Android"}
+    - {id: 53, cat: Books/EBook, desc: "e-Books"}
+    - {id: 17, cat: Console, desc: "Игри/конзоли"}
+    - {id: 4, cat: PC/Games, desc: "Игри/PC ISO"}
+    - {id: 21, cat: PC/Games, desc: "Игри/PC Rip"}
+    - {id: 1, cat: PC/ISO, desc: "Програми/PC ISO"}
+    - {id: 22, cat: PC, desc: "Програми/други"}
+    - {id: 57, cat: TV, desc: "Препоръчано MastersTB"}
+    - {id: 57, cat: Movies, desc: "Препоръчано MastersTB"}
+    - {id: 6, cat: Audio, desc: "Музика"}
+    - {id: 12, cat: Audio/Video, desc: "Музика/Видео"}
+    - {id: 33, cat: Audio/Video, desc: "Музика/DVD-R"}
+    - {id: 52, cat: Audio/Lossless, desc: "Музика/Lossless"}
+    - {id: 35, cat: TV, desc: "Сериали/BoxSet"}
+    - {id: 7, cat: TV, desc: "Сериали/TV"}
+    - {id: 32, cat: Movies, desc: "Филми/БГ"}
+    - {id: 55, cat: Movies, desc: "Филми/Asian"}
+    - {id: 36, cat: Movies, desc: "Филми/BoxSet"}
+    - {id: 28, cat: Movies, desc: "Филми/Руски"}
+    - {id: 34, cat: Movies/DVD, desc: "Филми/Руски DVD-R"}
+    - {id: 20, cat: Movies/DVD, desc: "Филми/DVD-R"}
+    - {id: 37, cat: Movies/HD, desc: "Филми/HD"}
+    - {id: 30, cat: TV/Sport, desc: "Филми/Спорт"}
+    - {id: 19, cat: Movies/SD, desc: "Филми/XviD"}
+    - {id: 29, cat: TV/Documentary, desc: "Филми/Документални"}
+    - {id: 54, cat: TV, desc: "TV Show"}
+    - {id: 2, cat: Other, desc: "Други"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: cookie
@@ -139,7 +139,7 @@ search:
         - name: regexp
           args: src=([^\s]+)
         - name: replace
-          args: [ "pic/not-available.jpg>');", "" ]
+          args: ["pic/not-available.jpg>');", ""]
     files:
       selector: td:nth-last-child(8)
     date:

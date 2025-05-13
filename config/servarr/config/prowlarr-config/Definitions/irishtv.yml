@@ -12,28 +12,28 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV, desc: "Comedy" }
-    - { id: 2, cat: TV, desc: "Drama" }
-    - { id: 3, cat: TV, desc: "Documentary" }
-    - { id: 6, cat: TV, desc: "Entertainment" }
-    - { id: 4, cat: TV, desc: "Lifestyle" }
-    - { id: 7, cat: TV, desc: "Kids" }
-    - { id: 8, cat: TV, desc: "Culture" }
-    - { id: 9, cat: TV, desc: "Science & Nature" }
-    - { id: 12, cat: TV/Sport, desc: "Sport" }
-    - { id: 13, cat: TV, desc: "News Current Affairs" }
-    - { id: 14, cat: TV, desc: "Classics" }
-    - { id: 17, cat: TV, desc: "Crime" }
-    - { id: 16, cat: TV, desc: "Boxsets" }
-    - { id: 18, cat: Audio, desc: "Music" }
-    - { id: 19, cat: Movies, desc: "Film" }
-    - { id: 20, cat: Movies, desc: "VIP" }
+    - {id: 1, cat: TV, desc: "Comedy"}
+    - {id: 2, cat: TV, desc: "Drama"}
+    - {id: 3, cat: TV, desc: "Documentary"}
+    - {id: 6, cat: TV, desc: "Entertainment"}
+    - {id: 4, cat: TV, desc: "Lifestyle"}
+    - {id: 7, cat: TV, desc: "Kids"}
+    - {id: 8, cat: TV, desc: "Culture"}
+    - {id: 9, cat: TV, desc: "Science & Nature"}
+    - {id: 12, cat: TV/Sport, desc: "Sport"}
+    - {id: 13, cat: TV, desc: "News Current Affairs"}
+    - {id: 14, cat: TV, desc: "Classics"}
+    - {id: 17, cat: TV, desc: "Crime"}
+    - {id: 16, cat: TV, desc: "Boxsets"}
+    - {id: 18, cat: Audio, desc: "Music"}
+    - {id: 19, cat: Movies, desc: "Film"}
+    - {id: 20, cat: Movies, desc: "VIP"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
 
 settings:
   - name: username
@@ -101,7 +101,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: "table.lista > tbody > tr:has(a[href^=\"download.php?id=\"]){{ if .Config.novip }}:not(:has(a[href$=\"category=20\"])){{ else }}{{ end }}{{ if .Config.freeleech }}:has(img[src$=\"gold.gif\"]){{ else }}{{ end }}, table.lista > tbody > tr:has(a[href^=\"download.php?id=\"]){{ if .Config.novip }}:not(:has(a[href$=\"category=20\"])){{ else }}{{ end }}{{ if .Config.freeleech }}:has(img[src$=\"freeleech.gif\"]){{ else }}{{ end }}"
@@ -121,7 +121,7 @@ search:
           args: f
         - name: htmldecode
         - name: re_replace
-          args: [ "(?i)\\.torrent$", "" ]
+          args: ["(?i)\\.torrent$", ""]
     title_text:
       selector: a[href^="index.php?page=torrent-details&id="]
     title:
@@ -133,7 +133,7 @@ search:
         - name: regexp
           args: "src=(.*?) "
         - name: replace
-          args: [ "torrentimg/nocover.jpg", "" ]
+          args: ["torrentimg/nocover.jpg", ""]
     details:
       selector: a[href^="index.php?page=torrent-details&id="]
       attribute: href

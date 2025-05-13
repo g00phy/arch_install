@@ -25,11 +25,11 @@ caps:
     XXX: XXX
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q, album, artist ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q, album, artist]
+    book-search: [q]
 
 settings:
   - name: downloadlink
@@ -65,7 +65,7 @@ search:
     - path: "{{ if .Keywords }}s/{{ .Keywords }}&page=10{{ else }}{{ end }}"
   keywordsfilters:
     - name: re_replace
-      args: [ "[\\s]+", "-" ]
+      args: ["[\\s]+", "-"]
     - name: tolower
 
   rows:

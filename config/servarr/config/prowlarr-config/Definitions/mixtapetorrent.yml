@@ -14,10 +14,10 @@ caps:
     1: Audio
 
   modes:
-    search: [ q ]
-    music-search: [ q ]
+    search: [q]
+    music-search: [q]
 
-settings: [ ]
+settings: []
 
 download:
   selectors:

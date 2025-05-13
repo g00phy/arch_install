@@ -10,17 +10,17 @@ links:
 
 caps:
   categorymappings:
-    - { id: 19, cat: Audio/Lossless, desc: "APE" }
-    - { id: 5, cat: Audio/Lossless, desc: "FLAC" }
-    - { id: 1, cat: Audio/Lossless, desc: "SHN" }
-    - { id: 12, cat: Audio/Video, desc: "MPG" }
-    - { id: 6, cat: Audio/Video, desc: "AVI" }
-    - { id: 2, cat: Audio/Video, desc: "DVD" }
-    - { id: 4, cat: Audio/Other, desc: "MISC" }
+    - {id: 19, cat: Audio/Lossless, desc: "APE"}
+    - {id: 5, cat: Audio/Lossless, desc: "FLAC"}
+    - {id: 1, cat: Audio/Lossless, desc: "SHN"}
+    - {id: 12, cat: Audio/Video, desc: "MPG"}
+    - {id: 6, cat: Audio/Video, desc: "AVI"}
+    - {id: 2, cat: Audio/Video, desc: "DVD"}
+    - {id: 4, cat: Audio/Other, desc: "MISC"}
 
   modes:
-    search: [ q ]
-    music-search: [ q, album, artist ]
+    search: [q]
+    music-search: [q, album, artist]
 
 settings:
   - name: username

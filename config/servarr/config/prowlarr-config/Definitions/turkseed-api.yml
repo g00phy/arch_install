@@ -5,31 +5,30 @@ description: "TurkSeed (Aturk) is a TURKISH Private Torrent Tracker for MOVIES /
 language: tr-TR
 type: private
 encoding: UTF-8
-certificates:
-  - dbb741dab386cdc63ef4ad16bf2bc1ec96f830dc # CN=turkseed.com when using dot net domain
 links:
   - https://turkseed.com/
+legacylinks:
   - https://turkseed.net/
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies/Foreign, desc: "Yabancı Film" }
-    - { id: 2, cat: Movies, desc: "Yerli Film" }
-    - { id: 24, cat: Movies, desc: "Film (Boxet)" }
-    - { id: 6, cat: TV, desc: "Dizi / Show (Yerli)" }
-    - { id: 5, cat: TV/Foreign, desc: "Dizi / Show (Yabancı)" }
-    - { id: 18, cat: TV, desc: "Dizi (Boxet)" }
-    - { id: 25, cat: TV/Documentary, desc: "Belgesel" }
-    - { id: 28, cat: Console, desc: "GAME - OYUN" }
-    - { id: 26, cat: Other, desc: "Other" }
-    - { id: 27, cat: PC, desc: "PROGRAM" }
-    - { id: 30, cat: Audio, desc: "Music" }
+    - {id: 1, cat: Movies/Foreign, desc: "Yabancı Film"}
+    - {id: 2, cat: Movies, desc: "Yerli Film"}
+    - {id: 24, cat: Movies, desc: "Film (Boxet)"}
+    - {id: 6, cat: TV, desc: "Dizi / Show (Yerli)"}
+    - {id: 5, cat: TV/Foreign, desc: "Dizi / Show (Yabancı)"}
+    - {id: 18, cat: TV, desc: "Dizi (Boxet)"}
+    - {id: 25, cat: TV/Documentary, desc: "Belgesel"}
+    - {id: 28, cat: Console, desc: "GAME - OYUN"}
+    - {id: 26, cat: Other, desc: "Other"}
+    - {id: 27, cat: PC, desc: "PROGRAM"}
+    - {id: 30, cat: Audio, desc: "Music"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
 
 settings:
   - name: apikey
@@ -71,7 +70,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -87,10 +86,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -105,7 +104,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -133,7 +132,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -144,15 +143,15 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)(Bilim Kurgu)", "Bilim_Kurgu" ]
+          args: ["(?i)(Bilim Kurgu)", "Bilim_Kurgu"]
         - name: re_replace
-          args: [ "(?i)(Pembe Dizi)", "Pembe_Dizi" ]
+          args: ["(?i)(Pembe Dizi)", "Pembe_Dizi"]
         - name: re_replace
-          args: [ "(?i)(TV film)", "TV_film" ]
+          args: ["(?i)(TV film)", "TV_film"]
         - name: re_replace
-          args: [ "(?i)(Vahşi Batı)", "Vahşi_Batı" ]
+          args: ["(?i)(Vahşi Batı)", "Vahşi_Batı"]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     seeders:
@@ -196,8 +195,9 @@ search:
         True: 2 # double
     uploadvolumefactor:
       text: "{{ if .Result._featured }}2{{ else }}{{ .Result.uploadvolumefactor_double_upload }}{{ end }}"
-    minimumratio:
-      text: 0.6
+# global MR is 0.6 but torrents must be seeded for 2 days regardless of ratio
+#    minimumratio:
+#      text: 0.6
     minimumseedtime:
       # 2 days (as seconds = 2 x 24 x 60 x 60)
       text: 172800

@@ -15,9 +15,9 @@ caps:
     PC: PC
 
   modes:
-    search: [ q ]
+    search: [q]
 
-settings: [ ]
+settings: []
 
 download:
   selectors:
@@ -56,7 +56,7 @@ search:
       remove: a, span
       filters:
         - name: replace
-          args: [ "- ", "" ]
+          args: ["- ", ""]
         - name: append
           args: " +03:00" # MSK
         - name: dateparse

@@ -10,17 +10,17 @@ links:
 
 caps:
   categorymappings:
-    - { id: 500, cat: XXX, desc: "日本有码" }
-    - { id: 401, cat: XXX, desc: "日本无码" }
-    - { id: 402, cat: XXX, desc: "欧美" }
-    - { id: 501, cat: XXX, desc: "其他（限制级）" }
-    - { id: 403, cat: XXX/Other, desc: "动漫（限制级）" }
-    - { id: 503, cat: XXX, desc: "真人秀，自拍（限制级）" }
-    - { id: 404, cat: XXX/ImageSet, desc: "写真、套图" }
-    - { id: 504, cat: XXX, desc: "SM调教（限制级）" }
+    - {id: 500, cat: XXX, desc: "日本有码"}
+    - {id: 401, cat: XXX, desc: "日本无码"}
+    - {id: 402, cat: XXX, desc: "欧美"}
+    - {id: 501, cat: XXX, desc: "其他（限制级）"}
+    - {id: 403, cat: XXX/Other, desc: "动漫（限制级）"}
+    - {id: 503, cat: XXX, desc: "真人秀，自拍（限制级）"}
+    - {id: 404, cat: XXX/ImageSet, desc: "写真、套图"}
+    - {id: 504, cat: XXX, desc: "SM调教（限制级）"}
 
   modes:
-    search: [ q ]
+    search: [q]
 
 settings:
   - name: username

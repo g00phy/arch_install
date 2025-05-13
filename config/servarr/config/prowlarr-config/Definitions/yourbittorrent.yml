@@ -15,27 +15,27 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: anime, cat: TV/Anime, desc: Anime }
-    - { id: software, cat: PC, desc: Software }
-    - { id: ebooks, cat: Books, desc: Ebooks }
-    - { id: adult, cat: XXX, desc: Adult }
-    - { id: games, cat: PC/Games, desc: Games }
-    - { id: movies, cat: Movies, desc: Movies }
-    - { id: music, cat: Audio, desc: Music }
-    - { id: television, cat: TV, desc: TV }
-    - { id: other, cat: Other, desc: Other }
-    - { id: photos, cat: Other, desc: Photos }
-    - { id: pictures, cat: Other, desc: Pictures }
-    - { id: unknown, cat: Other, desc: Unknown }
+    - {id: anime, cat: TV/Anime, desc: Anime}
+    - {id: software, cat: PC, desc: Software}
+    - {id: ebooks, cat: Books, desc: Ebooks}
+    - {id: adult, cat: XXX, desc: Adult}
+    - {id: games, cat: PC/Games, desc: Games}
+    - {id: movies, cat: Movies, desc: Movies}
+    - {id: music, cat: Audio, desc: Music}
+    - {id: television, cat: TV, desc: TV}
+    - {id: other, cat: Other, desc: Other}
+    - {id: photos, cat: Other, desc: Photos}
+    - {id: pictures, cat: Other, desc: Pictures}
+    - {id: unknown, cat: Other, desc: Unknown}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
-settings: [ ]
+settings: []
 
 search:
   paths:
@@ -46,7 +46,7 @@ search:
     q: "{{ if .Keywords }}{{ .Keywords }}{{ else }}{{ .Today.Year }}{{ end }}"
   keywordsfilters:
     - name: re_replace
-      args: [ "[\\s]+", "-" ]
+      args: ["[\\s]+", "-"]
     - name: tolower
 
   rows:
@@ -73,7 +73,7 @@ search:
       # into /down/25778710.torrent
       filters:
         - name: split
-          args: [ "/", 2 ]
+          args: ["/", 2]
         - name: prepend
           args: "/down/"
         - name: append
@@ -85,9 +85,9 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ "Today", "now" ]
+          args: ["Today", "now"]
         - name: replace
-          args: [ "Yesterday", "1 day" ]
+          args: ["Yesterday", "1 day"]
         - name: timeago
     date_year:
       selector: td:nth-child(4):contains("/")

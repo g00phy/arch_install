@@ -13,54 +13,54 @@ legacylinks:
 caps:
   categorymappings:
     # Cinema
-    - { id: 13, cat: Movies/HD, desc: "Зарубежное кино HD" }
-    - { id: 11, cat: Movies, desc: "Зарубежное кино" }
-    - { id: 12, cat: Movies, desc: "Наше кино" }
-    - { id: 66, cat: Movies, desc: "Зарубежное кино | VIP" }
-    - { id: 67, cat: Movies, desc: "Зарубежное кино HD | VIP" }
-    - { id: 68, cat: Movies, desc: "Фабельманы / The Fabelmans" }
+    - {id: 13, cat: Movies/HD, desc: "Зарубежное кино HD"}
+    - {id: 11, cat: Movies, desc: "Зарубежное кино"}
+    - {id: 12, cat: Movies, desc: "Наше кино"}
+    - {id: 66, cat: Movies, desc: "Зарубежное кино | VIP"}
+    - {id: 67, cat: Movies, desc: "Зарубежное кино HD | VIP"}
+    - {id: 68, cat: Movies, desc: "Фабельманы / The Fabelmans"}
     # TV
-    - { id: 2, cat: TV/HD, desc: "Зарубежные сериалы HD" }
-    - { id: 65, cat: TV/HD, desc: "Майя МС / Майянцы / Mayans M.C." }
-    - { id: 52, cat: TV/HD, desc: "Блудный сын / Prodigal Son" }
-    - { id: 49, cat: TV/HD, desc: "Пенниуорт / Pennyworth" }
-    - { id: 62, cat: TV/HD, desc: "Черный список / The Blacklist" }
-    - { id: 64, cat: TV/HD, desc: "Игра престолов / Game of Thrones" }
-    - { id: 59, cat: TV/HD, desc: "Американская история ужасов / American Horror Story" }
-    - { id: 60, cat: TV/HD, desc: "Хороший доктор / The Good Doctor" }
-    - { id: 54, cat: TV/HD, desc: "Рэй Донован / Ray Donovan" }
-    - { id: 55, cat: TV/HD, desc: "Сверхъестественное / Supernatural" }
-    - { id: 56, cat: TV/HD, desc: "Сквозь снег / Snowpiercer" }
-    - { id: 57, cat: TV/HD, desc: "Теория большого взрыва / The Big Bang Theory" }
-    - { id: 58, cat: TV/HD, desc: "Миллиарды / Billions" }
-    - { id: 53, cat: TV/HD, desc: "Родина / Homeland" }
-    - { id: 51, cat: TV/HD, desc: "Новобранец / The Rookie" }
-    - { id: 50, cat: TV/HD, desc: "Это мы / This Is Us" }
-    - { id: 48, cat: TV/HD, desc: "Бэтвумен / Batwoman" }
-    - { id: 32, cat: TV/HD, desc: "Кости / Bones" }
-    - { id: 31, cat: TV/HD, desc: "Американские боги / American Gods" }
-    - { id: 30, cat: TV/HD, desc: "Агенты Щ.И.Т. / Agents of S.H.I.E.L.D." }
-    - { id: 17, cat: TV/HD, desc: "Зарубежные сериалы HD для Apple TV" }
-    - { id: 22, cat: TV, desc: "Зарубежные сериалы HEVC" }
-    - { id: 3, cat: TV, desc: "Зарубежные сериалы" }
-    - { id: 14, cat: TV, desc: "Русские сериалы" }
-    - { id: 10, cat: TV, desc: "Звуковые дорожки" }
+    - {id: 2, cat: TV/HD, desc: "Зарубежные сериалы HD"}
+    - {id: 65, cat: TV/HD, desc: "Майя МС / Майянцы / Mayans M.C."}
+    - {id: 52, cat: TV/HD, desc: "Блудный сын / Prodigal Son"}
+    - {id: 49, cat: TV/HD, desc: "Пенниуорт / Pennyworth"}
+    - {id: 62, cat: TV/HD, desc: "Черный список / The Blacklist"}
+    - {id: 64, cat: TV/HD, desc: "Игра престолов / Game of Thrones"}
+    - {id: 59, cat: TV/HD, desc: "Американская история ужасов / American Horror Story"}
+    - {id: 60, cat: TV/HD, desc: "Хороший доктор / The Good Doctor"}
+    - {id: 54, cat: TV/HD, desc: "Рэй Донован / Ray Donovan"}
+    - {id: 55, cat: TV/HD, desc: "Сверхъестественное / Supernatural"}
+    - {id: 56, cat: TV/HD, desc: "Сквозь снег / Snowpiercer"}
+    - {id: 57, cat: TV/HD, desc: "Теория большого взрыва / The Big Bang Theory"}
+    - {id: 58, cat: TV/HD, desc: "Миллиарды / Billions"}
+    - {id: 53, cat: TV/HD, desc: "Родина / Homeland"}
+    - {id: 51, cat: TV/HD, desc: "Новобранец / The Rookie"}
+    - {id: 50, cat: TV/HD, desc: "Это мы / This Is Us"}
+    - {id: 48, cat: TV/HD, desc: "Бэтвумен / Batwoman"}
+    - {id: 32, cat: TV/HD, desc: "Кости / Bones"}
+    - {id: 31, cat: TV/HD, desc: "Американские боги / American Gods"}
+    - {id: 30, cat: TV/HD, desc: "Агенты Щ.И.Т. / Agents of S.H.I.E.L.D."}
+    - {id: 17, cat: TV/HD, desc: "Зарубежные сериалы HD для Apple TV"}
+    - {id: 22, cat: TV, desc: "Зарубежные сериалы HEVC"}
+    - {id: 3, cat: TV, desc: "Зарубежные сериалы"}
+    - {id: 14, cat: TV, desc: "Русские сериалы"}
+    - {id: 10, cat: TV, desc: "Звуковые дорожки"}
     # Cartoons
-    - { id: 24, cat: TV, desc: "Мультфильмы" }
-    - { id: 25, cat: TV, desc: "Мультсериалы" }
+    - {id: 24, cat: TV, desc: "Мультфильмы"}
+    - {id: 25, cat: TV, desc: "Мультсериалы"}
     # Documentary
-    - { id: 7, cat: TV/Documentary, desc: "Документальные (HD Video)" }
-    - { id: 21, cat: TV/Documentary, desc: "Документальные" }
-    - { id: 28, cat: TV/Documentary, desc: "Развлекательные телепередачи и шоу" }
+    - {id: 7, cat: TV/Documentary, desc: "Документальные (HD Video)"}
+    - {id: 21, cat: TV/Documentary, desc: "Документальные"}
+    - {id: 28, cat: TV/Documentary, desc: "Развлекательные телепередачи и шоу"}
     # Private Forums
-    - { id: 47, cat: TV/HD, desc: "Рассказ служанки / The Handmaid's Tale" }
+    - {id: 47, cat: TV/HD, desc: "Рассказ служанки / The Handmaid's Tale"}
     # Miscellaneous
-    - { id: 8, cat: Other, desc: "Разное (раздачи)" }
+    - {id: 8, cat: Other, desc: "Разное (раздачи)"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
 settings:
   - name: username
@@ -158,9 +158,9 @@ search:
       args: replace
     # strip season and/or ep
     - name: re_replace
-      args: [ "(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", "" ]
+      args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
     - name: re_replace
-      args: [ "(\\w+)", "+$1" ] # prepend + to each word
+      args: ["(\\w+)", "+$1"] # prepend + to each word
 
   rows:
     selector: tr[id^="tor_"]:has(a[href^="./dl.php?id="])
@@ -171,51 +171,51 @@ search:
       filters:
         # normalize to SXXEYY format
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))?", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)\\s*(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "S$1E$2 of $3"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*[CС]езоны?.+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?).+?(\\d+(?:-\\d+)?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "S$1E$2"]
         - name: re_replace
-          args: [ "(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1" ]
+          args: ["(?i)[CС]езоны?[\\s:]*(\\d+(?:-\\d+)?)", "S$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+[CС]езоны?", "S$1"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s*из\\s*(\\w?)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))\\s+из\\s*(\\w?)", "E$1 of $2"]
         - name: re_replace
-          args: [ "(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1" ]
+          args: ["(?i)(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))[\\s:]*(\\d+(?:-\\d+)?)", "E$1"]
         - name: re_replace
-          args: [ "(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1" ]
+          args: ["(?i)(\\d+(?:-\\d+)?)\\s+(?:\\s*(?:[CС]ери[ияй]|Эпизод|Выпуски?))", "E$1"]
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bHDTV[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bSAT[-\\s]?Rip\\b", "HDTV" ]
+          args: ["(?i)\\bSAT[-\\s]?Rip\\b", "HDTV"]
         - name: re_replace
-          args: [ "(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB[-\\s]?DL[-\\s]?Rip\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sRip\\b", "WEBRip" ]
+          args: ["(?i)\\bWEB\\sRip\\b", "WEBRip"]
         - name: re_replace
-          args: [ "(?i)\\bWEB\\sDL\\b", "WEB-DL" ]
+          args: ["(?i)\\bWEB\\sDL\\b", "WEB-DL"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} RUS{{ else }}{{ end }}"
     details:

@@ -12,13 +12,13 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Movie" }
-    - { id: 2, cat: TV, desc: "TV" }
+    - {id: 1, cat: Movies, desc: "Movie"}
+    - {id: 2, cat: TV, desc: "TV"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
 
 settings:
   - name: apikey
@@ -56,7 +56,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -72,7 +72,7 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
@@ -87,7 +87,7 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
@@ -100,9 +100,9 @@ search:
       selector: name
       filters:
         - name: re_replace
-          args: [ "\\(((?>[^()]+|(?<o>)\\(|(?<-o>)\\))*(?(o)(?!)))(?<!\\bHONE)(?<=\\s*- [\\w]+)\\)$", "$1" ]
+          args: ["\\(((?>[^()]+|(?<o>)\\(|(?<-o>)\\))*(?(o)(?!)))(?<!\\bHONE)(?<=\\s*- [\\w]+)\\)$", "$1"]
         - name: re_replace
-          args: [ "\\s*-\\s+(\\w+)$", "-$1" ]
+          args: ["\\s*-\\s+(\\w+)$", "-$1"]
     details:
       selector: details_link
     download:
@@ -111,7 +111,7 @@ search:
       selector: poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -148,9 +148,9 @@ search:
       case:
         0: 1 # normal
         1: 2 # double
-    # global MR is 0.25 but torrents must be seeded for 5 days regardless of ratio
-    #    minimumratio:
-    #      text: 0.25
+# global MR is 0.25 but torrents must be seeded for 5 days regardless of ratio
+#    minimumratio:
+#      text: 0.25
     minimumseedtime:
       # 5 days (as seconds = 5 x 24 x 60 x 60)
       text: 432000

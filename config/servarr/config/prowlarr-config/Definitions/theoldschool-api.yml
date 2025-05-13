@@ -10,23 +10,23 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Films" }
-    - { id: 6, cat: Movies, desc: "Films VOSTFR" }
-    - { id: 2, cat: TV, desc: "Series" }
-    - { id: 7, cat: TV, desc: "Series VOSTFR" }
-    - { id: 8, cat: TV, desc: "Series Pack" }
-    - { id: 9, cat: TV, desc: "Series Pack VOSTFR" }
-    - { id: 3, cat: Books, desc: "Ebooks" }
-    - { id: 4, cat: Console, desc: "Jeux" }
-    - { id: 5, cat: PC, desc: "Logiciel" }
-    - { id: 10, cat: TV/Sport, desc: "Sports" }
+    - {id: 1, cat: Movies, desc: "Films"}
+    - {id: 6, cat: Movies, desc: "Films VOSTFR"}
+    - {id: 2, cat: TV, desc: "Series"}
+    - {id: 7, cat: TV, desc: "Series VOSTFR"}
+    - {id: 8, cat: TV, desc: "Series Pack"}
+    - {id: 9, cat: TV, desc: "Series Pack VOSTFR"}
+    - {id: 3, cat: Books, desc: "Ebooks"}
+    - {id: 4, cat: Console, desc: "Jeux"}
+    - {id: 5, cat: PC, desc: "Logiciel"}
+    - {id: 10, cat: TV/Sport, desc: "Sports"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -87,7 +87,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -103,10 +103,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -121,13 +121,11 @@ search:
 
   keywordsfilters:
     - name: re_replace
-      args: [ "\\.", " " ]
+      args: ["\\.", " "]
 
   rows:
     selector: data
     attribute: attributes
-    count:
-      selector: meta.total
 
   fields:
     category:
@@ -138,21 +136,21 @@ search:
       text: "{{ .Result.title_phase1 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(VFQ)\\b", "FRENCH" ]
+          args: ["(?i)\\b(VFQ)\\b", "FRENCH"]
     title_phase2:
       text: "{{ if .Config.vfq }}{{ .Result.title_vfq }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     title_vostfr:
       text: "{{ .Result.title_phase2 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(vostfr|subfrench)\\b", "ENGLISH" ]
+          args: ["(?i)\\b(vostfr|subfrench)\\b", "ENGLISH"]
     title_phase3:
       text: "{{ if .Config.vostfr }}{{ .Result.title_vostfr }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     title_multilang:
       text: "{{ .Result.title_phase3 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase3 }}{{ end }}"
     details:
@@ -165,7 +163,7 @@ search:
       selector: meta.poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:
@@ -176,9 +174,9 @@ search:
       selector: meta.genres
       filters:
         - name: re_replace
-          args: [ "(?i)^None$", "" ]
+          args: ["(?i)^None$", ""]
         - name: replace
-          args: [ " & ", "_&_" ]
+          args: [" & ", "_&_"]
     description:
       text: "{{ .Result.genre }}"
     files:
@@ -215,9 +213,9 @@ search:
       case:
         False: 1 # normal
         True: 2 # double
-    # global MR is 0.6 but torrents must be seeded for 2 days regardless of ratio
-    #    minimumratio:
-    #      text: 0.6
+# global MR is 0.6 but torrents must be seeded for 2 days regardless of ratio
+#    minimumratio:
+#      text: 0.6
     minimumseedtime:
       # 2 days (as seconds = 2 x 24 x 60 x 60)
       text: 172800

@@ -7,24 +7,24 @@ type: public
 encoding: UTF-8
 # current domain at https://cursor.vip/btmulu then follow links to the final search-movie link
 links:
-  - https://www.btmulu.one/
+  - https://btmulu.work/
   - https://www.btmulu.cyou/
 legacylinks:
-  - https://btmulu.work/
   - https://www.btmulu.asia/
   - https://www.btmulu.digital/
   - https://www.btmulu.pw/
+  - https://www.btmulu.one/
 
 caps:
   categorymappings:
-    - { id: Other, cat: Other, desc: Other }
+    - {id: Other, cat: Other, desc: Other}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: info_category_8000

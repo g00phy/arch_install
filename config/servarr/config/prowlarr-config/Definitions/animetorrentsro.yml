@@ -10,15 +10,15 @@ links:
 
 caps:
   categorymappings:
-    - { id: 1, cat: TV/Anime, desc: "ANIME" }
-    - { id: 1, cat: Movies/Other, desc: "ANIME" } # for Radarr
-    - { id: 2, cat: Books/Comics, desc: "MANGA" }
+    - {id: 1, cat: TV/Anime, desc: "ANIME"}
+    - {id: 1, cat: Movies/Other, desc: "ANIME"} # for Radarr
+    - {id: 2, cat: Books/Comics, desc: "MANGA"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -112,7 +112,7 @@ search:
       selector: a[href^="details.php?id="]
       filters:
         - name: re_replace
-          args: [ "^(\\[.+?\\]).(.+)", "$2.$1" ]
+          args: ["^(\\[.+?\\]).(.+)", "$2.$1"]
     details:
       selector: a[href^="details.php?id="]
       attribute: href

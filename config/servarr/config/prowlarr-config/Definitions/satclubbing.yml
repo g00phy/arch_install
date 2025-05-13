@@ -10,44 +10,44 @@ links:
 
 caps:
   categorymappings:
-    - { id: 23, cat: Audio, desc: "Albums - Trance" }
-    - { id: 34, cat: Audio, desc: "Singles - Trance" }
-    - { id: 24, cat: Audio, desc: "Livesets - Trance" }
-    - { id: 30, cat: Audio, desc: "Albums - House" }
-    - { id: 25, cat: Audio, desc: "Singles - House" }
-    - { id: 32, cat: Audio, desc: "Livesets - House" }
-    - { id: 18, cat: Audio, desc: "Albums - Techno" }
-    - { id: 29, cat: Audio, desc: "Singles - Techno" }
-    - { id: 21, cat: Audio, desc: "Livesets - Techno" }
-    - { id: 35, cat: Audio, desc: "Albums - Hardstyle" }
-    - { id: 20, cat: Audio, desc: "Singles - Hardstyle" }
-    - { id: 28, cat: Audio, desc: "Livesets - Hardstyle" }
-    - { id: 22, cat: Audio, desc: "Albums - Goa/Psy" }
-    - { id: 33, cat: Audio, desc: "Singles - Goa/Psy" }
-    - { id: 26, cat: Audio, desc: "Livesets - Goa/Psy" }
-    - { id: 31, cat: Audio, desc: "Beat/Breaks" }
-    - { id: 40, cat: Audio, desc: "Electronic" }
-    - { id: 42, cat: Audio, desc: "Albums - Drum and Bass" }
-    - { id: 43, cat: Audio, desc: "Singles - Drum and Bass" }
-    - { id: 44, cat: Audio, desc: "Livesets - Drum and Bass" }
-    - { id: 45, cat: Audio, desc: "Albums - Dance" }
-    - { id: 46, cat: Audio, desc: "Singles - Dance" }
-    - { id: 36, cat: Audio, desc: "Unreleased Tracks" }
-    - { id: 41, cat: Audio, desc: "Bass" }
-    - { id: 39, cat: Audio, desc: "Ambient / Chill" }
-    - { id: 27, cat: Other, desc: "Music Plugins/Apps/Misc" }
-    - { id: 19, cat: Audio/Video, desc: "DVD/Video/Clips" }
-    - { id: 38, cat: Audio, desc: "SCMT Pack" }
-    - { id: 47, cat: Audio, desc: "Albums - Hardcore" }
-    - { id: 48, cat: Audio, desc: "Singles - Hardcore" }
-    - { id: 49, cat: Audio, desc: "Livesets - Hardcore" }
-    - { id: 50, cat: Audio, desc: "Rave" }
-    - { id: 51, cat: Audio, desc: "Acid" }
-    - { id: 52, cat: Audio, desc: "Dubstep" }
+    - {id: 23, cat: Audio, desc: "Albums - Trance"}
+    - {id: 34, cat: Audio, desc: "Singles - Trance"}
+    - {id: 24, cat: Audio, desc: "Livesets - Trance"}
+    - {id: 30, cat: Audio, desc: "Albums - House"}
+    - {id: 25, cat: Audio, desc: "Singles - House"}
+    - {id: 32, cat: Audio, desc: "Livesets - House"}
+    - {id: 18, cat: Audio, desc: "Albums - Techno"}
+    - {id: 29, cat: Audio, desc: "Singles - Techno"}
+    - {id: 21, cat: Audio, desc: "Livesets - Techno"}
+    - {id: 35, cat: Audio, desc: "Albums - Hardstyle"}
+    - {id: 20, cat: Audio, desc: "Singles - Hardstyle"}
+    - {id: 28, cat: Audio, desc: "Livesets - Hardstyle"}
+    - {id: 22, cat: Audio, desc: "Albums - Goa/Psy"}
+    - {id: 33, cat: Audio, desc: "Singles - Goa/Psy"}
+    - {id: 26, cat: Audio, desc: "Livesets - Goa/Psy"}
+    - {id: 31, cat: Audio, desc: "Beat/Breaks"}
+    - {id: 40, cat: Audio, desc: "Electronic"}
+    - {id: 42, cat: Audio, desc: "Albums - Drum and Bass"}
+    - {id: 43, cat: Audio, desc: "Singles - Drum and Bass"}
+    - {id: 44, cat: Audio, desc: "Livesets - Drum and Bass"}
+    - {id: 45, cat: Audio, desc: "Albums - Dance"}
+    - {id: 46, cat: Audio, desc: "Singles - Dance"}
+    - {id: 36, cat: Audio, desc: "Unreleased Tracks"}
+    - {id: 41, cat: Audio, desc: "Bass"}
+    - {id: 39, cat: Audio, desc: "Ambient / Chill"}
+    - {id: 27, cat: Other, desc: "Music Plugins/Apps/Misc"}
+    - {id: 19, cat: Audio/Video, desc: "DVD/Video/Clips"}
+    - {id: 38, cat: Audio, desc: "SCMT Pack"}
+    - {id: 47, cat: Audio, desc: "Albums - Hardcore"}
+    - {id: 48, cat: Audio, desc: "Singles - Hardcore"}
+    - {id: 49, cat: Audio, desc: "Livesets - Hardcore"}
+    - {id: 50, cat: Audio, desc: "Rave"}
+    - {id: 51, cat: Audio, desc: "Acid"}
+    - {id: 52, cat: Audio, desc: "Dubstep"}
 
   modes:
-    search: [ q ]
-    music-search: [ q, artist ]
+    search: [q]
+    music-search: [q, artist]
 
 settings:
   - name: username
@@ -131,7 +131,7 @@ search:
       selector: td:last-child
       filters:
         - name: replace
-          args: [ "added ", "" ]
+          args: ["added ", ""]
         - name: timeago
     files:
       selector: a[href$="filelist=1"]
@@ -147,7 +147,7 @@ search:
       default: 0
       filters:
         - name: split
-          args: [ "|", 1 ]
+          args: ["|", 1]
     downloadvolumefactor:
       case:
         img[src$="pic/free_icon.gif"]: 0

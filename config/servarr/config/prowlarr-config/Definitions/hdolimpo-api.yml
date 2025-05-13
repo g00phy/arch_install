@@ -12,17 +12,17 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 1, cat: Movies, desc: "Películas" }
-    - { id: 2, cat: TV, desc: "Series" }
-    - { id: 3, cat: Audio, desc: "Música" }
-    - { id: 4, cat: TV/Documentary, desc: "Documentales" }
+    - {id: 1, cat: Movies, desc: "Películas"}
+    - {id: 2, cat: TV, desc: "Series"}
+    - {id: 3, cat: Audio, desc: "Música"}
+    - {id: 4, cat: TV/Documentary, desc: "Documentales"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep, imdbid, tvdbid, tmdbid ]
-    movie-search: [ q, imdbid, tmdbid ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep, imdbid, tvdbid, tmdbid]
+    movie-search: [q, imdbid, tmdbid]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: apikey
@@ -52,7 +52,7 @@ settings:
 login:
   path: /api/torrents
   method: get
-  inputs: { } # TODO: remove in v10
+  inputs: {} # TODO: remove in v10
   error:
     - selector: a[href*="/login"]
       message:
@@ -68,10 +68,10 @@ search:
         type: json
 
   headers:
-    Authorization: [ "Bearer {{ .Config.apikey }}" ]
+    Authorization: ["Bearer {{ .Config.apikey }}"]
 
   inputs:
-    # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
+  # if we have an id based search, add Season and Episode as query in name for UNIT3D < v6.  Else pass S/E Params for UNIT3D >= v6
     $raw: "{{ range .Categories }}&categories[]={{.}}{{end}}"
     name: "{{ .Keywords }}"
     seasonNumber: "{{ .Query.Season }}"
@@ -94,57 +94,57 @@ search:
       selector: name
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(full uhd|(uhd )?full\\s?(blu-?ray|uhd))\\b", "BRDISK" ]
+          args: ["(?i)\\b(full uhd|(uhd )?full\\s?(blu-?ray|uhd))\\b", "BRDISK"]
         - name: re_replace
-          args: [ "\\bE-AC-3\\b", "EAC3" ]
+          args: ["\\bE-AC-3\\b", "EAC3"]
         - name: re_replace
-          args: [ "(?i)\\b(es-cat?-en|es-en-cat?|en-cat?-es|en-es-cat?|cat?-es-en|cat?-en-es)\\b", "MULTi SPANiSH CATALAN ENGLiSH" ]
+          args: ["(?i)\\b(es-cat?-en|es-en-cat?|en-cat?-es|en-es-cat?|cat?-es-en|cat?-en-es)\\b", "MULTi SPANiSH CATALAN ENGLiSH"]
         - name: re_replace
-          args: [ "(?i)\\b(es-cat?-(ja|ja?p)|es-(ja|ja?p)-cat?|cat?-es-(ja|ja?p)|cat?-(ja|ja?p)-es|(ja|ja?p)-es-cat?|(ja|ja?p)-cat?-es)\\b", "MULTi SPANiSH CATALAN JAPANES" ] # misspelled to accomodate negative lookback, corrected later
+          args: ["(?i)\\b(es-cat?-(ja|ja?p)|es-(ja|ja?p)-cat?|cat?-es-(ja|ja?p)|cat?-(ja|ja?p)-es|(ja|ja?p)-es-cat?|(ja|ja?p)-cat?-es)\\b", "MULTi SPANiSH CATALAN JAPANES"] # misspelled to accomodate negative lookback, corrected later
         - name: re_replace
-          args: [ "(?i)\\b(es-en|en-es)\\b", "MULTi SPANiSH ENGLiSH" ]
+          args: ["(?i)\\b(es-en|en-es)\\b", "MULTi SPANiSH ENGLiSH"]
         - name: re_replace
-          args: [ "(?i)\\b(es-cat?|cat?-es)\\b", "MULTi SPANiSH CATALAN" ]
+          args: ["(?i)\\b(es-cat?|cat?-es)\\b", "MULTi SPANiSH CATALAN"]
         - name: re_replace
-          args: [ "(?i)\\b(es-(ja|ja?p)|(ja|ja?p)-es)\\b", "MULTi SPANiSH JAPANES" ] # misspelled to accomodate negative lookback, corrected later
+          args: ["(?i)\\b(es-(ja|ja?p)|(ja|ja?p)-es)\\b", "MULTi SPANiSH JAPANES"] # misspelled to accomodate negative lookback, corrected later
         - name: re_replace
-          args: [ "(?i)\\b(es-fr[ae]?n?|fr[ae]?n?-es)\\b", "MULTi SPANiSH FRENCHx" ] # misspelled to accomodate negative lookback, corrected later
+          args: ["(?i)\\b(es-fr[ae]?n?|fr[ae]?n?-es)\\b", "MULTi SPANiSH FRENCHx"] # misspelled to accomodate negative lookback, corrected later
         - name: re_replace
-          args: [ "(?i)\\b(es-ita?|ita?-es)\\b", "MULTi SPANiSH iTALiAN" ]
+          args: ["(?i)\\b(es-ita?|ita?-es)\\b", "MULTi SPANiSH iTALiAN"]
         - name: re_replace
-          args: [ "(?i)\\b(es-rus?|rus?-es)\\b", "MULTi SPANiSH RUSSiAN" ]
+          args: ["(?i)\\b(es-rus?|rus?-es)\\b", "MULTi SPANiSH RUSSiAN"]
         - name: re_replace
-          args: [ "(?i)\\b(es-(ger?|al(e|em)?)|(ger?|al(e|em)?)-es)\\b", "MULTi SPANiSH GERMANx" ] # misspelled to accomodate negative lookback, corrected later
+          args: ["(?i)\\b(es-(ger?|al(e|em)?)|(ger?|al(e|em)?)-es)\\b", "MULTi SPANiSH GERMANx"] # misspelled to accomodate negative lookback, corrected later
         - name: re_replace
-          args: [ "(?i)\\btriaudio\\b", "MULTi SPANiSH" ]
+          args: ["(?i)\\btriaudio\\b", "MULTi SPANiSH"]
         - name: re_replace
-          args: [ "(?i)\\b(espa[ñn]ol|castellano|esp)\\b", "SPANiSH" ]
+          args: ["(?i)\\b(espa[ñn]ol|castellano|esp)\\b", "SPANiSH"]
         - name: re_replace
-          args: [ "(?i)\\b(ingl[ée]s|[ei]ng)\\b", "ENGLiSH" ]
+          args: ["(?i)\\b(ingl[ée]s|[ei]ng)\\b", "ENGLiSH"]
         - name: re_replace
-          args: [ "(?i)\\bcat\\b", "CATALAN" ]
+          args: ["(?i)\\bcat\\b", "CATALAN"]
         - name: re_replace
-          args: [ "(?i)\\bfr[ae]?n?\\b", "FRENCHx" ] # misspelled to accomodate negative lookback, corrected later
+          args: ["(?i)\\bfr[ae]?n?\\b", "FRENCHx"] # misspelled to accomodate negative lookback, corrected later
         - name: re_replace
-          args: [ "(?i)\\b(jap|jp)\\b", "JAPANES" ] # misspelled to accomodate negative lookback, corrected later
+          args: ["(?i)\\b(jap|jp)\\b", "JAPANES"] # misspelled to accomodate negative lookback, corrected later
         - name: re_replace
-          args: [ "(?i)\\bita\\b", "iTALiAN" ]
+          args: ["(?i)\\bita\\b", "iTALiAN"]
         - name: re_replace
-          args: [ "(?i)\\brus?\\b", "RUSSiAN" ]
+          args: ["(?i)\\brus?\\b", "RUSSiAN"]
         - name: re_replace
-          args: [ "(?i)\\b(ger?|alem)\\b", "GERMANx" ] # misspelled to accomodate negative lookback, corrected later
+          args: ["(?i)\\b(ger?|alem)\\b", "GERMANx"] # misspelled to accomodate negative lookback, corrected later
         - name: re_replace
-          args: [ "(\\s|\\.)+", "$1" ]
+          args: ["(\\s|\\.)+", "$1"]
         # add MULTi SPANiSH if not preceded by another language or followed by SPANiSH
         - name: re_replace
-          args: [ "(?<!(SPANiSH|ENGLiSH|CATALAN|FRENCHx|JAPANES|iTALiAN|RUSSiAN|GERMANx)[\\s.])\\b(ENGLiSH|CATALAN|FRENCHx|JAPANES|iTALiAN|RUSSiAN|GERMANx)\\b(?![\\s.]SPANiSH)", "MULTi SPANiSH $2" ]
+          args: ["(?<!(SPANiSH|ENGLiSH|CATALAN|FRENCHx|JAPANES|iTALiAN|RUSSiAN|GERMANx)[\\s.])\\b(ENGLiSH|CATALAN|FRENCHx|JAPANES|iTALiAN|RUSSiAN|GERMANx)\\b(?![\\s.]SPANiSH)", "MULTi SPANiSH $2"]
         # correct purposefully misspelled languages
         - name: re_replace
-          args: [ "\\bFRENCHx\\b", "FRENCH" ]
+          args: ["\\bFRENCHx\\b", "FRENCH"]
         - name: re_replace
-          args: [ "\\bJAPANES\\b", "JAPANESE" ]
+          args: ["\\bJAPANES\\b", "JAPANESE"]
         - name: re_replace
-          args: [ "\\bGERMANx\\b", "GERMAN" ]
+          args: ["\\bGERMANx\\b", "GERMAN"]
     title_spanish:
       text: "{{ .Result.title_phase1 }}"
       filters:
@@ -164,7 +164,7 @@ search:
       selector: poster
       filters:
         - name: replace
-          args: [ "https://via.placeholder.com/90x135", "" ]
+          args: ["https://via.placeholder.com/90x135", ""]
     imdbid:
       selector: imdb_id
     tmdbid:

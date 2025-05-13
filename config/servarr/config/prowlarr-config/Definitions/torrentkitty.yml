@@ -24,9 +24,9 @@ caps:
     Other: Other
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
 settings:
   - name: info_flaresolverr

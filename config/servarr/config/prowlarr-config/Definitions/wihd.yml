@@ -11,43 +11,43 @@ links:
 caps:
   # dont forget to update the search fields category (and size) case block(s)
   categorymappings:
-    - { id: 565af82b1fd35761568b4572, cat: Movies/HD, desc: "1080p" }
-    - { id: 565af82b1fd35761568b4574, cat: Movies/HD, desc: "720p" }
-    - { id: 565af82b1fd35761568b4576, cat: Movies/HD, desc: "HDTV" }
-    - { id: 565af82b1fd35761568b4578, cat: Movies/HD, desc: "Bluray" }
-    - { id: 565af82b1fd35761568b457a, cat: Movies/HD, desc: "Bluray Remux" }
-    - { id: 565af82b1fd35761568b457c, cat: Movies/HD, desc: "Bluray 3D" }
-    - { id: 565af82d1fd35761568b4587, cat: TV/HD, desc: "1080p" }
-    - { id: 565af82d1fd35761568b4589, cat: TV/HD, desc: "720p" }
-    - { id: 565af82d1fd35761568b458b, cat: TV/HD, desc: "HDTV" }
-    - { id: 565af82d1fd35761568b458d, cat: TV/HD, desc: "Bluray" }
-    - { id: 565af82d1fd35761568b458f, cat: TV/HD, desc: "Bluray Remux" }
-    - { id: 565af82d1fd35761568b4591, cat: TV/HD, desc: "Bluray 3D" }
-    - { id: 565af82d1fd35761568b459c, cat: TV/Anime, desc: "1080p" }
-    - { id: 565af82d1fd35761568b459e, cat: TV/Anime, desc: "720p" }
-    - { id: 565af82d1fd35761568b45a0, cat: TV/Anime, desc: "HDTV" }
-    - { id: 565af82d1fd35761568b45a2, cat: TV/Anime, desc: "Bluray" }
-    - { id: 565af82d1fd35761568b45a4, cat: TV/Anime, desc: "Bluray Remux" }
-    - { id: 565af82d1fd35761568b45a6, cat: TV/Anime, desc: "Bluray 3D" }
-    - { id: 565af82d1fd35761568b45af, cat: PC/0day, desc: "software" }
-    - { id: 565af82d1fd35761568b45b1, cat: Audio/Video, desc: "clips" }
-    - { id: 565af82d1fd35761568b45b3, cat: Audio/Other, desc: "Audio tracks" }
-    - { id: 565af82d1fd35761568b45b5, cat: TV/Documentary, desc: "documentaries" }
-    - { id: 565af82d1fd35761568b45b7, cat: Movies/HD, desc: "Bluray" }
-    - { id: 59591f0807fd301b6eaa7a8f, cat: Movies/HD, desc: "1080p" }
-    - { id: 595cd82e07fd301b6eaa7a90, cat: Movies/HD, desc: "720p" }
-    - { id: 59e67c0ed5b6a3e689dd1e1f, cat: Movies/UHD, desc: "Bluray 4K" }
-    - { id: 59e488174a23a800358b4567, cat: Movies/UHD, desc: "Bluray Remux 4K" }
-    - { id: 5a64af02ee30983a7e596aed, cat: Movies/HD, desc: "WEB-DL" }
-    - { id: 5cd19d6c3fc7af3ea2491037, cat: Movies/UHD, desc: "2160p" }
-    - { id: 5cd1a01f3fc7af3ea2491038, cat: TV/Anime, desc: "2160p" }
-    - { id: 5cd1a0b73fc7af3ea2491039, cat: Movies/Other, desc: "2160p" }
-    - { id: 5cd19f753fc7af3ea249103a, cat: TV/UHD, desc: "2160p" }
+    - {id: 565af82b1fd35761568b4572, cat: Movies/HD, desc: "1080p"}
+    - {id: 565af82b1fd35761568b4574, cat: Movies/HD, desc: "720p"}
+    - {id: 565af82b1fd35761568b4576, cat: Movies/HD, desc: "HDTV"}
+    - {id: 565af82b1fd35761568b4578, cat: Movies/HD, desc: "Bluray"}
+    - {id: 565af82b1fd35761568b457a, cat: Movies/HD, desc: "Bluray Remux"}
+    - {id: 565af82b1fd35761568b457c, cat: Movies/HD, desc: "Bluray 3D"}
+    - {id: 565af82d1fd35761568b4587, cat: TV/HD, desc: "1080p"}
+    - {id: 565af82d1fd35761568b4589, cat: TV/HD, desc: "720p"}
+    - {id: 565af82d1fd35761568b458b, cat: TV/HD, desc: "HDTV"}
+    - {id: 565af82d1fd35761568b458d, cat: TV/HD, desc: "Bluray"}
+    - {id: 565af82d1fd35761568b458f, cat: TV/HD, desc: "Bluray Remux"}
+    - {id: 565af82d1fd35761568b4591, cat: TV/HD, desc: "Bluray 3D"}
+    - {id: 565af82d1fd35761568b459c, cat: TV/Anime, desc: "1080p"}
+    - {id: 565af82d1fd35761568b459e, cat: TV/Anime, desc: "720p"}
+    - {id: 565af82d1fd35761568b45a0, cat: TV/Anime, desc: "HDTV"}
+    - {id: 565af82d1fd35761568b45a2, cat: TV/Anime, desc: "Bluray"}
+    - {id: 565af82d1fd35761568b45a4, cat: TV/Anime, desc: "Bluray Remux"}
+    - {id: 565af82d1fd35761568b45a6, cat: TV/Anime, desc: "Bluray 3D"}
+    - {id: 565af82d1fd35761568b45af, cat: PC/0day, desc: "software"}
+    - {id: 565af82d1fd35761568b45b1, cat: Audio/Video, desc: "clips"}
+    - {id: 565af82d1fd35761568b45b3, cat: Audio/Other, desc: "Audio tracks"}
+    - {id: 565af82d1fd35761568b45b5, cat: TV/Documentary, desc: "documentaries"}
+    - {id: 565af82d1fd35761568b45b7, cat: Movies/HD, desc: "Bluray"}
+    - {id: 59591f0807fd301b6eaa7a8f, cat: Movies/HD, desc: "1080p"}
+    - {id: 595cd82e07fd301b6eaa7a90, cat: Movies/HD, desc: "720p"}
+    - {id: 59e67c0ed5b6a3e689dd1e1f, cat: Movies/UHD, desc: "Bluray 4K"}
+    - {id: 59e488174a23a800358b4567, cat: Movies/UHD, desc: "Bluray Remux 4K"}
+    - {id: 5a64af02ee30983a7e596aed, cat: Movies/HD, desc: "WEB-DL"}
+    - {id: 5cd19d6c3fc7af3ea2491037, cat: Movies/UHD, desc: "2160p"}
+    - {id: 5cd1a01f3fc7af3ea2491038, cat: TV/Anime, desc: "2160p"}
+    - {id: 5cd1a0b73fc7af3ea2491039, cat: Movies/Other, desc: "2160p"}
+    - {id: 5cd19f753fc7af3ea249103a, cat: TV/UHD, desc: "2160p"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
 settings:
   - name: username
@@ -114,21 +114,21 @@ search:
       attribute: title
       filters:
         - name: re_replace
-          args: [ "(?i)(SEASON|SAISON) (\\d\\d)", "S$2" ]
+          args: ["(?i)(SEASON|SAISON) (\\d\\d)", "S$2"]
         - name: re_replace
-          args: [ "(?i)(SEASON|SAISON) (\\d)", "S0$2" ]
+          args: ["(?i)(SEASON|SAISON) (\\d)", "S0$2"]
     title_vostfr:
       text: "{{ .Result.title_phase1 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(vostfr|subfrench)\\b", "ENGLISH" ]
+          args: ["(?i)\\b(vostfr|subfrench)\\b", "ENGLISH"]
     title_phase2:
       text: "{{ if .Config.vostfr }}{{ .Result.title_vostfr }}{{ else }}{{ .Result.title_phase1 }}{{ end }}"
     title_multilang:
       text: "{{ .Result.title_phase2 }}"
       filters:
         - name: re_replace
-          args: [ "(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}" ]
+          args: ["(?i)\\b(MULTI(?!.*(?:FRENCH|ENGLISH|VOSTFR)))\\b", "{{ .Config.multilanguage }}"]
     title:
       text: "{{ if .Config.multilang }}{{ .Result.title_multilang }}{{ else }}{{ .Result.title_phase2 }}{{ end }}"
     poster:
@@ -218,12 +218,12 @@ search:
       selector: div.seeders
       filters:
         - name: re_replace
-          args: [ "^$", "999" ]
+          args: ["^$", "999"]
     leechers:
       selector: div.leechers
       filters:
         - name: re_replace
-          args: [ "^$", "999" ]
+          args: ["^$", "999"]
     grabs:
       selector: div.completed
     downloadvolumefactor:

@@ -20,14 +20,14 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: Other, cat: Other, desc: Other }
+    - {id: Other, cat: Other, desc: Other}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: filter-verified
@@ -52,11 +52,11 @@ download:
       attribute: href
       filters:
         - name: replace
-          args: [ "https://mylink.me.uk/?url=", "" ]
+          args: ["https://mylink.me.uk/?url=", ""]
         - name: replace
-          args: [ "https://mylink.cx/?url=", "" ]
+          args: ["https://mylink.cx/?url=", ""]
         - name: replace
-          args: [ "https://mylink.cloud/?url=", "" ]
+          args: ["https://mylink.cloud/?url=", ""]
         - name: urldecode
 
 search:

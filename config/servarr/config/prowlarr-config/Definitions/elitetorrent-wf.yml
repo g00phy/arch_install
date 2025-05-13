@@ -15,11 +15,11 @@ caps:
     other: Other
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
-settings: [ ]
+settings: []
 
 download:
   selectors:
@@ -33,9 +33,9 @@ search:
   keywordsfilters:
     # most ES/ITA TV torrents are in XXxYY format, so we search without S/E prefixes and filter later
     - name: re_replace
-      args: [ "(?i)S0?(\\d{1,2})", " $1 " ]
+      args: ["(?i)S0?(\\d{1,2})", " $1 "]
     - name: re_replace
-      args: [ "(?i)E(\\d{2,3})", " $1 " ]
+      args: ["(?i)E(\\d{2,3})", " $1 "]
   inputs:
     s: "{{ .Keywords }}"
     x: 0
@@ -65,38 +65,38 @@ search:
       selector: span:nth-of-type(2) > i
       filters:
         - name: replace
-          args: [ "---", "" ]
+          args: ["---", ""]
     _language:
       selector: span#idiomacio > i > img
       attribute: title
       filters:
         - name: replace
-          args: [ "Pelicula en ", "" ]
+          args: ["Pelicula en ", ""]
         - name: replace
-          args: [ "Español Latino", "LATiN SPANiSH" ]
+          args: ["Español Latino", "LATiN SPANiSH"]
         - name: replace
-          args: [ "Español Castellano", "SPANiSH" ]
+          args: ["Español Castellano", "SPANiSH"]
         - name: replace
-          args: [ "Ingles", "English" ]
+          args: ["Ingles", "English"]
         - name: replace
-          args: [ "Subtitulado", " SPASUBS" ]
+          args: ["Subtitulado", " SPASUBS"]
         - name: replace
-          args: [ "VOSE", "" ]
+          args: ["VOSE", ""]
     title:
       selector: div.imagen > a
       attribute: title
       # normalize to SXXEYY format
       filters:
         - name: replace
-          args: [ " – ", " " ]
+          args: [" – ", " "]
         - name: replace
-          args: [ "(", "" ]
+          args: ["(", ""]
         - name: replace
-          args: [ ")", "" ]
+          args: [")", ""]
         - name: re_replace
-          args: [ "(\\d{2})×(\\d{2})", "S$1E$2" ]
+          args: ["(\\d{2})×(\\d{2})", "S$1E$2"]
         - name: re_replace
-          args: [ "(\\d{1})×(\\d{2})", "S0$1E$2" ]
+          args: ["(\\d{1})×(\\d{2})", "S0$1E$2"]
         - name: append
           args: " {{ .Result._quality }} {{ .Result._language }}"
     details:
@@ -113,9 +113,9 @@ search:
       optional: true
       filters:
         - name: replace
-          args: [ "desc.", "512 MB" ]
+          args: ["desc.", "512 MB"]
         - name: replace
-          args: [ "s", "" ]
+          args: ["s", ""]
     size:
       text: "{{ if .Result.size_optional }}{{ .Result.size_optional }}{{ else }}512 MB{{ end }}"
     date:

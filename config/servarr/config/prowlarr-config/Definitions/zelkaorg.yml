@@ -14,54 +14,54 @@ legacylinks:
 
 caps:
   categorymappings:
-    - { id: 42, cat: Movies/BluRay, desc: "Blu-ray" }
-    - { id: 36, cat: PC/Mobile-Other, desc: "Mobile/GSM" }
-    - { id: 50, cat: TV, desc: "TV" }
-    - { id: 9, cat: XXX, desc: "XXX" }
-    - { id: 48, cat: XXX, desc: "XXX/3D" }
-    - { id: 49, cat: XXX/x264, desc: "XXX/HD" }
-    - { id: 25, cat: Movies/SD, desc: "Cartoons" }
-    - { id: 51, cat: Movies/HD, desc: "Cartoons/HD" }
-    - { id: 26, cat: Other, desc: "Others" }
-    - { id: 39, cat: PC/Mac, desc: "Games/Mac" }
-    - { id: 4, cat: PC/Games, desc: "Games/PC ISO" }
-    - { id: 21, cat: PC/Games, desc: "Games/PC Rip" }
-    - { id: 17, cat: Console/PS3, desc: "Games/PS" }
-    - { id: 40, cat: Console/XBox, desc: "Games/Xbox" }
-    - { id: 12, cat: Console/Other, desc: "Games/Console" }
-    - { id: 23, cat: Audio/Video, desc: "Clips/Concerts" }
-    - { id: 32, cat: Books/Comics, desc: "Books/Comics" }
-    - { id: 6, cat: Audio/MP3, desc: "Music" }
-    - { id: 29, cat: Movies/DVD, desc: "Music/DVD" }
-    - { id: 30, cat: Audio/Lossless, desc: "Music/Hi-Res Audio" }
-    - { id: 34, cat: Audio/Lossless, desc: "Music/Lossless" }
-    - { id: 52, cat: Audio/Other, desc: "Music/Vinyl HQRip" }
-    - { id: 22, cat: PC, desc: "Software" }
-    - { id: 38, cat: PC/Mac, desc: "Software/Mac" }
-    - { id: 1, cat: PC/ISO, desc: "Software/PC ISO" }
-    - { id: 7, cat: TV/SD, desc: "Series" }
-    - { id: 33, cat: TV/HD, desc: "Series/HD" }
-    - { id: 37, cat: PC, desc: "Warehouse" }
-    - { id: 41, cat: TV/Sport, desc: "Sport" }
-    - { id: 43, cat: TV/Sport, desc: "Sport/HD" }
-    - { id: 53, cat: Movies/HD, desc: "Movies/1080" }
-    - { id: 46, cat: Movies/3D, desc: "Movies/3D" }
-    - { id: 5, cat: Movies/HD, desc: "Movies/720" }
-    - { id: 20, cat: Movies/DVD, desc: "Movies/DVD" }
-    - { id: 54, cat: Movies/Other, desc: "Movies/VHS Rip" }
-    - { id: 35, cat: Movies/HD, desc: "Movies/x264" }
-    - { id: 19, cat: Movies/SD, desc: "Movies/XviD" }
-    - { id: 24, cat: Movies/Foreign, desc: "Movies/Bulgarian" }
-    - { id: 31, cat: TV/Documentary, desc: "Movies/Science" }
-    - { id: 28, cat: Movies/Foreign, desc: "Movies/Russian" }
-    - { id: 27, cat: TV/Anime, desc: "Hentai" }
+    - {id: 42, cat: Movies/BluRay, desc: "Blu-ray"}
+    - {id: 36, cat: PC/Mobile-Other, desc: "Mobile/GSM"}
+    - {id: 50, cat: TV, desc: "TV"}
+    - {id: 9, cat: XXX, desc: "XXX"}
+    - {id: 48, cat: XXX, desc: "XXX/3D"}
+    - {id: 49, cat: XXX/x264, desc: "XXX/HD"}
+    - {id: 25, cat: Movies/SD, desc: "Cartoons"}
+    - {id: 51, cat: Movies/HD, desc: "Cartoons/HD"}
+    - {id: 26, cat: Other, desc: "Others"}
+    - {id: 39, cat: PC/Mac, desc: "Games/Mac"}
+    - {id: 4, cat: PC/Games, desc: "Games/PC ISO"}
+    - {id: 21, cat: PC/Games, desc: "Games/PC Rip"}
+    - {id: 17, cat: Console/PS3, desc: "Games/PS"}
+    - {id: 40, cat: Console/XBox, desc: "Games/Xbox"}
+    - {id: 12, cat: Console/Other, desc: "Games/Console"}
+    - {id: 23, cat: Audio/Video, desc: "Clips/Concerts"}
+    - {id: 32, cat: Books/Comics, desc: "Books/Comics"}
+    - {id: 6, cat: Audio/MP3, desc: "Music"}
+    - {id: 29, cat: Movies/DVD, desc: "Music/DVD"}
+    - {id: 30, cat: Audio/Lossless, desc: "Music/Hi-Res Audio"}
+    - {id: 34, cat: Audio/Lossless, desc: "Music/Lossless"}
+    - {id: 52, cat: Audio/Other, desc: "Music/Vinyl HQRip"}
+    - {id: 22, cat: PC, desc: "Software"}
+    - {id: 38, cat: PC/Mac, desc: "Software/Mac"}
+    - {id: 1, cat: PC/ISO, desc: "Software/PC ISO"}
+    - {id: 7, cat: TV/SD, desc: "Series"}
+    - {id: 33, cat: TV/HD, desc: "Series/HD"}
+    - {id: 37, cat: PC, desc: "Warehouse"}
+    - {id: 41, cat: TV/Sport, desc: "Sport"}
+    - {id: 43, cat: TV/Sport, desc: "Sport/HD"}
+    - {id: 53, cat: Movies/HD, desc: "Movies/1080"}
+    - {id: 46, cat: Movies/3D, desc: "Movies/3D"}
+    - {id: 5, cat: Movies/HD, desc: "Movies/720"}
+    - {id: 20, cat: Movies/DVD, desc: "Movies/DVD"}
+    - {id: 54, cat: Movies/Other, desc: "Movies/VHS Rip"}
+    - {id: 35, cat: Movies/HD, desc: "Movies/x264"}
+    - {id: 19, cat: Movies/SD, desc: "Movies/XviD"}
+    - {id: 24, cat: Movies/Foreign, desc: "Movies/Bulgarian"}
+    - {id: 31, cat: TV/Documentary, desc: "Movies/Science"}
+    - {id: 28, cat: Movies/Foreign, desc: "Movies/Russian"}
+    - {id: 27, cat: TV/Anime, desc: "Hentai"}
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
-    music-search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
+    music-search: [q]
+    book-search: [q]
 
 settings:
   - name: username
@@ -132,7 +132,7 @@ search:
       filters:
         - name: urldecode
         - name: re_replace
-          args: [ "^(.*?)download\\.php\\/[0-9]{1,10}\\/|\\.torrent(?=[^.]*$)", "" ]
+          args: ["^(.*?)download\\.php\\/[0-9]{1,10}\\/|\\.torrent(?=[^.]*$)", ""]
     details:
       selector: td:nth-child(2) > a:nth-child(1)
       attribute: href
@@ -176,7 +176,7 @@ search:
       attribute: onmouseover
       filters:
         - name: replace
-          args: [ "</p><p class=\\'pop\\'>", " " ]
+          args: ["</p><p class=\\'pop\\'>", " "]
         - name: regexp
           args: "Genre:</b>(.+?)</div"
     description:

@@ -14,9 +14,9 @@ caps:
     Movies: Movies/Other
 
   modes:
-    search: [ q ]
-    tv-search: [ q, season, ep ]
-    movie-search: [ q ]
+    search: [q]
+    tv-search: [q, season, ep]
+    movie-search: [q]
 
 settings:
   - name: stripcyrillic
@@ -47,7 +47,7 @@ search:
   keywordsfilters:
     # strip season and/or ep
     - name: re_replace
-      args: [ "(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", "" ]
+      args: ["(?i)\\b(?:[SE]\\d{1,4}){1,2}\\b\\s?", ""]
 
   rows:
     selector: list
@@ -68,154 +68,154 @@ search:
       selector: ..names.en
       filters:
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*1\\b", "Part One" ]
+          args: ["(?i)\\bPart\\s*1\\b", "Part One"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*2\\b", "Part Two" ]
+          args: ["(?i)\\bPart\\s*2\\b", "Part Two"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*3\\b", "Part Three" ]
+          args: ["(?i)\\bPart\\s*3\\b", "Part Three"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*4\\b", "Part Four" ]
+          args: ["(?i)\\bPart\\s*4\\b", "Part Four"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*5\\b", "Part Five" ]
+          args: ["(?i)\\bPart\\s*5\\b", "Part Five"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*6\\b", "Part Six" ]
+          args: ["(?i)\\bPart\\s*6\\b", "Part Six"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*7\\b", "Part Seven" ]
+          args: ["(?i)\\bPart\\s*7\\b", "Part Seven"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*8\\b", "Part Eight" ]
+          args: ["(?i)\\bPart\\s*8\\b", "Part Eight"]
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*9\\b", "Part Nine" ]
+          args: ["(?i)\\bPart\\s*9\\b", "Part Nine"]
         - name: re_replace
-          args: [ "(?i)\\bseason\\s*(\\d+)\\b", "" ]
+          args: ["(?i)\\bseason\\s*(\\d+)\\b", ""]
         - name: re_replace
-          args: [ "(?i)\\b(\\d+)(st|nd|rd|th)\\s*season[\\s\\.]*", "" ]
+          args: ["(?i)\\b(\\d+)(st|nd|rd|th)\\s*season[\\s\\.]*", ""]
         - name: re_replace
-          args: [ "(?i)\\b(\\d+)\\s*season\\b[\\s\\.]*", "" ]
+          args: ["(?i)\\b(\\d+)\\s*season\\b[\\s\\.]*", ""]
         - name: re_replace
-          args: [ "(?i)\\bseason\\s*([IVXLCDM]+)\\b", "" ]
+          args: ["(?i)\\bseason\\s*([IVXLCDM]+)\\b", ""]
         - name: re_replace
-          args: [ "\\bI$", "" ]
+          args: ["\\bI$", ""]
         - name: re_replace
-          args: [ "\\bII$", "" ]
+          args: ["\\bII$", ""]
         - name: re_replace
-          args: [ "\\bIII$", "" ]
+          args: ["\\bIII$", ""]
         - name: re_replace
-          args: [ "\\bIV$", "" ]
+          args: ["\\bIV$", ""]
         - name: re_replace
-          args: [ "\\bV$", "" ]
+          args: ["\\bV$", ""]
         - name: re_replace
-          args: [ "\\bVI$", "" ]
+          args: ["\\bVI$", ""]
         - name: re_replace
-          args: [ "\\bVII$", "" ]
+          args: ["\\bVII$", ""]
         - name: re_replace
-          args: [ "\\bVIII$", "" ]
+          args: ["\\bVIII$", ""]
         - name: re_replace
-          args: [ "\\bIX$", "" ]
+          args: ["\\bIX$", ""]
         - name: re_replace
-          args: [ "\\bX$", "" ]
+          args: ["\\bX$", ""]
         - name: re_replace
-          args: [ "(?i)\\b(\\d+)(?:st|nd|rd|th)?\\b", "" ]
+          args: ["(?i)\\b(\\d+)(?:st|nd|rd|th)?\\b", ""]
         - name: trim
     title_alternative:
       selector: ..names.alternative
       optional: true
       filters:
         - name: re_replace
-          args: [ "(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}" ]
+          args: ["(\\([\\p{IsCyrillic}\\W]+\\))|(^[\\p{IsCyrillic}\\W\\d]+\\/ )|([\\p{IsCyrillic} \\-]+,+)|([\\p{IsCyrillic}]+)", "{{ if .Config.stripcyrillic }}{{ else }}$1$2$3$4{{ end }}"]
         - name: re_replace
-          args: [ "[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", "" ]
+          args: ["[\\[\\(\\{<«][\\s\\W]*[\\]\\)\\}>»]", ""]
         - name: re_replace
-          args: [ "^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", "" ]
+          args: ["^[\\s&,\\.!\\?\\+\\-_\\|\\/':]+", ""]
         - name: re_replace
-          args: [ "^OVA$", "" ]
+          args: ["^OVA$", ""]
     _season_number_en:
       selector: ..names.en
       filters:
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*\\d+\\s*$", "" ]
+          args: ["(?i)\\bPart\\s*\\d+\\s*$", ""]
         - name: re_replace
-          args: [ "(?i)(^.*\\bseason\\s*(\\d+)\\b\\s*$)", "S$2" ]
+          args: ["(?i)(^.*\\bseason\\s*(\\d+)\\b\\s*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)(^.*\\b(\\d+)(st|nd|rd|th)\\s*season\\b.*$)", "S$2" ]
+          args: ["(?i)(^.*\\b(\\d+)(st|nd|rd|th)\\s*season\\b.*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)(^.*\\b(\\d+)\\s*season\\b.*$)", "S$2" ]
+          args: ["(?i)(^.*\\b(\\d+)\\s*season\\b.*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)(^.*\\bseason\\s*([IVXLCDM]+)\\b\\s*$)", "$1" ]
+          args: ["(?i)(^.*\\bseason\\s*([IVXLCDM]+)\\b\\s*$)", "$1"]
         - name: re_replace
-          args: [ "(^.*X$)", "S10" ]
+          args: ["(^.*X$)", "S10"]
         - name: re_replace
-          args: [ "(^.*IX$)", "S9" ]
+          args: ["(^.*IX$)", "S9"]
         - name: re_replace
-          args: [ "(^.*VIII$)", "S8" ]
+          args: ["(^.*VIII$)", "S8"]
         - name: re_replace
-          args: [ "(^.*VII$)", "S7" ]
+          args: ["(^.*VII$)", "S7"]
         - name: re_replace
-          args: [ "(^.*VI$)", "S6" ]
+          args: ["(^.*VI$)", "S6"]
         - name: re_replace
-          args: [ "(^.*V$)", "S5" ]
+          args: ["(^.*V$)", "S5"]
         - name: re_replace
-          args: [ "(^.*IV$)", "S4" ]
+          args: ["(^.*IV$)", "S4"]
         - name: re_replace
-          args: [ "(^.*III$)", "S3" ]
+          args: ["(^.*III$)", "S3"]
         - name: re_replace
-          args: [ "(^.*II$)", "S2" ]
+          args: ["(^.*II$)", "S2"]
         - name: re_replace
-          args: [ "(^.*I$)", "S1" ]
+          args: ["(^.*I$)", "S1"]
         - name: re_replace
-          args: [ "(?i)(^.*\\b(\\d+)(?:st|nd|rd|th)?\\b\\s*$)", "S$2" ]
+          args: ["(?i)(^.*\\b(\\d+)(?:st|nd|rd|th)?\\b\\s*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)^(?!S\\d+).*", "" ]
+          args: ["(?i)^(?!S\\d+).*", ""]
     _season_number_alternative:
       selector: ..names.alternative
       optional: true
       filters:
         - name: re_replace
-          args: [ "(?i)\\bPart\\s*\\d+\\s*$", "" ]
+          args: ["(?i)\\bPart\\s*\\d+\\s*$", ""]
         - name: re_replace
-          args: [ "(?i)(^.*\\bseason\\s*(\\d+)\\b\\s*$)", "S$2" ]
+          args: ["(?i)(^.*\\bseason\\s*(\\d+)\\b\\s*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)(^.*\\b(\\d+)(st|nd|rd|th)\\s*season\\b\\s*$)", "S$2" ]
+          args: ["(?i)(^.*\\b(\\d+)(st|nd|rd|th)\\s*season\\b\\s*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)(^.*\\b(\\d+)\\s*season\\b\\s*$)", "S$2" ]
+          args: ["(?i)(^.*\\b(\\d+)\\s*season\\b\\s*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)(^.*\\bseason\\s*([IVXLCDM]+)\\b\\s*$)", "$1" ]
+          args: ["(?i)(^.*\\bseason\\s*([IVXLCDM]+)\\b\\s*$)", "$1"]
         - name: re_replace
-          args: [ "(^.*X$)", "S10" ]
+          args: ["(^.*X$)", "S10"]
         - name: re_replace
-          args: [ "(^.*IX$)", "S9" ]
+          args: ["(^.*IX$)", "S9"]
         - name: re_replace
-          args: [ "(^.*VIII$)", "S8" ]
+          args: ["(^.*VIII$)", "S8"]
         - name: re_replace
-          args: [ "(^.*VII$)", "S7" ]
+          args: ["(^.*VII$)", "S7"]
         - name: re_replace
-          args: [ "(^.*VI$)", "S6" ]
+          args: ["(^.*VI$)", "S6"]
         - name: re_replace
-          args: [ "(^.*V$)", "S5" ]
+          args: ["(^.*V$)", "S5"]
         - name: re_replace
-          args: [ "(^.*IV$)", "S4" ]
+          args: ["(^.*IV$)", "S4"]
         - name: re_replace
-          args: [ "(^.*III$)", "S3" ]
+          args: ["(^.*III$)", "S3"]
         - name: re_replace
-          args: [ "(^.*II$)", "S2" ]
+          args: ["(^.*II$)", "S2"]
         - name: re_replace
-          args: [ "(^.*I$)", "S1" ]
+          args: ["(^.*I$)", "S1"]
         - name: re_replace
-          args: [ "(?i)(^.*\\b(\\d+)(?:st|nd|rd|th)?\\b\\s*$)", "S$2" ]
+          args: ["(?i)(^.*\\b(\\d+)(?:st|nd|rd|th)?\\b\\s*$)", "S$2"]
         - name: re_replace
-          args: [ "(?i)^(?!S\\d+).*", "" ]
+          args: ["(?i)^(?!S\\d+).*", ""]
     _season_number:
       text: "{{ .Result._season_number_en }}"
       filters:
         - name: append
           args: "{{ .Result._season_number_alternative }}"
         - name: re_replace
-          args: [ "^S1S1$", "S1" ]
+          args: ["^S1S1$", "S1"]
         - name: re_replace
-          args: [ "^S1(.+)$", "$1" ]
+          args: ["^S1(.+)$", "$1"]
         - name: re_replace
-          args: [ "^(S\\d+).*$", "$1" ]
+          args: ["^(S\\d+).*$", "$1"]
         - name: re_replace
-          args: [ "^$", "S1" ]
+          args: ["^$", "S1"]
     year:
       selector: ..season.year
     _quality:
@@ -228,39 +228,39 @@ search:
       selector: quality.encoder
       filters:
         - name: re_replace
-          args: [ "(?i)^h", "x" ]
+          args: ["(?i)^h", "x"]
     title_parsed:
       text: "{{ if .Config.stripcyrillic }}{{ else }}{{ .Result.title_ru }} / {{ end }}{{ .Result.title_en_parsed }} {{ .Result._season_number}}E{{ .Result._episodes }} [{{ .Result._quality_type }} {{ .Result._quality_resolution }} {{ .Result._quality_encoder }}]"
       filters:
         - name: re_replace
-          args: [ "\\bS\\d+EФильм\\b", "({{ .Result.year }}) MOVIE" ]
+          args: ["\\bS\\d+EФильм\\b", "({{ .Result.year }}) MOVIE"]
         - name: re_replace
-          args: [ "\\bS\\d+EOVA\\b", "({{ .Result.year }}) OVA" ]
+          args: ["\\bS\\d+EOVA\\b", "({{ .Result.year }}) OVA"]
         - name: re_replace
-          args: [ "\\bS\\d+EONA\\b", "({{ .Result.year }}) ONA" ]
+          args: ["\\bS\\d+EONA\\b", "({{ .Result.year }}) ONA"]
         - name: re_replace
-          args: [ "\\bS\\d+EMovie\\b", "({{ .Result.year }}) MOVIE" ]
+          args: ["\\bS\\d+EMovie\\b", "({{ .Result.year }}) MOVIE"]
         - name: re_replace
-          args: [ "\\bS\\d+EП/м фильм\\b", "({{ .Result.year }}) MOVIE" ]
+          args: ["\\bS\\d+EП/м фильм\\b", "({{ .Result.year }}) MOVIE"]
         - name: re_replace
-          args: [ "\\bS\\d+EРекап\\b", "({{ .Result.year }}) RECAP" ]
+          args: ["\\bS\\d+EРекап\\b", "({{ .Result.year }}) RECAP"]
         - name: re_replace
-          args: [ "\\bS\\d+ETV-Special\\b", "({{ .Result.year }}) SPECIAL" ]
+          args: ["\\bS\\d+ETV-Special\\b", "({{ .Result.year }}) SPECIAL"]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} - RUS{{ else }}{{ end }}"
     title_original:
       text: "{{ if .Config.stripcyrillic }}{{ else }}{{ .Result.title_ru }} / {{ end }}{{ .Result.title_en }}{{ if .Result.title_alternative }} / AKA {{ .Result.title_alternative }}{{ else }}{{ end }} ({{ .Result.year }}) [{{ .Result._quality }}]{{ if .Result._episodes }} - E{{ .Result._episodes }}{{ else }}{{ end }}"
       filters:
         - name: re_replace
-          args: [ " - \\bEФильм\\b", " - MOVIE" ]
+          args: [" - \\bEФильм\\b", " - MOVIE"]
         - name: re_replace
-          args: [ " - \\bEMovie\\b", " - MOVIE" ]
+          args: [" - \\bEMovie\\b", " - MOVIE"]
         - name: re_replace
-          args: [ " - \\bEП/м фильм\\b", " - MOVIE" ]
+          args: [" - \\bEП/м фильм\\b", " - MOVIE"]
         - name: re_replace
-          args: [ " - \\bEOVA\\b", " - OVA" ]
+          args: [" - \\bEOVA\\b", " - OVA"]
         - name: re_replace
-          args: [ " - \\bEONA\\b", " - ONA" ]
+          args: [" - \\bEONA\\b", " - ONA"]
         - name: append
           args: "{{ if .Config.addrussiantotitle }} - RUS{{ else }}{{ end }}"
     title:

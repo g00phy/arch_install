@@ -10,11 +10,11 @@ links:
 
 caps:
   categorymappings:
-    - { id: ebook, cat: Books, desc: "EBook" }
+    - {id: ebook, cat: Books, desc: "EBook"}
 
   modes:
-    search: [ q ]
-    book-search: [ q ]
+    search: [q]
+    book-search: [q]
 
 settings:
   - name: ebook
@@ -32,7 +32,7 @@ download:
       attribute: href
       filters:
         - name: replace
-          args: [ "http://demagnetize.link/?magnet=", "" ]
+          args: ["http://demagnetize.link/?magnet=", ""]
         - name: urldecode
 
 search:
