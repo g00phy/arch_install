@@ -5,9 +5,9 @@ echo -ne "
                bringing up servarr stack containers
 -------------------------------------------------------------------------
 "
-sudo cp -r ~/arch_install/configs/servarr/config/* /mnt/servarr/config/
+sudo cp -r ~/arch_install/config/servarr/config/* /mnt/servarr/config/
 
-docker-compose -f docker-compose.yml up --build -d
+docker-compose -f ~/arch_install/servarr/docker-compose.yml up --build -d
 
 echo -ne "
 -------------------------------------------------------------------------
