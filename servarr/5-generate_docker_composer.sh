@@ -16,7 +16,7 @@ DATA_DIR="$ROOT_DIR/data"
 TORRENT_DIR="$DATA_DIR/torrents"
 MEDIA_DIR="$DATA_DIR/media"
 
-SERVICES=("emby" "sonarr" "radarr" "bazarr" "prowlarr" "qbittorrent" "flaresolverr" "jellyseerr" "homarr" "portainer")
+SERVICES=("emby" "sonarr" "radarr" "prowlarr" "deluge" "flaresolverr" "jellyseerr" "portainer")
 
 sudo mkdir -pv "${CONFIG_DIR:-.}" "${DATA_DIR:-.}" "$MEDIA_DIR/movies" "$MEDIA_DIR/tv" "$TORRENT_DIR"
 sudo chown -R $CURRENT_USER:$MEDIACENTER_GID "$DATA_DIR" "$CONFIG_DIR"
@@ -36,7 +36,7 @@ echo "services:" >>$HOME/arch_install/servarr/docker-compose.yml
 
 echo "
   emby:
-    image: emby/embyserver:latest
+    image: linuxserver/emby:4.8.11.0-ls239
     container_name: emby
     networks:
       - servarr-network
@@ -98,7 +98,7 @@ EOF
     done
   fi
 }
-
+generate_compose_entry "deluge" "$(id -u)" "8112:8112 6881:6881" "lscr.io/linuxserver/deluge:latest" "/mnt/servarr/config/deluge-config:/config /mnt/servarr/data:/data"
 generate_compose_entry "sonarr" "$(id -u)" "8989:8989" "lscr.io/linuxserver/sonarr:latest" "/mnt/servarr/config/sonarr-config:/config /mnt/servarr/data:/data"
 generate_compose_entry "radarr" "$(id -u)" "7878:7878" "lscr.io/linuxserver/radarr:latest" "/mnt/servarr/config/radarr-config:/config /mnt/servarr/data:/data"
 
@@ -124,11 +124,11 @@ echo "
       - '9696:9696'
 " >>$HOME/arch_install/servarr/docker-compose.yml
 
-generate_compose_entry "qbittorrent" "$(id -u)" "8080:8080 6881:6881" "lscr.io/linuxserver/qbittorrent:latest" "/mnt/servarr/config/qbittorrent-config:/config /mnt/servarr/data/media:/data /mnt/servarr/data/media/movies:/data/movies /mnt/servarr/data/media/tv:/data/tv"
-generate_compose_entry "jellyseerr" "$(id -u)" "5056:5055" "fallenbagel/jellyseerr:latest" "/mnt/servarr/config/jellyseerr-config:/app/config"
+
+generate_compose_entry "jellyseerr" "$(id -u)" "5056:5055" "fallenbagel/jellyseerr:2.5.1" "/mnt/servarr/config/jellyseerr-config:/app/config"
 generate_compose_entry "flaresolverr" "$(id -u)" "8191:8191" "ghcr.io/flaresolverr/flaresolverr:latest" "/mnt/servarr/config/flaresolverr-config:/app/config"
 
-generate_compose_entry "portainer" "$(id -u)" "9000:9000" "portainer/portainer-ce:latest" "/run/user/1000/docker.sock:/var/run/docker.sock /mnt/servarr/config/portainer-config:/data"
+generate_compose_entry "portainer" "$(id -u)" "9000:9000" "portainer/portainer-ce:2.29.0" "/run/user/1000/docker.sock:/var/run/docker.sock /mnt/servarr/config/portainer-config:/data"
 #generate_compose_entry "homarr" "$(id -u)" "7575:7575" "ghcr.io/ajnart/homarr:0.15.10" "/run/user/1000/docker.sock:/var/run/docker.sock /mnt/servarr/config/homarr-config:/appdata" "SECRET_ENCRYPTION_KEY=$HOMARR_SECRET_KEY"
 
 echo "networks:" >>$HOME/arch_install/servarr/docker-compose.yml
