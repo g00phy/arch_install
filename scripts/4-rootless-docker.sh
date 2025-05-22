@@ -10,9 +10,19 @@ echo -ne "
 -------------------------------------------------------------------------
 "
 source "$CONFIGS_DIR"/setup.conf
-echo -ne "rootless docker"
-sudo curl -fsSL https://get.docker.com/rootless | sh
 
+
+echo -ne "rootless docker"
+# Install fuse-overlayfs
+sudo pacman -S fuse-overlayfs
+
+# Add kernel.unprivileged_userns_clone=1 to /etc/sysctl.conf
+echo "kernel.unprivileged_userns_clone=1" | sudo tee -a /etc/sysctl.conf
+
+# Apply the sysctl changes
+sudo sysctl --system
+
+sudo curl -fsSL https://get.docker.com/rootless | sh
 systemctl --user restart docker | systemctl --user start docker
 systemctl --user enable --now docker | sudo loginctl enable-linger $(whoami)
 echo "export PATH=/home/g00phy/bin:$PATH" >>"$HOME"/.bashrc
@@ -20,9 +30,10 @@ echo "export DOCKER_HOST=unix:///run/user/1000/docker.sock" >>"$HOME"/.bashrc
 echo "docker enabled"
 
 echo -ne "nvidia-container-toolkit "
-$AUR_HELPER -S --noconfirm --needed nvidia-container-toolkit
+sudo pacman -S --noconfirm --needed nvidia-container-toolkit
 # shellcheck disable=SC2086
 sudo nvidia-ctk runtime configure --runtime=docker --config=$HOME/.config/docker/daemon.json
+systemctl --user restart docker
 sudo nvidia-ctk config --set nvidia-container-cli.no-cgroups --in-place
 echo "  nvidia docker enabled"
 
