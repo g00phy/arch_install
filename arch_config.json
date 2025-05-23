@@ -227,7 +227,8 @@
         "cups",
         "cups-pdf",
         "ntfs-3g",
-        "git-lfs"
+        "git-lfs",
+        "docker"
     ],
     "parallel downloads": 5,
     "profile_config": {

@@ -25,9 +25,9 @@ echo -ne "
       bash $HOME/arch_install/scripts/2-user.sh
     fi
     bash $HOME/arch_install/scripts/3-post-setup.sh
-    bash $HOME/arch_install/scripts/4-rootless-docker.sh
+    bash $HOME/arch_install/scripts/4-rootful-docker.sh
     bash $HOME/arch_install/servarr/5-generate_docker_composer.sh
-    bash $HOME/arch_install/servarr/7-vnstat-setup.sh
+    bash $HOME/arch_install/scripts/7-vnstat-setup.sh
 
 echo -ne "
 -------------------------------------------------------------------------
