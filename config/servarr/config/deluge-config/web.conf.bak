@@ -1,0 +1,30 @@
+{
+    "file": 2,
+    "format": 1
+}{
+    "base": "/",
+    "cert": "ssl/daemon.cert",
+    "default_daemon": "",
+    "enabled_plugins": [],
+    "first_login": true,
+    "https": false,
+    "interface": "0.0.0.0",
+    "language": "",
+    "pkey": "ssl/daemon.pkey",
+    "port": 8112,
+    "pwd_salt": "55f345acaf1d6c06c8efaef2ca1e27ebfee62538",
+    "pwd_sha1": "b775c5f5dc412ac9c7278d12fb0248b21183b5ab",
+    "session_timeout": 3600,
+    "sessions": {
+        "398781b2e9091329a54aef5c7b858ccaa13ee3f27f60d292f2fe657a82bae61a": {
+            "expires": 1748105820.0,
+            "level": 10,
+            "login": "admin"
+        }
+    },
+    "show_session_speed": false,
+    "show_sidebar": true,
+    "sidebar_multiple_filters": true,
+    "sidebar_show_zero": false,
+    "theme": "gray"
+}

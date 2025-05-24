@@ -131,7 +131,7 @@ echo "
 generate_compose_entry "jellyseerr" "$(id -u)" "5056:5055" "fallenbagel/jellyseerr:latest" "/mnt/servarr/config/jellyseerr-config:/app/config"
 generate_compose_entry "flaresolverr" "$(id -u)" "8191:8191" "ghcr.io/flaresolverr/flaresolverr:latest" "/mnt/servarr/config/flaresolverr-config:/app/config"
 
-generate_compose_entry "portainer" "$(id -u)" "9000:9000" "portainer/portainer-ce:latest" "/run/user/1000/docker.sock:/var/run/docker.sock /mnt/servarr/config/portainer-config:/data"
+generate_compose_entry "portainer" "$(id -u)" "9000:9000" "portainer/portainer-ce:latest" "/var/run/docker.sock:/var/run/docker.sock /mnt/servarr/config/portainer-config:/data"
 #generate_compose_entry "homarr" "$(id -u)" "7575:7575" "ghcr.io/ajnart/homarr:0.15.10" "/run/user/1000/docker.sock:/var/run/docker.sock /mnt/servarr/config/homarr-config:/appdata" "SECRET_ENCRYPTION_KEY=$HOMARR_SECRET_KEY"
 
 echo "networks:" >>$HOME/arch_install/servarr/docker-compose.yml
