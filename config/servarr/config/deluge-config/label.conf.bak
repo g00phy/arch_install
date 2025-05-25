@@ -23,7 +23,7 @@
         },
         "tv": {
             "apply_max": false,
-            "apply_move_completed": true,
+            "apply_move_completed": false,
             "apply_queue": false,
             "auto_add": false,
             "auto_add_trackers": [],
@@ -41,9 +41,8 @@
         }
     },
     "torrent_labels": {
-        "0c92229e26ae0c7d7d0c8e96b562403297db3b0b": "movies",
-        "2dbd10035d6acae9baadcc7c302337a7a09e8971": "movies",
-        "d1bf1b36d28f45fd859fa69c54d4854ee1703cf8": "tv",
-        "f5aeec73ae1f8173421bd56a906a8b63b5a9be32": "movies"
+        "22e93ebf5b7cd50437d448f5408b02a640ae1cf5": "tv",
+        "2adb0c5636cbb4b864bfe83ca9e15f532d6299bb": "movies",
+        "d1bf1b36d28f45fd859fa69c54d4854ee1703cf8": "tv"
     }
 }

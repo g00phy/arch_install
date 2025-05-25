@@ -32,13 +32,10 @@
   <ImageSavingConvention>Compatible</ImageSavingConvention>
   <EnableAutomaticRestart>true</EnableAutomaticRestart>
   <PreferredDetectedRemoteAddressFamily>InterNetwork</PreferredDetectedRemoteAddressFamily>
-  <WanDdns />
   <UICulture>en-US</UICulture>
   <RemoteClientBitrateLimit>0</RemoteClientBitrateLimit>
   <LocalNetworkSubnets />
-  <LocalNetworkAddresses>
-    <string>192.168.1.100</string>
-  </LocalNetworkAddresses>
+  <LocalNetworkAddresses />
   <EnableExternalContentInSuggestions>true</EnableExternalContentInSuggestions>
   <RequireHttps>false</RequireHttps>
   <IsBehindProxy>false</IsBehindProxy>

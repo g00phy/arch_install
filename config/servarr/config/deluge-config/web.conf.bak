@@ -6,23 +6,98 @@
     "cert": "ssl/daemon.cert",
     "default_daemon": "",
     "enabled_plugins": [],
-    "first_login": true,
+    "first_login": false,
     "https": false,
     "interface": "0.0.0.0",
     "language": "",
     "pkey": "ssl/daemon.pkey",
     "port": 8112,
-    "pwd_salt": "55f345acaf1d6c06c8efaef2ca1e27ebfee62538",
-    "pwd_sha1": "b775c5f5dc412ac9c7278d12fb0248b21183b5ab",
+    "pwd_salt": "1ff9da11c73f49a27aaa52f4f6ccdaa3b6c3c1f3",
+    "pwd_sha1": "5428bd753bb3ed1c4b8a60d479ca355825947534",
     "session_timeout": 3600,
     "sessions": {
+        "00407784d0a26068832b25e680d407f7361e52b3c3b7fc04b80df927b1f614d5": {
+            "expires": 1748109589.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "109303eb81e00586d2cb0560a498e170c2aef27f1c26771c40d1a2e6b1ea65ee": {
+            "expires": 1748124837.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "131af42985b12ddd16240c1aa3871a85fef6849e3cb3cbdcce3fb5c8dccf4de8": {
+            "expires": 1748124783.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "2f54c00d216cd2ed11091bbbd857c305ae4203d1934c40c186246d0a4c5753e5": {
+            "expires": 1748109617.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "35d2c3c08d6726315090438c0c80cf8952955b6a6395333c620452c65f31862d": {
+            "expires": 1748108263.0,
+            "level": 10,
+            "login": "admin"
+        },
         "398781b2e9091329a54aef5c7b858ccaa13ee3f27f60d292f2fe657a82bae61a": {
-            "expires": 1748105820.0,
+            "expires": 1748124866.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "3be1c62c5ab3289498a7145a1ab78131f5332487343a50f426f2412d0626cb6f": {
+            "expires": 1748123496.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "3e82003665dd8c966449d0f3fb4e5cd07eb11d5553a5c39cc6251791f59812bc": {
+            "expires": 1748124748.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "439c5f8922d53c80a870600a78f38b7f707064a95119e2226ff828e19f570c75": {
+            "expires": 1748122389.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "6f67071f27c488a2b35d3cdc1b1aecddc4afae1516427223e78f2fa0f2a6dcb8": {
+            "expires": 1748123529.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "8033b7b3f2450d2ba8e1b16bbc7cf032d51e07ff83e07a891188c9649f8d68be": {
+            "expires": 1748121040.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "8c42a8f83e0694da3f687ea417b25961613347a5aecebcefc00ad24323107c1e": {
+            "expires": 1748122446.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "b658ca1bbd9379a9db4dc2fec62c0c5f32343a3977cbd7e2eab0e2c5af20fda1": {
+            "expires": 1748108265.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "bbaf52ecdc846fafb46f38258c4ccac9f7bed262284db4e2b3c4eda8436bd93c": {
+            "expires": 1748108284.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "c50cbbeeaed6e1b40a5aa0f348efca62be2bafc2a1d059390543ab93c7261b72": {
+            "expires": 1748124833.0,
+            "level": 10,
+            "login": "admin"
+        },
+        "da11d70aadad0f012560e9193de14c4e51134293ded44154c33cc5407a37d5b5": {
+            "expires": 1748121107.0,
             "level": 10,
             "login": "admin"
         }
     },
-    "show_session_speed": false,
+    "show_session_speed": true,
     "show_sidebar": true,
     "sidebar_multiple_filters": true,
     "sidebar_show_zero": false,

@@ -1,0 +1,11 @@
+{
+    "movies": {
+        "save_path": "/data/media/movies"
+    },
+    "prowlarr": {
+        "save_path": "/data/media/movies"
+    },
+    "tv": {
+        "save_path": "/data/media/tv"
+    }
+}

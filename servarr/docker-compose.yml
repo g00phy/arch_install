@@ -1,0 +1,143 @@
+---
+services:
+
+  emby:
+    image: emby/embyserver:latest
+    container_name: emby
+    networks:
+      - servarr-network
+    runtime: nvidia
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - NVIDIA_VISIBLE_DEVICES=all    # This will allow Emby to use all available GPUs
+      - NVIDIA_DRIVER_CAPABILITIES=compute,video,utility
+    volumes:
+      - /mnt/servarr/data/media/movies:/data/movies
+      - /mnt/servarr/data/media/tv:/data/tv
+      - /mnt/servarr/config/emby-config:/config
+    ports:
+      - '8096:8096'   # Web UI port
+      - '8920:8920'   # HTTPS port (optional)
+    restart: on-failure
+    devices:
+      - /dev/nvidia0
+      - /dev/nvidiactl
+      - /dev/nvidia-uvm
+    shm_size: '2gb'
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    networks:
+      - servarr-network
+    volumes:
+      - /mnt/servarr/config/sonarr-config:/config
+      - /mnt/servarr/data:/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    restart: unless-stopped
+    ports:
+      - 8989:8989
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    networks:
+      - servarr-network
+    volumes:
+      - /mnt/servarr/config/radarr-config:/config
+      - /mnt/servarr/data:/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    restart: unless-stopped
+    ports:
+      - 7878:7878
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:develop
+    container_name: prowlarr
+    networks:
+      - servarr-network
+    volumes:
+      - /mnt/servarr/config/prowlarr-config:/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - DOTNET_SYSTEM_NET_HTTP_USEIPV6=false
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+    restart: unless-stopped
+    ports:
+      - '9696:9696'
+
+  qbittorrent:
+    image: lscr.io/linuxserver/qbittorrent:5.0.4
+    container_name: qbittorrent
+    networks:
+      - servarr-network
+    volumes:
+      - /mnt/servarr/config/qbittorrent-config:/config
+      - /mnt/servarr/data/media:/data
+      - /mnt/servarr/data/media/movies:/data/movies
+      - /mnt/servarr/data/media/tv:/data/tv
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+      - 6881:6881
+  jellyseerr:
+    image: fallenbagel/jellyseerr:latest
+    container_name: jellyseerr
+    networks:
+      - servarr-network
+    volumes:
+      - /mnt/servarr/config/jellyseerr-config:/app/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    restart: unless-stopped
+    ports:
+      - 5056:5055
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    networks:
+      - servarr-network
+    volumes:
+      - /mnt/servarr/config/flaresolverr-config:/app/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    restart: unless-stopped
+    ports:
+      - 8191:8191
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    networks:
+      - servarr-network
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /mnt/servarr/config/portainer-config:/data
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    restart: unless-stopped
+    ports:
+      - 9000:9000
+networks:
+    servarr-network:
+        driver: bridge

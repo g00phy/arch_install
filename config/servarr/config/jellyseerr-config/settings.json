@@ -19,7 +19,7 @@
   "discoverRegion": "",
   "streamingRegion": "",
   "originalLanguage": "",
-  "mediaServerType": 4,
+  "mediaServerType": 3,
   "partialRequestsEnabled": true,
   "enableSpecialEpisodes": false,
   "locale": "en"
@@ -32,22 +32,35 @@
   "libraries": []
  },
  "jellyfin": {
-  "name": "",
-  "ip": "",
+  "name": "74b269ab47cb",
+  "ip": "emby",
   "port": 8096,
   "useSsl": false,
   "urlBase": "",
   "externalHostname": "",
   "jellyfinForgotPasswordUrl": "",
-  "libraries": [],
-  "serverId": "",
-  "apiKey": ""
+  "libraries": [
+   {
+    "id": "3",
+    "name": "Movies",
+    "enabled": true,
+    "type": "movie"
+   },
+   {
+    "id": "5",
+    "name": "TV shows",
+    "enabled": true,
+    "type": "show"
+   }
+  ],
+  "serverId": "fdbf2fa3f5ee429b951d94c0c2faacf1",
+  "apiKey": "e59171a8118e4e9ebcfc8519331f1b03"
  },
  "tautulli": {},
  "radarr": [],
  "sonarr": [],
  "public": {
-  "initialized": false
+  "initialized": true
  },
  "notifications": {
   "agents": {
