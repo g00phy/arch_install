@@ -1,7 +1,25 @@
 --END OF MINIMAL INSTALL--
+blueman
+bluez
+bluez-utils
+cups
+cups-pdf
+eog
+gimp
+keepassxc
+ntfs-3g
+nvidia-container-toolkit
+nvidia-settings
+python-pip
+sassc
+thunderbird
+timeshift
+unzip
+git-lfs
+mpv
+vlc
 apple-fonts
 pycharm-professional
-docker-buildx
 skanlite
 jdownloader2
 sumatrapdf
@@ -12,8 +30,7 @@ obs-studio
 spotify 
 bcompare
 docker-compose
-twitch
-onlyoffice-bin 
+onlyoffice-bin
 dupeguru
 gallery-dl
 handbrake

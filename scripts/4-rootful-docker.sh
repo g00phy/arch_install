@@ -12,9 +12,9 @@ echo -ne "
 source "$CONFIGS_DIR"/setup.conf
 
 
-echo -ne "rootless docker"
+echo -ne "rootful docker and docker buildx"
 # Install fuse-overlayfs
-sudo pacman -S --noconfirm --needed docker nvidia-container-toolkit
+$AUR_HELPER -S --noconfirm --needed docker nvidia-container-toolkit docker-buildx
 
 # Apply the sysctl changes
 sudo systemctl start docker.service
@@ -27,9 +27,6 @@ echo -ne "nvidia-container-toolkit "
 sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 echo "  nvidia docker enabled"
-
-echo -ne "rootless docker buildx"
-$AUR_HELPER -S --noconfirm --needed docker-buildx
 
 echo -ne "
 -------------------------------------------------------------------------
