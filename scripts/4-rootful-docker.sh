@@ -20,6 +20,8 @@ $AUR_HELPER -S --noconfirm --needed docker nvidia-container-toolkit docker-build
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
 sudo usermod -aG docker $USER
+echo 'export COMPOSE_BAKE=true' >> ~/.bashrc
+source ~/.bashrc
 echo "docker enabled"
 
 echo -ne "nvidia-container-toolkit "
