@@ -26,7 +26,7 @@ qdirstat
 bleachbit
 gparted
 obs-studio
-spotify 
+spotify-adblock-git 
 bcompare
 docker-compose
 onlyoffice-bin
