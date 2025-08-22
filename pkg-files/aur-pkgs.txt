@@ -19,7 +19,6 @@ git-lfs
 mpv
 vlc
 apple-fonts
-pycharm-professional
 skanlite
 jdownloader2
 sumatrapdf
