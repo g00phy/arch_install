@@ -33,7 +33,6 @@ onlyoffice-bin
 dupeguru
 gallery-dl
 handbrake
-peek
 google-chrome
 yt-dlp
 bash-completion
@@ -42,5 +41,5 @@ canon-pixma-mg2500-complete
 czkawka-git
 tixati
 visual-studio-code-bin
-wine
-winetricks-git
+audacious
+streamrip
